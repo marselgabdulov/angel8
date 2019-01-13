@@ -14,7 +14,9 @@ const IndexPage = () => (
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
-    <AniLink to="/page-2/">Go to page 2</AniLink>
+    <AniLink cover bg="#663399" to="/page-2/">
+      Go to Page 2
+    </AniLink>
   </Layout>
 )
 

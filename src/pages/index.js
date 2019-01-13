@@ -7,7 +7,10 @@ import SEO from '../components/seo'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO
+      title="Angel 8 bar, grill and wine. Эмоциональная кухня в Туле. Паназиатская
+      кухня и блюда на гриле."
+    />
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>

@@ -31,21 +31,26 @@ class IndexPage extends React.Component {
                 <span>в Туле</span>
               </h1>
             </div>
-
-            <img
+            <div
               className="home-page__cover-image"
               data-aos="fade"
               data-aos-delay="300"
               data-aos-duration="1200"
-              src={this.props.data.cover.childImageSharp.fluid.src}
-              alt="Cover Image"
+              style={{
+                backgroundImage: `url(${
+                  this.props.data.cover.childImageSharp.fluid.src
+                })`,
+              }}
             />
           </section>
           <section className="home-page__description">
-            <img
+            <div
               className="home-page__description-image"
-              src={this.props.data.description.childImageSharp.fluid.src}
-              alt="Cover Image"
+              style={{
+                backgroundImage: `url(${
+                  this.props.data.description.childImageSharp.fluid.src
+                })`,
+              }}
             />
             <div
               className="home-page__description-text"
@@ -77,109 +82,89 @@ class IndexPage extends React.Component {
             </div>
           </section>
 
-          {/* <section className="home__media">
-            <div className="home__media-item-one">
-              <span>Instagram</span>
-            </div>
+          <section className="home__media">
+            <a
+              href="https://www.instagram.com/angel_bar_grill/?hl=ru"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="home__media-item-one"
+              style={{
+                backgroundImage: `url(${
+                  this.props.data.logo_inst.childImageSharp.fluid.src
+                })`,
+              }}
+            />
             <a
               href="https://www.instagram.com/p/BsNY__mntMs/"
               className="home__media-item-two"
               target="_blank"
               rel="noopener noreferrer"
+              style={{
+                backgroundImage: `url(${
+                  this.props.data.command.childImageSharp.fluid.src
+                })`,
+              }}
             >
-              <img
-                data-aos="fade"
-                data-aos-delay="300"
-                data-aos-duration="1200"
-                src={this.props.data.command.childImageSharp.fluid.src}
-                alt="Cover Image"
-              />
+              2
             </a>
             <a
               href="https://www.instagram.com/p/BsPx-oonHGk/"
               target="_blank"
               rel="noopener noreferrer"
               className="home__media-item-three"
+              style={{
+                backgroundImage: `url(${
+                  this.props.data.bottles.childImageSharp.fluid.src
+                })`,
+              }}
             >
-              <img
-                data-aos="fade"
-                data-aos-delay="300"
-                data-aos-duration="1200"
-                src={this.props.data.bottles.childImageSharp.fluid.src}
-                alt="Cover Image"
-              />
+              3
             </a>
             <a
               href="https://www.instagram.com/p/BsZ3AsRnAay/"
               target="_blank"
               rel="noopener noreferrer"
               className="home__media-item-four"
-            >
-              <img
-                data-aos="fade"
-                data-aos-delay="300"
-                data-aos-duration="1200"
-                src={this.props.data.juice.childImageSharp.fluid.src}
-                alt="Cover Image"
-              />
-            </a>
+              style={{
+                backgroundImage: `url(${
+                  this.props.data.juice.childImageSharp.fluid.src
+                })`,
+              }}
+            />
             <a
               href="https://www.instagram.com/p/Br-JhtlHC59/"
               target="_blank"
               rel="noopener noreferrer"
               className="home__media-item-five"
-            >
-              <img
-                data-aos="fade"
-                data-aos-delay="300"
-                data-aos-duration="1200"
-                src={this.props.data.last.childImageSharp.fluid.src}
-                alt="Cover Image"
-              />
-            </a>
+              style={{
+                backgroundImage: `url(${
+                  this.props.data.last.childImageSharp.fluid.src
+                })`,
+              }}
+            />
             <a
               href="https://www.instagram.com/p/Br4_77CHxnP/"
               target="_blank"
               rel="noopener noreferrer"
               className="home__media-item-six"
-            >
-              <img
-                data-aos="fade"
-                data-aos-delay="300"
-                data-aos-duration="1200"
-                src={this.props.data.david.childImageSharp.fluid.src}
-                alt="Cover Image"
-              />
-            </a>
+              style={{
+                backgroundImage: `url(${
+                  this.props.data.david.childImageSharp.fluid.src
+                })`,
+              }}
+            />
             <a
               href="https://www.instagram.com/p/BrOGbVbFugw/"
               target="_blank"
               rel="noopener noreferrer"
               className="home__media-item-seven"
-            >
-              <img
-                data-aos="fade"
-                data-aos-delay="300"
-                data-aos-duration="1200"
-                src={this.props.data.asian_food.childImageSharp.fluid.src}
-                alt="Cover Image"
-              />
-            </a>
-            <a
-              href="https://www.instagram.com/angel_bar_grill/?hl=ru"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="home__media-item-eight"
-            >
-              <img
-                data-aos="fade"
-                data-aos-delay="300"
-                data-aos-duration="1200"
-                src={this.props.data.logo_inst.childImageSharp.fluid.src}
-                alt="Cover Image"
-              />
-            </a>
-          </section> */}
+              style={{
+                backgroundImage: `url(${
+                  this.props.data.asian_food.childImageSharp.fluid.src
+                })`,
+              }}
+            />
+          </section>
         </div>
       </Layout>
     )

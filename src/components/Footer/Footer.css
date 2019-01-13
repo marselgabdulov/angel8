@@ -4,6 +4,7 @@
   background-color: #0b0b0b;
   color: white;
 }
+
 .footer__wrapper {
   font-size: 1.2em;
   width: 80%;
@@ -45,6 +46,7 @@
   align-self: center;
   width: 150px;
   height: auto;
+  z-index: 200;
 }
 
 .footer__working-time {
@@ -73,8 +75,13 @@
   align-self: center;
 }
 
+.footer__maps {
+  z-index: 200;
+}
+
 .footer a {
   color: white;
+  z-index: 200;
 }
 
 .footer a:hover {
@@ -87,6 +94,7 @@
     height: 700px;
   }
   .footer__wrapper {
+    font-size: 1em;
     margin-bottom: 1em;
     grid-template-columns: 100%;
     grid-template-rows: auto;

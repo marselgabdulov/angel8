@@ -1,0 +1,165 @@
+/* Main */
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  font-weight: 500;
+}
+
+.header__wrapper {
+  width: 80%;
+  margin: auto;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 40%;
+}
+
+.header__logo:hover {
+  opacity: 0.7;
+}
+.header__logo-img {
+  width: 150px;
+}
+
+.header__links {
+  width: 40%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__links a {
+  color: white;
+  text-decoration: none;
+}
+
+.header__links a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+  .header {
+    height: 4em;
+  }
+  .header a {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .header {
+    height: 2em;
+  }
+
+  .header__logo {
+    width: 30%;
+  }
+  .header__links {
+    width: 50%;
+  }
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .header__logo {
+    width: 30%;
+  }
+  .header__links {
+    width: 50%;
+  }
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .header__wrapper {
+    width: 100%;
+  }
+
+  .header__logo-img {
+    width: 100px;
+    margin: 1em;
+  }
+  .header__links {
+    display: none;
+  }
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .header__wrapper {
+    width: 100%;
+  }
+
+  .header__links {
+    display: none;
+  }
+
+  .header__logo-img {
+    width: 100px;
+    margin: 1em;
+  }
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .header__wrapper {
+    width: 100%;
+  }
+
+  .header__logo-img {
+    width: 100px;
+    margin: 1em;
+  }
+  .header__links {
+    display: none;
+  }
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .header__wrapper {
+    width: 100%;
+  }
+
+  .header__logo-img {
+    width: 100px;
+    margin: 1em;
+  }
+  .header__links {
+    display: none;
+  }
+}

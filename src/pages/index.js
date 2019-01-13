@@ -41,16 +41,12 @@ class IndexPage extends React.Component {
               alt="Cover Image"
             />
           </section>
-          {/* <section className="home-page__description">
-            <div className="home-page__description-image">
-              <img
-                data-aos="fade"
-                data-aos-delay="300"
-                data-aos-duration="1200"
-                src={this.props.data.description.childImageSharp.fluid.src}
-                alt="Cover Image"
-              />
-            </div>
+          <section className="home-page__description">
+            <img
+              className="home-page__description-image"
+              src={this.props.data.description.childImageSharp.fluid.src}
+              alt="Cover Image"
+            />
             <div
               className="home-page__description-text"
               data-aos="fade"
@@ -60,8 +56,9 @@ class IndexPage extends React.Component {
             >
               <h2>О нас</h2>
               <p>
-                Мы находимся на территории торгово-делового квартала
+                Мы находимся на территории торгово-делового квартала&nbsp;
                 <a
+                  className="home-page__link"
                   href="https://vk.com/likerkaloft"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -78,7 +75,7 @@ class IndexPage extends React.Component {
               <AniLink to="/food">Кухня</AniLink> <br />
               <AniLink to="/drinks">Бар</AniLink>
             </div>
-          </section> */}
+          </section>
 
           {/* <section className="home__media">
             <div className="home__media-item-one">

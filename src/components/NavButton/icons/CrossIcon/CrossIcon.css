@@ -1,0 +1,15 @@
+.cross {
+  width: auto;
+  height: auto;
+}
+
+.cross path {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.cross:hover path {
+  d: path('M4 8h24M4 16h16M4 24h8');
+}

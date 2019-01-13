@@ -1,29 +1,35 @@
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
-
+import AOS from 'aos'
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
-import './layout.css'
+import NavPannel from './NavPannel/NavPannel'
+import NavButton from './NavButton/NavButton'
+import './layout.scss'
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
-    render={data => (
+class Layout extends React.Component {
+  state = {
+    navIsOpen: false,
+  }
+  componentDidMount() {
+    AOS.init()
+  }
+  handleClick = () => {
+    this.setState({ navIsOpen: !this.state.navIsOpen })
+  }
+  render() {
+    return (
       <div className="main-wrapper">
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div>{children}</div>
+        <NavPannel show={this.state.navIsOpen} handleClick={this.handleClick} />
+        <NavButton
+          clickHandler={this.handleClick}
+          icon={this.state.navIsOpen}
+        />
+        <Header />
+        <div>{this.props.children}</div>
         <Footer />
       </div>
-    )}
-  />
-)
+    )
+  }
+}
 
 export default Layout

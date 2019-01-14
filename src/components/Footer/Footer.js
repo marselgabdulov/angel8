@@ -1,6 +1,6 @@
 import React from 'react'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
-import footerLogo from '../../images/footer-logo.png'
+import footerLogo from '../../images/logo.png'
 import './Footer.css'
 
 const Footer = () => (

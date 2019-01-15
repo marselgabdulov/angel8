@@ -16,7 +16,6 @@ class FoodPage extends React.Component {
         <Layout>
           <div className="wrapper">
             <div className="menu-page">
-              <span className="menu-page__sign">\ \ \</span>
               <div className="menu-page__wrapper">
                 <span className="menu-page__section-title">ЗАКУСКИ</span>
                 {starters.map(position => (

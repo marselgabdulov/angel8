@@ -40,31 +40,28 @@ import {
 } from '../data/menu.js'
 
 class DrinksPage extends React.Component {
-  state = {
-    scrollSettings: {
-      offset: 0,
-      align: 'top',
-      duration: 500,
-      ease: 'inExpo',
-    },
-  }
   componentDidMount() {
     window.scrollTo(0, 0)
   }
   render() {
+    const scrollSettings = {
+      offset: 0,
+      align: 'top',
+      duration: 500,
+      ease: 'inExpo',
+    }
     return (
       <>
         <Layout>
           <div className="wrapper">
             <div className="menu-page">
-              <span className="menu-page__sign">\ \ \</span>
               <div className="menu-page__wrapper">
                 <span className="menu-page__submenu-title">Быстрый поиск</span>
                 <div className="menu-page__submenu">
                   <button
                     className="menu-page__submenu-button"
                     onClick={() =>
-                      scrollToComponent(this.whiskey, this.state.scrollSettings)
+                      scrollToComponent(this.whiskey, scrollSettings)
                     }
                   >
                     Виски
@@ -72,7 +69,7 @@ class DrinksPage extends React.Component {
                   <button
                     className="menu-page__submenu-button"
                     onClick={() =>
-                      scrollToComponent(this.tequila, this.state.scrollSettings)
+                      scrollToComponent(this.tequila, scrollSettings)
                     }
                   >
                     Текила
@@ -80,10 +77,7 @@ class DrinksPage extends React.Component {
                   <button
                     className="menu-page__submenu-button"
                     onClick={() =>
-                      scrollToComponent(
-                        this.portoAndJerez,
-                        this.state.scrollSettings
-                      )
+                      scrollToComponent(this.portoAndJerez, scrollSettings)
                     }
                   >
                     Порто
@@ -91,7 +85,7 @@ class DrinksPage extends React.Component {
                   <button
                     className="menu-page__submenu-button"
                     onClick={() =>
-                      scrollToComponent(this.vodka, this.state.scrollSettings)
+                      scrollToComponent(this.vodka, scrollSettings)
                     }
                   >
                     Водка
@@ -99,26 +93,21 @@ class DrinksPage extends React.Component {
                   <button
                     className="menu-page__submenu-button"
                     onClick={() =>
-                      scrollToComponent(
-                        this.rumAndChacha,
-                        this.state.scrollSettings
-                      )
+                      scrollToComponent(this.rumAndChacha, scrollSettings)
                     }
                   >
                     Ром
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() =>
-                      scrollToComponent(this.gin, this.state.scrollSettings)
-                    }
+                    onClick={() => scrollToComponent(this.gin, scrollSettings)}
                   >
                     Джин
                   </button>
                   <button
                     className="menu-page__submenu-button"
                     onClick={() =>
-                      scrollToComponent(this.brandy, this.state.scrollSettings)
+                      scrollToComponent(this.brandy, scrollSettings)
                     }
                   >
                     Коньяк/Бренди
@@ -126,10 +115,7 @@ class DrinksPage extends React.Component {
                   <button
                     className="menu-page__submenu-button"
                     onClick={() =>
-                      scrollToComponent(
-                        this.calvados,
-                        this.state.scrollSettings
-                      )
+                      scrollToComponent(this.calvados, scrollSettings)
                     }
                   >
                     Арманьяк/Кальвадос
@@ -137,7 +123,7 @@ class DrinksPage extends React.Component {
                   <button
                     className="menu-page__submenu-button"
                     onClick={() =>
-                      scrollToComponent(this.grappa, this.state.scrollSettings)
+                      scrollToComponent(this.grappa, scrollSettings)
                     }
                   >
                     Граппа
@@ -145,7 +131,7 @@ class DrinksPage extends React.Component {
                   <button
                     className="menu-page__submenu-button"
                     onClick={() =>
-                      scrollToComponent(this.pisko, this.state.scrollSettings)
+                      scrollToComponent(this.pisko, scrollSettings)
                     }
                   >
                     Писко
@@ -153,10 +139,7 @@ class DrinksPage extends React.Component {
                   <button
                     className="menu-page__submenu-button"
                     onClick={() =>
-                      scrollToComponent(
-                        this.aperitivo,
-                        this.state.scrollSettings
-                      )
+                      scrollToComponent(this.aperitivo, scrollSettings)
                     }
                   >
                     Аперитив/Digestiv
@@ -164,7 +147,7 @@ class DrinksPage extends React.Component {
                   <button
                     className="menu-page__submenu-button"
                     onClick={() =>
-                      scrollToComponent(this.vermut, this.state.scrollSettings)
+                      scrollToComponent(this.vermut, scrollSettings)
                     }
                   >
                     Вермут
@@ -172,10 +155,7 @@ class DrinksPage extends React.Component {
                   <button
                     className="menu-page__submenu-button"
                     onClick={() =>
-                      scrollToComponent(
-                        this.cocktails,
-                        this.state.scrollSettings
-                      )
+                      scrollToComponent(this.cocktails, scrollSettings)
                     }
                   >
                     Коктейли
@@ -183,7 +163,7 @@ class DrinksPage extends React.Component {
                   <button
                     className="menu-page__submenu-button"
                     onClick={() =>
-                      scrollToComponent(this.water, this.state.scrollSettings)
+                      scrollToComponent(this.water, scrollSettings)
                     }
                   >
                     Вода
@@ -191,7 +171,7 @@ class DrinksPage extends React.Component {
                   <button
                     className="menu-page__submenu-button"
                     onClick={() =>
-                      scrollToComponent(this.smoosy, this.state.scrollSettings)
+                      scrollToComponent(this.smoosy, scrollSettings)
                     }
                   >
                     Смузи
@@ -199,10 +179,7 @@ class DrinksPage extends React.Component {
                   <button
                     className="menu-page__submenu-button"
                     onClick={() =>
-                      scrollToComponent(
-                        this.limonades,
-                        this.state.scrollSettings
-                      )
+                      scrollToComponent(this.limonades, scrollSettings)
                     }
                   >
                     Лимонады
@@ -210,42 +187,35 @@ class DrinksPage extends React.Component {
                   <button
                     className="menu-page__submenu-button"
                     onClick={() =>
-                      scrollToComponent(
-                        this.juicesYa,
-                        this.state.scrollSettings
-                      )
+                      scrollToComponent(this.juicesYa, scrollSettings)
                     }
                   >
                     Соки
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() =>
-                      scrollToComponent(this.beer, this.state.scrollSettings)
-                    }
+                    onClick={() => scrollToComponent(this.beer, scrollSettings)}
                   >
                     Пиво
                   </button>
                   <button
                     className="menu-page__submenu-button"
                     onClick={() =>
-                      scrollToComponent(this.hotAlco, this.state.scrollSettings)
+                      scrollToComponent(this.hotAlco, scrollSettings)
                     }
                   >
                     Горячее
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() =>
-                      scrollToComponent(this.tea, this.state.scrollSettings)
-                    }
+                    onClick={() => scrollToComponent(this.tea, scrollSettings)}
                   >
                     Чай
                   </button>
                   <button
                     className="menu-page__submenu-button"
                     onClick={() =>
-                      scrollToComponent(this.coffee, this.state.scrollSettings)
+                      scrollToComponent(this.coffee, scrollSettings)
                     }
                   >
                     Кофе

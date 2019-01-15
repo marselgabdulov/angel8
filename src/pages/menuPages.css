@@ -36,11 +36,6 @@
   text-decoration: underline;
 }
 
-.menu-page__sign {
-  transform: rotate(90deg);
-  position: fixed;
-}
-
 .menu-page__section-title {
   font-weight: bold;
   text-decoration: underline;
@@ -59,7 +54,6 @@
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
-  justify-content: flex-end;
 }
 
 /*
@@ -74,17 +68,10 @@
     width: 80%;
   }
 
-  .menu-page__sign {
-    top: 3em;
-    left: 8%;
-    font-weight: 500;
-    font-size: 4em;
-  }
-
   .menu-page__wrapper {
-    margin: 0 1em 2em 18%;
+    width: 80%;
+    margin: auto;
     height: 100%;
-    justify-content: flex-end;
   }
 }
 
@@ -96,15 +83,9 @@
     width: 80%;
   }
 
-  .menu-page__sign {
-    top: 1.5em;
-    left: 8%;
-    font-weight: 500;
-    font-size: 4em;
-  }
-
   .menu-page__wrapper {
-    margin: 0 1em 2em 18%;
+    width: 90%;
+    margin: auto;
     height: 100%;
     justify-content: flex-end;
   }
@@ -123,16 +104,10 @@
     width: 80%;
   }
 
-  .menu-page__sign {
-    top: 1.5em;
-    left: 8%;
-    font-weight: 500;
-    font-size: 4em;
-  }
-
   .menu-page__wrapper {
-    margin: 0 1em 2em 18%;
     height: 100%;
+    width: 90%;
+    margin: auto;
     justify-content: flex-end;
   }
 }
@@ -147,20 +122,13 @@
     font-size: 1.2em;
     line-height: 3em;
     font-weight: 500;
-    width: 80%;
-  }
-
-  .menu-page__sign {
-    top: 1.5em;
-    left: 7%;
-    font-weight: 500;
-    font-size: 2.5em;
+    width: 95%;
   }
 
   .menu-page__wrapper {
-    margin: 0 1em 2em 10%;
+    margin: auto;
     height: 100%;
-    justify-content: flex-end;
+    width: 90%;
   }
 }
 
@@ -174,19 +142,13 @@
     font-size: 1.2em;
     line-height: 3em;
     font-weight: 500;
-    width: 80%;
-  }
-
-  .menu-page__sign {
-    top: 1.5em;
-    left: 7%;
-    font-weight: 500;
-    font-size: 2.5em;
+    width: 95%;
   }
 
   .menu-page__wrapper {
-    margin: 0 1em 2em 10%;
     height: 100%;
+    width: 90%;
+    margin: auto;
     justify-content: flex-end;
   }
 }
@@ -201,18 +163,13 @@
     font-size: 0.8em;
     line-height: 3em;
     font-weight: 500;
-    width: 90%;
-  }
-
-  .menu-page__sign {
-    display: none;
+    width: 95%;
   }
 
   .menu-page__wrapper {
-    width: 100%;
-    margin: 0 1em 2em 0em;
+    width: 95%;
+    margin: auto;
     height: 100%;
-    justify-content: flex-end;
   }
 }
 
@@ -226,15 +183,12 @@
     font-size: 0.75em;
     line-height: 2em;
     font-weight: 300;
-    width: 90%;
-  }
-
-  .menu-page__sign {
-    display: none;
+    width: 95%;
   }
 
   .menu-page__wrapper {
-    margin: 0 1em 2em 1em;
+    width: 95%;
+    margin: auto;
     height: 100%;
   }
 }

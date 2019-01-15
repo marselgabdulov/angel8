@@ -1,11 +1,13 @@
 /* Main */
 .header {
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 200;
+  z-index: 2000;
   font-weight: 500;
+  background-color: rgb(11, 11, 11);
+  /* background-color: transparent; */
 }
 
 .header__wrapper {
@@ -20,9 +22,15 @@
 
 .header__logo {
   width: 40%;
+  height: 65px;
 }
 
-.header__logo:hover {
+.header__logo img {
+  width: 110px;
+  margin-top: 10px;
+}
+
+.header__logo img:hover {
   opacity: 0.7;
 }
 .header__logo-img {
@@ -40,6 +48,7 @@
 .header__links a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .header__links a:hover {

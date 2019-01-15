@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import './index.css'
 import SEO from '../components/seo'
+import coverImage from '../images/logo-white-full.png'
 
 class IndexPage extends React.Component {
   render() {
@@ -13,39 +14,35 @@ class IndexPage extends React.Component {
           title="Angel 8 bar, grill and wine. Эмоциональная кухня в Туле. Паназиатская
           кухня и блюда на гриле."
         />
-        <div className="home-page">
-          <section className="home-page__cover">
-            <div>
-              <h1
-                className="home-page__cover-title"
-                data-aos="fade"
-                data-aos-delay="200"
-                data-aos-duration="1200"
-              >
-                <span>
-                  Эмоциональная <br />
-                </span>
-                <span>
-                  кухня <br />
-                </span>
-                <span>в Туле</span>
-              </h1>
-            </div>
+        <div className="index">
+          <section
+            className="index__cover"
+            style={{
+              backgroundImage: `url(${
+                this.props.data.cover.childImageSharp.fluid.src
+              })`,
+            }}
+          />
+          <div className="index__cover-text">
             <div
-              className="home-page__cover-image"
+              className="index__cover-title"
               data-aos="fade"
-              data-aos-delay="300"
+              data-aos-delay="200"
               data-aos-duration="1200"
-              style={{
-                backgroundImage: `url(${
-                  this.props.data.cover.childImageSharp.fluid.src
-                })`,
-              }}
-            />
-          </section>
-          <section className="home-page__description">
+              data-aos-once="true"
+            >
+              <span className="index__cover-title-one">
+                Эмоциональная <br />
+              </span>
+              <span className="index__cover-title-two">
+                кухня <br />
+              </span>
+              <span className="index__cover-title-three">в Туле</span>
+            </div>
+          </div>
+          <section className="index__description">
             <div
-              className="home-page__description-image"
+              className="index__description-image"
               style={{
                 backgroundImage: `url(${
                   this.props.data.description.childImageSharp.fluid.src
@@ -53,7 +50,7 @@ class IndexPage extends React.Component {
               }}
             />
             <div
-              className="home-page__description-text"
+              className="index__description-text"
               data-aos="fade"
               data-aos-delay="100"
               data-aos-duration="1200"
@@ -63,7 +60,7 @@ class IndexPage extends React.Component {
               <p>
                 Мы находимся на территории торгово-делового квартала&nbsp;
                 <a
-                  className="home-page__link"
+                  className="index__link"
                   href="https://vk.com/likerkaloft"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -169,12 +166,6 @@ class IndexPage extends React.Component {
       </Layout>
     )
   }
-}
-
-{
-  /* <AniLink cover bg="#663399" to="/page-2/">
-  Go to Page 2
-</AniLink> */
 }
 
 export const fluidImage = graphql`

@@ -1,5 +1,5 @@
 /* Main */
-.home-page {
+.index {
   width: 100%;
   color: white;
   display: -webkit-flex;
@@ -9,26 +9,43 @@
   height: auto;
 }
 
-.home-page__cover {
+.index__cover {
   position: relative;
-  width: 100%;
-  z-index: 1;
+  width: 80%;
   margin-bottom: 3em;
+  margin-left: 10%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  opacity: 0.8;
 }
-
-.home-page__cover-title {
+.index__cover-text {
   position: absolute;
-  text-shadow: 0 0 2px black;
+  top: 0;
+  left: 0;
   z-index: 10;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 50%;
+  height: 100vh;
+  margin-left: 25%;
+  margin-right: auto;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
 }
 
-.home-page__cover-image {
-  border: none;
-  position: absolute;
-  z-index: -1;
+.index__cover-title {
+  text-align: left;
+  font-weight: 700;
+  text-shadow: 2px 0 1px black;
 }
 
-.home-page__description {
+.index__description {
   margin: auto;
   display: -webkit-flex;
   display: -ms-flex;
@@ -39,13 +56,12 @@
   z-index: 200;
 }
 
-.home-page__description-text a {
+.index__description-text a {
   color: white;
 }
 
-.home-page__description-image {
+.index__description-image {
   background-size: cover;
-  border: none;
 }
 
 .home__media {
@@ -106,44 +122,26 @@
 */
 
 @media all and (min-width: 1690px) {
-  .home-page {
-    margin-top: 70px;
+  .index__cover-title {
+    font-size: 4.5vw;
+    line-height: 7vw;
   }
 
-  .home-page__cover {
-    height: 70vh;
-  }
-
-  .home-page__cover-title {
-    font-size: 6em;
-    line-height: 1.3em;
-    font-weight: bold;
-    top: 10%;
-    left: 10%;
-  }
-
-  .home-page__cover-image {
-    width: 60%;
-    height: 600px;
-    top: 0;
-    right: 0;
-  }
-
-  .home-page__description {
+  .index__description {
     width: 80%;
   }
 
-  .home-page__description-image {
+  .index__description-image {
     width: 45%;
   }
 
-  .home-page__description-text {
+  .index__description-text {
     width: 40%;
     font-size: 1.7em;
     line-height: 1.8em;
   }
 
-  .home-page__description-image {
+  .index__description-image {
     width: 50%;
     height: 75vh;
   }
@@ -165,40 +163,17 @@
   ##Screen = 1281px to higher resolution desktops
 */
 @media (min-width: 1281px) and (max-width: 1681px) {
-  .home-page {
-    margin-top: 70px;
-  }
-
-  .home-page__cover {
-    height: 60vh;
-  }
-
-  .home-page__cover-title {
-    font-size: 4em;
-    line-height: 1.3em;
-    font-weight: bold;
-    top: 10%;
-    left: 10%;
-  }
-
-  /* .home-page__cover-image {
-    position: absolute;
-    top: 0;
-    right: 0;
-
-  } */
-
-  .home-page__description {
+  .index__description {
     width: 80%;
     height: 60vh;
   }
 
-  .home-page__description-image {
+  .index__description-image {
     width: 40%;
     height: auto;
   }
 
-  .home-page__description-text {
+  .index__description-text {
     width: 40%;
     font-size: 1.3em;
     line-height: 1.7em;
@@ -222,16 +197,16 @@
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  .home-page {
+  .index {
     margin-top: 70px;
   }
 
-  .home-page__cover {
+  .index__cover {
     margin-bottom: 2em;
     height: 60vh;
   }
 
-  .home-page__cover-title {
+  .index__cover-title {
     font-size: 4em;
     line-height: 1.3em;
     font-weight: bold;
@@ -239,7 +214,7 @@
     left: 10%;
   }
 
-  .home-page__cover-image {
+  .index__cover-image {
     position: absolute;
     top: 0;
     right: 0;
@@ -247,17 +222,17 @@
     height: auto;
   }
 
-  .home-page__description {
+  .index__description {
     width: 80%;
     margin: auto;
   }
 
-  .home-page__description-image {
+  .index__description-image {
     width: 50%;
     height: auto;
   }
 
-  .home-page__description-text {
+  .index__description-text {
     width: 40%;
     font-size: 1.2em;
     line-height: 1.8em;
@@ -276,16 +251,16 @@
 }
 
 @media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .home-page {
+  .index {
     margin-top: 70px;
   }
 
-  .home-page__cover {
+  .index__cover {
     margin-bottom: 5em;
     height: 50vh;
   }
 
-  .home-page__cover-title {
+  .index__cover-title {
     font-size: 4em;
     line-height: 1.3em;
     font-weight: bold;
@@ -293,7 +268,7 @@
     left: 10%;
   }
 
-  .home-page__cover-image {
+  .index__cover-image {
     position: absolute;
     top: 0;
     right: 0;
@@ -301,17 +276,17 @@
     height: auto;
   }
 
-  .home-page__description {
+  .index__description {
     width: 80%;
     margin: auto;
   }
 
-  .home-page__description-image {
+  .index__description-image {
     width: 50%;
     height: auto;
   }
 
-  .home-page__description-text {
+  .index__description-text {
     width: 40%;
     font-size: 1.2em;
     line-height: 1.8em;
@@ -339,16 +314,16 @@
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .home-page {
+  .index {
     margin-top: 70px;
   }
 
-  .home-page__cover {
+  .index__cover {
     margin-bottom: 5em;
     height: 35vh;
   }
 
-  .home-page__cover-title {
+  .index__cover-title {
     font-size: 4.5em;
     line-height: 1.3em;
     font-weight: bold;
@@ -356,7 +331,7 @@
     left: 10%;
   }
 
-  .home-page__cover-image {
+  .index__cover-image {
     position: absolute;
     top: 0;
     right: 0;
@@ -364,16 +339,16 @@
     height: auto;
   }
 
-  .home-page__description {
+  .index__description {
     width: 80%;
     margin: auto;
   }
 
-  .home-page__description-image {
+  .index__description-image {
     display: none;
   }
 
-  .home-page__description-text {
+  .index__description-text {
     width: 100%;
     font-size: 1.2em;
     line-height: 1.8em;
@@ -403,16 +378,16 @@
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .home-page {
+  .index {
     margin-top: 70px;
   }
 
-  .home-page__cover {
+  .index__cover {
     margin-bottom: 5em;
     height: 60vh;
   }
 
-  .home-page__cover-title {
+  .index__cover-title {
     font-size: 4em;
     line-height: 1.3em;
     font-weight: bold;
@@ -420,7 +395,7 @@
     left: 10%;
   }
 
-  .home-page__cover-image {
+  .index__cover-image {
     position: absolute;
     top: 0;
     right: 0;
@@ -428,16 +403,16 @@
     height: auto;
   }
 
-  .home-page__description {
+  .index__description {
     width: 80%;
     margin: auto;
   }
 
-  .home-page__description-image {
+  .index__description-image {
     display: none;
   }
 
-  .home-page__description-text {
+  .index__description-text {
     width: 100%;
     font-size: 1.2em;
     line-height: 1.8em;
@@ -466,16 +441,16 @@
 */
 
 @media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
-  .home-page {
+  .index {
     margin-top: 70px;
   }
 
-  .home-page__cover {
+  .index__cover {
     margin-bottom: 5em;
     min-height: 70vh;
   }
 
-  .home-page__cover-title {
+  .index__cover-title {
     font-size: 3em;
     line-height: 1.3em;
     font-weight: bold;
@@ -483,23 +458,23 @@
     left: 10%;
   }
 
-  .home-page__cover-image {
+  .index__cover-image {
     position: absolute;
     top: 0;
     right: 0;
     width: 100%;
     height: auto;
   }
-  .home-page__description {
+  .index__description {
     width: 80%;
     margin: auto;
   }
 
-  .home-page__description-image {
+  .index__description-image {
     display: none;
   }
 
-  .home-page__description-text {
+  .index__description-text {
     width: 100%;
     font-size: 1.2em;
     line-height: 1.8em;
@@ -529,16 +504,12 @@
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .home-page {
-    margin-top: 70px;
-  }
-
-  .home-page__cover {
+  .index__cover {
     margin-bottom: 5em;
     height: 20vh;
   }
 
-  .home-page__cover-title {
+  .index__cover-title {
     font-size: 2em;
     line-height: 1.3em;
     font-weight: bold;
@@ -546,7 +517,7 @@
     left: 5%;
   }
 
-  .home-page__cover-image {
+  .index__cover-image {
     position: absolute;
     top: 0;
     right: 0;
@@ -554,16 +525,16 @@
     height: auto;
   }
 
-  .home-page__description {
+  .index__description {
     width: 80%;
     margin: auto;
   }
 
-  .home-page__description-image {
+  .index__description-image {
     display: none;
   }
 
-  .home-page__description-text {
+  .index__description-text {
     width: 100%;
     font-size: 1em;
     line-height: 1.8em;

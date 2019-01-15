@@ -4,6 +4,7 @@ import Header from './Header/Header'
 import Footer from './Footer/Footer'
 import NavPannel from './NavPannel/NavPannel'
 import NavButton from './NavButton/NavButton'
+import ArrowUp from './ArrowUp/ArrowUp'
 import Grid from './Grid/Grid'
 
 import './layout.scss'
@@ -21,6 +22,7 @@ class Layout extends React.Component {
   render() {
     return (
       <div className="main-wrapper">
+        <ArrowUp />
         <Grid />
         <NavPannel show={this.state.navIsOpen} handleClick={this.handleClick} />
         <NavButton

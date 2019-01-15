@@ -39,7 +39,7 @@
 
 .grid__eight-circle-one,
 .grid__eight-circle-two {
-  border: 2px dotted #fff;
+  border: 2px dotted white;
   opacity: 0.2;
   margin: auto;
   border-radius: 50%;

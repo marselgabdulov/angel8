@@ -1,7 +1,6 @@
 import React from 'react'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import './NavPannel.css'
-import navLogo from '../../images/logo.png'
 
 const NavPannel = props => {
   let pannelClass = 'nav-closed'
@@ -19,9 +18,7 @@ const NavPannel = props => {
             className="nav-wrapper__logo"
             cover
             bg="#663399"
-          >
-            <img className="footer__logo" src={navLogo} alt="Angel 8" />
-          </AniLink>
+          />
 
           <div className="nav-wrapper__links">
             <AniLink

@@ -3,12 +3,18 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Footer from '../components/Footer/Footer'
+import ImageGallery from '../components/ImageGallery/ImageGallery'
 import './index.css'
 import SEO from '../components/seo'
 import coverImage from '../images/logo-white-full.png'
 
 class IndexPage extends React.Component {
   render() {
+    const images = [
+      this.props.data.bread.childImageSharp.fluid.src,
+      this.props.data.soup.childImageSharp.fluid.src,
+      this.props.data.mix.childImageSharp.fluid.src,
+    ]
     return (
       <Layout>
         <SEO
@@ -16,31 +22,23 @@ class IndexPage extends React.Component {
           кухня и блюда на гриле."
         />
         <div className="index">
-          <section
-            className="index__cover"
-            style={{
-              backgroundImage: `url(${
-                this.props.data.cover.childImageSharp.fluid.src
-              })`,
-            }}
-          />
-          <div className="index__cover-text">
-            <div
-              className="index__cover-title"
-              data-aos="fade"
-              data-aos-delay="200"
-              data-aos-duration="1200"
-              data-aos-once="true"
-            >
-              <span className="index__cover-title-one">
-                Эмоциональная <br />
+          <section className="index__intro">
+            <div className="index__intro-slogan">
+              <h1 className="index__intro-slogan-title">
+                <span>Эмоциональная</span>
+                <span>кухня</span>
+                <span>в Туле</span>
+              </h1>
+              <span className="index__intro-slogan-address">
+                пр-т Ленина д.85 кор. 1
               </span>
-              <span className="index__cover-title-two">
-                кухня <br />
-              </span>
-              <span className="index__cover-title-three">в Туле</span>
             </div>
-          </div>
+
+            <div className="index__intro-gallery">
+              <ImageGallery images={images} />
+            </div>
+          </section>
+          {/*
           <section className="index__description">
             <div
               className="index__description-image"
@@ -162,7 +160,7 @@ class IndexPage extends React.Component {
                 })`,
               }}
             />
-          </section>
+          </section> */}
           <Footer />
         </div>
       </Layout>
@@ -173,7 +171,7 @@ class IndexPage extends React.Component {
 export const fluidImage = graphql`
   fragment fluidImage on File {
     childImageSharp {
-      fluid(maxWidth: 1200) {
+      fluid(maxWidth: 1900) {
         ...GatsbyImageSharpFluid
       }
     }
@@ -182,6 +180,15 @@ export const fluidImage = graphql`
 
 export const pageQuery = graphql`
   query {
+    bread: file(relativePath: { eq: "intro/bread.jpg" }) {
+      ...fluidImage
+    }
+    mix: file(relativePath: { eq: "intro/mix.jpg" }) {
+      ...fluidImage
+    }
+    soup: file(relativePath: { eq: "intro/soup.jpg" }) {
+      ...fluidImage
+    }
     cover: file(relativePath: { eq: "cover2.jpg" }) {
       ...fluidImage
     }

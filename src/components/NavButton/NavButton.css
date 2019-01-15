@@ -1,9 +1,9 @@
 .nav-button {
-  z-index: 1000;
+  z-index: 3000;
   position: fixed;
   top: 0.7em;
   right: 1em;
-  background-color: transparent;
+  background: transparent;
   border: none;
   display: none;
 }

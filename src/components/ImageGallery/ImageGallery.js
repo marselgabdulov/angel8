@@ -3,7 +3,7 @@ import { Fade } from 'react-slideshow-image'
 import './ImageGallery.css'
 
 const fadeProperties = {
-  duration: 2000,
+  duration: 2500,
   transitionDuration: 1000,
   infinite: true,
   indicators: false,

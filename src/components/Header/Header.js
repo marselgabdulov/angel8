@@ -3,6 +3,13 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import logo from '../../images/logo.png'
 import './Header.css'
 
+const scrollSettings = {
+  offset: 0,
+  align: 'top',
+  duration: 500,
+  ease: 'inExpo',
+}
+
 const Header = () => (
   <div className="header">
     <div className="header__wrapper">
@@ -13,7 +20,7 @@ const Header = () => (
         data-aos-duration="1200"
         data-aos-once="true"
       >
-        <AniLink to="/">
+        <AniLink cover to="/" bg="#181818">
           <img className="header__logo-img" src={logo} alt="logo" />
         </AniLink>
       </div>
@@ -27,6 +34,8 @@ const Header = () => (
         >
           <AniLink
             to="/food"
+            cover
+            bg="#181818"
             activeStyle={{
               fontWeight: 'bold',
               textDecoration: 'underline',
@@ -44,6 +53,8 @@ const Header = () => (
         >
           <AniLink
             to="/drinks"
+            cover
+            bg="#181818"
             activeStyle={{
               fontWeight: 'bold',
               textDecoration: 'underline',
@@ -61,6 +72,8 @@ const Header = () => (
         >
           <AniLink
             to="/contacts"
+            cover
+            bg="#181818"
             activeStyle={{
               fontWeight: 'bold',
               textDecoration: 'underline',

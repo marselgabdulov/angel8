@@ -6,7 +6,6 @@ import Footer from '../components/Footer/Footer'
 import ImageGallery from '../components/ImageGallery/ImageGallery'
 import './index.css'
 import SEO from '../components/seo'
-import coverImage from '../images/logo-white-full.png'
 
 class IndexPage extends React.Component {
   render() {
@@ -25,16 +24,41 @@ class IndexPage extends React.Component {
           <section className="index__intro">
             <div className="index__intro-slogan">
               <h1 className="index__intro-slogan-title">
-                <span>Эмоциональная</span>
-                <span>кухня</span>
-                <span>в Туле</span>
+                <span
+                  data-aos="fade"
+                  data-aos-delay="100"
+                  data-aos-duration="1200"
+                  data-aos-once="true"
+                >
+                  Эмоциональная
+                </span>
+                <span
+                  data-aos="fade"
+                  data-aos-delay="150"
+                  data-aos-duration="1200"
+                  data-aos-once="true"
+                >
+                  кухня
+                </span>
+                <span
+                  data-aos="fade"
+                  data-aos-delay="200"
+                  data-aos-duration="1200"
+                  data-aos-once="true"
+                >
+                  в Туле
+                </span>
               </h1>
-              <span className="index__intro-slogan-address">
-                пр-т Ленина д.85 кор. 1
-              </span>
+              <span>пр-т Ленина д.85 кор. 1</span>
             </div>
 
-            <div className="index__intro-gallery">
+            <div
+              className="index__intro-gallery"
+              data-aos="fade"
+              data-aos-delay="150"
+              data-aos-duration="1200"
+              data-aos-once="true"
+            >
               <ImageGallery images={images} />
             </div>
           </section>

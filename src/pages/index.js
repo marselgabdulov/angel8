@@ -2,6 +2,7 @@ import React from 'react'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
+import Footer from '../components/Footer/Footer'
 import './index.css'
 import SEO from '../components/seo'
 import coverImage from '../images/logo-white-full.png'
@@ -162,6 +163,7 @@ class IndexPage extends React.Component {
               }}
             />
           </section>
+          <Footer />
         </div>
       </Layout>
     )

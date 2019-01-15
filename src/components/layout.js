@@ -1,7 +1,6 @@
 import React from 'react'
 import AOS from 'aos'
 import Header from './Header/Header'
-import Footer from './Footer/Footer'
 import NavPannel from './NavPannel/NavPannel'
 import NavButton from './NavButton/NavButton'
 import ArrowUp from './ArrowUp/ArrowUp'
@@ -23,7 +22,6 @@ class Layout extends React.Component {
     return (
       <div className="main-wrapper">
         <ArrowUp />
-        <Grid />
         <NavPannel show={this.state.navIsOpen} handleClick={this.handleClick} />
         <NavButton
           clickHandler={this.handleClick}
@@ -31,7 +29,7 @@ class Layout extends React.Component {
         />
         <Header />
         <div>{this.props.children}</div>
-        <Footer />
+        <Grid />
       </div>
     )
   }

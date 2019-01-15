@@ -1,16 +1,19 @@
 .footer {
   width: 100%;
-  height: 600px;
-  background-color: #0b0b0b;
+  height: 50vh;
+  background-color: rgba(20, 20, 20, 0.5);
   color: white;
 }
 
 .footer__wrapper {
   font-size: 1.2em;
   width: 80%;
-  height: 500px;
+  height: 50vh;
   display: grid;
-  margin: auto;
+  margin-top: 0;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 1em;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto;
   grid-template-areas:

@@ -16,10 +16,7 @@ class IndexPage extends React.Component {
     ]
     return (
       <Layout>
-        <SEO
-          title="Angel 8 bar, grill and wine. Эмоциональная кухня в Туле. Паназиатская
-          кухня и блюда на гриле."
-        />
+        <SEO title="Angel 8 bar, grill and wine." />
         <div className="index">
           <section className="index__intro">
             <div className="index__intro-slogan">
@@ -49,7 +46,9 @@ class IndexPage extends React.Component {
                   в Туле
                 </span>
               </h1>
-              <span>пр-т Ленина д.85 кор. 1</span>
+              <span className="index__intro-slogan-address">
+                пр-т Ленина д.85 кор. 1
+              </span>
             </div>
 
             <div
@@ -62,16 +61,10 @@ class IndexPage extends React.Component {
               <ImageGallery images={images} />
             </div>
           </section>
-          {/*
           <section className="index__description">
-            <div
-              className="index__description-image"
-              style={{
-                backgroundImage: `url(${
-                  this.props.data.description.childImageSharp.fluid.src
-                })`,
-              }}
-            />
+            <div className="index__description-gallery">
+              <ImageGallery images={images} />
+            </div>
             <div
               className="index__description-text"
               data-aos="fade"
@@ -102,21 +95,23 @@ class IndexPage extends React.Component {
             </div>
           </section>
 
-          <section className="home__media">
+          <section className="index__media">
             <a
               href="https://www.instagram.com/angel_bar_grill/?hl=ru"
               target="_blank"
               rel="noopener noreferrer"
-              className="home__media-item-one"
+              className="index__media-item-one"
               style={{
                 backgroundImage: `url(${
                   this.props.data.logo_inst.childImageSharp.fluid.src
                 })`,
               }}
-            />
+            >
+              1
+            </a>
             <a
               href="https://www.instagram.com/p/BsNY__mntMs/"
-              className="home__media-item-two"
+              className="index__media-item-two"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -131,7 +126,7 @@ class IndexPage extends React.Component {
               href="https://www.instagram.com/p/BsPx-oonHGk/"
               target="_blank"
               rel="noopener noreferrer"
-              className="home__media-item-three"
+              className="index__media-item-three"
               style={{
                 backgroundImage: `url(${
                   this.props.data.bottles.childImageSharp.fluid.src
@@ -144,47 +139,55 @@ class IndexPage extends React.Component {
               href="https://www.instagram.com/p/BsZ3AsRnAay/"
               target="_blank"
               rel="noopener noreferrer"
-              className="home__media-item-four"
+              className="index__media-item-four"
               style={{
                 backgroundImage: `url(${
                   this.props.data.juice.childImageSharp.fluid.src
                 })`,
               }}
-            />
+            >
+              4
+            </a>
             <a
               href="https://www.instagram.com/p/Br-JhtlHC59/"
               target="_blank"
               rel="noopener noreferrer"
-              className="home__media-item-five"
+              className="index__media-item-five"
               style={{
                 backgroundImage: `url(${
                   this.props.data.last.childImageSharp.fluid.src
                 })`,
               }}
-            />
+            >
+              5
+            </a>
             <a
               href="https://www.instagram.com/p/Br4_77CHxnP/"
               target="_blank"
               rel="noopener noreferrer"
-              className="home__media-item-six"
+              className="index__media-item-six"
               style={{
                 backgroundImage: `url(${
                   this.props.data.david.childImageSharp.fluid.src
                 })`,
               }}
-            />
+            >
+              6
+            </a>
             <a
               href="https://www.instagram.com/p/BrOGbVbFugw/"
               target="_blank"
               rel="noopener noreferrer"
-              className="home__media-item-seven"
+              className="index__media-item-seven"
               style={{
                 backgroundImage: `url(${
                   this.props.data.asian_food.childImageSharp.fluid.src
                 })`,
               }}
-            />
-          </section> */}
+            >
+              7
+            </a>
+          </section>
           <Footer />
         </div>
       </Layout>

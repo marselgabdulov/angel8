@@ -3,13 +3,6 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import logo from '../../images/logo.png'
 import './Header.css'
 
-const scrollSettings = {
-  offset: 0,
-  align: 'top',
-  duration: 500,
-  ease: 'inExpo',
-}
-
 const Header = () => (
   <div className="header">
     <div className="header__wrapper">

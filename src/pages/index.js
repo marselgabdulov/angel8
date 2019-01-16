@@ -3,6 +3,7 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Footer from '../components/Footer/Footer'
+import InstagramCard from '../components/InstagramCard/InstagramCard'
 import ImageGallery from '../components/ImageGallery/ImageGallery'
 import './index.css'
 import SEO from '../components/seo'
@@ -20,6 +21,7 @@ class IndexPage extends React.Component {
         <SEO title="Angel 8 bar, grill and wine." />
         <div className="index">
           <section className="index__intro">
+            <div className="index__intro--background" />
             <div className="index__intro-slogan">
               <h1 className="index__intro-slogan--title">
                 <span
@@ -101,98 +103,40 @@ class IndexPage extends React.Component {
             </div>
           </section>
 
+          <h2 className="index__media--title">Instagram</h2>
           <section className="index__media">
-            <a
-              href="https://www.instagram.com/angel_bar_grill/?hl=ru"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="index__media-item-one"
-              style={{
-                backgroundImage: `url(${
-                  this.props.data.logo_inst.childImageSharp.fluid.src
-                })`,
-              }}
-            >
-              1
-            </a>
-            <a
-              href="https://www.instagram.com/p/BsNY__mntMs/"
-              className="index__media-item-two"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                backgroundImage: `url(${
-                  this.props.data.command.childImageSharp.fluid.src
-                })`,
-              }}
-            >
-              2
-            </a>
-            <a
-              href="https://www.instagram.com/p/BsPx-oonHGk/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="index__media-item-three"
-              style={{
-                backgroundImage: `url(${
-                  this.props.data.bottles.childImageSharp.fluid.src
-                })`,
-              }}
-            >
-              3
-            </a>
-            <a
-              href="https://www.instagram.com/p/BsZ3AsRnAay/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="index__media-item-four"
-              style={{
-                backgroundImage: `url(${
-                  this.props.data.juice.childImageSharp.fluid.src
-                })`,
-              }}
-            >
-              4
-            </a>
-            <a
-              href="https://www.instagram.com/p/Br-JhtlHC59/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="index__media-item-five"
-              style={{
-                backgroundImage: `url(${
-                  this.props.data.last.childImageSharp.fluid.src
-                })`,
-              }}
-            >
-              5
-            </a>
-            <a
-              href="https://www.instagram.com/p/Br4_77CHxnP/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="index__media-item-six"
-              style={{
-                backgroundImage: `url(${
-                  this.props.data.david.childImageSharp.fluid.src
-                })`,
-              }}
-            >
-              6
-            </a>
-            <a
-              href="https://www.instagram.com/p/BrOGbVbFugw/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="index__media-item-seven"
-              style={{
-                backgroundImage: `url(${
-                  this.props.data.asian_food.childImageSharp.fluid.src
-                })`,
-              }}
-            >
-              7
-            </a>
+            <InstagramCard
+              hreference="https://www.instagram.com/angel_bar_grill/?hl=ru"
+              imageUrl={this.props.data.logo_inst.childImageSharp.fluid.src}
+            />
+            <InstagramCard
+              hreference="https://www.instagram.com/p/Br-JhtlHC59/"
+              imageUrl={this.props.data.command.childImageSharp.fluid.src}
+            />
+            <InstagramCard
+              hreference="https://www.instagram.com/p/BsPx-oonHGk/"
+              imageUrl={this.props.data.bottles.childImageSharp.fluid.src}
+            />
+            <InstagramCard
+              hreference="https://www.instagram.com/p/BsNY__mntMs/"
+              imageUrl={this.props.data.juice.childImageSharp.fluid.src}
+            />
+            <InstagramCard
+              hreference="https://www.instagram.com/p/BsZ3AsRnAay/"
+              imageUrl={this.props.data.last.childImageSharp.fluid.src}
+            />
+            <InstagramCard
+              hreference="https://www.instagram.com/p/BrOGbVbFugw/"
+              imageUrl={this.props.data.david.childImageSharp.fluid.src}
+            />
+            <InstagramCard
+              hreference="https://www.instagram.com/p/Br4_77CHxnP/"
+              imageUrl={this.props.data.asian_food.childImageSharp.fluid.src}
+            />
+            <InstagramCard
+              hreference="https://www.instagram.com/p/BssD9J4nQQB/"
+              imageUrl={this.props.data.bread_inst.childImageSharp.fluid.src}
+            />
           </section>
           <Footer />
         </div>
@@ -250,6 +194,9 @@ export const pageQuery = graphql`
       ...fluidImage
     }
     asian_food: file(relativePath: { eq: "instagram/asian_food.jpg" }) {
+      ...fluidImage
+    }
+    bread_inst: file(relativePath: { eq: "instagram/bread.jpg" }) {
       ...fluidImage
     }
   }

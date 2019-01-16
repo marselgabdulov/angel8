@@ -43,7 +43,7 @@ class DrinksPage extends React.Component {
     window.scroll({
       behavior: 'smooth',
       left: 0,
-      top: window.getElementById.offsetTop,
+      top: document.getElementById.offsetTop,
     })
   }
   componentDidMount() {

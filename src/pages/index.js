@@ -9,18 +9,19 @@ import SEO from '../components/seo'
 
 class IndexPage extends React.Component {
   render() {
-    const images = [
+    const introImages = [
       this.props.data.bread.childImageSharp.fluid.src,
       this.props.data.soup.childImageSharp.fluid.src,
       this.props.data.mix.childImageSharp.fluid.src,
     ]
+
     return (
       <Layout>
         <SEO title="Angel 8 bar, grill and wine." />
         <div className="index">
           <section className="index__intro">
             <div className="index__intro-slogan">
-              <h1 className="index__intro-slogan-title">
+              <h1 className="index__intro-slogan--title">
                 <span
                   data-aos="fade"
                   data-aos-delay="100"
@@ -46,27 +47,32 @@ class IndexPage extends React.Component {
                   в Туле
                 </span>
               </h1>
-              <span className="index__intro-slogan-address">
+              <span className="index__intro-slogan--address">
                 пр-т Ленина д.85 кор. 1
               </span>
             </div>
 
             <div
-              className="index__intro-gallery"
+              className="index__intro--gallery"
               data-aos="fade"
               data-aos-delay="150"
               data-aos-duration="1200"
               data-aos-once="true"
             >
-              <ImageGallery images={images} />
+              <ImageGallery images={introImages} />
             </div>
           </section>
           <section className="index__description">
-            <div className="index__description-gallery">
-              <ImageGallery images={images} />
-            </div>
             <div
-              className="index__description-text"
+              className="index__description--image"
+              style={{
+                backgroundImage: `url(${
+                  this.props.data.table.childImageSharp.fluid.src
+                })`,
+              }}
+            />
+            <div
+              className="index__description--text"
               data-aos="fade"
               data-aos-delay="100"
               data-aos-duration="1200"
@@ -216,10 +222,13 @@ export const pageQuery = graphql`
     soup: file(relativePath: { eq: "intro/soup.jpg" }) {
       ...fluidImage
     }
-    cover: file(relativePath: { eq: "cover2.jpg" }) {
+    people: file(relativePath: { eq: "description/people.jpg" }) {
       ...fluidImage
     }
-    description: file(relativePath: { eq: "description.jpg" }) {
+    table: file(relativePath: { eq: "description/table.jpg" }) {
+      ...fluidImage
+    }
+    kitchen: file(relativePath: { eq: "description/kitchen.jpg" }) {
       ...fluidImage
     }
     logo_inst: file(relativePath: { eq: "instagram/logo.jpg" }) {

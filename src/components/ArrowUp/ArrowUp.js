@@ -1,6 +1,6 @@
-import React from "react";
-import ScrollToTop from "react-scroll-up";
-import "./ArrowUp.css";
+import React from 'react'
+import ScrollToTop from 'react-scroll-up'
+import './ArrowUp.css'
 
 const ArrowUp = () => (
   <ScrollToTop showUnder={260}>
@@ -10,6 +10,6 @@ const ArrowUp = () => (
       <path className="a3" d="M0 20 L15 36 L30 20" />
     </svg>
   </ScrollToTop>
-);
+)
 
-export default ArrowUp;
+export default ArrowUp

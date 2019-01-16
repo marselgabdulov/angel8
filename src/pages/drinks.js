@@ -39,11 +39,11 @@ import {
 } from '../data/menu.js'
 
 class DrinksPage extends React.Component {
-  scrollToTop = element => {
+  scrollTo = element => {
     window.scroll({
       behavior: 'smooth',
       left: 0,
-      top: document.getElementById.offsetTop,
+      top: element.offsetTop,
     })
   }
   componentDidMount() {
@@ -60,127 +60,169 @@ class DrinksPage extends React.Component {
                 <div className="menu-page__submenu">
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() => scrollTo('whiskey')}
+                    onClick={() =>
+                      this.scrollTo(document.getElementById('whiskey'))
+                    }
                   >
                     Виски
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() => scrollTo('tequila')}
+                    onClick={() =>
+                      this.scrollTo(document.getElementById('tequila'))
+                    }
                   >
                     Текила
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() => scrollTo('porto')}
+                    onClick={() =>
+                      this.scrollTo(document.getElementById('porto'))
+                    }
                   >
                     Порто
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() => scrollTo('vodka')}
+                    onClick={() =>
+                      this.scrollTo(document.getElementById('vodka'))
+                    }
                   >
                     Водка
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() => scrollTo('rumAndChacha')}
+                    onClick={() =>
+                      this.scrollTo(document.getElementById('rumAndChacha'))
+                    }
                   >
                     Ром
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() => scrollTo('gin')}
+                    onClick={() =>
+                      this.scrollTo(document.getElementById('gin'))
+                    }
                   >
                     Джин
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() => scrollTo('brandy')}
+                    onClick={() =>
+                      this.scrollTo(document.getElementById('brandy'))
+                    }
                   >
                     Коньяк/Бренди
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() => scrollTo('calvados')}
+                    onClick={() =>
+                      this.scrollTo(document.getElementById('calvados'))
+                    }
                   >
                     Арманьяк/Кальвадос
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() => scrollTo('grappa')}
+                    onClick={() =>
+                      this.scrollTo(document.getElementById('grappa'))
+                    }
                   >
                     Граппа
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() => scrollTo('pisko')}
+                    onClick={() =>
+                      this.scrollTo(document.getElementById('pisko'))
+                    }
                   >
                     Писко
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() => scrollTo('apperetivo')}
+                    onClick={() =>
+                      this.scrollTo(document.getElementById('apperetivo'))
+                    }
                   >
                     Аперитив/Digestiv
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() => scrollTo('vermut')}
+                    onClick={() =>
+                      this.scrollTo(document.getElementById('vermut'))
+                    }
                   >
                     Вермут
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() => scrollTo('cocktails')}
+                    onClick={() =>
+                      this.scrollTo(document.getElementById('cocktails'))
+                    }
                   >
                     Коктейли
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() => scrollTo('water')}
+                    onClick={() =>
+                      this.scrollTo(document.getElementById('water'))
+                    }
                   >
                     Вода
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() => scrollTo('smoosy')}
+                    onClick={() =>
+                      this.scrollTo(document.getElementById('smoosy'))
+                    }
                   >
                     Смузи
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() => scrollTo('limonades')}
+                    onClick={() =>
+                      this.scrollTo(document.getElementById('limonades'))
+                    }
                   >
                     Лимонады
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() => scrollTo('juices')}
+                    onClick={() =>
+                      this.scrollTo(document.getElementById('juices'))
+                    }
                   >
                     Соки
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() => scrollTo('beer')}
+                    onClick={() =>
+                      this.scrollTo(document.getElementById('beer'))
+                    }
                   >
                     Пиво
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() => scrollTo('hotAlco')}
+                    onClick={() =>
+                      this.scrollTo(document.getElementById('hotAlco'))
+                    }
                   >
                     Горячее
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() => scrollTo('tea')}
+                    onClick={() =>
+                      this.scrollTo(document.getElementById('tea'))
+                    }
                   >
                     Чай
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() => scrollTo('coffee')}
+                    onClick={() =>
+                      this.scrollTo(document.getElementById('coffee'))
+                    }
                   >
                     Кофе
                   </button>

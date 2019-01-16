@@ -1,6 +1,5 @@
 import React from 'react'
 import './menuPages.css'
-import scrollToComponent from 'react-scroll-to-component'
 import Layout from '../components/layout'
 import Footer from '../components/Footer/Footer'
 
@@ -40,16 +39,17 @@ import {
 } from '../data/menu.js'
 
 class DrinksPage extends React.Component {
+  scrollToTop = element => {
+    window.scroll({
+      behavior: 'smooth',
+      left: 0,
+      top: window.getElementById.offsetTop,
+    })
+  }
   componentDidMount() {
     window.scrollTo(0, 0)
   }
   render() {
-    const scrollSettings = {
-      offset: 0,
-      align: 'top',
-      duration: 500,
-      ease: 'inExpo',
-    }
     return (
       <>
         <Layout>
@@ -60,168 +60,133 @@ class DrinksPage extends React.Component {
                 <div className="menu-page__submenu">
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() =>
-                      scrollToComponent(this.whiskey, scrollSettings)
-                    }
+                    onClick={() => scrollTo('whiskey')}
                   >
                     Виски
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() =>
-                      scrollToComponent(this.tequila, scrollSettings)
-                    }
+                    onClick={() => scrollTo('tequila')}
                   >
                     Текила
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() =>
-                      scrollToComponent(this.portoAndJerez, scrollSettings)
-                    }
+                    onClick={() => scrollTo('porto')}
                   >
                     Порто
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() =>
-                      scrollToComponent(this.vodka, scrollSettings)
-                    }
+                    onClick={() => scrollTo('vodka')}
                   >
                     Водка
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() =>
-                      scrollToComponent(this.rumAndChacha, scrollSettings)
-                    }
+                    onClick={() => scrollTo('rumAndChacha')}
                   >
                     Ром
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() => scrollToComponent(this.gin, scrollSettings)}
+                    onClick={() => scrollTo('gin')}
                   >
                     Джин
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() =>
-                      scrollToComponent(this.brandy, scrollSettings)
-                    }
+                    onClick={() => scrollTo('brandy')}
                   >
                     Коньяк/Бренди
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() =>
-                      scrollToComponent(this.calvados, scrollSettings)
-                    }
+                    onClick={() => scrollTo('calvados')}
                   >
                     Арманьяк/Кальвадос
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() =>
-                      scrollToComponent(this.grappa, scrollSettings)
-                    }
+                    onClick={() => scrollTo('grappa')}
                   >
                     Граппа
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() =>
-                      scrollToComponent(this.pisko, scrollSettings)
-                    }
+                    onClick={() => scrollTo('pisko')}
                   >
                     Писко
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() =>
-                      scrollToComponent(this.aperitivo, scrollSettings)
-                    }
+                    onClick={() => scrollTo('apperetivo')}
                   >
                     Аперитив/Digestiv
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() =>
-                      scrollToComponent(this.vermut, scrollSettings)
-                    }
+                    onClick={() => scrollTo('vermut')}
                   >
                     Вермут
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() =>
-                      scrollToComponent(this.cocktails, scrollSettings)
-                    }
+                    onClick={() => scrollTo('cocktails')}
                   >
                     Коктейли
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() =>
-                      scrollToComponent(this.water, scrollSettings)
-                    }
+                    onClick={() => scrollTo('water')}
                   >
                     Вода
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() =>
-                      scrollToComponent(this.smoosy, scrollSettings)
-                    }
+                    onClick={() => scrollTo('smoosy')}
                   >
                     Смузи
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() =>
-                      scrollToComponent(this.limonades, scrollSettings)
-                    }
+                    onClick={() => scrollTo('limonades')}
                   >
                     Лимонады
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() =>
-                      scrollToComponent(this.juicesYa, scrollSettings)
-                    }
+                    onClick={() => scrollTo('juices')}
                   >
                     Соки
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() => scrollToComponent(this.beer, scrollSettings)}
+                    onClick={() => scrollTo('beer')}
                   >
                     Пиво
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() =>
-                      scrollToComponent(this.hotAlco, scrollSettings)
-                    }
+                    onClick={() => scrollTo('hotAlco')}
                   >
                     Горячее
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() => scrollToComponent(this.tea, scrollSettings)}
+                    onClick={() => scrollTo('tea')}
                   >
                     Чай
                   </button>
                   <button
                     className="menu-page__submenu-button"
-                    onClick={() =>
-                      scrollToComponent(this.coffee, scrollSettings)
-                    }
+                    onClick={() => scrollTo('coffee')}
                   >
                     Кофе
                   </button>
                 </div>
                 <section
+                  id="whiskey"
                   className="whiskey"
                   ref={section => {
                     this.whiskey = section
@@ -281,6 +246,7 @@ class DrinksPage extends React.Component {
                   ))}
                 </section>
                 <section
+                  id="tequila"
                   className="tequila"
                   ref={section => {
                     this.tequila = section
@@ -298,6 +264,7 @@ class DrinksPage extends React.Component {
                   ))}
                 </section>
                 <section
+                  id="portoAndJerez"
                   className="portoAndJerez"
                   ref={section => {
                     this.portoAndJerez = section
@@ -315,6 +282,7 @@ class DrinksPage extends React.Component {
                   ))}
                 </section>
                 <section
+                  id="vodka"
                   className="vodka"
                   ref={section => {
                     this.vodka = section
@@ -330,6 +298,7 @@ class DrinksPage extends React.Component {
                   ))}
                 </section>
                 <section
+                  id="rumAndChacha"
                   className="rumAndChacha"
                   ref={section => {
                     this.rumAndChacha = section
@@ -347,6 +316,7 @@ class DrinksPage extends React.Component {
                   ))}
                 </section>
                 <section
+                  id="gin"
                   className="gin"
                   ref={section => {
                     this.gin = section
@@ -362,6 +332,7 @@ class DrinksPage extends React.Component {
                   ))}
                 </section>
                 <section
+                  id="brandy"
                   className="brandy"
                   ref={section => {
                     this.brandy = section
@@ -379,6 +350,7 @@ class DrinksPage extends React.Component {
                   ))}
                 </section>
                 <section
+                  id="calvados"
                   className="calvados"
                   ref={section => {
                     this.calvados = section
@@ -396,6 +368,7 @@ class DrinksPage extends React.Component {
                   ))}
                 </section>
                 <section
+                  id="grappa"
                   className="grappa"
                   ref={section => {
                     this.grappa = section
@@ -411,6 +384,7 @@ class DrinksPage extends React.Component {
                   ))}
                 </section>
                 <section
+                  id="pisko"
                   className="pisco"
                   ref={section => {
                     this.pisko = section
@@ -426,6 +400,7 @@ class DrinksPage extends React.Component {
                   ))}
                 </section>
                 <section
+                  id="aperitivo"
                   className="aperitivo"
                   ref={section => {
                     this.aperitivo = section
@@ -443,6 +418,7 @@ class DrinksPage extends React.Component {
                   ))}
                 </section>
                 <section
+                  id="vermut"
                   className="vermut"
                   ref={section => {
                     this.vermut = section
@@ -458,6 +434,7 @@ class DrinksPage extends React.Component {
                   ))}
                 </section>
                 <section
+                  id="cocktails"
                   className="cocktails"
                   ref={section => {
                     this.cocktails = section
@@ -476,6 +453,7 @@ class DrinksPage extends React.Component {
                   ))}
                 </section>
                 <section
+                  id="water"
                   className="water"
                   ref={section => {
                     this.water = section
@@ -491,6 +469,7 @@ class DrinksPage extends React.Component {
                   ))}
                 </section>
                 <section
+                  id="smoosy"
                   className="smoosy"
                   ref={section => {
                     this.smoosy = section
@@ -507,6 +486,7 @@ class DrinksPage extends React.Component {
                   ))}
                 </section>
                 <section
+                  id="limonades"
                   className="limonades"
                   ref={section => {
                     this.limonades = section
@@ -524,6 +504,7 @@ class DrinksPage extends React.Component {
                   ))}
                 </section>
                 <section
+                  id="juices"
                   className="juicesYa"
                   ref={section => {
                     this.juicesYa = section
@@ -556,6 +537,7 @@ class DrinksPage extends React.Component {
                   ))}
                 </section>
                 <section
+                  id="beer"
                   className="beer"
                   ref={section => {
                     this.beer = section
@@ -583,6 +565,7 @@ class DrinksPage extends React.Component {
                   ))}
                 </section>
                 <section
+                  id="hotAlco"
                   className="hotAlco"
                   ref={section => {
                     this.hotAlco = section
@@ -601,6 +584,7 @@ class DrinksPage extends React.Component {
                   ))}
                 </section>
                 <section
+                  id="coffee"
                   className="coffee"
                   ref={section => {
                     this.coffee = section

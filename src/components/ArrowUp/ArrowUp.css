@@ -5,6 +5,13 @@
   transform: rotate(-180deg);
   z-index: 200;
   margin-right: 1em;
+  position: fixed;
+  bottom: 2em;
+  right: 1em;
+}
+
+.arrow-up:hover {
+  cursor: pointer;
 }
 
 .arrow-up path {
@@ -58,10 +65,4 @@
 .arrow-up path.a3 {
   animation-delay: 0s;
   -webkit-animation-delay: 0s; /* Safari 和 Chrome */
-}
-
-@media (max-width: 767px) {
-  .arrow-up {
-    margin-right: 0;
-  }
 }

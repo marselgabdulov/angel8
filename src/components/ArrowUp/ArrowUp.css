@@ -8,7 +8,7 @@
 }
 
 .arrow-up path {
-  stroke: white;
+  stroke: rgb(226, 140, 11);
   fill: transparent;
   stroke-width: 3px;
   animation: arrow 2s infinite;
@@ -61,7 +61,7 @@
 }
 
 @media (max-width: 767px) {
-  .arrow-up path {
-    stroke: black;
+  .arrow-up {
+    margin-right: 0;
   }
 }

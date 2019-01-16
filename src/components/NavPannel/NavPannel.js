@@ -12,36 +12,52 @@ const NavPannel = props => {
     <>
       <div className={pannelClass}>
         <div className="nav-wrapper">
-          <AniLink
-            to="/"
-            onClick={props.handleClick}
-            className="nav-wrapper__logo"
-            cover
-            bg="#663399"
-          />
-
           <div className="nav-wrapper__links">
             <AniLink
-              onClick={props.handleClick}
+              // onClick={props.handleClick}
               className="nav-wrapper__link"
+              cover
               to="/food"
+              bg="#232324"
+              activeStyle={{
+                fontWeight: 'bold',
+                textDecoration: 'underline',
+              }}
             >
               Блюда
             </AniLink>
             <AniLink
-              onClick={props.handleClick}
               className="nav-wrapper__link"
               to="/drinks"
+              cover
+              bg="#232324"
+              activeStyle={{
+                fontWeight: 'bold',
+                textDecoration: 'underline',
+              }}
             >
               Напитки
             </AniLink>
             <AniLink
-              onClick={props.handleClick}
               className="nav-wrapper__link"
               to="/contacts"
+              cover
+              bg="#232324"
+              activeStyle={{
+                fontWeight: 'bold',
+                textDecoration: 'underline',
+              }}
             >
               Контакты
             </AniLink>
+            <a href="tel:+74872770247">+7 (4872) 77-02-47</a>
+            <br />
+            <span>г. Тула</span>
+            <br />
+            <span>пр-т Ленина</span>
+            <br />
+            <span>д. 85 кор.5</span>
+            <br />
           </div>
         </div>
       </div>

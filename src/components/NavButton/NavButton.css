@@ -22,12 +22,6 @@
   }
 }
 
-@media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .nav-button {
-    display: none;
-  }
-}
-
 /*
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
@@ -46,7 +40,7 @@
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .nav-button {
-    display: block;
+    display: none;
   }
 }
 
@@ -57,7 +51,7 @@
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .nav-button {
-    display: block;
+    display: none;
   }
 }
 
@@ -68,7 +62,7 @@
 
 @media (min-width: 481px) and (max-width: 767px) {
   .nav-button {
-    display: block;
+    display: none;
   }
 }
 

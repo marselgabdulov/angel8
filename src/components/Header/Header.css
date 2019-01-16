@@ -69,19 +69,6 @@
   }
 }
 
-@media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .header {
-    height: 2em;
-  }
-
-  .header__logo {
-    width: 30%;
-  }
-  .header__links {
-    width: 50%;
-  }
-}
-
 /*
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
@@ -107,15 +94,19 @@
     background-color: black;
   }
   .header__wrapper {
-    width: 100%;
+    width: 90%;
+    margin: auto;
   }
 
   .header__logo-img {
-    width: 100px;
-    margin: 1em;
+    width: 80px;
+  }
+
+  .header__logo {
+    width: 40%;
   }
   .header__links {
-    display: none;
+    width: 50%;
   }
 }
 
@@ -130,16 +121,18 @@
     background-color: black;
   }
   .header__wrapper {
-    width: 100%;
+    width: 90%;
+    margin: auto;
   }
-
-  .header__links {
-    display: none;
-  }
-
   .header__logo-img {
-    width: 100px;
-    margin: 1em;
+    width: 80px;
+  }
+
+  .header__logo {
+    width: 40%;
+  }
+  .header__links {
+    width: 50%;
   }
 }
 
@@ -154,15 +147,18 @@
     background-color: black;
   }
   .header__wrapper {
-    width: 100%;
+    width: 90%;
+    margin: auto;
+  }
+  .header__logo-img {
+    width: 80px;
   }
 
-  .header__logo-img {
-    width: 100px;
-    margin: 1em;
+  .header__logo {
+    width: 40%;
   }
   .header__links {
-    display: none;
+    width: 50%;
   }
 }
 

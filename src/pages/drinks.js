@@ -43,7 +43,7 @@ class DrinksPage extends React.Component {
     window.scroll({
       behavior: 'smooth',
       left: 0,
-      top: element.offsetTop,
+      top: element.offsetTop - 50,
     })
   }
   componentDidMount() {
@@ -77,7 +77,7 @@ class DrinksPage extends React.Component {
                   <button
                     className="menu-page__submenu-button"
                     onClick={() =>
-                      this.scrollTo(document.getElementById('porto'))
+                      this.scrollTo(document.getElementById('portoAndJerez'))
                     }
                   >
                     Порто
@@ -141,7 +141,7 @@ class DrinksPage extends React.Component {
                   <button
                     className="menu-page__submenu-button"
                     onClick={() =>
-                      this.scrollTo(document.getElementById('apperetivo'))
+                      this.scrollTo(document.getElementById('aperitivo'))
                     }
                   >
                     Аперитив/Digestiv

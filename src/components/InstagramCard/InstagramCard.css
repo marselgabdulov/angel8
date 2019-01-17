@@ -80,6 +80,7 @@
 @media (min-width: 320px) and (max-width: 480px) {
   .instagram-card {
     width: calc(100% - 6px);
-    height: 40vh;
+    height: 45vh;
+    overflow: hidden;
   }
 }

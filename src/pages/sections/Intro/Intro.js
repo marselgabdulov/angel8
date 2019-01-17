@@ -8,10 +8,10 @@ class Intro extends React.Component {
   }
   render() {
     return (
-      <section className="index__intro">
-        <div className="index__intro--background" />
-        <div className="index__intro-slogan">
-          <h1 className="index__intro-slogan--title">
+      <section className="intro">
+        <div className="intro__background" />
+        <div className="intro__slogan">
+          <h1 className="intro__slogan--title">
             <span
               data-aos="fade"
               data-aos-delay="100"
@@ -37,13 +37,13 @@ class Intro extends React.Component {
               в Туле
             </span>
           </h1>
-          <span className="index__intro-slogan--address">
+          <span className="intro__slogan--address">
             пр-т Ленина д.85 кор. 1
           </span>
         </div>
 
         <div
-          className="index__intro--gallery"
+          className="intro__gallery"
           data-aos="fade"
           data-aos-delay="150"
           data-aos-duration="1200"

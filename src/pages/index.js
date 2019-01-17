@@ -57,8 +57,8 @@ class IndexPage extends React.Component {
         <SEO title="Angel 8 bar, grill and wine." />
         <div className="index">
           <Intro introImages={introImages} />
-          <About bgImage={this.props.data.table.childImageSharp.fluid.src} />
-          <Media instagram={instagram} />
+          {/* <About bgImage={this.props.data.table.childImageSharp.fluid.src} />
+          <Media instagram={instagram} /> */}
           <Footer />
         </div>
       </Layout>

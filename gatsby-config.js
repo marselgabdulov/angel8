@@ -3,7 +3,7 @@ module.exports = {
     title: `Эмоциональная кухня в Туле. Паназиатская
       кухня и блюда на гриле.`,
     description: `Эмоциональная кухня и бар в Туле. Блюда паназиатской кухни и блюда на гриле. Бронируйте столик ✆ +7 4872 77 02 47`,
-    author: `@gatsbyjs`,
+    author: `@MarselGabdulov`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,8 +24,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#0b0b0b`,
+        theme_color: `#0b0b0b`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },

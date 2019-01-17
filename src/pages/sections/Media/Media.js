@@ -1,5 +1,6 @@
 import React from 'react'
 import InstagramCard from '../../../components/InstagramCard/InstagramCard'
+import './Media.css'
 
 class Media extends React.Component {
   componentDidMount() {

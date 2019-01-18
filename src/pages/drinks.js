@@ -36,6 +36,11 @@ import {
   fruitTea,
   simpleTea,
   altayTea,
+  whiteWineBottles,
+  redWinesBottles,
+  champagne,
+  whiteWinesGlasses,
+  redWinesGlasses,
 } from '../data/menu.js'
 
 class DrinksPage extends React.Component {
@@ -58,6 +63,49 @@ class DrinksPage extends React.Component {
               <div className="menu-page__wrapper">
                 <span className="menu-page__submenu-title">Быстрый поиск</span>
                 <div className="menu-page__submenu">
+                  <button
+                    className="menu-page__submenu-button"
+                    onClick={() =>
+                      this.scrollTo(document.getElementById('whiteWineBottles'))
+                    }
+                  >
+                    Белые Вина в бутылках
+                  </button>
+
+                  <button
+                    className="menu-page__submenu-button"
+                    onClick={() =>
+                      this.scrollTo(document.getElementById('redWinesBottles'))
+                    }
+                  >
+                    Красные Вина в бутылках
+                  </button>
+                  <button
+                    className="menu-page__submenu-button"
+                    onClick={() =>
+                      this.scrollTo(document.getElementById('champagne'))
+                    }
+                  >
+                    шампанское и игристое
+                  </button>
+                  <button
+                    className="menu-page__submenu-button"
+                    onClick={() =>
+                      this.scrollTo(
+                        document.getElementById('whiteWinesGlasses')
+                      )
+                    }
+                  >
+                    Вина белые по бокалам 150 мл
+                  </button>
+                  <button
+                    className="menu-page__submenu-button"
+                    onClick={() =>
+                      this.scrollTo(document.getElementById('redWinesGlasses'))
+                    }
+                  >
+                    Вина красные по бокалам 150 мл
+                  </button>
                   <button
                     className="menu-page__submenu-button"
                     onClick={() =>
@@ -228,13 +276,108 @@ class DrinksPage extends React.Component {
                   </button>
                 </div>
                 <section
+                  id="whiteWineBottles"
+                  className="whiteWineBottles"
+                  ref={section => {
+                    this.whiteWineBottles = section
+                  }}
+                >
+                  <span className="menu-page__section-title">
+                    Вина по бутылкам белые 750 мл
+                  </span>
+                  {whiteWineBottles.map(position => (
+                    <ComplexMenuPosition
+                      key={position.id}
+                      name={position.name}
+                      price={position.price}
+                      description={position.description}
+                    />
+                  ))}
+                </section>
+                <section
+                  id="redWinesBottles"
+                  className="redWinesBottles"
+                  ref={section => {
+                    this.whiteWineBottles = section
+                  }}
+                >
+                  <span className="menu-page__section-title">
+                    Вина по бутылкам красные 750 мл
+                  </span>
+                  {redWinesBottles.map(position => (
+                    <ComplexMenuPosition
+                      key={position.id}
+                      name={position.name}
+                      price={position.price}
+                      description={position.description}
+                    />
+                  ))}
+                </section>
+                <section
+                  id="champagne"
+                  className="champagne"
+                  ref={section => {
+                    this.champagne = section
+                  }}
+                >
+                  <span className="menu-page__section-title">
+                    Шампанское и игристое 150/750 мл
+                  </span>
+                  {champagne.map(position => (
+                    <ComplexMenuPosition
+                      key={position.id}
+                      name={position.name}
+                      price={position.price}
+                      description={position.description}
+                    />
+                  ))}
+                </section>
+                <section
+                  id="whiteWineGlasses"
+                  className="whiteWineGlasses"
+                  ref={section => {
+                    this.whiteWinesGlasses = section
+                  }}
+                >
+                  <span className="menu-page__section-title">
+                    Вина белые по бокалам 150 мл
+                  </span>
+                  {whiteWinesGlasses.map(position => (
+                    <ComplexMenuPosition
+                      key={position.id}
+                      name={position.name}
+                      price={position.price}
+                      description={position.description}
+                    />
+                  ))}
+                </section>
+                <section
+                  id="redWinesGlasses"
+                  className="redWinesGlasses"
+                  ref={section => {
+                    this.redWinesGlasses = section
+                  }}
+                >
+                  <span className="menu-page__section-title">
+                    Вина красные по бокалам 150 мл
+                  </span>
+                  {redWinesGlasses.map(position => (
+                    <ComplexMenuPosition
+                      key={position.id}
+                      name={position.name}
+                      price={position.price}
+                      description={position.description}
+                    />
+                  ))}
+                </section>
+                <section
                   id="whiskey"
                   className="whiskey"
                   ref={section => {
                     this.whiskey = section
                   }}
                 >
-                  <span className="menu-page__section-title">ВИСКИ 50ml</span>
+                  <span className="menu-page__section-title">ВИСКИ 50 мл</span>
                   <br />
                   <span className="menu-page__section-subtitle">
                     Scotch Whiskey Blend
@@ -295,7 +438,7 @@ class DrinksPage extends React.Component {
                   }}
                 >
                   <span className="menu-page__section-title">
-                    ТЕКИЛА / MEСКАЛЬ 50ml
+                    ТЕКИЛА / MEСКАЛЬ 50 мл
                   </span>
                   {tequilaAndMezkal.map(position => (
                     <SimpleMenuPosition
@@ -313,7 +456,7 @@ class DrinksPage extends React.Component {
                   }}
                 >
                   <span className="menu-page__section-title">
-                    ПОРТО / ШЕРРИ 75ml
+                    ПОРТО / ШЕРРИ 75 мл
                   </span>
                   {portoAndJerez.map(position => (
                     <SimpleMenuPosition
@@ -330,7 +473,7 @@ class DrinksPage extends React.Component {
                     this.vodka = section
                   }}
                 >
-                  <span className="menu-page__section-title">ВОДКА 50ml</span>
+                  <span className="menu-page__section-title">ВОДКА 50 мл</span>
                   {vodka.map(position => (
                     <SimpleMenuPosition
                       key={position.id}
@@ -347,7 +490,7 @@ class DrinksPage extends React.Component {
                   }}
                 >
                   <span className="menu-page__section-title">
-                    РОМ / ЧАЧА 50ml
+                    РОМ / ЧАЧА 50 мл
                   </span>
                   {rumAndChacha.map(position => (
                     <SimpleMenuPosition
@@ -364,7 +507,7 @@ class DrinksPage extends React.Component {
                     this.gin = section
                   }}
                 >
-                  <span className="menu-page__section-title">ДЖИН 50ml</span>
+                  <span className="menu-page__section-title">ДЖИН 50 мл</span>
                   {gin.map(position => (
                     <SimpleMenuPosition
                       key={position.id}
@@ -381,7 +524,7 @@ class DrinksPage extends React.Component {
                   }}
                 >
                   <span className="menu-page__section-title">
-                    КОНЬЯК / БРЕДИ 50ml
+                    КОНЬЯК / БРЕДИ 50 мл
                   </span>
                   {brandy.map(position => (
                     <SimpleMenuPosition
@@ -399,7 +542,7 @@ class DrinksPage extends React.Component {
                   }}
                 >
                   <span className="menu-page__section-title">
-                    АРМАНЬЯК / КАЛЬВАДОС 50ml
+                    АРМАНЬЯК / КАЛЬВАДОС 50 мл
                   </span>
                   {calvados.map(position => (
                     <SimpleMenuPosition
@@ -416,7 +559,7 @@ class DrinksPage extends React.Component {
                     this.grappa = section
                   }}
                 >
-                  <span className="menu-page__section-title">ГРАППА 50ml</span>
+                  <span className="menu-page__section-title">ГРАППА 50 мл</span>
                   {grappa.map(position => (
                     <SimpleMenuPosition
                       key={position.id}
@@ -432,7 +575,7 @@ class DrinksPage extends React.Component {
                     this.pisko = section
                   }}
                 >
-                  <span className="menu-page__section-title">ПИСКО 50ml</span>
+                  <span className="menu-page__section-title">ПИСКО 50 мл</span>
                   {pisco.map(position => (
                     <SimpleMenuPosition
                       key={position.id}
@@ -449,7 +592,7 @@ class DrinksPage extends React.Component {
                   }}
                 >
                   <span className="menu-page__section-title">
-                    АПЕРИТИВ / DIGESTIV 50ml
+                    АПЕРИТИВ / DIGESTIV 50 мл
                   </span>
                   {aperitivo.map(position => (
                     <SimpleMenuPosition
@@ -490,7 +633,7 @@ class DrinksPage extends React.Component {
                       key={position.id}
                       name={position.name}
                       price={position.price}
-                      ingredients={position.ingredients}
+                      description={position.description}
                     />
                   ))}
                 </section>
@@ -517,13 +660,13 @@ class DrinksPage extends React.Component {
                     this.smoosy = section
                   }}
                 >
-                  <span className="menu-page__section-title">СМУЗИ 300ml</span>
+                  <span className="menu-page__section-title">СМУЗИ 300 мл</span>
                   {smoosy.map(position => (
                     <ComplexMenuPosition
                       key={position.id}
                       name={position.name}
                       price={position.price}
-                      ingredients={position.ingredients}
+                      description={position.description}
                     />
                   ))}
                 </section>
@@ -535,7 +678,7 @@ class DrinksPage extends React.Component {
                   }}
                 >
                   <span className="menu-page__section-title">
-                    ДОМАШНИЕ ЛИМОНАДЫ 300ml / 1l
+                    ДОМАШНИЕ ЛИМОНАДЫ 300 мл / 1l
                   </span>
                   {limonades.map(position => (
                     <SimpleMenuPosition
@@ -568,7 +711,7 @@ class DrinksPage extends React.Component {
                   }}
                 >
                   <span className="menu-page__section-title">
-                    СОК СВЕЖЕВЫЖАТЫЙ 250ml
+                    СОК СВЕЖЕВЫЖАТЫЙ 250 мл
                   </span>
                   {freshJuices.map(position => (
                     <SimpleMenuPosition
@@ -614,14 +757,14 @@ class DrinksPage extends React.Component {
                   }}
                 >
                   <span className="menu-page__section-title">
-                    ГОРЯЧИЕ НАПИТКИ 300ml
+                    ГОРЯЧИЕ НАПИТКИ 300 мл
                   </span>
                   {hotAlco.map(position => (
                     <ComplexMenuPosition
                       key={position.id}
                       name={position.name}
                       price={position.price}
-                      ingredients={position.ingredients}
+                      description={position.description}
                     />
                   ))}
                 </section>
@@ -645,7 +788,7 @@ class DrinksPage extends React.Component {
                       key={position.id}
                       name={position.name}
                       price={position.price}
-                      ingredients={position.ingredients}
+                      description={position.description}
                     />
                   ))}
                 </section>
@@ -656,7 +799,7 @@ class DrinksPage extends React.Component {
                   }}
                 >
                   <span className="menu-page__section-title" id="tea">
-                    ЧАЙ НА ЯГОДАХ И ФРУКТАХ 450ml
+                    ЧАЙ НА ЯГОДАХ И ФРУКТАХ 450 мл
                   </span>
                   {fruitTea.map(position => (
                     <SimpleMenuPosition
@@ -665,7 +808,7 @@ class DrinksPage extends React.Component {
                       price={position.price}
                     />
                   ))}
-                  <span className="menu-page__section-title">ЧАЙ 450ml</span>
+                  <span className="menu-page__section-title">ЧАЙ 450 мл</span>
                   {simpleTea.map(position => (
                     <SimpleMenuPosition
                       key={position.id}
@@ -674,7 +817,7 @@ class DrinksPage extends React.Component {
                     />
                   ))}
                   <span className="menu-page__section-title">
-                    ЧАЙ АЛТАЙ 450ml
+                    ЧАЙ АЛТАЙ 450 мл
                   </span>
                   {altayTea.map(position => (
                     <SimpleMenuPosition

@@ -1,5 +1,5 @@
 /* Main */
-.index__description {
+.about {
   margin: auto;
   display: -webkit-flex;
   display: -ms-flex;
@@ -12,17 +12,17 @@
   margin-bottom: 10%;
 }
 
-.index__description--text a {
+.about__text a {
   color: black;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  .index__description {
+  .about {
     width: 90%;
   }
 
-  .index__description--text {
+  .about__text {
     width: 94%;
     margin-left: 3%;
     margin-right: 3%;
@@ -34,11 +34,11 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .index__description {
+  .about {
     width: 90%;
   }
 
-  .index__description--text {
+  .about__text {
     width: 94%;
     margin-left: 3%;
     margin-right: 3%;
@@ -50,11 +50,11 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .index__description {
+  .about {
     width: 90%;
   }
 
-  .index__description--text {
+  .about__text {
     width: 94%;
     margin-left: 3%;
     margin-right: 3%;
@@ -66,11 +66,11 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .index__description {
+  .about {
     width: 90%;
   }
 
-  .index__description--text {
+  .about__text {
     width: 94%;
     margin-left: 3%;
     margin-right: 3%;
@@ -82,19 +82,19 @@
 
 /* Extra large devices (large desktops, 1200px and 1439px) */
 @media (min-width: 1200px) and (max-width: 1440px) {
-  .index__description {
+  .about {
     width: 80%;
     height: auto;
   }
 
-  .index__description--image {
+  .about__image {
     -webkit-background-size: cover;
     background-size: cover;
     width: 50%;
     height: 70vh;
   }
 
-  .index__description--text {
+  .about__text {
     width: 40%;
     margin-left: 5%;
     margin-right: 5%;
@@ -105,19 +105,19 @@
 
 /* Extra large devices (large desktops, 1440px and up) */
 @media (min-width: 1441px) {
-  .index__description {
+  .about {
     width: 80%;
     height: auto;
   }
 
-  .index__description--image {
+  .about__image {
     -webkit-background-size: cover;
     background-size: cover;
     width: 50%;
     height: 70vh;
   }
 
-  .index__description--text {
+  .about__text {
     width: 40%;
     font-size: 1.3em;
     line-height: 1.7em;
@@ -129,13 +129,13 @@
 /* iPad Pro Portrait */
 @media only screen and (device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (device-width: 1024px) and (orientation: portrait) and (-o-min-device-pixel-ratio: 3/2),
-  only screen and (device-width: 1024px) and (orientation: portrait) and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (device-width: 1024px) and (orientation: portrait) and (min__moz-device-pixel-ratio: 1.5),
   only screen and (device-width: 1024px) and (orientation: portrait) and (min-device-pixel-ratio: 1.5) {
-  .index__description {
+  .about {
     width: 90%;
   }
 
-  .index__description--text {
+  .about__text {
     width: 94%;
     margin-left: 3%;
     margin-right: 3%;
@@ -148,21 +148,21 @@
 /* iPad Pro Landscape */
 @media only screen and (device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (device-width: 1366px) and (orientation: landscape) and (-o-min-device-pixel-ratio: 3/2),
-  only screen and (device-width: 1366px) and (orientation: landscape) and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (device-width: 1366px) and (orientation: landscape) and (min__moz-device-pixel-ratio: 1.5),
   only screen and (device-width: 1366px) and (orientation: landscape) and (min-device-pixel-ratio: 1.5) {
-  .index__description {
+  .about {
     width: 90%;
     height: auto;
   }
 
-  .index__description--image {
+  .about__image {
     -webkit-background-size: cover;
     background-size: cover;
     width: 55%;
     height: 70vh;
   }
 
-  .index__description--text {
+  .about__text {
     width: 40%;
     margin-left: 5%;
     margin-right: 5%;

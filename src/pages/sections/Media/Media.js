@@ -3,9 +3,6 @@ import InstagramCard from '../../../components/InstagramCard/InstagramCard'
 import './Media.css'
 
 class Media extends React.Component {
-  componentDidMount() {
-    console.log(typeof this.props.instagram[0].img)
-  }
   render() {
     return (
       <>

@@ -50,6 +50,28 @@
   }
 }
 
+/* Extra small devices (landscape phones, less than 576px) */
+@media (max-width: 575.98px) and (orientation: landscape) {
+  .media {
+    width: 90%;
+  }
+
+  .media :nth-child(3),
+  .media :nth-child(5),
+  .media :nth-child(6),
+  .media :nth-child(7) {
+    display: none;
+  }
+
+  .media__title {
+    font-size: 3em;
+  }
+
+  .media a {
+    opacity: 1;
+  }
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   .media {
@@ -67,6 +89,28 @@
     font-size: 3em;
   }
 
+  .media a {
+    opacity: 1;
+  }
+}
+
+/* iPhoneX Landscape */
+@media only screen and (device-width: 812px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (device-width: 812px) and (orientation: landscape) and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (device-width: 812px) and (orientation: landscape) and (min__moz-device-pixel-ratio: 1.5),
+  only screen and (device-width: 812px) and (orientation: landscape) and (min-device-pixel-ratio: 1.5) {
+  .media {
+    width: 90%;
+  }
+
+  .media :nth-child(3),
+  .media :nth-child(5) {
+    display: none;
+  }
+
+  .media__title {
+    font-size: 4em;
+  }
   .media a {
     opacity: 1;
   }
@@ -94,7 +138,7 @@
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .media {
-    width: 80%;
+    width: 90%;
   }
 
   .media__title {
@@ -158,6 +202,11 @@
   only screen and (device-width: 1366px) and (orientation: landscape) and (min-device-pixel-ratio: 1.5) {
   .media {
     width: 90%;
+  }
+
+  .media :nth-child(3),
+  .media :nth-child(5) {
+    display: none;
   }
 
   .media__title {

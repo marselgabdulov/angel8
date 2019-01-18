@@ -3,15 +3,15 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import './About.css'
 
 const About = props => (
-  <section className="index__description">
+  <section className="about">
     <div
-      className="index__description--image"
+      className="about__image"
       style={{
         backgroundImage: `url(${props.bgImage})`,
       }}
     />
     <div
-      className="index__description--text"
+      className="about__text"
       data-aos="fade"
       data-aos-delay="100"
       data-aos-duration="1200"

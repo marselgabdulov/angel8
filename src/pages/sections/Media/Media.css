@@ -1,102 +1,6 @@
-/*------------------------------------------
-  Responsive Grid Media Queries - 1280, 1024, 768, 480
-   1280-1024   - desktop (default grid)
-   1024-768    - tablet landscape
-   768-480     - tablet
-   480-less    - phone landscape & smaller
---------------------------------------------*/
-@media all and (min-width: 1024px) and (max-width: 1280px) {
-}
-
-@media all and (min-width: 768px) and (max-width: 1024px) {
-}
-
-@media all and (min-width: 480px) and (max-width: 768px) {
-}
-
-@media all and (max-width: 480px) {
-}
-
-/*------------------------------------------
-  Foundation Media Queries
-   http://foundation.zurb.com/docs/media-queries.html
---------------------------------------------*/
-
-/* Small screens - MOBILE */
-@media only screen {
-} /* Define mobile styles - Mobile First */
-
-@media only screen and (max-width: 40em) {
-} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
-
-/* Medium screens - TABLET */
-@media only screen and (min-width: 40.063em) {
-} /* min-width 641px, medium screens */
-
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
-
-/* Large screens - DESKTOP */
-@media only screen and (min-width: 64.063em) {
-} /* min-width 1025px, large screens */
-
-@media only screen and (min-width: 64.063em) and (max-width: 90em) {
-} /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
-
-/* XLarge screens */
-@media only screen and (min-width: 90.063em) {
-} /* min-width 1441px, xlarge screens */
-
-@media only screen and (min-width: 90.063em) and (max-width: 120em) {
-} /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
-
-/* XXLarge screens */
-@media only screen and (min-width: 120.063em) {
-} /* min-width 1921px, xlarge screens */
-
-/*------------------------------------------*/
-
-/* Portrait */
-@media screen and (orientation: portrait) {
-  /* Portrait styles here */
-}
-/* Landscape */
-@media screen and (orientation: landscape) {
-  /* Landscape styles here */
-}
-
-/* CSS for iPhone, iPad, and Retina Displays */
-
-/* Non-Retina */
-@media screen and (-webkit-max-device-pixel-ratio: 1) {
-}
-
-/* Retina */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (-o-min-device-pixel-ratio: 3/2),
-  only screen and (min--moz-device-pixel-ratio: 1.5),
-  only screen and (min-device-pixel-ratio: 1.5) {
-}
-
-/* iPhone Portrait */
-@media screen and (max-device-width: 480px) and (orientation: portrait) {
-}
-
-/* iPhone Landscape */
-@media screen and (max-device-width: 480px) and (orientation: landscape) {
-}
-
-/* iPad Portrait */
-@media screen and (min-device-width: 481px) and (orientation: portrait) {
-}
-
-/* iPad Landscape */
-@media screen and (min-device-width: 481px) and (orientation: landscape) {
-}
-
 /* Main */
 
-.index__media {
+.media {
   width: 80%;
   height: auto;
   margin-left: 10%;
@@ -111,155 +15,155 @@
   justify-content: space-between;
 }
 
-.index__media--title {
+.media__title {
   text-align: center;
 }
 
-.index__media a {
+.media a {
   font-size: 0;
   opacity: 0.8;
 }
 
-.index__media a:hover {
+.media a:hover {
   opacity: 1;
 }
 
-/*
-  ##Device = Desktops
-  ##Screen = 1680 to higher resolution desktops
-*/
-
-@media (min-width: 1680px) {
-  .index__media--title {
-    font-size: 4em;
-  }
-}
-
-/*
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-@media (min-width: 1281px) and (max-width: 1679px) {
-  .index__media {
-    width: 80%;
-    height: auto;
-  }
-
-  .index__media--title {
-    font-size: 4em;
-  }
-}
-
-/*
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  .index__media {
-    width: 80%;
-    height: auto;
-  }
-
-  .index__media--title {
-    font-size: 4em;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .index__media {
-    width: 95%;
-    height: auto;
-  }
-
-  .index__media :nth-child(3),
-  .index__media :nth-child(5) {
-    display: none;
-  }
-
-  .index__media--title {
-    font-size: 4em;
-  }
-
-  .index__media a {
-    opacity: 1;
-  }
-}
-
-/*
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .index__media {
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .media {
     width: 90%;
-    height: auto;
   }
 
-  .index__media :nth-child(3),
-  .index__media :nth-child(5) {
+  .media :nth-child(3),
+  .media :nth-child(5),
+  .media :nth-child(6),
+  .media :nth-child(7) {
     display: none;
   }
 
-  .index__media--title {
-    font-size: 4em;
-  }
-  .index__media a {
-    opacity: 1;
-  }
-}
-
-/*
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 823px
-*/
-
-@media (min-width: 481px) and (max-width: 823px) and (orientation: landscape) {
-  .index__media {
-    width: 90%;
-    height: auto;
-  }
-
-  .index__media :nth-child(3),
-  .index__media :nth-child(5),
-  .index__media :nth-child(6),
-  .index__media :nth-child(7) {
-    display: none;
-  }
-
-  .index__media--title {
-    font-size: 3em;
-  }
-
-  .index__media a {
-    opacity: 1;
-  }
-}
-
-/*
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
-@media (min-width: 320px) and (max-width: 480px) {
-  .index__media {
-    width: 90%;
-    height: auto;
-  }
-
-  .index__media :nth-child(3),
-  .index__media :nth-child(5),
-  .index__media :nth-child(6),
-  .index__media :nth-child(7) {
-    display: none;
-  }
-
-  .index__media--title {
+  .media__title {
     font-size: 2em;
   }
 
-  .index__media a {
+  .media a {
+    opacity: 1;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .media {
+    width: 90%;
+  }
+
+  .media :nth-child(3),
+  .media :nth-child(5),
+  .media :nth-child(6),
+  .media :nth-child(7) {
+    display: none;
+  }
+
+  .media__title {
+    font-size: 3em;
+  }
+
+  .media a {
+    opacity: 1;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .media {
+    width: 90%;
+  }
+
+  .media :nth-child(3),
+  .media :nth-child(5) {
+    display: none;
+  }
+
+  .media__title {
+    font-size: 4em;
+  }
+  .media a {
+    opacity: 1;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .media {
+    width: 80%;
+  }
+
+  .media__title {
+    font-size: 4em;
+  }
+
+  .media :nth-child(3),
+  .media :nth-child(5) {
+    display: none;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and 1439px) */
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .media {
+    width: 80%;
+  }
+
+  .media__title {
+    font-size: 4em;
+  }
+}
+
+/* Extra large devices (large desktops, 1440px and up) */
+@media (min-width: 1441px) {
+  .media {
+    width: 80%;
+  }
+
+  .media__title {
+    font-size: 4em;
+  }
+}
+
+/* iPad Pro Portrait */
+@media only screen and (device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (device-width: 1024px) and (orientation: portrait) and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (device-width: 1024px) and (orientation: portrait) and (min__moz-device-pixel-ratio: 1.5),
+  only screen and (device-width: 1024px) and (orientation: portrait) and (min-device-pixel-ratio: 1.5) {
+  .media {
+    width: 90%;
+  }
+
+  .media :nth-child(3),
+  .media :nth-child(5) {
+    display: none;
+  }
+
+  .media__title {
+    font-size: 4em;
+  }
+  .media a {
+    opacity: 1;
+  }
+}
+
+/* iPad Pro Landscape */
+@media only screen and (device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (device-width: 1366px) and (orientation: landscape) and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (device-width: 1366px) and (orientation: landscape) and (min__moz-device-pixel-ratio: 1.5),
+  only screen and (device-width: 1366px) and (orientation: landscape) and (min-device-pixel-ratio: 1.5) {
+  .media {
+    width: 90%;
+  }
+
+  .media__title {
+    font-size: 4em;
+  }
+  .media a {
     opacity: 1;
   }
 }

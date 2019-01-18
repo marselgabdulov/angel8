@@ -9,8 +9,8 @@ class Media extends React.Component {
   render() {
     return (
       <>
-        <h2 className="index__media--title">Instagram</h2>
-        <section className="index__media">
+        <h2 className="media__title">Instagram</h2>
+        <section className="media">
           {this.props.instagram.map(card => (
             <InstagramCard
               hreference={card.url}

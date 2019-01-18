@@ -1,15 +1,18 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Layout from '../components/layout'
-import Footer from '../components/Footer/Footer'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import SEO from '../components/seo'
 import { Fade } from 'react-slideshow-image'
-
-// Sections
-import './sections/Intro/Intro.css'
+// Components
+import Layout from '../components/layout'
+import Footer from '../components/Footer/Footer'
+import InstagramCard from '../components/InstagramCard/InstagramCard'
+//  Styles
+import './index.css'
+import './indexSectionsStyles/Intro.css'
+import './indexSectionsStyles/About.css'
+import './indexSectionsStyles/Media.css'
 import '../components/ImageGallery/ImageGallery.css'
-import About from './sections/About/About'
-import Media from './sections/Media/Media'
 
 class IndexPage extends React.Component {
   render() {
@@ -129,8 +132,56 @@ class IndexPage extends React.Component {
               </div>
             </div>
           </section>
-          <About bgImage={this.props.data.table.childImageSharp.fluid.src} />
-          <Media instagram={instagram} />
+          <section className="about">
+            <div
+              className="about__image"
+              style={{
+                backgroundImage: `url(${
+                  this.props.data.table.childImageSharp.fluid.src
+                })`,
+              }}
+            />
+            <div
+              className="about__text"
+              data-aos="fade"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+              data-aos-once="true"
+            >
+              <h2>О нас</h2>
+              <p>
+                Мы находимся на территории торгово-делового квартала&nbsp;
+                <a
+                  className="index__link"
+                  href="https://vk.com/likerkaloft"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  &laquo;Ликерка Лофт&raquo;
+                </a>
+                .
+              </p>
+              <p>Готовим блюда паназиатской кухни и блюда на гриле.</p>
+              <p>
+                У нас Вы сможете насладиться нашими коктейлями и традиционными
+                напитками.
+              </p>
+              <AniLink to="/food">Кухня</AniLink> <br />
+              <AniLink to="/drinks">Бар</AniLink>
+            </div>
+          </section>
+          <>
+            <h2 className="media__title">Instagram</h2>
+            <section className="media">
+              {instagram.map(card => (
+                <InstagramCard
+                  hreference={card.url}
+                  imageUrl={card.img}
+                  key={card.url}
+                />
+              ))}
+            </section>
+          </>
           <Footer />
         </div>
       </Layout>

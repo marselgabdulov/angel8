@@ -16,7 +16,7 @@
   overflow: hidden;
 }
 
-.intro__slogan {
+.intro__text {
   height: calc(100vh - 65px);
   display: -webkit-flex;
   display: -ms-flex;
@@ -28,13 +28,8 @@
   text-shadow: 2px 0 0 #000;
 }
 
-.intro__slogan--title {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+.intro__title {
+  line-height: 2em;
 }
 
 .intro__background {
@@ -59,12 +54,174 @@
   }
 }
 
-/*------------------------------------------
-  Responsive Grid Media Queries - 1280, 1024, 768, 480
---------------------------------------------*/
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .intro {
+    width: calc(100vw - 2em);
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .intro__background {
+    display: none;
+  }
+  .intro__gallery {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 65px);
+    z-index: -1;
+  }
+  .intro__text {
+    height: 68vh;
+  }
 
-/* 1824 - ...  - desktop extra large */
-@media all and (min-width: 1824px) {
+  .intro__title *,
+  .intro__address * {
+    background-color: rgba(249, 249, 249, 0.5);
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .intro {
+    width: calc(100vw - 2em);
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .intro__background {
+    display: none;
+  }
+  .intro__gallery {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 65px);
+    z-index: -1;
+  }
+  .intro__title {
+    position: absolute;
+    top: 65px;
+    left: 1em;
+    font-size: 3em;
+    line-height: 1.5em;
+  }
+
+  .intro__address {
+    position: absolute;
+    top: 22em;
+    left: 3em;
+  }
+  .intro__title *,
+  .intro__address * {
+    background-color: rgba(249, 249, 249, 0.5);
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .intro {
+    width: calc(100vw - 2em);
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .intro__background {
+    display: none;
+  }
+  .intro__gallery {
+    position: absolute;
+    top: 65px;
+    left: 0em;
+    width: 100%;
+    height: calc(100vh - 65px);
+    z-index: -1;
+  }
+
+  .intro__title {
+    position: absolute;
+    top: 65px;
+    left: 1em;
+    font-size: 3em;
+    line-height: 1.5em;
+  }
+
+  .intro__address {
+    position: absolute;
+    top: 22em;
+    left: 3em;
+  }
+  .intro__title *,
+  .intro__address * {
+    background-color: rgba(249, 249, 249, 0.5);
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .intro {
+    width: calc(100vw - 2em);
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .intro__background {
+    display: none;
+  }
+  .intro__gallery {
+    width: 50%;
+    height: calc(100vh - 65px);
+    z-index: -1;
+  }
+  .intro__text {
+    height: 85vh;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and 1439px) */
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .intro {
+    width: 80%;
+  }
+
+  .intro__gallery {
+    width: 50%;
+    height: calc(100vh - 65px);
+    z-index: -1;
+  }
+
+  .intro__text {
+    width: 50%;
+  }
+
+  .intro__title {
+    font-size: 4em;
+    line-height: 1.5em;
+    margin-top: 1em;
+  }
+
+  .intro__address {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+
+  .intro__background {
+    width: 40%;
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 1;
+      width: 0%;
+    }
+    100% {
+      opacity: 1;
+      width: 40%;
+    }
+  }
+}
+
+/* Extra large devices (large desktops, 1440px and up) */
+@media (min-width: 1441px) {
   .intro {
     width: 80%;
   }
@@ -72,181 +229,87 @@
   .intro__gallery {
     width: 40%;
     height: calc(100vh - 65px);
+    z-index: -1;
   }
 
-  .intro__slogan {
+  .intro__text {
     width: 60%;
   }
 
-  .intro__slogan--title {
+  .intro__title {
     font-size: 6em;
     line-height: 1.5em;
     margin-top: 1em;
   }
 
-  .intro__slogan--address {
+  .intro__address {
     font-size: 1.5em;
     margin-bottom: 1em;
   }
 }
 
-/* 1281 - 1823  - desktop large */
-
-@media all and (min-width: 1281px) and (max-width: 1823px) {
+/* iPad Pro Portrait */
+@media only screen and (device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (device-width: 1024px) and (orientation: portrait) and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (device-width: 1024px) and (orientation: portrait) and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (device-width: 1024px) and (orientation: portrait) and (min-device-pixel-ratio: 1.5) {
   .intro {
-    width: 80%;
-  }
-
-  .intro__gallery {
-    width: 50%;
-    height: calc(100vh - 65px);
-  }
-
-  .intro__slogan {
-    width: 40%;
-    z-index: 1;
-  }
-
-  .intro__slogan--title {
-    font-size: 4em;
-    line-height: 1.5em;
-    margin-top: 2em;
-  }
-
-  .intro__slogan--address {
-    font-size: 1.5em;
-    margin-bottom: 1em;
-  }
-}
-
-/*----------------
- 1280-1024 - desktop (default grid)
- ----------------*/
-@media all and (min-width: 1024px) and (max-width: 1280px) {
-  .intro {
-    width: 80%;
-  }
-
-  .intro__gallery {
-    width: 50%;
-    height: calc(100vh - 65px);
-  }
-
-  .intro__slogan {
-    width: 50%;
-  }
-
-  .intro__slogan--title {
-    font-size: 3.5em;
-    line-height: 1.5em;
-    margin-top: 2em;
-  }
-
-  .intro__slogan--address {
-    margin-bottom: 1em;
-    font-size: 1.2em;
-  }
-}
-
-/*---------------------------
- 1024-768 - tablet landscape
- --------------------------*/
-
-@media all and (min-width: 768px) and (max-width: 1024px) {
-  .intro {
-    width: calc(100% - 2em);
-    margin-top: 65px;
-  }
-
-  .intro__gallery {
-    width: 100%;
-    height: calc(100vh - 65px);
-    opacity: 0.7;
-  }
-
-  .intro__slogan {
-    position: absolute;
-    top: 2em;
-    left: 3.8em;
-    height: calc(100vh - 65px);
-    z-index: 1;
-  }
-
-  .intro__slogan--title {
-    font-size: 4em;
-    line-height: 1.5em;
-    margin-top: 1em;
-  }
-
-  .intro__slogan--address {
-    font-size: 1.5em;
-  }
-}
-/*------------
-768-480 - tablet
-------------*/
-@media all and (min-width: 480px) and (max-width: 768px) {
-  .intro {
-    width: calc(100% - 2em);
-    margin-top: 65px;
-  }
-
-  .intro__gallery {
-    width: 100%;
-    height: calc(100vh - 65px);
-    opacity: 0.7;
-  }
-
-  .intro__slogan {
-    height: calc(90vh - 65px);
-  }
-
-  .intro__slogan--title {
-    font-size: 4em;
-    line-height: 1.5em;
-    margin-top: 1em;
-  }
-
-  .intro__slogan--address {
-    font-size: 1.5em;
-  }
-}
-
-/* Portrait */
-@media screen and (orientation: portrait) {
-  /* Portrait styles here */
-  .intro__gallery {
-    position: absolute;
-    top: 4em;
-    left: 1em;
-    margin: auto;
-    height: 100vh;
     width: calc(100vw - 2em);
+    margin-left: 1em;
+    margin-right: 1em;
   }
-
   .intro__background {
     display: none;
   }
-
-  .intro__slogan {
+  .intro__gallery {
     position: absolute;
-    top: 4em;
-    left: 1.5em;
-    z-index: 1;
+    top: 65px;
+    left: 0em;
+    width: 100%;
+    height: calc(100vh - 65px);
+    z-index: -1;
+  }
+  .intro__text {
+    height: 90vh;
+  }
+  .intro__title {
+    font-size: 5em;
   }
 
-  .intro__slogan--address {
-    font-weight: bold;
+  .intro__title *,
+  .intro__address * {
+    background-color: rgba(249, 249, 249, 0.5);
   }
 }
-/* Landscape */
-@media screen and (orientation: landscape) {
-  /* Landscape styles here */
-}
 
-/* iPhone Portrait */
-@media screen and (max-device-width: 480px) and (orientation: portrait) {
-  .intro__slogan {
-    height: 62vh;
+/* iPad Pro Landscape */
+@media only screen and (device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (device-width: 1366px) and (orientation: landscape) and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (device-width: 1366px) and (orientation: landscape) and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (device-width: 1366px) and (orientation: landscape) and (min-device-pixel-ratio: 1.5) {
+  .intro {
+    width: calc(100vw - 2em);
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .intro__background {
+    display: none;
+  }
+  .intro__gallery {
+    position: absolute;
+    top: 65px;
+    left: 0em;
+    width: 100%;
+    height: calc(100vh - 65px);
+    z-index: -1;
+  }
+  .intro__text {
+    height: 90vh;
+    margin-left: 10%;
+  }
+
+  .intro__title *,
+  .intro__address * {
+    background-color: rgba(249, 249, 249, 0.5);
   }
 }

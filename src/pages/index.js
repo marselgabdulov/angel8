@@ -191,7 +191,7 @@ class IndexPage extends React.Component {
 export const fluidImage = graphql`
   fragment fluidImage on File {
     childImageSharp {
-      fluid(maxWidth: 1900) {
+      fluid(maxWidth: 900) {
         ...GatsbyImageSharpFluid
       }
     }

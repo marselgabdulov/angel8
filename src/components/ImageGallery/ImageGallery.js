@@ -15,9 +15,9 @@ class ImageGallery extends React.Component {
     return (
       <div className="image-gallery">
         <Fade {...fadeProperties}>
-          {galleryImages.map((img, index) => (
-            <div key={index} style={{ backgroundImage: `url(${img})` }} />
-          ))}
+          <div style={{ backgroundImage: `url(${galleryImages[0]})` }} />
+          <div style={{ backgroundImage: `url(${galleryImages[1]})` }} />
+          <div style={{ backgroundImage: `url(${galleryImages[2]})` }} />
         </Fade>
       </div>
     )

@@ -12,7 +12,6 @@ import './index.css'
 import './indexSectionsStyles/Intro.css'
 import './indexSectionsStyles/About.css'
 import './indexSectionsStyles/Media.css'
-import '../components/ImageGallery/ImageGallery.css'
 
 class IndexPage extends React.Component {
   render() {

@@ -75,7 +75,7 @@ class DrinksPage extends React.Component {
                       )
                     }
                   >
-                    Белые Вина в бутылках
+                    Белые Вина по бутылкам
                   </button>
 
                   <button
@@ -84,7 +84,7 @@ class DrinksPage extends React.Component {
                       this.scrollTo(document.getElementById('redWinesBottles'))
                     }
                   >
-                    Красные Вина в бутылках
+                    Красные Вина по бутылкам
                   </button>
                   <button
                     className="menu-page__submenu-button"

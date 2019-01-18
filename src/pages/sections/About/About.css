@@ -1,101 +1,4 @@
-/*------------------------------------------
-  Responsive Grid Media Queries - 1280, 1024, 768, 480
-   1280-1024   - desktop (default grid)
-   1024-768    - tablet landscape
-   768-480     - tablet
-   480-less    - phone landscape & smaller
---------------------------------------------*/
-@media all and (min-width: 1024px) and (max-width: 1280px) {
-}
-
-@media all and (min-width: 768px) and (max-width: 1024px) {
-}
-
-@media all and (min-width: 480px) and (max-width: 768px) {
-}
-
-@media all and (max-width: 480px) {
-}
-
-/*------------------------------------------
-  Foundation Media Queries
-   http://foundation.zurb.com/docs/media-queries.html
---------------------------------------------*/
-
-/* Small screens - MOBILE */
-@media only screen {
-} /* Define mobile styles - Mobile First */
-
-@media only screen and (max-width: 40em) {
-} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
-
-/* Medium screens - TABLET */
-@media only screen and (min-width: 40.063em) {
-} /* min-width 641px, medium screens */
-
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
-
-/* Large screens - DESKTOP */
-@media only screen and (min-width: 64.063em) {
-} /* min-width 1025px, large screens */
-
-@media only screen and (min-width: 64.063em) and (max-width: 90em) {
-} /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
-
-/* XLarge screens */
-@media only screen and (min-width: 90.063em) {
-} /* min-width 1441px, xlarge screens */
-
-@media only screen and (min-width: 90.063em) and (max-width: 120em) {
-} /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
-
-/* XXLarge screens */
-@media only screen and (min-width: 120.063em) {
-} /* min-width 1921px, xlarge screens */
-
-/*------------------------------------------*/
-
-/* Portrait */
-@media screen and (orientation: portrait) {
-  /* Portrait styles here */
-}
-/* Landscape */
-@media screen and (orientation: landscape) {
-  /* Landscape styles here */
-}
-
-/* CSS for iPhone, iPad, and Retina Displays */
-
-/* Non-Retina */
-@media screen and (-webkit-max-device-pixel-ratio: 1) {
-}
-
-/* Retina */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (-o-min-device-pixel-ratio: 3/2),
-  only screen and (min--moz-device-pixel-ratio: 1.5),
-  only screen and (min-device-pixel-ratio: 1.5) {
-}
-
-/* iPhone Portrait */
-@media screen and (max-device-width: 480px) and (orientation: portrait) {
-}
-
-/* iPhone Landscape */
-@media screen and (max-device-width: 480px) and (orientation: landscape) {
-}
-
-/* iPad Portrait */
-@media screen and (min-device-width: 481px) and (orientation: portrait) {
-}
-
-/* iPad Landscape */
-@media screen and (min-device-width: 481px) and (orientation: landscape) {
-}
-
 /* Main */
-
 .index__description {
   margin: auto;
   display: -webkit-flex;
@@ -113,14 +16,75 @@
   color: black;
 }
 
-/*
-  ##Device = Desktops
-  ##Screen = 1680 to higher resolution desktops
-*/
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .index__description {
+    width: 90%;
+  }
 
-@media (min-width: 1680px) {
+  .index__description--text {
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .index__description {
+    width: 90%;
+  }
+
+  .index__description--text {
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .index__description {
+    width: 90%;
+  }
+
+  .index__description--text {
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    font-size: 1.2em;
+    line-height: 1.8em;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .index__description {
+    width: 90%;
+  }
+
+  .index__description--text {
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    font-size: 1.2em;
+    line-height: 1.8em;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and 1439px) */
+@media (min-width: 1200px) and (max-width: 1440px) {
   .index__description {
     width: 80%;
+    height: auto;
   }
 
   .index__description--image {
@@ -134,16 +98,13 @@
     width: 40%;
     margin-left: 5%;
     margin-right: 5%;
-    font-size: 1.5em;
-    line-height: 2em;
+    font-size: 1.2em;
+    line-height: 1.8em;
   }
 }
 
-/*
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-@media (min-width: 1281px) and (max-width: 1679px) {
+/* Extra large devices (large desktops, 1440px and up) */
+@media (min-width: 1441px) {
   .index__description {
     width: 80%;
     height: auto;
@@ -165,21 +126,39 @@
   }
 }
 
-/*
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
-@media (min-width: 1025px) and (max-width: 1280px) {
+/* iPad Pro Portrait */
+@media only screen and (device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (device-width: 1024px) and (orientation: portrait) and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (device-width: 1024px) and (orientation: portrait) and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (device-width: 1024px) and (orientation: portrait) and (min-device-pixel-ratio: 1.5) {
   .index__description {
-    width: 80%;
+    width: 90%;
+  }
+
+  .index__description--text {
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    font-size: 1.2em;
+    line-height: 1.8em;
+  }
+}
+
+/* iPad Pro Landscape */
+@media only screen and (device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (device-width: 1366px) and (orientation: landscape) and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (device-width: 1366px) and (orientation: landscape) and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (device-width: 1366px) and (orientation: landscape) and (min-device-pixel-ratio: 1.5) {
+  .index__description {
+    width: 90%;
     height: auto;
   }
 
   .index__description--image {
     -webkit-background-size: cover;
     background-size: cover;
-    width: 50%;
+    width: 55%;
     height: 70vh;
   }
 
@@ -187,82 +166,8 @@
     width: 40%;
     margin-left: 5%;
     margin-right: 5%;
+    margin-top: 2em;
     font-size: 1.2em;
     line-height: 1.8em;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .index__description {
-    width: 95%;
-  }
-
-  .index__description--text {
-    width: 94%;
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-bottom: 3%;
-    font-size: 1.2em;
-    line-height: 1.8em;
-  }
-}
-
-/*
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .index__description {
-    width: 90%;
-  }
-
-  .index__description--text {
-    width: 94%;
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-bottom: 3%;
-    font-size: 1.2em;
-    line-height: 1.8em;
-  }
-}
-
-/*
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 823px
-*/
-
-@media (min-width: 481px) and (max-width: 823px) and (orientation: landscape) {
-  .index__description {
-    width: 90%;
-  }
-
-  .index__description--text {
-    width: 94%;
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-bottom: 3%;
-    font-size: 1em;
-    line-height: 1.5em;
-  }
-}
-
-/*
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
-@media (min-width: 320px) and (max-width: 480px) {
-  .index__description {
-    width: 90%;
-  }
-
-  .index__description--text {
-    width: 94%;
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-bottom: 3%;
-    font-size: 1em;
-    line-height: 1.5em;
   }
 }

@@ -209,13 +209,7 @@ export const pageQuery = graphql`
     soup: file(relativePath: { eq: "intro/soup.jpg" }) {
       ...fluidImage
     }
-    people: file(relativePath: { eq: "description/people.jpg" }) {
-      ...fluidImage
-    }
     table: file(relativePath: { eq: "description/table.jpg" }) {
-      ...fluidImage
-    }
-    kitchen: file(relativePath: { eq: "description/kitchen.jpg" }) {
       ...fluidImage
     }
     logo_inst: file(relativePath: { eq: "instagram/logo.jpg" }) {

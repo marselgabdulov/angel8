@@ -5,9 +5,29 @@
   margin: 65px auto;
 }
 
+.menu-page__upper {
+  font-weight: bold;
+  position: absolute;
+  top: 1.7em;
+  right: 8em;
+}
+
+.menu-page__section {
+  border-bottom: 12px dotted black;
+  padding-bottom: 2em;
+  margin-top: 2em;
+}
+
+.menu-page__section--last {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.menu-page:last-shild {
+  border-bottom: none;
+}
+
 .menu-page__submenu {
-  background-color: black;
-  color: white;
   z-index: 200;
   display: -webkit-flex;
   display: -ms-flex;
@@ -21,14 +41,14 @@
 }
 
 .menu-page__submenu-button {
-  background-color: black;
+  background-color: white;
   padding: 0 !important;
   height: 3em;
   color: inherit;
   border: none;
   font: inherit;
   cursor: pointer;
-  margin-right: 0.5em;
+  margin-right: 1em;
   margin-top: 0.5em;
   font-size: 1em;
   outline: none;
@@ -77,6 +97,14 @@
     margin: auto;
     height: 100%;
   }
+
+  .menu-page__upper {
+    font-weight: bold;
+    position: absolute;
+    top: 1.3em;
+    right: 5.5em;
+    font-size: 1.5em;
+  }
 }
 
 @media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
@@ -92,6 +120,13 @@
     margin: auto;
     height: 100%;
     justify-content: flex-end;
+  }
+  .menu-page__upper {
+    font-weight: bold;
+    position: absolute;
+    top: 1.6em;
+    right: 4em;
+    font-size: 1.5em;
   }
 }
 
@@ -114,6 +149,13 @@
     margin: auto;
     justify-content: flex-end;
   }
+  .menu-page__upper {
+    font-weight: bold;
+    position: absolute;
+    top: 1.5em;
+    right: 4em;
+    font-size: 1.5em;
+  }
 }
 
 /*
@@ -133,6 +175,13 @@
     margin: auto;
     height: 100%;
     width: 90%;
+  }
+  .menu-page__upper {
+    font-weight: bold;
+    position: absolute;
+    top: 1.7em;
+    right: 1em;
+    font-size: 1.5em;
   }
 }
 
@@ -155,6 +204,13 @@
     margin: auto;
     justify-content: flex-end;
   }
+  .menu-page__upper {
+    font-weight: bold;
+    position: absolute;
+    top: 1.6em;
+    right: 1em;
+    font-size: 1.5em;
+  }
 }
 
 /*
@@ -168,6 +224,14 @@
     line-height: 3em;
     font-weight: 500;
     width: 95%;
+  }
+
+  .menu-page__upper {
+    font-weight: bold;
+    position: absolute;
+    top: 2em;
+    right: 1em;
+    font-size: 1.5em;
   }
 
   .menu-page__wrapper {
@@ -188,6 +252,14 @@
     line-height: 2em;
     font-weight: 300;
     width: 95%;
+  }
+
+  .menu-page__upper {
+    font-weight: bold;
+    position: absolute;
+    top: 3.5em;
+    right: 1em;
+    font-size: 1.5em;
   }
 
   .menu-page__wrapper {

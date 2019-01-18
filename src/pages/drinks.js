@@ -36,7 +36,7 @@ import {
   fruitTea,
   simpleTea,
   altayTea,
-  whiteWineBottles,
+  whiteWinesBottles,
   redWinesBottles,
   champagne,
   whiteWinesGlasses,
@@ -60,13 +60,19 @@ class DrinksPage extends React.Component {
         <Layout>
           <div className="wrapper">
             <div className="menu-page">
+              <div className="menu-page__upper">
+                \&nbsp; \&nbsp; \&nbsp; \&nbsp; \&nbsp; \&nbsp; \&nbsp; \&nbsp;
+                \&nbsp; \&nbsp; \&nbsp; \&nbsp; \&nbsp; \&nbsp; \
+              </div>
               <div className="menu-page__wrapper">
                 <span className="menu-page__submenu-title">Быстрый поиск</span>
                 <div className="menu-page__submenu">
                   <button
                     className="menu-page__submenu-button"
                     onClick={() =>
-                      this.scrollTo(document.getElementById('whiteWineBottles'))
+                      this.scrollTo(
+                        document.getElementById('whiteWinesBottles')
+                      )
                     }
                   >
                     Белые Вина в бутылках
@@ -275,17 +281,18 @@ class DrinksPage extends React.Component {
                     Кофе
                   </button>
                 </div>
+
                 <section
-                  id="whiteWineBottles"
-                  className="whiteWineBottles"
+                  id="whiteWinesBottles"
+                  className="menu-page__section"
                   ref={section => {
-                    this.whiteWineBottles = section
+                    this.whiteWinesBottles = section
                   }}
                 >
                   <span className="menu-page__section-title">
                     Вина по бутылкам белые 750 мл
                   </span>
-                  {whiteWineBottles.map(position => (
+                  {whiteWinesBottles.map(position => (
                     <ComplexMenuPosition
                       key={position.id}
                       name={position.name}
@@ -296,9 +303,9 @@ class DrinksPage extends React.Component {
                 </section>
                 <section
                   id="redWinesBottles"
-                  className="redWinesBottles"
+                  className="menu-page__section"
                   ref={section => {
-                    this.whiteWineBottles = section
+                    this.whiteWinesBottles = section
                   }}
                 >
                   <span className="menu-page__section-title">
@@ -315,7 +322,7 @@ class DrinksPage extends React.Component {
                 </section>
                 <section
                   id="champagne"
-                  className="champagne"
+                  className="menu-page__section"
                   ref={section => {
                     this.champagne = section
                   }}
@@ -333,8 +340,8 @@ class DrinksPage extends React.Component {
                   ))}
                 </section>
                 <section
-                  id="whiteWineGlasses"
-                  className="whiteWineGlasses"
+                  id="whiteWinesGlasses"
+                  className="menu-page__section"
                   ref={section => {
                     this.whiteWinesGlasses = section
                   }}
@@ -353,7 +360,7 @@ class DrinksPage extends React.Component {
                 </section>
                 <section
                   id="redWinesGlasses"
-                  className="redWinesGlasses"
+                  className="menu-page__section"
                   ref={section => {
                     this.redWinesGlasses = section
                   }}
@@ -372,7 +379,7 @@ class DrinksPage extends React.Component {
                 </section>
                 <section
                   id="whiskey"
-                  className="whiskey"
+                  className="menu-page__section"
                   ref={section => {
                     this.whiskey = section
                   }}
@@ -432,7 +439,7 @@ class DrinksPage extends React.Component {
                 </section>
                 <section
                   id="tequila"
-                  className="tequila"
+                  className="menu-page__section"
                   ref={section => {
                     this.tequila = section
                   }}
@@ -450,7 +457,7 @@ class DrinksPage extends React.Component {
                 </section>
                 <section
                   id="portoAndJerez"
-                  className="portoAndJerez"
+                  className="menu-page__section"
                   ref={section => {
                     this.portoAndJerez = section
                   }}
@@ -468,7 +475,7 @@ class DrinksPage extends React.Component {
                 </section>
                 <section
                   id="vodka"
-                  className="vodka"
+                  className="menu-page__section"
                   ref={section => {
                     this.vodka = section
                   }}
@@ -484,7 +491,7 @@ class DrinksPage extends React.Component {
                 </section>
                 <section
                   id="rumAndChacha"
-                  className="rumAndChacha"
+                  className="menu-page__section"
                   ref={section => {
                     this.rumAndChacha = section
                   }}
@@ -502,7 +509,7 @@ class DrinksPage extends React.Component {
                 </section>
                 <section
                   id="gin"
-                  className="gin"
+                  className="menu-page__section"
                   ref={section => {
                     this.gin = section
                   }}
@@ -518,7 +525,7 @@ class DrinksPage extends React.Component {
                 </section>
                 <section
                   id="brandy"
-                  className="brandy"
+                  className="menu-page__section"
                   ref={section => {
                     this.brandy = section
                   }}
@@ -536,7 +543,7 @@ class DrinksPage extends React.Component {
                 </section>
                 <section
                   id="calvados"
-                  className="calvados"
+                  className="menu-page__section"
                   ref={section => {
                     this.calvados = section
                   }}
@@ -554,7 +561,7 @@ class DrinksPage extends React.Component {
                 </section>
                 <section
                   id="grappa"
-                  className="grappa"
+                  className="menu-page__section"
                   ref={section => {
                     this.grappa = section
                   }}
@@ -570,7 +577,7 @@ class DrinksPage extends React.Component {
                 </section>
                 <section
                   id="pisko"
-                  className="pisco"
+                  className="menu-page__section"
                   ref={section => {
                     this.pisko = section
                   }}
@@ -586,7 +593,7 @@ class DrinksPage extends React.Component {
                 </section>
                 <section
                   id="aperitivo"
-                  className="aperitivo"
+                  className="menu-page__section"
                   ref={section => {
                     this.aperitivo = section
                   }}
@@ -604,7 +611,7 @@ class DrinksPage extends React.Component {
                 </section>
                 <section
                   id="vermut"
-                  className="vermut"
+                  className="menu-page__section"
                   ref={section => {
                     this.vermut = section
                   }}
@@ -620,7 +627,7 @@ class DrinksPage extends React.Component {
                 </section>
                 <section
                   id="cocktails"
-                  className="cocktails"
+                  className="menu-page__section"
                   ref={section => {
                     this.cocktails = section
                   }}
@@ -639,7 +646,7 @@ class DrinksPage extends React.Component {
                 </section>
                 <section
                   id="water"
-                  className="water"
+                  className="menu-page__section"
                   ref={section => {
                     this.water = section
                   }}
@@ -655,7 +662,7 @@ class DrinksPage extends React.Component {
                 </section>
                 <section
                   id="smoosy"
-                  className="smoosy"
+                  className="menu-page__section"
                   ref={section => {
                     this.smoosy = section
                   }}
@@ -672,7 +679,7 @@ class DrinksPage extends React.Component {
                 </section>
                 <section
                   id="limonades"
-                  className="limonades"
+                  className="menu-page__section"
                   ref={section => {
                     this.limonades = section
                   }}
@@ -690,7 +697,7 @@ class DrinksPage extends React.Component {
                 </section>
                 <section
                   id="juices"
-                  className="juicesYa"
+                  className="menu-page__section"
                   ref={section => {
                     this.juicesYa = section
                   }}
@@ -705,7 +712,7 @@ class DrinksPage extends React.Component {
                   ))}
                 </section>
                 <section
-                  className="freshJuices"
+                  className="menu-page__section"
                   ref={section => {
                     this.freshJuices = section
                   }}
@@ -723,7 +730,7 @@ class DrinksPage extends React.Component {
                 </section>
                 <section
                   id="beer"
-                  className="beer"
+                  className="menu-page__section"
                   ref={section => {
                     this.beer = section
                   }}
@@ -751,7 +758,7 @@ class DrinksPage extends React.Component {
                 </section>
                 <section
                   id="hotAlco"
-                  className="hotAlco"
+                  className="menu-page__section"
                   ref={section => {
                     this.hotAlco = section
                   }}
@@ -770,7 +777,7 @@ class DrinksPage extends React.Component {
                 </section>
                 <section
                   id="coffee"
-                  className="coffee"
+                  className="menu-page__section"
                   ref={section => {
                     this.coffee = section
                   }}
@@ -793,7 +800,7 @@ class DrinksPage extends React.Component {
                   ))}
                 </section>
                 <section
-                  className="tea"
+                  className="menu-page__section--last"
                   ref={section => {
                     this.tea = section
                   }}
@@ -826,8 +833,6 @@ class DrinksPage extends React.Component {
                       price={position.price}
                     />
                   ))}
-                  <br />
-                  <br />
                 </section>
               </div>
             </div>

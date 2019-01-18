@@ -1,4 +1,4 @@
-// starters, salads, soups, hotAndGrill, desserts, scotchWhiskeyBlend, singleMalt, irishWhiskey, americanWhiskey, japanWhiskey, tequilaAndMezkal, portoAndJerez, vodka, rumAndChacha, gin, brandy, calvados, grappa, pisco, aperitivo, vermut, **cocktails, water, **smoosy, limonades, juicesYa, freshJuices, beer, bottleBeer, **hotAlco, coffee, **coffeWithEngredients, fruitTea, simpleTea, altayTea, whiteWineBottles, redWinesBottles, champagne, whiteWinesGlasses, redWinesGlasses
+// starters, salads, soups, hotAndGrill, desserts, scotchWhiskeyBlend, singleMalt, irishWhiskey, americanWhiskey, japanWhiskey, tequilaAndMezkal, portoAndJerez, vodka, rumAndChacha, gin, brandy, calvados, grappa, pisco, aperitivo, vermut, **cocktails, water, **smoosy, limonades, juicesYa, freshJuices, beer, bottleBeer, **hotAlco, coffee, **coffeWithEngredients, fruitTea, simpleTea, altayTea, whiteWinesBottles, redWinesBottles, champagne, whiteWinesGlasses, redWinesGlasses
 
 export const starters = [
   {
@@ -970,7 +970,7 @@ export const altayTea = [
   },
 ]
 
-export const whiteWineBottles = [
+export const whiteWinesBottles = [
   {
     name: 'Cune Verdejo, Rueda',
     description: 'Spain, 2017',

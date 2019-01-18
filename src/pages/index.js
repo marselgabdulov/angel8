@@ -59,7 +59,6 @@ class IndexPage extends React.Component {
       <Layout>
         <SEO title="Angel 8 bar, grill and wine." />
         <div className="index">
-          {/* <Intro introImages={introImages} /> */}
           <section className="intro">
             <div className="intro__background" />
             <div className="intro__text">

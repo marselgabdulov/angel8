@@ -3,19 +3,23 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Footer from '../components/Footer/Footer'
 import SEO from '../components/seo'
+import { Fade } from 'react-slideshow-image'
 
 // Sections
-import Intro from './sections/Intro/Intro'
+import './sections/Intro/Intro.css'
+import '../components/ImageGallery/ImageGallery.css'
 import About from './sections/About/About'
 import Media from './sections/Media/Media'
 
 class IndexPage extends React.Component {
   render() {
-    const introImages = [
-      this.props.data.bread.childImageSharp.fluid.src,
-      this.props.data.soup.childImageSharp.fluid.src,
-      this.props.data.mix.childImageSharp.fluid.src,
-    ]
+    const fadeProperties = {
+      duration: 3500,
+      transitionDuration: 1000,
+      infinite: true,
+      indicators: false,
+      arrows: false,
+    }
 
     const instagram = [
       {
@@ -55,7 +59,77 @@ class IndexPage extends React.Component {
       <Layout>
         <SEO title="Angel 8 bar, grill and wine." />
         <div className="index">
-          <Intro introImages={introImages} />
+          {/* <Intro introImages={introImages} /> */}
+          <section className="intro">
+            <div className="intro__background" />
+            <div className="intro__text">
+              <h1 className="intro__title">
+                <span
+                  data-aos="fade"
+                  data-aos-delay="100"
+                  data-aos-duration="1200"
+                  data-aos-once="true"
+                >
+                  Эмоциональная
+                </span>
+                <br />
+                <span
+                  data-aos="fade"
+                  data-aos-delay="150"
+                  data-aos-duration="1200"
+                  data-aos-once="true"
+                >
+                  кухня
+                </span>
+                <br />
+                <span
+                  data-aos="fade"
+                  data-aos-delay="200"
+                  data-aos-duration="1200"
+                  data-aos-once="true"
+                >
+                  в Туле
+                </span>
+              </h1>
+              <span className="intro__address">
+                <span>пр-т Ленина д.85 кор. 1</span>
+              </span>
+            </div>
+
+            <div
+              className="intro__gallery"
+              data-aos="fade"
+              data-aos-delay="150"
+              data-aos-duration="1200"
+              data-aos-once="true"
+            >
+              <div className="image-gallery">
+                <Fade {...fadeProperties}>
+                  <div
+                    style={{
+                      backgroundImage: `url(${
+                        this.props.data.bread.childImageSharp.fluid.src
+                      })`,
+                    }}
+                  />
+                  <div
+                    style={{
+                      backgroundImage: `url(${
+                        this.props.data.soup.childImageSharp.fluid.src
+                      })`,
+                    }}
+                  />
+                  <div
+                    style={{
+                      backgroundImage: `url(${
+                        this.props.data.mix.childImageSharp.fluid.src
+                      })`,
+                    }}
+                  />
+                </Fade>
+              </div>
+            </div>
+          </section>
           <About bgImage={this.props.data.table.childImageSharp.fluid.src} />
           <Media instagram={instagram} />
           <Footer />

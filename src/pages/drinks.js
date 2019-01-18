@@ -65,7 +65,7 @@ class DrinksPage extends React.Component {
                 \&nbsp; \&nbsp; \&nbsp; \&nbsp; \&nbsp; \&nbsp; \
               </div>
               <div className="menu-page__wrapper">
-                <span className="menu-page__submenu-title">Быстрый поиск</span>
+                <span className="menu-page__submenu-title">БЫСТРЫЙ ПОИСК</span>
                 <div className="menu-page__submenu">
                   <button
                     className="menu-page__submenu-button"

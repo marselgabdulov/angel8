@@ -10,10 +10,16 @@
   align-items: flex-start;
   height: auto;
   margin-bottom: 10%;
+  font-size: 1.2em;
 }
 
 .about__text a {
   color: black;
+}
+
+.about__text {
+  -ms-align-self: center;
+  align-self: center;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -96,8 +102,7 @@
 
   .about__text {
     width: 40%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: auto;
     font-size: 1.2em;
     line-height: 1.8em;
   }
@@ -121,8 +126,7 @@
     width: 40%;
     font-size: 1.3em;
     line-height: 1.7em;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: auto;
   }
 }
 
@@ -164,9 +168,7 @@
 
   .about__text {
     width: 40%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 2em;
+    margin: auto;
     font-size: 1.2em;
     line-height: 1.8em;
   }

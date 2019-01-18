@@ -683,6 +683,8 @@ class DrinksPage extends React.Component {
                       price={position.price}
                     />
                   ))}
+                  <br />
+                  <br />
                 </section>
               </div>
             </div>

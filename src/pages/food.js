@@ -59,6 +59,8 @@ class FoodPage extends React.Component {
                     price={position.price}
                   />
                 ))}
+                <br />
+                <br />
               </div>
             </div>
           </div>

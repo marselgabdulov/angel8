@@ -160,7 +160,7 @@
 
 @media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
   .menu-page {
-    font-size: 0.8em;
+    font-size: 1em;
     line-height: 3em;
     font-weight: 500;
     width: 95%;

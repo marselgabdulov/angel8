@@ -31,6 +31,10 @@
   line-height: 2em;
 }
 
+.intro__address {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
 .intro__background {
   position: absolute;
   top: 65px;

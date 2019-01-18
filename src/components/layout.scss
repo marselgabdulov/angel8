@@ -5,11 +5,17 @@ $aos-distance: 20px; // It has to be above import
 
 html,
 body {
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
   background-color: #0b0b0b;
+}
 
-  // background-color: rgb(34, 64, 37);
-  // background-color: rgb(0, 24, 57);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .main-wrapper {

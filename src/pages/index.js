@@ -65,18 +65,45 @@ class IndexPage extends React.Component {
             <div className="intro__background" />
             <div className="intro__text">
               <h1 className="intro__title">
-                <span>Эмоциональная</span>
+                <span
+                  data-aos="fade"
+                  data-aos-delay="100"
+                  data-aos-duration="1200"
+                  data-aos-once="true"
+                >
+                  Эмоциональная
+                </span>
                 <br />
-                <span>кухня</span>
+                <span
+                  data-aos="fade"
+                  data-aos-delay="150"
+                  data-aos-duration="1200"
+                  data-aos-once="true"
+                >
+                  кухня
+                </span>
                 <br />
-                <span>в Туле</span>
+                <span
+                  data-aos="fade"
+                  data-aos-delay="200"
+                  data-aos-duration="1200"
+                  data-aos-once="true"
+                >
+                  в Туле
+                </span>
               </h1>
               <span className="intro__address">
                 <span>пр-т Ленина д.85 кор. 1</span>
               </span>
             </div>
 
-            <div className="intro__gallery">
+            <div
+              className="intro__gallery"
+              data-aos="fade"
+              data-aos-delay="150"
+              data-aos-duration="1200"
+              data-aos-once="true"
+            >
               <div className="image-gallery">
                 <Fade {...fadeProperties}>
                   <div
@@ -113,7 +140,13 @@ class IndexPage extends React.Component {
                 })`,
               }}
             />
-            <div className="about__text">
+            <div
+              className="about__text"
+              data-aos="fade"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+              data-aos-once="true"
+            >
               <h2>О нас</h2>
               <p>
                 Мы находимся на территории торгово-делового квартала&nbsp;

@@ -1,152 +1,373 @@
+/* Main */
+
 .contacts-page {
   position: fixed;
+  margin-top: 65px;
   color: white;
-  top: 70px;
-  left: 0;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   width: 100%;
-  height: 100%;
-  font-size: 1.2em;
-  line-height: 2em;
-  z-index: 200;
-}
-
-.contacts-page__info {
-  width: 40%;
-  height: auto;
-  -ms-align-self: flex-start;
-  align-self: flex-start;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-left: 10em;
-  margin-bottom: 2em;
-}
-
-.contacts-page__social {
-  width: 100px;
-  display: flex;
-  justify-content: space-between;
+  height: calc(100vh - 65px);
 }
 
 .contacts-page a {
   color: white;
 }
 
-.contacts-page a:hover {
-  cursor: pointer;
-  opacity: 0.5;
+.contacts-page__title {
+  position: absolute;
 }
 
-.contacts-page__map {
-  width: 45%;
-  height: auto;
-  background-size: cover;
-  opacity: 0.9;
-  border: none;
+.contacts-page__info {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'address  maps'
+    'phone  working-time'
+    'social .';
 }
 
-/*
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-@media (min-width: 1281px) {
+.contacts-page__address,
+.contacts-page__phone,
+.contacts-page__maps,
+.contacts-page__working-time {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 10%;
 }
 
-@media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .contacts-page__map {
-    width: 45%;
+.contacts-page__social {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 20%;
+  margin-left: 10%;
+  justify-content: space-between;
+  grid-area: social;
+}
+
+.contacts-page__address {
+  grid-area: address;
+}
+
+.contacts-page__phone {
+  grid-area: phone;
+}
+
+.contacts-page__maps {
+  grid-area: maps;
+}
+
+.contacts-page__working-time {
+  grid-area: working-time;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) and (orientation: portrait) {
+  .contacts-page {
+    position: relative;
+  }
+  .contacts-page__title {
+    top: 0%;
+    left: 5%;
+    font-size: 1.2em;
   }
 
   .contacts-page__info {
-    margin-left: 4em;
-  }
-}
-
-/*
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-}
-
-/*
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .contacts-page {
-    line-height: 1.8em;
-  }
-  .contacts-page__map {
-    display: none;
+    font-size: 1.4em;
+    width: 90%;
+    height: 100%;
+    margin-left: 1%;
+    margin-top: 30%;
+    margin-bottom: 1em;
+    grid-row-gap: 2em;
+    grid-template-areas:
+      'address'
+      'phone'
+      'maps'
+      'working-time'
+      'social';
   }
 
-  .contacts-page__info {
-    margin-left: 1em;
+  .contacts-page__address,
+  .contacts-page__phone,
+  .contacts-page__maps,
+  .contacts-page__working-time {
+    width: 90vw;
   }
-}
 
-/*
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .contacts-page {
-    line-height: 1.8em;
-    position: absolute !important;
-  }
-  .contacts-page__map {
+  .contacts-page__social {
     width: 50%;
-  }
-
-  .contacts-page__info {
-    margin-left: 4em;
+    margin-bottom: 2em;
   }
 }
 
-/*
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+/* Extra small devices (landscape phones, less than 576px) */
+@media (max-width: 575.98px) and (orientation: landscape) {
   .contacts-page {
-    position: absolute !important;
+    position: relative;
   }
-  .contacts-page__map {
-    display: none;
+  .contacts-page__title {
+    top: 0%;
+    left: 5%;
+    font-size: 1.2em;
   }
 
   .contacts-page__info {
+    font-size: 1.4em;
     width: 90%;
-    margin-left: 10em;
+    height: 100%;
+    margin-left: 1%;
+    margin-top: 15%;
+    margin-bottom: 1em;
+    grid-row-gap: 2em;
+    grid-template-areas:
+      'address'
+      'phone'
+      'maps'
+      'working-time'
+      'social';
+  }
+
+  .contacts-page__address,
+  .contacts-page__phone,
+  .contacts-page__maps,
+  .contacts-page__working-time {
+    width: 90vw;
+  }
+
+  .contacts-page__social {
+    width: 50%;
+    margin-bottom: 2em;
   }
 }
 
-/*
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
-@media (min-width: 320px) and (max-width: 480px) {
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) and (orientation: landscape) {
   .contacts-page {
-    position: absolute !important;
+    position: relative;
   }
-  .contacts-page__map {
-    display: none;
+  .contacts-page__title {
+    top: 0%;
+    left: 5%;
+    font-size: 1.2em;
   }
 
   .contacts-page__info {
+    font-size: 1.4em;
     width: 90%;
-    margin-left: 1em;
+    height: 100%;
+    margin-left: 1%;
+    margin-top: 15%;
+    margin-bottom: 1em;
+    grid-row-gap: 2em;
+    grid-template-areas:
+      'address'
+      'phone'
+      'maps'
+      'working-time'
+      'social';
+  }
+
+  .contacts-page__address,
+  .contacts-page__phone,
+  .contacts-page__maps,
+  .contacts-page__working-time {
+    width: 90vw;
+  }
+
+  .contacts-page__social {
+    width: 50%;
+    margin-bottom: 2em;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .contacts-page {
+    position: relative;
+  }
+  .contacts-page__title {
+    top: 1%;
+    left: 5%;
+    font-size: 1.5em;
+  }
+
+  .contacts-page__info {
+    font-size: 1.4em;
+    width: 100%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 20%;
+    grid-row-gap: 2em;
+  }
+
+  .contacts-page__address,
+  .contacts-page__phone,
+  .contacts-page__maps,
+  .contacts-page__working-time {
+    margin-left: 0%;
+  }
+
+  .contacts-page__social {
+    width: 30%;
+    margin-left: 0%;
+    margin-bottom: 2em;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .contacts-page__title {
+    left: 5%;
+    font-size: 1.5em;
+  }
+
+  .contacts-page__info {
+    font-size: 1.4em;
+    width: 80%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 15%;
+    grid-row-gap: 1em;
+  }
+
+  .contacts-page__address,
+  .contacts-page__phone,
+  .contacts-page__maps,
+  .contacts-page__working-time {
+    margin-left: 0%;
+  }
+
+  .contacts-page__social {
+    width: 20%;
+    margin-left: 0%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and 1439px) */
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .contacts-page__title {
+    top: 12%;
+    left: 10%;
+    font-size: 1.4em;
+  }
+
+  .contacts-page__info {
+    font-size: 1.4em;
+    width: 60%;
+    height: 70%;
+    margin-left: 35%;
+    margin-top: 10%;
+  }
+
+  .contacts-page__address,
+  .contacts-page__phone,
+  .contacts-page__maps,
+  .contacts-page__working-time {
+    margin-left: 10%;
+  }
+
+  .contacts-page__social {
+    width: 20%;
+    margin-left: 10%;
+  }
+}
+
+/* Extra large devices (large desktops, 1440px and up) */
+@media (min-width: 1441px) {
+  .contacts-page__title {
+    top: 15%;
+    left: 10%;
+    font-size: 2em;
+  }
+
+  .contacts-page__info {
+    font-size: 1.4em;
+    width: 60%;
+    height: 50%;
+    margin-left: 35%;
+    margin-top: 10%;
+  }
+
+  .contacts-page__address,
+  .contacts-page__phone,
+  .contacts-page__maps,
+  .contacts-page__working-time {
+    margin-left: 10%;
+  }
+
+  .contacts-page__social {
+    width: 20%;
+    margin-left: 10%;
+  }
+}
+
+/* iPad Pro Portrait */
+@media only screen and (device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (device-width: 1024px) and (orientation: portrait) and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (device-width: 1024px) and (orientation: portrait) and (min__moz-device-pixel-ratio: 1.5),
+  only screen and (device-width: 1024px) and (orientation: portrait) and (min-device-pixel-ratio: 1.5) {
+  .contacts-page__title {
+    top: 0;
+    left: 5%;
+    font-size: 1.6em;
+  }
+
+  .contacts-page__info {
+    font-size: 1.4em;
+    width: 80%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 20%;
+  }
+
+  .contacts-page__address,
+  .contacts-page__phone,
+  .contacts-page__maps,
+  .contacts-page__working-time {
+    margin-left: 0%;
+  }
+
+  .contacts-page__social {
+    width: 20%;
+    margin-left: 0%;
+  }
+}
+
+/* iPad Pro Landscape */
+@media only screen and (device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (device-width: 1366px) and (orientation: landscape) and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (device-width: 1366px) and (orientation: landscape) and (min__moz-device-pixel-ratio: 1.5),
+  only screen and (device-width: 1366px) and (orientation: landscape) and (min-device-pixel-ratio: 1.5) {
+  .contacts-page__title {
+    top: 9%;
+    left: 5%;
+    font-size: 1.8em;
+  }
+  .contacts-page__info {
+    font-size: 1.4em;
+    width: 60%;
+    height: auto;
+    margin-left: 35%;
+    margin-top: 10%;
+  }
+
+  .contacts-page__address,
+  .contacts-page__phone,
+  .contacts-page__maps,
+  .contacts-page__working-time {
+    margin-left: 10%;
+  }
+
+  .contacts-page__social {
+    width: 20%;
+    margin-left: 10%;
   }
 }

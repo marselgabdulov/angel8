@@ -1,19 +1,15 @@
 import React from 'react'
-import AOS from 'aos'
 import Header from './Header/Header'
 import NavPannel from './NavPannel/NavPannel'
 import NavButton from './NavButton/NavButton'
 import ArrowUp from './ArrowUp/ArrowUp'
 import Grid from './Grid/Grid'
 
-import './layout.scss'
+import './layout.css'
 
 class Layout extends React.Component {
   state = {
     navIsOpen: false,
-  }
-  componentDidMount() {
-    AOS.init()
   }
   handleClick = () => {
     this.setState({ navIsOpen: !this.state.navIsOpen })

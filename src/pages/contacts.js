@@ -5,22 +5,10 @@ import './contactsPage.css'
 const ContactsPage = props => (
   <Layout>
     <div className="contacts-page">
-      <div
-        className="contacts-page__title"
-        data-aos="fade"
-        data-aos-delay="100"
-        data-aos-duration="1200"
-        data-aos-once="true"
-      >
+      <div className="contacts-page__title">
         <h1>Контакты</h1>
       </div>
-      <div
-        className="contacts-page__info"
-        data-aos="fade"
-        data-aos-delay="150"
-        data-aos-duration="1200"
-        data-aos-once="true"
-      >
+      <div className="contacts-page__info">
         <div className="contacts-page__address">
           <span>г. Тула</span>
           <br />

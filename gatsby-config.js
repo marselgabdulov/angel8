@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/angel8',
   siteMetadata: {
     title: `Эмоциональная кухня в Туле. Паназиатская
       кухня и блюда на гриле.`,
@@ -36,8 +37,6 @@ module.exports = {
         fonts: [
           `Montserrat+Alternates`,
           `source sans pro\:400,500,600,700`, // you can also specify font weights and styles,
-          // `IBM+Plex+Mono`,
-          // `source monospace\:400,500,600,700`,
           `Varela+Round`,
           `source sans-serif\:400,500,600,700`,
         ],

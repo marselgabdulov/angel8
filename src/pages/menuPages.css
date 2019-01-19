@@ -38,7 +38,6 @@
 
 .menu-page__submenu-title {
   font-weight: bold;
-  text-decoration: underline;
 }
 
 .menu-page__submenu-button {
@@ -55,15 +54,15 @@
   font-size: 1em;
   outline: none;
   text-transform: uppercase;
+  text-decoration: underline;
 }
 
 .menu-page__submenu-button:hover {
-  text-decoration: underline;
+  color: orange;
 }
 
 .menu-page__section-title {
   font-weight: bold;
-  text-decoration: underline;
   text-transform: uppercase;
 }
 

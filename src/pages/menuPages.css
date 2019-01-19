@@ -38,15 +38,17 @@
 
 .menu-page__submenu-title {
   font-weight: bold;
+  text-decoration: underline;
 }
 
 .menu-page__submenu-button {
   background-color: white;
   padding: 0 !important;
   height: 3em;
-  color: inherit;
+  color: rgb(55, 53, 53);
   border: none;
   font: inherit;
+  font-weight: bold;
   cursor: pointer;
   margin-right: 1em;
   margin-top: 0.5em;

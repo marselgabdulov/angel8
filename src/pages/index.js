@@ -1,5 +1,4 @@
 import React from 'react'
-import { graphql } from 'gatsby'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import SEO from '../components/seo'
 import { Fade } from 'react-slideshow-image'
@@ -12,6 +11,21 @@ import './index.css'
 import './indexSectionsStyles/Intro.css'
 import './indexSectionsStyles/About.css'
 import './indexSectionsStyles/Media.css'
+
+// Images
+import galleryImageOne from '../images/intro/bread.jpg'
+import galleryImageTwo from '../images/intro/mix.jpg'
+import galleryImageThree from '../images/intro/soup.jpg'
+import aboutImage from '../images/about/table.jpg'
+
+import instLogo from '../images/instagram/logo.jpg'
+import command from '../images/instagram/command.jpg'
+import bottles from '../images/instagram/bottles.jpg'
+import juice from '../images/instagram/juice.jpg'
+import last from '../images/instagram/last.jpg'
+import david from '../images/instagram/david.jpg'
+import asianFood from '../images/instagram/asian_food.jpg'
+import bread from '../images/instagram/bread.jpg'
 
 class IndexPage extends React.Component {
   render() {
@@ -26,35 +40,35 @@ class IndexPage extends React.Component {
     const instagram = [
       {
         url: 'https://www.instagram.com/angel_bar_grill/?hl=ru',
-        img: this.props.data.logo_inst.childImageSharp.fluid.src,
+        img: instLogo,
       },
       {
         url: 'https://www.instagram.com/p/Br-JhtlHC59/',
-        img: this.props.data.command.childImageSharp.fluid.src,
+        img: command,
       },
       {
         url: 'https://www.instagram.com/p/BsPx-oonHGk/',
-        img: this.props.data.bottles.childImageSharp.fluid.src,
+        img: bottles,
       },
       {
         url: 'https://www.instagram.com/p/BsNY__mntMs/',
-        img: this.props.data.juice.childImageSharp.fluid.src,
+        img: juice,
       },
       {
         url: 'https://www.instagram.com/p/BsZ3AsRnAay/',
-        img: this.props.data.last.childImageSharp.fluid.src,
+        img: last,
       },
       {
         url: 'https://www.instagram.com/p/BrOGbVbFugw/',
-        img: this.props.data.david.childImageSharp.fluid.src,
+        img: david,
       },
       {
         url: 'https://www.instagram.com/p/Br4_77CHxnP/',
-        img: this.props.data.asian_food.childImageSharp.fluid.src,
+        img: asianFood,
       },
       {
         url: 'https://www.instagram.com/p/BssD9J4nQQB/',
-        img: this.props.data.bread_inst.childImageSharp.fluid.src,
+        img: bread,
       },
     ]
     return (
@@ -108,23 +122,17 @@ class IndexPage extends React.Component {
                 <Fade {...fadeProperties}>
                   <div
                     style={{
-                      backgroundImage: `url(${
-                        this.props.data.bread.childImageSharp.fluid.src
-                      })`,
+                      backgroundImage: `url(${galleryImageOne})`,
                     }}
                   />
                   <div
                     style={{
-                      backgroundImage: `url(${
-                        this.props.data.soup.childImageSharp.fluid.src
-                      })`,
+                      backgroundImage: `url(${galleryImageTwo})`,
                     }}
                   />
                   <div
                     style={{
-                      backgroundImage: `url(${
-                        this.props.data.mix.childImageSharp.fluid.src
-                      })`,
+                      backgroundImage: `url(${galleryImageThree})`,
                     }}
                   />
                 </Fade>
@@ -135,9 +143,7 @@ class IndexPage extends React.Component {
             <div
               className="about__image"
               style={{
-                backgroundImage: `url(${
-                  this.props.data.table.childImageSharp.fluid.src
-                })`,
+                backgroundImage: `url(${aboutImage})`,
               }}
             />
             <div
@@ -187,56 +193,5 @@ class IndexPage extends React.Component {
     )
   }
 }
-
-export const fluidImage = graphql`
-  fragment fluidImage on File {
-    childImageSharp {
-      fluid(maxWidth: 900) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-`
-
-export const pageQuery = graphql`
-  query {
-    bread: file(relativePath: { eq: "intro/bread.jpg" }) {
-      ...fluidImage
-    }
-    mix: file(relativePath: { eq: "intro/mix.jpg" }) {
-      ...fluidImage
-    }
-    soup: file(relativePath: { eq: "intro/soup.jpg" }) {
-      ...fluidImage
-    }
-    table: file(relativePath: { eq: "description/table.jpg" }) {
-      ...fluidImage
-    }
-    logo_inst: file(relativePath: { eq: "instagram/logo.jpg" }) {
-      ...fluidImage
-    }
-    command: file(relativePath: { eq: "instagram/command.jpg" }) {
-      ...fluidImage
-    }
-    bottles: file(relativePath: { eq: "instagram/bottles.jpg" }) {
-      ...fluidImage
-    }
-    david: file(relativePath: { eq: "instagram/david.jpg" }) {
-      ...fluidImage
-    }
-    juice: file(relativePath: { eq: "instagram/juice.jpg" }) {
-      ...fluidImage
-    }
-    last: file(relativePath: { eq: "instagram/last.jpg" }) {
-      ...fluidImage
-    }
-    asian_food: file(relativePath: { eq: "instagram/asian_food.jpg" }) {
-      ...fluidImage
-    }
-    bread_inst: file(relativePath: { eq: "instagram/bread.jpg" }) {
-      ...fluidImage
-    }
-  }
-`
 
 export default IndexPage

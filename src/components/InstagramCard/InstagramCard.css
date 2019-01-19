@@ -34,8 +34,8 @@
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .instagram-card {
-    width: calc(33% - 6px);
-    height: 60vh;
+    width: calc(50% - 6px);
+    height: 90vh;
   }
 }
 
@@ -60,6 +60,17 @@
   .instagram-card {
     width: calc(25% - 6px);
     height: 38vh;
+  }
+}
+
+/* iPad  Portrait */
+@media only screen and (device-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (device-width: 768px) and (orientation: portrait) and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (device-width: 768px) and (orientation: portrait) and (min__moz-device-pixel-ratio: 1.5),
+  only screen and (device-width: 768px) and (orientation: portrait) and (min-device-pixel-ratio: 1.5) {
+  .instagram-card {
+    width: calc(33% - 6px);
+    height: 22vh;
   }
 }
 

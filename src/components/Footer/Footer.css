@@ -47,20 +47,27 @@
 }
 
 .footer__working-time {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: right;
   grid-area: working-time;
   justify-self: end;
-  align-self: center;
   line-height: 2em;
 }
 .footer__social {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  justify-content: space-between;
-  grid-area: social;
-  width: 100px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  line-height: 2em;
   justify-self: end;
-  align-self: center;
+  grid-area: social;
 }
 .footer__author {
   grid-area: author;
@@ -120,21 +127,21 @@
   .footer__working-time {
     justify-self: start;
   }
-  .footer__logo {
+  .footer__working-time {
+    text-align: left;
   }
 }
 
 /* max-width 640px, mobile-only styles, orientation: landscape */
 @media only screen and (max-width: 40em) and (orientation: landscape) {
   .footer {
-    height: 80vh;
-    line-height: 0.5em;
+    height: auto;
+    line-height: 1em;
     font-size: 0.8em;
   }
   .footer__wrapper {
     width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 5%;
   }
 
   .footer__logo {
@@ -161,12 +168,27 @@
 /* min-width 641px and max-width 1024px, orientation: landscape */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) and (orientation: landscape) {
   .footer {
-    height: 50vh;
-    line-height: 4em;
+    line-height: 3em;
   }
   .footer__wrapper {
     width: 90%;
-    margin: 1em 5%;
+    margin: 5%;
+    -ms-align-self: center;
+    align-self: center;
+  }
+}
+
+/* iPad Pro Portrait */
+@media only screen and (device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (device-width: 1024px) and (orientation: portrait) and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (device-width: 1024px) and (orientation: portrait) and (min__moz-device-pixel-ratio: 1.5),
+  only screen and (device-width: 1024px) and (orientation: portrait) and (min-device-pixel-ratio: 1.5) {
+  .footer {
+    height: 30vh;
+    line-height: 5em;
+  }
+  .footer__wrapper {
+    width: 90%;
     -ms-align-self: center;
     align-self: center;
   }
@@ -178,12 +200,12 @@
 /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
   .footer {
-    height: 50vh;
     line-height: 5em;
   }
   .footer__wrapper {
+    height: auto;
+    margin: 3% 10%;
     width: 80%;
-    margin: 1em 10%;
     -ms-align-self: center;
     align-self: center;
   }
@@ -199,7 +221,7 @@
   }
   .footer__wrapper {
     width: 80%;
-    margin: 1em 10%;
+    margin: 3% 10%;
     -ms-align-self: center;
     align-self: center;
   }
@@ -214,7 +236,7 @@
   }
   .footer__wrapper {
     width: 80%;
-    margin: 1em 10%;
+    margin: 2% 10%;
     -ms-align-self: center;
     align-self: center;
   }

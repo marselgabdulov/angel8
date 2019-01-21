@@ -40,27 +40,29 @@ const Footer = () => (
         </AniLink>
       </div>
       <div className="footer__working-time">
-        пн-чт/12:00-24:00/
-        <br />
-        пт-сб/12:00-02:00/
-        <br />
-        вс/12:00-24:00/
+        <span>пн-чт/12:00-24:00/</span>
+        <span>пт-сб/12:00-02:00/</span>
+        <span>вс/12:00-24:00/</span>
       </div>
       <div className="footer__social">
-        <a
-          href="https://www.facebook.com/Angel-8-2123834887946466/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Fb
-        </a>
-        <a
-          href="https://www.instagram.com/angel_bar_grill/?hl=ru"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Ins
-        </a>
+        <span>
+          <a
+            href="https://www.facebook.com/Angel-8-2123834887946466/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Facebook
+          </a>
+        </span>
+        <span>
+          <a
+            href="https://www.instagram.com/angel_bar_grill/?hl=ru"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
+          </a>
+        </span>
       </div>
       <div className="footer__author">MG</div>
       <div className="footer__copy">&copy; 2019</div>

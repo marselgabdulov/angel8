@@ -32,7 +32,8 @@
 .contacts-page__address,
 .contacts-page__phone,
 .contacts-page__maps,
-.contacts-page__working-time {
+.contacts-page__working-time,
+.contacts-page__social {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -43,12 +44,6 @@
 }
 
 .contacts-page__social {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  width: 20%;
-  margin-left: 10%;
-  justify-content: space-between;
   grid-area: social;
 }
 

@@ -81,7 +81,7 @@ const ContactsPage = props => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            Fb
+            Facebook
           </a>
           <br />
           <a
@@ -89,7 +89,7 @@ const ContactsPage = props => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            Ins
+            Instagram
           </a>
         </div>
       </div>

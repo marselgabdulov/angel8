@@ -1,4 +1,4 @@
-/* Main */
+/*-----MAIN-----*/
 .grid {
   position: fixed;
   top: 0;
@@ -50,11 +50,16 @@
   background-color: transparent;
 }
 
-/*
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-@media (min-width: 1281px) {
+/* Small screens - MOBILE */
+
+/* max-width 640px, mobile-only styles, orientation: portrait */
+@media only screen and (max-width: 40em) and (orientation: portrait) {
+  .grid__vline-one {
+    left: 50%;
+  }
+  .grid__vline-two {
+    display: none;
+  }
   .grid__eight-circle-one {
     width: 50%;
     height: 0;
@@ -76,150 +81,15 @@
   }
 
   .grid__eight {
-    top: 19.5%;
-    left: 18%;
-    width: 30%;
-    height: 70%;
-  }
-}
-
-@media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .grid__eight-circle-one {
+    top: 35.5%;
+    left: 25%;
     width: 50%;
-    height: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    padding-bottom: 50%;
-  }
-
-  .grid__eight-circle-two {
-    width: 60%;
-    height: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    padding-bottom: 60%;
-  }
-
-  .grid__eight {
-    top: 30%;
-    left: 18%;
-    width: 30%;
     height: 70%;
   }
 }
 
-/*
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  .grid__eight-circle-one {
-    width: 50%;
-    height: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    padding-bottom: 50%;
-  }
-
-  .grid__eight-circle-two {
-    width: 60%;
-    height: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    padding-bottom: 60%;
-  }
-
-  .grid__eight {
-    top: 18%;
-    left: 13%;
-    width: 40%;
-    height: 70%;
-  }
-}
-
-/*
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .grid__eight-circle-one {
-    width: 50%;
-    height: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    padding-bottom: 50%;
-  }
-
-  .grid__eight-circle-two {
-    width: 60%;
-    height: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    padding-bottom: 60%;
-  }
-
-  .grid__eight {
-    top: 35%;
-    left: 13%;
-    width: 40%;
-    height: 70%;
-  }
-}
-
-/*
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .grid__eight-circle-one {
-    width: 50%;
-    height: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    padding-bottom: 50%;
-  }
-
-  .grid__eight-circle-two {
-    width: 60%;
-    height: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    padding-bottom: 60%;
-  }
-
-  .grid__eight {
-    top: 30%;
-    left: 18%;
-    width: 30%;
-    height: 70%;
-  }
-}
-
-/*
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+/* max-width 640px, mobile-only styles, orientation: landscape */
+@media only screen and (max-width: 40em) and (orientation: landscape) {
   .grid__vline-one {
     left: 50%;
   }
@@ -254,18 +124,46 @@
   }
 }
 
-/*
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
+/* Medium screens - TABLET */
 
-@media (min-width: 320px) and (max-width: 480px) {
+/* min-width 641px and max-width 1024px, orientation: portrait */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) and (orientation: portrait) {
   .grid__vline-one {
     left: 50%;
   }
   .grid__vline-two {
     display: none;
   }
+  .grid__eight-circle-one {
+    width: 80%;
+    height: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-bottom: 80%;
+  }
+
+  .grid__eight-circle-two {
+    width: 90%;
+    height: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-bottom: 90%;
+  }
+
+  .grid__eight {
+    top: 20%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+  }
+}
+
+/* min-width 641px and max-width 1024px, orientation: landscape */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) and (orientation: landscape) {
   .grid__eight-circle-one {
     width: 50%;
     height: 0;
@@ -287,9 +185,105 @@
   }
 
   .grid__eight {
-    top: 35.5%;
-    left: 25%;
+    top: 23%;
+    left: 13%;
+    width: 40%;
+    height: 70%;
+  }
+}
+
+/* Large screens - DESKTOP */
+/* min-width 1025px, large screens */
+
+/* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+  .grid__eight-circle-one {
     width: 50%;
+    height: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-bottom: 50%;
+  }
+
+  .grid__eight-circle-two {
+    width: 60%;
+    height: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-bottom: 60%;
+  }
+
+  .grid__eight {
+    top: 18%;
+    left: 13%;
+    width: 40%;
+    height: 70%;
+  }
+}
+
+/* XLarge screens */
+
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {
+  .grid__eight-circle-one {
+    width: 50%;
+    height: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-bottom: 50%;
+  }
+
+  .grid__eight-circle-two {
+    width: 60%;
+    height: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-bottom: 60%;
+  }
+
+  .grid__eight {
+    top: 9.5%;
+    left: 13%;
+    width: 40%;
+    height: 70%;
+  }
+}
+
+/* XXLarge screens */
+/* min-width 1921px, xlarge screens */
+@media only screen and (min-width: 120.063em) {
+  .grid__eight-circle-one {
+    width: 50%;
+    height: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-bottom: 50%;
+  }
+
+  .grid__eight-circle-two {
+    width: 60%;
+    height: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-bottom: 60%;
+  }
+
+  .grid__eight {
+    top: 9.5%;
+    left: 13%;
+    width: 40%;
     height: 70%;
   }
 }

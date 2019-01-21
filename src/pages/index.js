@@ -107,7 +107,7 @@ class IndexPage extends React.Component {
     return (
       <Layout>
         <SEO title="Angel 8 bar, grill and wine." />
-        <div className="index">
+        {/* <div className="index">
           <section className="intro">
             <div className="intro__background" />
             <div className="intro__text">
@@ -221,7 +221,7 @@ class IndexPage extends React.Component {
             </section>
           </>
           <Footer />
-        </div>
+        </div> */}
       </Layout>
     )
   }

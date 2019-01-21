@@ -1,4 +1,4 @@
-/* Main */
+/*-----MAIN-----*/
 .about {
   margin: auto;
   display: -webkit-flex;
@@ -10,7 +10,11 @@
   align-items: flex-start;
   height: auto;
   margin-bottom: 10%;
-  font-size: 1.2em;
+}
+
+.about__image {
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 .about__text a {
@@ -21,155 +25,163 @@
   -ms-align-self: center;
   align-self: center;
 }
+/* Small screens - MOBILE */
 
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
+/* max-width 640px, mobile-only styles, orientation: portrait */
+@media only screen and (max-width: 40em) and (orientation: portrait) {
   .about {
-    width: 90%;
+    width: calc(100% - 2em);
+  }
+
+  .about__image {
+    display: none;
   }
 
   .about__text {
-    width: 94%;
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-bottom: 3%;
-    font-size: 1em;
-    line-height: 1.5em;
+    margin: 1em;
   }
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
+/* max-width 640px, mobile-only styles, orientation: landscape */
+@media only screen and (max-width: 40em) and (orientation: landscape) {
   .about {
     width: 90%;
   }
 
+  .about__image {
+    display: none;
+  }
+
   .about__text {
-    width: 94%;
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-bottom: 3%;
-    font-size: 1em;
-    line-height: 1.5em;
+    margin: 1em;
   }
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
+/* Medium screens - TABLET */
+
+/* min-width 641px and max-width 1024px, orientation: portrait */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) and (orientation: portrait) {
   .about {
     width: 90%;
   }
 
+  .about__image {
+    display: none;
+  }
+
   .about__text {
-    width: 94%;
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-bottom: 3%;
+    margin: 1em;
     font-size: 1.2em;
-    line-height: 1.8em;
   }
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
+/* min-width 641px and max-width 900px, orientation: landscape */
+@media only screen and (min-width: 40.063em) and (max-width: 56em) and (orientation: landscape) {
+  .about {
+    width: 90%;
+
+    height: 80vh;
+  }
+
+  .about__image {
+    width: 48%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .about__text {
+    width: 50%;
+    margin: 1em;
+    font-size: 1em;
+  }
+}
+
+/* min-width 901px and max-width 1024px, orientation: landscape */
+@media only screen and (min-width: 56.063em) and (max-width: 64em) and (orientation: landscape) {
   .about {
     width: 90%;
   }
 
+  .about__image {
+    width: 48%;
+    height: 50vh;
+    margin: 0;
+    overflow: hidden;
+  }
+
   .about__text {
-    width: 94%;
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-bottom: 3%;
+    width: 50%;
+    margin: 1em;
     font-size: 1.2em;
-    line-height: 1.8em;
   }
 }
 
-/* Extra large devices (large desktops, 1200px and 1439px) */
-@media (min-width: 1200px) and (max-width: 1440px) {
+/* Large screens - DESKTOP */
+/* min-width 1025px, large screens */
+
+/* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
   .about {
     width: 80%;
-    height: auto;
+    height: 50vh;
   }
 
   .about__image {
-    -webkit-background-size: cover;
-    background-size: cover;
     width: 50%;
-    height: 70vh;
+    height: 50vh;
+    margin: 0;
+    overflow: hidden;
   }
 
   .about__text {
-    width: 40%;
-    margin: auto;
+    width: 50%;
+    margin: 1em;
     font-size: 1.2em;
-    line-height: 1.8em;
   }
 }
 
-/* Extra large devices (large desktops, 1440px and up) */
-@media (min-width: 1441px) {
+/* XLarge screens */
+
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {
   .about {
     width: 80%;
-    height: auto;
+    height: 50vh;
   }
 
   .about__image {
-    -webkit-background-size: cover;
-    background-size: cover;
     width: 50%;
-    height: 70vh;
+    height: 50vh;
+    margin: 0;
+    overflow: hidden;
   }
 
   .about__text {
-    width: 40%;
-    font-size: 1.3em;
-    line-height: 1.7em;
-    margin: auto;
-  }
-}
-
-/* iPad Pro Portrait */
-@media only screen and (device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (device-width: 1024px) and (orientation: portrait) and (-o-min-device-pixel-ratio: 3/2),
-  only screen and (device-width: 1024px) and (orientation: portrait) and (min__moz-device-pixel-ratio: 1.5),
-  only screen and (device-width: 1024px) and (orientation: portrait) and (min-device-pixel-ratio: 1.5) {
-  .about {
-    width: 90%;
-  }
-
-  .about__text {
-    width: 94%;
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-bottom: 3%;
+    width: 50%;
+    margin: 1em;
     font-size: 1.2em;
-    line-height: 1.8em;
   }
 }
 
-/* iPad Pro Landscape */
-@media only screen and (device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (device-width: 1366px) and (orientation: landscape) and (-o-min-device-pixel-ratio: 3/2),
-  only screen and (device-width: 1366px) and (orientation: landscape) and (min__moz-device-pixel-ratio: 1.5),
-  only screen and (device-width: 1366px) and (orientation: landscape) and (min-device-pixel-ratio: 1.5) {
+/* XXLarge screens */
+/* min-width 1921px, xlarge screens */
+@media only screen and (min-width: 120.063em) {
   .about {
-    width: 90%;
-    height: auto;
+    width: 80%;
+    height: 50vh;
   }
 
   .about__image {
-    -webkit-background-size: cover;
-    background-size: cover;
-    width: 55%;
-    height: 70vh;
+    width: 50%;
+    height: 50vh;
+    margin: 0;
+    overflow: hidden;
   }
 
   .about__text {
-    width: 40%;
-    margin: auto;
+    width: 50%;
+    margin: 1em;
     font-size: 1.2em;
-    line-height: 1.8em;
   }
 }

@@ -1,4 +1,4 @@
-/* Main */
+/*-----MAIN-----*/
 
 .contacts-page {
   position: fixed;
@@ -67,9 +67,10 @@
 .contacts-page__working-time {
   grid-area: working-time;
 }
+/* Small screens - MOBILE */
 
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) and (orientation: portrait) {
+/* max-width 640px, mobile-only styles, orientation: portrait */
+@media only screen and (max-width: 40em) and (orientation: portrait) {
   .contacts-page {
     position: relative;
   }
@@ -80,7 +81,7 @@
   }
 
   .contacts-page__info {
-    font-size: 1.4em;
+    font-size: 1.2em;
     width: 90%;
     height: 100%;
     margin-left: 1%;
@@ -108,8 +109,8 @@
   }
 }
 
-/* Extra small devices (landscape phones, less than 576px) */
-@media (max-width: 575.98px) and (orientation: landscape) {
+/* max-width 640px, mobile-only styles, orientation: landscape */
+@media only screen and (max-width: 40em) and (orientation: landscape) {
   .contacts-page {
     position: relative;
   }
@@ -120,7 +121,7 @@
   }
 
   .contacts-page__info {
-    font-size: 1.4em;
+    font-size: 1.2em;
     width: 90%;
     height: 100%;
     margin-left: 1%;
@@ -148,48 +149,10 @@
   }
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) and (orientation: landscape) {
-  .contacts-page {
-    position: relative;
-  }
-  .contacts-page__title {
-    top: 0%;
-    left: 5%;
-    font-size: 1.2em;
-  }
+/* Medium screens - TABLET */
 
-  .contacts-page__info {
-    font-size: 1.4em;
-    width: 90%;
-    height: 100%;
-    margin-left: 1%;
-    margin-top: 15%;
-    margin-bottom: 1em;
-    grid-row-gap: 2em;
-    grid-template-areas:
-      'address'
-      'phone'
-      'maps'
-      'working-time'
-      'social';
-  }
-
-  .contacts-page__address,
-  .contacts-page__phone,
-  .contacts-page__maps,
-  .contacts-page__working-time {
-    width: 90vw;
-  }
-
-  .contacts-page__social {
-    width: 50%;
-    margin-bottom: 2em;
-  }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
+/* min-width 641px and max-width 1024px, orientation: portrait */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) and (orientation: portrait) {
   .contacts-page {
     position: relative;
   }
@@ -200,9 +163,9 @@
   }
 
   .contacts-page__info {
-    font-size: 1.4em;
+    font-size: 1.2em;
     width: 100%;
-    height: auto;
+    height: 70%;
     margin-left: 5%;
     margin-top: 20%;
     grid-row-gap: 2em;
@@ -222,20 +185,26 @@
   }
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
+/* min-width 641px and max-width 900px, orientation: landscape */
+@media only screen and (min-width: 40.063em) and (max-width: 56em) and (orientation: landscape) {
+  .contacts-page {
+    position: relative;
+  }
   .contacts-page__title {
-    left: 5%;
-    font-size: 1.5em;
+    display: none;
   }
 
   .contacts-page__info {
-    font-size: 1.4em;
-    width: 80%;
-    height: auto;
+    font-size: 1.1em;
+    width: 100%;
+    height: 70%;
     margin-left: 5%;
-    margin-top: 15%;
-    grid-row-gap: 1em;
+    margin-top: 2%;
+    grid-row-gap: 1.5em;
+    grid-template-areas:
+      'address  phone'
+      'maps  working-time'
+      'social .';
   }
 
   .contacts-page__address,
@@ -246,21 +215,22 @@
   }
 
   .contacts-page__social {
-    width: 20%;
+    width: 30%;
     margin-left: 0%;
+    margin-bottom: 2em;
   }
 }
 
-/* Extra large devices (large desktops, 1200px and 1439px) */
-@media (min-width: 1200px) and (max-width: 1440px) {
+/* min-width 901px and max-width 1024px, orientation: landscape */
+@media only screen and (min-width: 56.063em) and (max-width: 64em) and (orientation: landscape) {
   .contacts-page__title {
-    top: 12%;
-    left: 10%;
+    top: 10%;
+    left: 5%;
     font-size: 1.4em;
   }
 
   .contacts-page__info {
-    font-size: 1.4em;
+    font-size: 1.2em;
     width: 60%;
     height: 70%;
     margin-left: 35%;
@@ -280,16 +250,19 @@
   }
 }
 
-/* Extra large devices (large desktops, 1440px and up) */
-@media (min-width: 1441px) {
+/* Large screens - DESKTOP */
+/* min-width 1025px, large screens */
+
+/* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
   .contacts-page__title {
-    top: 15%;
+    top: 12%;
     left: 10%;
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   .contacts-page__info {
-    font-size: 1.4em;
+    font-size: 1.2em;
     width: 60%;
     height: 50%;
     margin-left: 35%;
@@ -309,52 +282,50 @@
   }
 }
 
-/* iPad Pro Portrait */
-@media only screen and (device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (device-width: 1024px) and (orientation: portrait) and (-o-min-device-pixel-ratio: 3/2),
-  only screen and (device-width: 1024px) and (orientation: portrait) and (min__moz-device-pixel-ratio: 1.5),
-  only screen and (device-width: 1024px) and (orientation: portrait) and (min-device-pixel-ratio: 1.5) {
+/* XLarge screens */
+
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {
   .contacts-page__title {
-    top: 0;
-    left: 5%;
-    font-size: 1.6em;
+    top: 15%;
+    left: 10%;
+    font-size: 1.5em;
   }
 
   .contacts-page__info {
-    font-size: 1.4em;
-    width: 80%;
-    height: auto;
-    margin-left: 5%;
-    margin-top: 20%;
+    font-size: 1.2em;
+    width: 60%;
+    height: 50%;
+    margin-left: 35%;
+    margin-top: 10%;
   }
 
   .contacts-page__address,
   .contacts-page__phone,
   .contacts-page__maps,
   .contacts-page__working-time {
-    margin-left: 0%;
+    margin-left: 10%;
   }
 
   .contacts-page__social {
     width: 20%;
-    margin-left: 0%;
+    margin-left: 10%;
   }
 }
 
-/* iPad Pro Landscape */
-@media only screen and (device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (device-width: 1366px) and (orientation: landscape) and (-o-min-device-pixel-ratio: 3/2),
-  only screen and (device-width: 1366px) and (orientation: landscape) and (min__moz-device-pixel-ratio: 1.5),
-  only screen and (device-width: 1366px) and (orientation: landscape) and (min-device-pixel-ratio: 1.5) {
+/* XXLarge screens */
+/* min-width 1921px, xlarge screens */
+@media only screen and (min-width: 120.063em) {
   .contacts-page__title {
-    top: 9%;
-    left: 5%;
-    font-size: 1.8em;
+    top: 12%;
+    left: 10%;
+    font-size: 1.5em;
   }
+
   .contacts-page__info {
-    font-size: 1.4em;
+    font-size: 1.2em;
     width: 60%;
-    height: auto;
+    height: 50%;
     margin-left: 35%;
     margin-top: 10%;
   }

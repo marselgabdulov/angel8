@@ -34,15 +34,6 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [
-          `Montserrat+Alternates`,
-          `source sans pro\:400,500,600,700`, // you can also specify font weights and styles,
-        ],
-      },
-    },
-    {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://angel8bar.ru/',

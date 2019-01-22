@@ -5,9 +5,46 @@ $aos-distance: 20px; // It has to be above import
 
 @font-face {
   font-family: 'GothamPro';
-  src: url('../fonts/GothamPro.woff') format('woff'),
-    url('../fonts/GothamPro.eot') format('eot'),
-    url('../fonts/GothamPro.ttf') format('ttf');
+  src: url('../fonts/GothamPro/GothamPro.woff') format('woff'),
+    url('../fonts/GothamPro/GothamPro.eot') format('eot'),
+    url('../fonts/GothamPro/GothamPro.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontserratAlternates';
+  src: url('../fonts/MontserratAlternates/MontserratAlternates-Medium.ttf')
+      format('ttf'),
+    url('../fonts/MontserratAlternates/MontserratAlternates-Medium.eot')
+      format('eot'),
+    url('../fonts/MontserratAlternates/MontserratAlternates-Medium.woff')
+      format('woff'),
+    url('../fonts/MontserratAlternates/MontserratAlternates-Bold.ttf')
+      format('ttf'),
+    url('../fonts/MontserratAlternates/MontserratAlternates-Bold.eot')
+      format('eot'),
+    url('../fonts/MontserratAlternates/MontserratAlternates-Bold.woff')
+      format('woff'),
+    url('../fonts/MontserratAlternates/MontserratAlternates-ExtraBold.ttf')
+      format('ttf'),
+    url('../fonts/MontserratAlternates/MontserratAlternates-ExtraBold.eot')
+      format('eot'),
+    url('../fonts/MontserratAlternates/MontserratAlternates-ExtraBold.woff')
+      format('woff'),
+    url('../fonts/MontserratAlternates/MontserratAlternates-Regular.ttf')
+      format('ttf'),
+    url('../fonts/MontserratAlternates/MontserratAlternates-Regular.eot')
+      format('eot'),
+    url('../fonts/MontserratAlternates/MontserratAlternates-Regular.woff')
+      format('woff'),
+    url('../fonts/MontserratAlternates/MontserratAlternates-SemiBold.ttf')
+      format('ttf'),
+    url('../fonts/MontserratAlternates/MontserratAlternates-SemiBold.eot')
+      format('eof'),
+    url('../fonts/MontserratAlternates/MontserratAlternates-SemiBold.woff')
+      format('woff');
+
   font-weight: normal;
   font-style: normal;
 }
@@ -24,7 +61,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'MontserratAlternates', sans-serif;
+}
+
+h1 {
+  font-weight: lighter;
 }
 
 .main-wrapper {

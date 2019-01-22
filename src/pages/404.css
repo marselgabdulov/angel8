@@ -1,0 +1,25 @@
+.four-zero-four {
+  color: white;
+  margin-top: 105px;
+}
+
+.four-zero-four__title {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.four-zero-four__description {
+  text-align: center;
+}
+
+.four-zero-four__link {
+  text-align: center;
+}
+
+.four-zero-four__link a {
+  color: white;
+}
+
+.four-zero-four__description a:hover {
+  opacity: 0.5;
+}

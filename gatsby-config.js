@@ -1,8 +1,7 @@
 module.exports = {
   pathPrefix: '/angel8',
   siteMetadata: {
-    title: `Эмоциональная кухня в Туле. Паназиатская
-      кухня и блюда на гриле.`,
+    title: `Эмоциональная кухня и бар в Туле. Бронирование ✆ +7 4872 77 02 47`,
     description: `Эмоциональная кухня и бар в Туле. Блюда паназиатской кухни и блюда на гриле. Бронируйте столик ✆ +7 4872 77 02 47`,
     author: `@MarselGabdulov`,
   },
@@ -37,8 +36,6 @@ module.exports = {
         fonts: [
           `Montserrat+Alternates`,
           `source sans pro\:400,500,600,700`, // you can also specify font weights and styles,
-          `Varela+Round`,
-          `source sans-serif\:400,500,600,700`,
         ],
       },
     },

@@ -64,8 +64,17 @@ const Footer = () => (
           </a>
         </span>
       </div>
-      <div className="footer__author">MG</div>
-      <div className="footer__copy">&copy; 2019</div>
+      <div className="footer__author">
+        Разработано &nbsp;
+        <a
+          href="https://marselgabdulov.github.io/personal/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          MG
+        </a>
+      </div>
+      <div className="footer__copy">Copyright &copy; 2019 Angel8</div>
     </div>
   </div>
 )

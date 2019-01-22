@@ -26,7 +26,14 @@ const ContactsPage = props => (
           <br />
           <span>пр-т Ленина 85, кор. 1, вход 5</span>
           <br />
-          <span>Ликерка Лофт</span>
+          <a
+            className="index__link"
+            href="http://likerka-loft.ru/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            &laquo;Ликерка Лофт&raquo;
+          </a>
           <br />
           <span>300041</span>
         </div>

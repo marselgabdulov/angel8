@@ -3,9 +3,18 @@
 $aos-distance: 20px; // It has to be above import
 @import 'node_modules/aos/src/sass/aos.scss';
 
+@font-face {
+  font-family: 'GothamPro';
+  src: url('../fonts/GothamPro.woff') format('woff'),
+    url('../fonts/GothamPro.eot') format('eot'),
+    url('../fonts/GothamPro.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'GothamPro';
   background-color: #0b0b0b;
 }
 

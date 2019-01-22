@@ -10,7 +10,9 @@ const InstagramCard = props => (
     style={{
       backgroundImage: `url(${props.imageUrl})`,
     }}
-  />
+  >
+    1
+  </a>
 )
 
 export default InstagramCard

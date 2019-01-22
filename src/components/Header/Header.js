@@ -8,6 +8,7 @@ const Header = () => (
     <div className="header__wrapper">
       <div
         className="header__logo"
+        title="Angel8"
         data-aos="fade"
         data-aos-delay="100"
         data-aos-duration="1200"

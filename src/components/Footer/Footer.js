@@ -34,7 +34,7 @@ const Footer = () => (
           </a>
         </span>
       </div>
-      <div className="footer__logo">
+      <div className="footer__logo" title="Angel8">
         <AniLink to="/" cover bg="#663399">
           <img className="footer__logo" src={footerLogo} alt="footer-logo" />
         </AniLink>

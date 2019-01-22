@@ -73,7 +73,7 @@ class IndexPage extends React.Component {
     ]
     return (
       <Layout>
-        <SEO title="Angel 8" />
+        <SEO title="Angel 8 | Эмоциональная кухня и бар в Туле. ✆ +7 4872 77 02 47" />
         <div className="index">
           <section className="intro">
             <div className="intro__background" />

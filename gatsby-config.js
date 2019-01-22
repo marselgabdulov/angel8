@@ -4,8 +4,10 @@ module.exports = {
     title: `Эмоциональная кухня и бар в Туле. Бронирование ✆ +7 4872 77 02 47`,
     description: `Эмоциональная кухня и бар в Туле. Блюда паназиатской кухни и блюда на гриле. Бронируйте столик ✆ +7 4872 77 02 47`,
     author: `@MarselGabdulov`,
+    siteUrl: `https://angel8bar.ru`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-sass`,
@@ -37,6 +39,14 @@ module.exports = {
           `Montserrat+Alternates`,
           `source sans pro\:400,500,600,700`, // you can also specify font weights and styles,
         ],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://angel8bar.ru/',
+        sitemap: 'https://angel8bar.ru/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

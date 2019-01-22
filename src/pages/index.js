@@ -209,7 +209,6 @@ class IndexPage extends React.Component {
             </div>
           </section>
           <>
-            <h2 className="media__title">Instagram</h2>
             <section className="media">
               {instagram.map(card => (
                 <InstagramCard

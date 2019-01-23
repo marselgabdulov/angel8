@@ -171,19 +171,19 @@
 /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
   .intro {
-    width: 80%;
+    width: 90%;
     height: calc(100vh - 65px);
     margin-top: 65px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .intro__gallery {
-    width: 60%;
+    width: 45%;
   }
 
   .intro__text {
-    width: 60%;
+    width: 55%;
     height: 70vh;
     margin: auto;
   }
@@ -196,8 +196,8 @@
   .intro__background {
     position: absolute;
     top: 65px;
-    left: 10%;
-    width: 45%;
+    left: 5%;
+    width: 50%;
     z-index: -2;
     height: calc(100vh - 65px);
     background-color: rgba(46, 46, 48, 0.5);
@@ -210,7 +210,7 @@
       opacity: 1;
     }
     100% {
-      width: 45%;
+      width: 50%;
       opacity: 1;
     }
   }

@@ -145,6 +145,16 @@
     position: absolute;
     height: 4em;
   }
+  .header__wrapper {
+    width: 90%;
+    margin: auto;
+  }
+  .header__logo {
+    width: 45%;
+  }
+  .header__links {
+    width: 45%;
+  }
   .header a {
     font-size: 1.2em;
   }

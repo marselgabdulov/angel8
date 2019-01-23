@@ -123,7 +123,7 @@
 /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
   .about {
-    width: 80%;
+    width: 90%;
     height: 50vh;
   }
 

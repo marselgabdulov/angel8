@@ -68,7 +68,7 @@ const Footer = () => (
         </span>
         <span>
           вс/<time dateTime="12:00">12:00</time>-
-          <time dateTime="24:00">24:00</time>//
+          <time dateTime="24:00">24:00</time>/
         </span>
       </div>
       <div className="footer__social">

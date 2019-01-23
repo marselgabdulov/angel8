@@ -46,6 +46,10 @@ function SEO({ description, lang, meta, keywords, title, siteUrl }) {
                 content: `bJ4SzHq0EYG9J8Oo99n-oVGv0k2Z3rRFLdLgCmVajME`,
               },
               {
+                name: `yandex-verification`,
+                content: `5c12c2683065ad52`,
+              },
+              {
                 name: `twitter:card`,
                 content: `summary`,
               },

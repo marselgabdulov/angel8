@@ -61,6 +61,10 @@ function SEO({ description, lang, meta, keywords, title, siteUrl }) {
                 name: `twitter:image`,
                 content: data.ogImage.childImageSharp.fluid.src,
               },
+              {
+                name: `twitter:site`,
+                content: 'angel8bar.ru',
+              },
             ]
               .concat(
                 keywords.length > 0

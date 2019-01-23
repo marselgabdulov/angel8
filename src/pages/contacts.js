@@ -6,8 +6,8 @@ const ContactsPage = props => (
   <Layout>
     <section
       className="contacts-page"
-      itemscope
-      itemtype="http://schema.org/Organization"
+      itemScope
+      itemType="http://schema.org/Organization"
     >
       <div
         className="contacts-page__title"
@@ -27,13 +27,13 @@ const ContactsPage = props => (
       >
         <div
           className="contacts-page__address"
-          itemprop="address"
-          itemscope
-          itemtype="http://schema.org/PostalAddress"
+          itemProp="address"
+          itemScope
+          itemType="http://schema.org/PostalAddress"
         >
-          <span itemprop="addressRegion">г. Тула</span>
+          <span itemProp="addressRegion">г. Тула</span>
           <br />
-          <span itemprop="streetAddress">пр-т Ленина 85, кор. 1, вход 5</span>
+          <span itemProp="streetAddress">пр-т Ленина 85, кор. 1, вход 5</span>
           <br />
           <a
             className="index__link"
@@ -45,14 +45,14 @@ const ContactsPage = props => (
             &laquo;Ликерка Лофт&raquo;
           </a>
           <br />
-          <span itemprop="postalCode">300041</span>
+          <span itemProp="postalCode">300041</span>
         </div>
         <div className="contacts-page__phone">
           <span>
             <a
               href="tel:+74872770247"
               title="Позвоните нам"
-              itemprop="telephone"
+              itemProp="telephone"
             >
               +7 (4872) 77-02-47
             </a>
@@ -61,7 +61,7 @@ const ContactsPage = props => (
           <a
             href="mailto:angel8bar@gmail.com"
             title="Напишите нам"
-            itemprop="email"
+            itemProp="email"
           >
             angel8bar@gmail.com
           </a>
@@ -102,12 +102,21 @@ const ContactsPage = props => (
             </a>
           </span>
         </div>
-        <div className="contacts-page__working-time" itemprop="hoursAvailable">
-          <span> пн-чт / 12:00-24:00 /</span>
+        <div className="contacts-page__working-time" itemProp="hoursAvailable">
+          <span>
+            пн-чт/<time dateTime="12:00">12:00</time>-
+            <time dateTime="24:00">24:00</time>/
+          </span>
           <br />
-          <span> пт-сб / 12:00-02:00 /</span>
+          <span>
+            пт-сб/<time dateTime="12:00">12:00</time>-
+            <time dateTime="02:00">02:00</time>/
+          </span>
           <br />
-          <span>вс / 12:00-24:00 /</span>
+          <span>
+            вс/<time dateTime="12:00">12:00</time>-
+            <time dateTime="24:00">24:00</time>/
+          </span>
         </div>
 
         <div className="contacts-page__social">

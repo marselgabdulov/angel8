@@ -4,17 +4,29 @@ import footerLogo from '../../images/logo-white-full.png'
 import './Footer.css'
 
 const Footer = () => (
-  <div className="footer">
+  <section
+    className="footer"
+    itemScope
+    itemType="http://schema.org/Organization"
+  >
     <div className="footer__wrapper">
-      <div className="footer__address">
-        <span>Тула</span>
-        <span>пр-т Ленина 85, кор. 1, вход 5</span>
+      <div
+        className="footer__address"
+        itemScope
+        itemType="http://schema.org/PostalAddress"
+      >
+        <span itemProp="addressRegion">г. Тула</span>
+        <span itemProp="streetAddress">пр-т Ленина 85, кор. 1, вход 5</span>
       </div>
       <div className="footer__contacts">
-        <a href="tel:+74872770247" title="Позвоните нам">
+        <a href="tel:+74872770247" title="Позвоните нам" itemProp="telephone">
           +7 (4872) 77-02-47
         </a>
-        <a href="mailto:angel8bar@gmail.com" title="Напишите нам">
+        <a
+          href="mailto:angel8bar@gmail.com"
+          title="Напишите нам"
+          itemProp="email"
+        >
           angel8bar@gmail.com
         </a>
       </div>
@@ -45,10 +57,19 @@ const Footer = () => (
           <img className="footer__logo" src={footerLogo} alt="footer-logo" />
         </AniLink>
       </div>
-      <div className="footer__working-time">
-        <span>пн-чт/12:00-24:00/</span>
-        <span>пт-сб/12:00-02:00/</span>
-        <span>вс/12:00-24:00/</span>
+      <div className="footer__working-time" itemProp="hoursAvailable">
+        <span>
+          пн-чт/<time dateTime="12:00">12:00</time>-
+          <time dateTime="24:00">24:00</time>/
+        </span>
+        <span>
+          пт-сб/<time dateTime="12:00">12:00</time>-
+          <time dateTime="02:00">02:00</time>/
+        </span>
+        <span>
+          вс/<time dateTime="12:00">12:00</time>-
+          <time dateTime="24:00">24:00</time>//
+        </span>
       </div>
       <div className="footer__social">
         <span>
@@ -85,7 +106,7 @@ const Footer = () => (
       </div>
       <div className="footer__copy">Copyright &copy; 2019 Angel8</div>
     </div>
-  </div>
+  </section>
 )
 
 export default Footer

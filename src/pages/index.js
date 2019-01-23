@@ -167,14 +167,17 @@ class IndexPage extends React.Component {
             </div>
           </section>
           <>
-            <section className="media">
-              {instagram.map(card => (
-                <InstagramCard
-                  hreference={card.url}
-                  imageUrl={card.img}
-                  key={card.url}
-                />
-              ))}
+            <section>
+              <h2 className="media__title">Медиа / Instagram</h2>
+              <div className="media">
+                {instagram.map(card => (
+                  <InstagramCard
+                    hreference={card.url}
+                    imageUrl={card.img}
+                    key={card.url}
+                  />
+                ))}
+              </div>
             </section>
           </>
           <Footer />

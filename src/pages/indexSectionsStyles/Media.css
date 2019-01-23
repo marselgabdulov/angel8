@@ -13,6 +13,7 @@
 
 .media__title {
   text-align: center;
+  font-weight: lighter;
 }
 
 .media a {
@@ -31,6 +32,10 @@
     width: 90%;
   }
 
+  .media__title {
+    font-size: 2em;
+  }
+
   .media a {
     opacity: 1;
   }
@@ -47,6 +52,10 @@
 @media only screen and (max-width: 40em) and (orientation: landscape) {
   .media {
     width: 90%;
+  }
+
+  .media__title {
+    font-size: 2em;
   }
 
   .media a {
@@ -73,6 +82,10 @@
     opacity: 1;
   }
 
+  .media__title {
+    font-size: 2.5em;
+  }
+
   .media :nth-child(3),
   .media :nth-child(4) {
     display: none;
@@ -89,6 +102,10 @@
     opacity: 1;
   }
 
+  .media__title {
+    font-size: 2.5em;
+  }
+
   .media :nth-child(3),
   .media :nth-child(4) {
     display: none;
@@ -103,6 +120,14 @@
   .media {
     width: 90%;
   }
+
+  .media__title {
+    font-size: 2em;
+  }
+
+  .media__title {
+    font-size: 3em;
+  }
 }
 
 /* XLarge screens */
@@ -112,6 +137,10 @@
   .media {
     width: 80%;
   }
+
+  .media__title {
+    font-size: 3em;
+  }
 }
 
 /* XXLarge screens */
@@ -119,5 +148,9 @@
 @media only screen and (min-width: 120.063em) {
   .media {
     width: 80%;
+  }
+
+  .media__title {
+    font-size: 3em;
   }
 }

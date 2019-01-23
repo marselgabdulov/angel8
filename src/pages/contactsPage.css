@@ -9,6 +9,7 @@
   display: flex;
   width: 100%;
   height: calc(100vh - 65px);
+  line-height: 2em;
 }
 
 .contacts-page a {
@@ -68,6 +69,7 @@
 @media only screen and (max-width: 40em) and (orientation: portrait) {
   .contacts-page {
     position: relative;
+    line-height: 1.2em;
   }
   .contacts-page__title {
     top: 0%;
@@ -108,6 +110,7 @@
 @media only screen and (max-width: 40em) and (orientation: landscape) {
   .contacts-page {
     position: relative;
+    line-height: 1.5em;
   }
   .contacts-page__title {
     top: 0%;

@@ -40,8 +40,8 @@
 
 .nav-wrapper__link {
   width: auto;
-  font-size: 1.7em;
-  font-weight: bold;
+  font-size: 1.5em;
+  font-weight: middle;
 }
 
 .nav-wrapper a:hover {

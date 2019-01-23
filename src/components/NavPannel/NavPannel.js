@@ -21,6 +21,7 @@ const NavPannel = props => {
               +7 (4872) 77-02-47
             </a>
             <AniLink
+              title="Меню | Блюда"
               className="nav-wrapper__link"
               cover
               to="/food"
@@ -33,6 +34,7 @@ const NavPannel = props => {
               Блюда
             </AniLink>
             <AniLink
+              title="Меню | Напитки"
               className="nav-wrapper__link"
               to="/drinks"
               cover
@@ -45,6 +47,7 @@ const NavPannel = props => {
               Напитки
             </AniLink>
             <AniLink
+              title="Контакты"
               className="nav-wrapper__link"
               to="/contacts"
               cover

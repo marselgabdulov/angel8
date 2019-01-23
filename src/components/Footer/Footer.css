@@ -3,6 +3,7 @@
   width: 100%;
   background-color: rgba(11, 11, 11, 0.5);
   color: white;
+  text-transform: uppercase;
 }
 
 .footer__wrapper {
@@ -96,9 +97,10 @@
 /* max-width 640px, mobile-only styles, orientation: portrait */
 @media only screen and (max-width: 40em) and (orientation: portrait) {
   .footer {
-    line-height: 2em;
+    line-height: 1.5em;
     margin-top: 65px;
     height: auto;
+    font-size: 0.85em;
   }
   .footer__wrapper {
     height: 90vh;
@@ -136,12 +138,12 @@
 @media only screen and (max-width: 40em) and (orientation: landscape) {
   .footer {
     height: auto;
-    line-height: 1em;
-    font-size: 0.8em;
+    line-height: 3em;
+    font-size: 0.7em;
   }
   .footer__wrapper {
     width: 90%;
-    margin: 5%;
+    margin: 4% 5%;
   }
 
   .footer__logo {
@@ -156,7 +158,9 @@
 @media only screen and (min-width: 40.063em) and (max-width: 64em) and (orientation: portrait) {
   .footer__wrapper {
     width: 90%;
-    margin: 2em auto;
+    margin: 1.5em auto;
+    line-height: 3em;
+    font-size: 0.9em;
   }
 
   .footer__logo {
@@ -169,6 +173,7 @@
 @media only screen and (min-width: 40.063em) and (max-width: 64em) and (orientation: landscape) {
   .footer {
     line-height: 3em;
+    font-size: 0.75em;
   }
   .footer__wrapper {
     width: 90%;
@@ -189,6 +194,7 @@
   }
   .footer__wrapper {
     width: 90%;
+    margin: 5%;
     -ms-align-self: center;
     align-self: center;
   }
@@ -201,10 +207,11 @@
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
   .footer {
     line-height: 5em;
+    font-size: 0.85em;
   }
   .footer__wrapper {
     height: auto;
-    margin: 3% 5%;
+    margin: 2% 5%;
     width: 90%;
     -ms-align-self: center;
     align-self: center;
@@ -216,12 +223,12 @@
 /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
 @media only screen and (min-width: 90.063em) and (max-width: 120em) {
   .footer {
-    height: 50vh;
     line-height: 6em;
+    font-size: 0.8em;
   }
   .footer__wrapper {
     width: 80%;
-    margin: 3% 10%;
+    margin: 2% 10%;
     -ms-align-self: center;
     align-self: center;
   }
@@ -231,8 +238,8 @@
 /* min-width 1921px, xlarge screens */
 @media only screen and (min-width: 120.063em) {
   .footer {
-    height: 50vh;
     line-height: 7em;
+    font-size: 0.8em;
   }
   .footer__wrapper {
     width: 80%;

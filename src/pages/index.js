@@ -85,10 +85,11 @@ class IndexPage extends React.Component {
                 data-aos-duration="1200"
                 data-aos-once="true"
               >
-                Эмоциональная
+                <span>Эмоциональная</span>
                 <br />
-                кухня
-                <br />в Туле
+                <span>кухня</span>
+                <br />
+                <span>в Туле</span>
               </h1>
               <span className="intro__address">
                 <span>пр-т Ленина д.85 кор. 1</span>

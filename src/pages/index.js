@@ -131,8 +131,8 @@ class IndexPage extends React.Component {
                 style={{
                   backgroundImage: `url(${aboutImage})`,
                 }}
-                data-aos="custom-fade-in"
-                data-aos-delay="0"
+                data-aos="fade"
+                data-aos-delay="100"
                 data-aos-duration="1200"
                 data-aos-once="true"
               />

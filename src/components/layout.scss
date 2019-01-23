@@ -3,32 +3,6 @@
 $aos-distance: 20px; // It has to be above import
 @import 'node_modules/aos/src/sass/aos.scss';
 
-[data-aos='custom-fade-in'] {
-  opacity: 0;
-  &.aos-animate {
-    opacity: 1;
-    animation: 0.75s fadeIn linear;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    width: 0;
-    height: 90%;
-    opacity: 0;
-  }
-  50% {
-    width: 50%;
-    height: 90%;
-    opacity: 0.2;
-  }
-  100% {
-    width: 90%;
-    height: 90%;
-    opacity: 1;
-  }
-}
-
 @font-face {
   font-family: 'GothamPro';
   src: url('../fonts/GothamPro/GothamPro.woff') format('woff'),

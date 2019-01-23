@@ -4,7 +4,11 @@ import './contactsPage.css'
 
 const ContactsPage = props => (
   <Layout>
-    <div className="contacts-page">
+    <section
+      className="contacts-page"
+      itemscope
+      itemtype="http://schema.org/Organization"
+    >
       <div
         className="contacts-page__title"
         data-aos="fade"
@@ -21,10 +25,15 @@ const ContactsPage = props => (
         data-aos-duration="1200"
         data-aos-once="true"
       >
-        <div className="contacts-page__address">
-          <span>г. Тула</span>
+        <div
+          className="contacts-page__address"
+          itemprop="address"
+          itemscope
+          itemtype="http://schema.org/PostalAddress"
+        >
+          <span itemprop="addressRegion">г. Тула</span>
           <br />
-          <span>пр-т Ленина 85, кор. 1, вход 5</span>
+          <span itemprop="streetAddress">пр-т Ленина 85, кор. 1, вход 5</span>
           <br />
           <a
             className="index__link"
@@ -36,16 +45,24 @@ const ContactsPage = props => (
             &laquo;Ликерка Лофт&raquo;
           </a>
           <br />
-          <span>300041</span>
+          <span itemprop="postalCode">300041</span>
         </div>
         <div className="contacts-page__phone">
           <span>
-            <a href="tel:+74872770247" title="Позвоните нам">
+            <a
+              href="tel:+74872770247"
+              title="Позвоните нам"
+              itemprop="telephone"
+            >
               +7 (4872) 77-02-47
             </a>
           </span>
           <br />
-          <a href="mailto:angel8bar@gmail.com" title="Напишите нам">
+          <a
+            href="mailto:angel8bar@gmail.com"
+            title="Напишите нам"
+            itemprop="email"
+          >
             angel8bar@gmail.com
           </a>
           <span />
@@ -85,7 +102,7 @@ const ContactsPage = props => (
             </a>
           </span>
         </div>
-        <div className="contacts-page__working-time">
+        <div className="contacts-page__working-time" itemprop="hoursAvailable">
           <span> пн-чт / 12:00-24:00 /</span>
           <br />
           <span> пт-сб / 12:00-02:00 /</span>
@@ -113,7 +130,7 @@ const ContactsPage = props => (
           </a>
         </div>
       </div>
-    </div>
+    </section>
   </Layout>
 )
 

@@ -45,7 +45,7 @@ export const starters = [
 
 export const salads = [
   {
-    name: 'печеная свекла с булгуром и соусом из брынзы',
+    name: 'Печеная свекла с булгуром и соусом из брынзы',
     price: 260,
     id: 9,
   },
@@ -63,7 +63,7 @@ export const salads = [
 
 export const soups = [
   {
-    name: 'куриный суп',
+    name: 'Куриный суп',
     price: 260,
     id: 12,
   },
@@ -180,7 +180,7 @@ export const singleMalt = [
     id: 32,
   },
   {
-    name: 'the Macallan Triple Cask Matured',
+    name: 'The Macallan Triple Cask Matured',
     price: 520,
     id: 33,
   },

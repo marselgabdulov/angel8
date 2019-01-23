@@ -22,7 +22,7 @@
   transform: translateX(0);
   transition: transform 0.3s ease;
   overflow: hidden;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'GothamPro', sans-serif;
 }
 
 .nav-wrapper {

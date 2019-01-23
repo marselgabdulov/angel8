@@ -16,7 +16,7 @@ import './indexSectionsStyles/Media.css'
 import galleryImageOne from '../images/intro/bread.jpg'
 import galleryImageTwo from '../images/intro/mix.jpg'
 import galleryImageThree from '../images/intro/soup.jpg'
-import aboutImage from '../images/about/table.jpg'
+import aboutImage from '../images/about/bar.jpg'
 
 import instLogo from '../images/instagram/logo.jpg'
 import command from '../images/instagram/command.jpg'
@@ -125,22 +125,45 @@ class IndexPage extends React.Component {
             </div>
           </section>
           <section className="about">
-            <div
-              className="about__image"
-              style={{
-                backgroundImage: `url(${aboutImage})`,
-              }}
-            />
+            <div className="about__image--wrapper">
+              <div
+                className="about__image"
+                style={{
+                  backgroundImage: `url(${aboutImage})`,
+                }}
+                data-aos="custom-fade-in"
+                data-aos-delay="0"
+                data-aos-duration="1200"
+                data-aos-once="true"
+              />
+            </div>
             <div
               className="about__text"
               data-aos="fade"
-              data-aos-delay="100"
+              data-aos-delay="200"
               data-aos-duration="1200"
               data-aos-once="true"
             >
-              <h2>О нас</h2>
+              <h2 className="about__text--title">
+                Атмосфера, созданная с любовью
+              </h2>
               <p>
-                Мы находимся на территории торгово-делового квартала&nbsp;
+                <b>Angel 8</b> предлагает Вам отведать изысканные блюда
+                паназиатской кухни и блюда на гриле. <br /> Подробнее о нашей
+                &nbsp;
+                <AniLink to="/food" title="Меню | Блюда">
+                  Кухне.
+                </AniLink>
+              </p>
+              <p>
+                У нас самый широкий выбор как традиционных напитков, так и наших
+                фирменных коктейлей. Загляните в наш &nbsp;
+                <AniLink to="/drinks" title="Меню | Напитки">
+                  Бар.
+                </AniLink>
+              </p>
+              <p>
+                Вы найдете нас на территории торгово-делового квартала&nbsp;
                 <a
                   className="index__link"
                   href="http://likerka-loft.ru/"
@@ -148,22 +171,14 @@ class IndexPage extends React.Component {
                   rel="noopener noreferrer"
                   title="Сайт likerka-loft.ru"
                 >
-                  &laquo;Ликерка Лофт&raquo;
+                  &laquo;Ликерка Лофт&raquo;.
                 </a>
-                .
               </p>
-              <p>Готовим блюда паназиатской кухни и блюда на гриле.</p>
               <p>
-                У нас Вы сможете насладиться нашими коктейлями и традиционными
-                напитками.
+                <AniLink to="/contacts" title="Контакты">
+                  Как добраться.
+                </AniLink>
               </p>
-              <AniLink to="/food" title="Меню | Блюда">
-                Кухня
-              </AniLink>{' '}
-              <br />
-              <AniLink to="/drinks" title="Меню | Напитки">
-                Бар
-              </AniLink>
             </div>
           </section>
           <>

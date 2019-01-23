@@ -43,7 +43,7 @@ function SEO({ description, lang, meta, keywords, title, siteUrl }) {
               },
               {
                 name: `google-site-verification`,
-                content: `content="bJ4SzHq0EYG9J8Oo99n-oVGv0k2Z3rRFLdLgCmVajME`,
+                content: `bJ4SzHq0EYG9J8Oo99n-oVGv0k2Z3rRFLdLgCmVajME`,
               },
               {
                 name: `twitter:card`,

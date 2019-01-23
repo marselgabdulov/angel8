@@ -8,13 +8,12 @@ const Header = () => (
     <div className="header__wrapper">
       <div
         className="header__logo"
-        title="Angel8"
         data-aos="fade"
         data-aos-delay="100"
         data-aos-duration="1200"
         data-aos-once="true"
       >
-        <AniLink cover to="/" bg="#181818">
+        <AniLink cover to="/" bg="#181818" title="На главную">
           <img className="header__logo-img" src={logo} alt="logo" />
         </AniLink>
       </div>
@@ -28,6 +27,7 @@ const Header = () => (
         >
           <AniLink
             to="/food"
+            title="Меню | Блюда"
             cover
             bg="#181818"
             activeStyle={{
@@ -47,6 +47,7 @@ const Header = () => (
         >
           <AniLink
             to="/drinks"
+            title="Меню | Напитки"
             cover
             bg="#181818"
             activeStyle={{
@@ -66,6 +67,7 @@ const Header = () => (
         >
           <AniLink
             to="/contacts"
+            title="Контактная информация"
             cover
             bg="#181818"
             activeStyle={{

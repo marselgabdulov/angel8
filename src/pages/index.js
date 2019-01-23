@@ -146,6 +146,7 @@ class IndexPage extends React.Component {
                   href="http://likerka-loft.ru/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  title="Сайт likerka-loft.ru"
                 >
                   &laquo;Ликерка Лофт&raquo;
                 </a>
@@ -156,8 +157,13 @@ class IndexPage extends React.Component {
                 У нас Вы сможете насладиться нашими коктейлями и традиционными
                 напитками.
               </p>
-              <AniLink to="/food">Кухня</AniLink> <br />
-              <AniLink to="/drinks">Бар</AniLink>
+              <AniLink to="/food" title="Меню | Блюда">
+                Кухня
+              </AniLink>{' '}
+              <br />
+              <AniLink to="/drinks" title="Меню | Напитки">
+                Бар
+              </AniLink>
             </div>
           </section>
           <>

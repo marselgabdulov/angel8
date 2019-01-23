@@ -42,6 +42,10 @@ function SEO({ description, lang, meta, keywords, title, siteUrl }) {
                 content: data.ogImage.childImageSharp.fluid.src,
               },
               {
+                name: `google-site-verification`,
+                content: `content="bJ4SzHq0EYG9J8Oo99n-oVGv0k2Z3rRFLdLgCmVajME`,
+              },
+              {
                 name: `twitter:card`,
                 content: `summary`,
               },

@@ -71,9 +71,9 @@ class IndexPage extends React.Component {
                 data-aos-duration="1200"
                 data-aos-once="true"
               >
-                <span>Эмоциональная &nabsp;</span>
+                <span>Эмоциональная</span>&nbsp;
                 <br />
-                <span>кухня&nabsp;</span>
+                <span>кухня</span>&nbsp;
                 <br />
                 <span>в Туле</span>
               </h1>

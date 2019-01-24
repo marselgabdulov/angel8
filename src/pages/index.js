@@ -209,7 +209,7 @@ export const fluidInstagramImage = graphql`
 export const fluidImage = graphql`
   fragment fluidImage on File {
     childImageSharp {
-      fluid(maxWidth: 800) {
+      fluid(maxWidth: 1200) {
         ...GatsbyImageSharpFluid
       }
     }

@@ -129,6 +129,9 @@
   .intro__title {
     line-height: 1.5em;
   }
+  .intro__address {
+    font-size: 1;
+  }
 }
 
 /* min-width 641px and max-width 1024px, orientation: landscape */
@@ -161,6 +164,7 @@
     background-color: rgba(23, 23, 23, 0.8);
   }
   .intro__title {
+    font-size: 2em;
     line-height: 1.5em;
   }
 }
@@ -189,8 +193,8 @@
   }
 
   .intro__title {
-    line-height: 2em;
-    font-size: 4.5em;
+    line-height: 1.5;
+    font-size: 4em;
   }
 
   .intro__background {
@@ -239,12 +243,12 @@
   }
 
   .intro__title {
-    line-height: 1.5em;
-    font-size: 6em;
+    line-height: 1.5;
+    font-size: 5em;
   }
 
   .intro__address {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   .intro__background {

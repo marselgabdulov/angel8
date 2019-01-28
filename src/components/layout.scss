@@ -53,6 +53,17 @@ html,
 body {
   font-family: 'GothamPro';
   background-color: #0b0b0b;
+  font-size: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size-adjust: 0.5;
 }
 
 h1,
@@ -66,6 +77,13 @@ h6 {
 
 h1 {
   font-weight: lighter;
+  font-size: 2em;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 1.625em;
+  line-height: 1.15384615;
 }
 
 .main-wrapper {
@@ -77,8 +95,36 @@ h1 {
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 100vh;
+  font-size: 1em;
+  line-height: 1.25;
 }
 
 .footer {
   flex-shrink: 0;
+}
+
+@media (min-width: 43.75em) {
+  h1 {
+    font-size: 2.5em;
+    line-height: 1.125;
+  }
+  h2 {
+    font-size: 2em;
+    line-height: 1.25;
+  }
+  .main-wrapper {
+    font-size: 1em;
+    line-height: 1.375;
+  }
+}
+
+@media (min-width: 56.25em) {
+  h1 {
+    font-size: 3em;
+    line-height: 1.05;
+  }
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.25;
+  }
 }

@@ -6,8 +6,7 @@
   left: 0;
   z-index: 2000;
   font-weight: 500;
-  /* background-color: rgb(11, 11, 11); */
-  background-color: transparent;
+  background-color: rgb(11, 11, 11);
   font-family: 'GothamPro', sans-serif;
 }
 
@@ -142,7 +141,6 @@
 /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
   .header {
-    position: absolute;
     height: 4em;
   }
   .header__wrapper {
@@ -165,7 +163,6 @@
 /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
 @media only screen and (min-width: 90.063em) and (max-width: 120em) {
   .header {
-    position: absolute;
     height: 4em;
   }
   .header a {
@@ -177,7 +174,6 @@
 /* min-width 1921px, xlarge screens */
 @media only screen and (min-width: 120.063em) {
   .header {
-    position: absolute;
     height: 4em;
   }
   .header a {

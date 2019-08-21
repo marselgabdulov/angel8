@@ -4,7 +4,14 @@ import Layout from '../components/layout'
 import Footer from '../components/Footer/Footer'
 
 import SimpleMenuPosition from '../components/SimpleMenuPosition/SimpleMenuPosition'
-import { starters, salads, soups, hotAndGrill, desserts } from '../data/menu.js'
+import {
+  brunch,
+  starters,
+  salads,
+  soups,
+  hotAndGrill,
+  desserts,
+} from '../data/menu.js'
 
 class FoodPage extends React.Component {
   componentDidMount() {
@@ -21,6 +28,29 @@ class FoodPage extends React.Component {
                 \&nbsp; \&nbsp; \&nbsp; \&nbsp; \&nbsp; \&nbsp; \
               </div>
               <div className="menu-page__wrapper">
+                <section className="menu-page__section">
+                  <div className="menu-page__section-title">
+                    ПОЗДНИЕ ЗАВТРАКИ 12:00-15:00
+                  </div>
+                  <div className="menu-page__section-subtitle">
+                    Натуральный йогурт & Cемена чиа и льна
+                  </div>
+                  {brunch.slice(0, 3).map(position => (
+                    <SimpleMenuPosition
+                      key={position.id}
+                      name={position.name}
+                      price={position.price}
+                    />
+                  ))}
+                  <div className="menu-page__section-subtitle">Яйца & Хлеб</div>
+                  {brunch.slice(3, brunch.length).map(position => (
+                    <SimpleMenuPosition
+                      key={position.id}
+                      name={position.name}
+                      price={position.price}
+                    />
+                  ))}
+                </section>
                 <section className="menu-page__section">
                   <span className="menu-page__section-title">ЗАКУСКИ</span>
                   {starters.map(position => (

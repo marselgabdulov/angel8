@@ -23,12 +23,12 @@ import {
   aperitivo,
   vermut,
   cocktails,
+  summerCocktails,
   water,
   smoosy,
   limonades,
   juicesYa,
   freshJuices,
-  beer,
   bottleBeer,
   hotAlco,
   coffee,
@@ -215,6 +215,14 @@ class DrinksPage extends React.Component {
                     }
                   >
                     Коктейли
+                  </button>
+                  <button
+                    className="menu-page__submenu-button"
+                    onClick={() =>
+                      this.scrollTo(document.getElementById('summerCocktails'))
+                    }
+                  >
+                    Летние Коктейли
                   </button>
                   <button
                     className="menu-page__submenu-button"
@@ -645,6 +653,25 @@ class DrinksPage extends React.Component {
                   ))}
                 </section>
                 <section
+                  id="summerCocktails"
+                  className="menu-page__section"
+                  ref={section => {
+                    this.summerCocktails = section
+                  }}
+                >
+                  <span className="menu-page__section-title">
+                    SUMMER COCKTAILS
+                  </span>
+                  {summerCocktails.map(position => (
+                    <ComplexMenuPosition
+                      key={position.id}
+                      name={position.name}
+                      price={position.price}
+                      description={position.description}
+                    />
+                  ))}
+                </section>
+                <section
                   id="water"
                   className="menu-page__section"
                   ref={section => {
@@ -737,14 +764,7 @@ class DrinksPage extends React.Component {
                 >
                   <span className="menu-page__section-title">ПИВО</span>
                   <br />
-                  <span className="menu-page__section-subtitle">бочковое</span>
-                  {beer.map(position => (
-                    <SimpleMenuPosition
-                      key={position.id}
-                      name={position.name}
-                      price={position.price}
-                    />
-                  ))}
+
                   <span className="menu-page__section-subtitle">
                     бутылочное
                   </span>

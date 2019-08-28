@@ -9,14 +9,24 @@ import InstagramCard from '../components/InstagramCard/InstagramCard'
 //  Styles
 import './index.css'
 import './indexSectionsStyles/Intro.scss'
-import './indexSectionsStyles/About.css'
+import './indexSectionsStyles/About.scss'
 import './indexSectionsStyles/Media.css'
 
 // Video
 import VideoMP4 from '../video/angel8bg2.mp4'
 import VideoWEBM from '../video/angel8bg2.webm'
 
+import { Fade } from 'react-slideshow-image'
+import Img from 'gatsby-image'
+
 function IndexPage(props) {
+  const fadeProperties = {
+    duration: 5000,
+    transitionDuration: 500,
+    infinite: true,
+    indicators: false,
+    arrows: false,
+  }
   const instagram = [
     {
       url: 'https://www.instagram.com/angel_bar_grill/?hl=ru',
@@ -97,42 +107,40 @@ function IndexPage(props) {
           </div>
         </section>
         <section className="about">
-          <div className="about__image--wrapper">
-            <div
-              className="about__image"
-              style={{
-                backgroundImage: `url(${props.data.bar_image.childImageSharp.fluid.src})`,
-              }}
-              data-aos="fade"
-              data-aos-delay="100"
-              data-aos-duration="1200"
-              data-aos-once="true"
-            />
+          <div className="about__gallery">
+            <Fade {...fadeProperties}>
+              <div className="image-container">
+                <Img fluid={props.data.intro_one.childImageSharp.fluid} />
+              </div>
+              <div className="image-container">
+                <Img fluid={props.data.intro_two.childImageSharp.fluid} />
+              </div>
+              <div className="image-container">
+                <Img fluid={props.data.intro_three.childImageSharp.fluid} />
+              </div>
+              <div className="image-container">
+                <Img fluid={props.data.intro_four.childImageSharp.fluid} />
+              </div>
+            </Fade>
           </div>
-          <div
-            className="about__text"
-            data-aos="fade"
-            data-aos-delay="200"
-            data-aos-duration="1200"
-            data-aos-once="true"
-          >
-            <h2 className="about__text--title">
-              Атмосфера, созданная с любовью
-            </h2>
+          <div className="about__text">
+            <h2 className="about__text--title">Эмоциональная кухня</h2>
             <p>
-              <b>Angel 8</b> предлагает Вам отведать изысканные блюда
-              паназиатской кухни и блюда на гриле. <br /> Подробнее о нашей
-              &nbsp;
-              <AniLink to="/food" cover bg="#181818" title="Меню | Блюда">
-                Кухне.
-              </AniLink>
+              Наши блюда готовятся в печи{' '}
+              <a
+                href="https://www.josper.es/ru/josper/about/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="О печах Josper"
+              >
+                Josper.
+              </a>
             </p>
+            <p>Классические коктейли из первоисточников.</p>
+            <p>Хороший выбор вина в правильных бокалах.</p>
             <p>
-              У нас самый широкий выбор как традиционных напитков, так и наших
-              фирменных коктейлей. Загляните в наш &nbsp;
-              <AniLink to="/drinks" cover bg="#181818" title="Меню | Напитки">
-                Бар.
-              </AniLink>
+              Восьмерка как символ бесконечности,​ разделение мира на две
+              основные составляющие – дух и материю, соединение неба и земли.
             </p>
             <p>
               Вы найдете нас на территории торгово-делового квартала&nbsp;
@@ -186,7 +194,7 @@ export const fluidInstagramImage = graphql`
 export const fluidImage = graphql`
   fragment fluidImage on File {
     childImageSharp {
-      fluid(maxWidth: 1800) {
+      fluid(maxWidth: 1200) {
         ...GatsbyImageSharpFluid
       }
     }
@@ -229,9 +237,6 @@ export const pageQuery = graphql`
       ...fluidInstagramImage
     }
     intro_four: file(relativePath: { eq: "intro/intro_four.jpg" }) {
-      ...fluidInstagramImage
-    }
-    bar_image: file(relativePath: { eq: "about/bar_image.jpg" }) {
       ...fluidInstagramImage
     }
   }

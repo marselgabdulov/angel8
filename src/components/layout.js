@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import AOS from 'aos'
 import Header from './Header/Header'
 import NavPannel from './NavPannel/NavPannel'
@@ -8,31 +8,31 @@ import Grid from './Grid/Grid'
 
 import './layout.scss'
 
-class Layout extends React.Component {
-  state = {
-    navIsOpen: false,
-  }
-  componentDidMount() {
+function Layout(props) {
+  const [navPannel, setNavPannel] = useState(false)
+  useEffect(() => {
     AOS.init()
+  })
+
+  function handleClick() {
+    navPannel ? setNavPannel(false) : setNavPannel(true)
   }
-  handleClick = () => {
-    this.setState({ navIsOpen: !this.state.navIsOpen })
-  }
-  render() {
-    return (
+
+  return (
+    <>
+      <div className="turn">
+        <span>Пожалуйста переверните</span>
+      </div>
       <div className="main-wrapper">
         <ArrowUp />
-        <NavPannel show={this.state.navIsOpen} handleClick={this.handleClick} />
-        <NavButton
-          clickHandler={this.handleClick}
-          icon={this.state.navIsOpen}
-        />
+        <NavPannel show={navPannel} handleClick={handleClick} />
+        <NavButton clickHandler={handleClick} icon={navPannel} />
         <Header />
-        <div>{this.props.children}</div>
+        <div>{props.children}</div>
         <Grid />
       </div>
-    )
-  }
+    </>
+  )
 }
 
 export default Layout

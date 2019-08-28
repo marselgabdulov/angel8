@@ -48,6 +48,14 @@ module.exports = {
         siteUrl: `https://angel8bar.ru`,
       },
     },
+    {
+      resolve: `gatsby-plugin-yandex-metrika`,
+      options: {
+        trackingId: '55093711',
+        webvisor: true,
+        trackHash: true,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',

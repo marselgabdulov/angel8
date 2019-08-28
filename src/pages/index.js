@@ -93,23 +93,22 @@ class IndexPage extends React.Component {
                 <Fade {...fadeProperties}>
                   <div
                     style={{
-                      backgroundImage: `url(${
-                        this.props.data.introBread.childImageSharp.fluid.src
-                      })`,
+                      backgroundImage: `url(${this.props.data.intro1.childImageSharp.fluid.src})`,
                     }}
                   />
                   <div
                     style={{
-                      backgroundImage: `url(${
-                        this.props.data.mix.childImageSharp.fluid.src
-                      })`,
+                      backgroundImage: `url(${this.props.data.intro2.childImageSharp.fluid.src})`,
                     }}
                   />
                   <div
                     style={{
-                      backgroundImage: `url(${
-                        this.props.data.soup.childImageSharp.fluid.src
-                      })`,
+                      backgroundImage: `url(${this.props.data.intro3.childImageSharp.fluid.src})`,
+                    }}
+                  />
+                  <div
+                    style={{
+                      backgroundImage: `url(${this.props.data.intro4.childImageSharp.fluid.src})`,
                     }}
                   />
                 </Fade>
@@ -121,9 +120,7 @@ class IndexPage extends React.Component {
               <div
                 className="about__image"
                 style={{
-                  backgroundImage: `url(${
-                    this.props.data.bar.childImageSharp.fluid.src
-                  })`,
+                  backgroundImage: `url(${this.props.data.bar.childImageSharp.fluid.src})`,
                 }}
                 data-aos="fade"
                 data-aos-delay="100"
@@ -242,13 +239,16 @@ export const pageQuery = graphql`
     logoInst: file(relativePath: { eq: "instagram/logo.jpg" }) {
       ...fluidInstagramImage
     }
-    mix: file(relativePath: { eq: "intro/mix.jpg" }) {
+    intro1: file(relativePath: { eq: "intro/photo_58.jpg" }) {
       ...fluidInstagramImage
     }
-    introBread: file(relativePath: { eq: "intro/bread.jpg" }) {
+    intro2: file(relativePath: { eq: "intro/photo_61.jpg" }) {
       ...fluidInstagramImage
     }
-    soup: file(relativePath: { eq: "intro/soup.jpg" }) {
+    intro3: file(relativePath: { eq: "intro/photo_66.jpg" }) {
+      ...fluidInstagramImage
+    }
+    intro4: file(relativePath: { eq: "intro/photo_63.jpg" }) {
       ...fluidInstagramImage
     }
     bar: file(relativePath: { eq: "about/bar.jpg" }) {

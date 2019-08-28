@@ -2,195 +2,175 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import SEO from '../components/seo'
-import { Fade } from 'react-slideshow-image'
 // Components
 import Layout from '../components/layout'
 import Footer from '../components/Footer/Footer'
 import InstagramCard from '../components/InstagramCard/InstagramCard'
 //  Styles
 import './index.css'
-import './indexSectionsStyles/Intro.css'
+import './indexSectionsStyles/Intro.scss'
 import './indexSectionsStyles/About.css'
 import './indexSectionsStyles/Media.css'
 
-class IndexPage extends React.Component {
-  render() {
-    const fadeProperties = {
-      duration: 3500,
-      transitionDuration: 1000,
-      infinite: true,
-      indicators: false,
-      arrows: false,
-    }
+// Video
+import VideoMP4 from '../video/angel8bg2.mp4'
+import VideoWEBM from '../video/angel8bg2.webm'
 
-    const instagram = [
-      {
-        url: 'https://www.instagram.com/angel_bar_grill/?hl=ru',
-        img: this.props.data.logoInst.childImageSharp.fluid.src,
-      },
-      {
-        url: 'https://www.instagram.com/p/Br-JhtlHC59/',
-        img: this.props.data.command.childImageSharp.fluid.src,
-      },
-      {
-        url: 'https://www.instagram.com/p/BsPx-oonHGk/',
-        img: this.props.data.bottles.childImageSharp.fluid.src,
-      },
-      {
-        url: 'https://www.instagram.com/p/BsNY__mntMs/',
-        img: this.props.data.juice.childImageSharp.fluid.src,
-      },
-      {
-        url: 'https://www.instagram.com/p/BsZ3AsRnAay/',
-        img: this.props.data.some.childImageSharp.fluid.src,
-      },
-      {
-        url: 'https://www.instagram.com/p/BrOGbVbFugw/',
-        img: this.props.data.david.childImageSharp.fluid.src,
-      },
-      {
-        url: 'https://www.instagram.com/p/Br4_77CHxnP/',
-        img: this.props.data.asianFood.childImageSharp.fluid.src,
-      },
-      {
-        url: 'https://www.instagram.com/p/BssD9J4nQQB/',
-        img: this.props.data.bread.childImageSharp.fluid.src,
-      },
-    ]
-    return (
-      <Layout>
-        <SEO title="Angel 8 | Эмоциональная кухня и бар в Туле. ✆ +7 4872 77 02 47" />
-        <div className="index">
-          <section className="intro">
-            <div className="intro__background" />
-            <div className="intro__text">
-              <h1
-                className="intro__title"
-                data-aos="fade"
-                data-aos-delay="100"
-                data-aos-duration="1200"
-                data-aos-once="true"
-              >
-                <span>Эмоциональная</span>&nbsp;
-                <br />
-                <span>кухня</span>&nbsp;
-                <br />
-                <span>в Туле</span>
-              </h1>
-              <span className="intro__address">
-                <span>пр-т Ленина д.85 кор. 1</span>
-              </span>
+function IndexPage(props) {
+  const instagram = [
+    {
+      url: 'https://www.instagram.com/angel_bar_grill/?hl=ru',
+      img: props.data.logoInst.childImageSharp.fluid.src,
+    },
+    {
+      url: 'https://www.instagram.com/p/Br-JhtlHC59/',
+      img: props.data.command.childImageSharp.fluid.src,
+    },
+    {
+      url: 'https://www.instagram.com/p/BsPx-oonHGk/',
+      img: props.data.bottles.childImageSharp.fluid.src,
+    },
+    {
+      url: 'https://www.instagram.com/p/BsNY__mntMs/',
+      img: props.data.juice.childImageSharp.fluid.src,
+    },
+    {
+      url: 'https://www.instagram.com/p/BsZ3AsRnAay/',
+      img: props.data.some.childImageSharp.fluid.src,
+    },
+    {
+      url: 'https://www.instagram.com/p/BrOGbVbFugw/',
+      img: props.data.david.childImageSharp.fluid.src,
+    },
+    {
+      url: 'https://www.instagram.com/p/Br4_77CHxnP/',
+      img: props.data.asianFood.childImageSharp.fluid.src,
+    },
+    {
+      url: 'https://www.instagram.com/p/BssD9J4nQQB/',
+      img: props.data.bread.childImageSharp.fluid.src,
+    },
+  ]
+  return (
+    <Layout>
+      <SEO title="Angel 8 | Эмоциональная кухня и бар в Туле. ✆ +7 4872 77 02 47" />
+      <div className="index">
+        <section className="intro">
+          <div className="bg-video">
+            <video loop autoPlay muted id="bg-video">
+              <source type="video/webm" src={VideoWEBM} />
+              <source type="video/mp4" src={VideoMP4} />
+            </video>
+            <div className="intro-hashtag">
+              <h1>#Angel8</h1>
+              <span>cocktails. grill. wine...</span>
             </div>
-
-            <div
-              className="intro__gallery"
-              data-aos="fade"
-              data-aos-delay="150"
-              data-aos-duration="1200"
-              data-aos-once="true"
-            >
-              <div className="image-gallery">
-                <Fade {...fadeProperties}>
-                  <div
-                    style={{
-                      backgroundImage: `url(${this.props.data.intro1.childImageSharp.fluid.src})`,
-                    }}
-                  />
-                  <div
-                    style={{
-                      backgroundImage: `url(${this.props.data.intro2.childImageSharp.fluid.src})`,
-                    }}
-                  />
-                  <div
-                    style={{
-                      backgroundImage: `url(${this.props.data.intro3.childImageSharp.fluid.src})`,
-                    }}
-                  />
-                  <div
-                    style={{
-                      backgroundImage: `url(${this.props.data.intro4.childImageSharp.fluid.src})`,
-                    }}
-                  />
-                </Fade>
+            <div className="intro-footer">
+              <div className="intro-footer__working-times">
+                <span>пн - чт и вс: 12.00 - 24: 00</span>
+                <br />
+                <span>пт - сб: 12.00 - 02: 00</span>
               </div>
-            </div>
-          </section>
-          <section className="about">
-            <div className="about__image--wrapper">
-              <div
-                className="about__image"
-                style={{
-                  backgroundImage: `url(${this.props.data.bar.childImageSharp.fluid.src})`,
-                }}
-                data-aos="fade"
-                data-aos-delay="100"
-                data-aos-duration="1200"
-                data-aos-once="true"
-              />
-            </div>
-            <div
-              className="about__text"
-              data-aos="fade"
-              data-aos-delay="200"
-              data-aos-duration="1200"
-              data-aos-once="true"
-            >
-              <h2 className="about__text--title">
-                Атмосфера, созданная с любовью
-              </h2>
-              <p>
-                <b>Angel 8</b> предлагает Вам отведать изысканные блюда
-                паназиатской кухни и блюда на гриле. <br /> Подробнее о нашей
-                &nbsp;
-                <AniLink to="/food" cover bg="#181818" title="Меню | Блюда">
-                  Кухне.
-                </AniLink>
-              </p>
-              <p>
-                У нас самый широкий выбор как традиционных напитков, так и наших
-                фирменных коктейлей. Загляните в наш &nbsp;
-                <AniLink to="/drinks" cover bg="#181818" title="Меню | Напитки">
-                  Бар.
-                </AniLink>
-              </p>
-              <p>
-                Вы найдете нас на территории торгово-делового квартала&nbsp;
+              <div className="intro-footer__contacts">
                 <a
-                  className="index__link"
-                  href="http://likerka-loft.ru/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Сайт likerka-loft.ru"
+                  href="mailto:angel8bar@gmail.com"
+                  title="Напишите нам"
+                  itemProp="email"
                 >
-                  &laquo;Ликерка Лофт&raquo;.
+                  angel8bar@gmail.com
                 </a>
-              </p>
-              <p>
-                <AniLink to="/contacts" cover bg="#181818" title="Контакты">
-                  Как добраться.
-                </AniLink>
-              </p>
+                <br />
+                <a
+                  href="tel:+74872770247"
+                  title="Позвоните нам"
+                  itemProp="telephone"
+                >
+                  +7 (4872) 77-02-47
+                </a>
+              </div>
+              <div className="intro-footer__address">
+                <span>г. Тула пр-т Ленина 85</span>
+                <br />
+                <span>кор. 1, вход 5</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="about">
+          <div className="about__image--wrapper">
+            <div
+              className="about__image"
+              style={{
+                backgroundImage: `url(${props.data.bar_image.childImageSharp.fluid.src})`,
+              }}
+              data-aos="fade"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+              data-aos-once="true"
+            />
+          </div>
+          <div
+            className="about__text"
+            data-aos="fade"
+            data-aos-delay="200"
+            data-aos-duration="1200"
+            data-aos-once="true"
+          >
+            <h2 className="about__text--title">
+              Атмосфера, созданная с любовью
+            </h2>
+            <p>
+              <b>Angel 8</b> предлагает Вам отведать изысканные блюда
+              паназиатской кухни и блюда на гриле. <br /> Подробнее о нашей
+              &nbsp;
+              <AniLink to="/food" cover bg="#181818" title="Меню | Блюда">
+                Кухне.
+              </AniLink>
+            </p>
+            <p>
+              У нас самый широкий выбор как традиционных напитков, так и наших
+              фирменных коктейлей. Загляните в наш &nbsp;
+              <AniLink to="/drinks" cover bg="#181818" title="Меню | Напитки">
+                Бар.
+              </AniLink>
+            </p>
+            <p>
+              Вы найдете нас на территории торгово-делового квартала&nbsp;
+              <a
+                className="index__link"
+                href="http://likerka-loft.ru/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Сайт likerka-loft.ru"
+              >
+                &laquo;Ликерка Лофт&raquo;.
+              </a>
+            </p>
+            <p>
+              <AniLink to="/contacts" cover bg="#181818" title="Контакты">
+                Как добраться.
+              </AniLink>
+            </p>
+          </div>
+        </section>
+        <>
+          <section>
+            <h2 className="media__title">Медиа / Instagram</h2>
+            <div className="media">
+              {instagram.map(card => (
+                <InstagramCard
+                  hreference={card.url}
+                  imageUrl={card.img}
+                  key={card.url}
+                />
+              ))}
             </div>
           </section>
-          <>
-            <section>
-              <h2 className="media__title">Медиа / Instagram</h2>
-              <div className="media">
-                {instagram.map(card => (
-                  <InstagramCard
-                    hreference={card.url}
-                    imageUrl={card.img}
-                    key={card.url}
-                  />
-                ))}
-              </div>
-            </section>
-          </>
-          <Footer />
-        </div>
-      </Layout>
-    )
-  }
+        </>
+        <Footer />
+      </div>
+    </Layout>
+  )
 }
 
 export const fluidInstagramImage = graphql`
@@ -206,7 +186,7 @@ export const fluidInstagramImage = graphql`
 export const fluidImage = graphql`
   fragment fluidImage on File {
     childImageSharp {
-      fluid(maxWidth: 1200) {
+      fluid(maxWidth: 1800) {
         ...GatsbyImageSharpFluid
       }
     }
@@ -239,19 +219,19 @@ export const pageQuery = graphql`
     logoInst: file(relativePath: { eq: "instagram/logo.jpg" }) {
       ...fluidInstagramImage
     }
-    intro1: file(relativePath: { eq: "intro/photo_58.jpg" }) {
+    intro_one: file(relativePath: { eq: "intro/intro_one.jpg" }) {
       ...fluidInstagramImage
     }
-    intro2: file(relativePath: { eq: "intro/photo_61.jpg" }) {
+    intro_two: file(relativePath: { eq: "intro/intro_two.jpg" }) {
       ...fluidInstagramImage
     }
-    intro3: file(relativePath: { eq: "intro/photo_66.jpg" }) {
+    intro_three: file(relativePath: { eq: "intro/intro_three.jpg" }) {
       ...fluidInstagramImage
     }
-    intro4: file(relativePath: { eq: "intro/photo_63.jpg" }) {
+    intro_four: file(relativePath: { eq: "intro/intro_four.jpg" }) {
       ...fluidInstagramImage
     }
-    bar: file(relativePath: { eq: "about/bar.jpg" }) {
+    bar_image: file(relativePath: { eq: "about/bar_image.jpg" }) {
       ...fluidInstagramImage
     }
   }

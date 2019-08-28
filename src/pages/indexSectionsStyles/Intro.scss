@@ -1,0 +1,265 @@
+/*-----MAIN-----*/
+.intro {
+  position: relative;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 0;
+
+  video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: brightness(0.75);
+  }
+}
+
+.intro-hashtag {
+  position: absolute;
+
+  span {
+    text-transform: uppercase;
+  }
+}
+
+.intro-footer {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  letter-spacing: 1px;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+// mobile
+@media (max-width: 599px) {
+  .intro {
+    width: 90%;
+    height: 100vh;
+    margin-left: 5%;
+    margin-top: 7.5vh;
+  }
+
+  .bg-video {
+    height: 90vh;
+  }
+
+  .intro-hashtag {
+    display: none;
+  }
+
+  .intro-footer {
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.5em;
+    width: 100%;
+    height: 40%;
+    margin-left: 1%;
+    font-weight: 700;
+    align-items: flex-start;
+  }
+}
+
+// tublet-portrait
+@media (min-width: 600px) {
+  .intro {
+    width: 90%;
+    height: 100vh;
+    margin-left: 5%;
+    margin-top: 7.5vh;
+  }
+
+  .bg-video {
+    height: 85vh;
+  }
+
+  .intro-hashtag {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center;
+    line-height: 3em;
+
+    h1 {
+      font-weight: 900;
+      letter-spacing: 7px;
+      font-size: 5em;
+    }
+
+    span {
+      font-weight: 900;
+      font-size: 1.25em;
+      letter-spacing: 2px;
+    }
+  }
+
+  .intro-footer {
+    width: 96%;
+    height: 4em;
+    margin-left: 2%;
+    font-weight: 700;
+    line-height: 1.75em;
+    margin-bottom: 1em;
+    .intro-footer__working-times {
+      text-align: left;
+    }
+
+    .intro-footer__contacts {
+      text-align: center;
+    }
+
+    .intro-footer__address {
+      text-align: right;
+    }
+  }
+}
+
+// tablet-landscape
+@media (min-width: 900px) {
+  .intro {
+    width: 90%;
+    height: 100vh;
+    margin-left: 5%;
+    margin-top: 7.5vh;
+  }
+
+  .bg-video {
+    height: 82.5vh;
+  }
+
+  .intro-hashtag {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center;
+    line-height: 3em;
+
+    h1 {
+      font-weight: 900;
+      letter-spacing: 7px;
+      font-size: 5em;
+    }
+
+    span {
+      font-weight: 900;
+      font-size: 1.25em;
+      letter-spacing: 2px;
+    }
+  }
+
+  .intro-footer {
+    width: 96%;
+    height: 4em;
+    margin-left: 2%;
+    font-weight: 700;
+    line-height: 1.75em;
+    margin-bottom: 1em;
+  }
+}
+
+// desktop/laptop
+@media (min-width: 1200px) {
+  .intro {
+    width: 90%;
+    height: 100vh;
+    margin-left: 5%;
+    margin-top: 7.5vh;
+  }
+
+  .bg-video {
+    height: 85vh;
+  }
+
+  .intro-hashtag {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center;
+    line-height: 3em;
+
+    h1 {
+      font-weight: 900;
+      letter-spacing: 7px;
+      font-size: 6em;
+    }
+
+    span {
+      font-weight: 900;
+      font-size: 1.4em;
+      letter-spacing: 2px;
+    }
+  }
+
+  .intro-footer {
+    width: 96%;
+    height: 4em;
+    margin-left: 2%;
+    font-weight: 700;
+    line-height: 1.75em;
+    margin-bottom: 1em;
+  }
+}
+
+// desktop x-large
+@media (min-width: 1800px) {
+  .intro {
+    width: 80%;
+    height: 100vh;
+    margin-left: 10%;
+    margin-top: 7.5vh;
+  }
+
+  .bg-video {
+    height: 82.5vh;
+  }
+
+  .intro-hashtag {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center;
+    line-height: 4em;
+
+    h1 {
+      font-weight: 900;
+      letter-spacing: 7px;
+      font-size: 6em;
+    }
+
+    span {
+      font-weight: 900;
+      font-size: 1.4em;
+      letter-spacing: 2px;
+    }
+  }
+
+  .intro-footer {
+    width: 96%;
+    height: 4em;
+    margin-left: 2%;
+    font-weight: 700;
+    line-height: 1.75em;
+  }
+}

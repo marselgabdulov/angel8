@@ -5,12 +5,10 @@ import SEO from '../components/seo'
 // Components
 import Layout from '../components/layout'
 import Footer from '../components/Footer/Footer'
-import InstagramCard from '../components/InstagramCard/InstagramCard'
 //  Styles
 import './index.css'
 import './indexSectionsStyles/Intro.scss'
 import './indexSectionsStyles/About.scss'
-import './indexSectionsStyles/Media.css'
 
 // Video
 import VideoMP4 from '../video/angel8bg2.mp4'
@@ -27,40 +25,7 @@ function IndexPage(props) {
     indicators: false,
     arrows: false,
   }
-  const instagram = [
-    {
-      url: 'https://www.instagram.com/angel_bar_grill/?hl=ru',
-      img: props.data.logoInst.childImageSharp.fluid.src,
-    },
-    {
-      url: 'https://www.instagram.com/p/Br-JhtlHC59/',
-      img: props.data.command.childImageSharp.fluid.src,
-    },
-    {
-      url: 'https://www.instagram.com/p/BsPx-oonHGk/',
-      img: props.data.bottles.childImageSharp.fluid.src,
-    },
-    {
-      url: 'https://www.instagram.com/p/BsNY__mntMs/',
-      img: props.data.juice.childImageSharp.fluid.src,
-    },
-    {
-      url: 'https://www.instagram.com/p/BsZ3AsRnAay/',
-      img: props.data.some.childImageSharp.fluid.src,
-    },
-    {
-      url: 'https://www.instagram.com/p/BrOGbVbFugw/',
-      img: props.data.david.childImageSharp.fluid.src,
-    },
-    {
-      url: 'https://www.instagram.com/p/Br4_77CHxnP/',
-      img: props.data.asianFood.childImageSharp.fluid.src,
-    },
-    {
-      url: 'https://www.instagram.com/p/BssD9J4nQQB/',
-      img: props.data.bread.childImageSharp.fluid.src,
-    },
-  ]
+
   return (
     <Layout>
       <SEO title="Angel 8 | Эмоциональная кухня и бар в Туле. ✆ +7 4872 77 02 47" />
@@ -110,16 +75,16 @@ function IndexPage(props) {
           <div className="about__gallery">
             <Fade {...fadeProperties}>
               <div className="image-container">
-                <Img fluid={props.data.intro_one.childImageSharp.fluid} />
+                <Img fluid={props.data.about_one.childImageSharp.fluid} />
               </div>
               <div className="image-container">
-                <Img fluid={props.data.intro_two.childImageSharp.fluid} />
+                <Img fluid={props.data.about_two.childImageSharp.fluid} />
               </div>
               <div className="image-container">
-                <Img fluid={props.data.intro_three.childImageSharp.fluid} />
+                <Img fluid={props.data.about_three.childImageSharp.fluid} />
               </div>
               <div className="image-container">
-                <Img fluid={props.data.intro_four.childImageSharp.fluid} />
+                <Img fluid={props.data.about_four.childImageSharp.fluid} />
               </div>
             </Fade>
           </div>
@@ -161,35 +126,11 @@ function IndexPage(props) {
             </p>
           </div>
         </section>
-        <>
-          <section>
-            <h2 className="media__title">Медиа / Instagram</h2>
-            <div className="media">
-              {instagram.map(card => (
-                <InstagramCard
-                  hreference={card.url}
-                  imageUrl={card.img}
-                  key={card.url}
-                />
-              ))}
-            </div>
-          </section>
-        </>
         <Footer />
       </div>
     </Layout>
   )
 }
-
-export const fluidInstagramImage = graphql`
-  fragment fluidInstagramImage on File {
-    childImageSharp {
-      fluid(maxWidth: 450) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-`
 
 export const fluidImage = graphql`
   fragment fluidImage on File {
@@ -203,41 +144,17 @@ export const fluidImage = graphql`
 
 export const pageQuery = graphql`
   query {
-    asianFood: file(relativePath: { eq: "instagram/asian_food.jpg" }) {
-      ...fluidInstagramImage
+    about_one: file(relativePath: { eq: "intro/about_one.jpg" }) {
+      ...fluidImage
     }
-    bottles: file(relativePath: { eq: "instagram/bottles.jpg" }) {
-      ...fluidInstagramImage
+    about_two: file(relativePath: { eq: "intro/about_two.jpg" }) {
+      ...fluidImage
     }
-    bread: file(relativePath: { eq: "instagram/bread.jpg" }) {
-      ...fluidInstagramImage
+    about_three: file(relativePath: { eq: "intro/about_three.jpg" }) {
+      ...fluidImage
     }
-    command: file(relativePath: { eq: "instagram/command.jpg" }) {
-      ...fluidInstagramImage
-    }
-    david: file(relativePath: { eq: "instagram/david.jpg" }) {
-      ...fluidInstagramImage
-    }
-    juice: file(relativePath: { eq: "instagram/juice.jpg" }) {
-      ...fluidInstagramImage
-    }
-    some: file(relativePath: { eq: "instagram/some.jpg" }) {
-      ...fluidInstagramImage
-    }
-    logoInst: file(relativePath: { eq: "instagram/logo.jpg" }) {
-      ...fluidInstagramImage
-    }
-    intro_one: file(relativePath: { eq: "intro/intro_one.jpg" }) {
-      ...fluidInstagramImage
-    }
-    intro_two: file(relativePath: { eq: "intro/intro_two.jpg" }) {
-      ...fluidInstagramImage
-    }
-    intro_three: file(relativePath: { eq: "intro/intro_three.jpg" }) {
-      ...fluidInstagramImage
-    }
-    intro_four: file(relativePath: { eq: "intro/intro_four.jpg" }) {
-      ...fluidInstagramImage
+    about_four: file(relativePath: { eq: "intro/about_four.jpg" }) {
+      ...fluidImage
     }
   }
 `

@@ -6,9 +6,7 @@ import SEO from '../components/seo'
 import Layout from '../components/layout'
 import Footer from '../components/Footer/Footer'
 //  Styles
-import './index.css'
-import './indexSectionsStyles/Intro.scss'
-import './indexSectionsStyles/About.scss'
+import './index.scss'
 
 // Video
 import VideoMP4 from '../video/angel8bg2.mp4'
@@ -19,7 +17,7 @@ import Img from 'gatsby-image'
 
 function IndexPage(props) {
   const fadeProperties = {
-    duration: 5000,
+    duration: 3000,
     transitionDuration: 500,
     infinite: true,
     indicators: false,
@@ -126,6 +124,93 @@ function IndexPage(props) {
             </p>
           </div>
         </section>
+        <section className="team">
+          <h2>Команда</h2>
+          <div className="team-cards">
+            <div className="team-card">
+              <Img
+                fluid={props.data.teamFour.childImageSharp.fluid}
+                className="team-image"
+              ></Img>
+              <div className="card-info">
+                <div className="card-name">Арман Хачатрян</div>
+                <div className="card-position">
+                  <b>шеф-повар</b>
+                </div>
+                <p className="card-experience">
+                  <b>проекты</b> : "Рагу",&nbsp; "Тайский слон"&nbsp;,
+                  "Моментс",&nbsp; ученик{' '}
+                  <a
+                    href="https://ruspekh.ru/people/item/zimin-aleksej-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Алексея Зимина
+                  </a>{' '}
+                  и{' '}
+                  <a
+                    href="http://www.timeout.ru/msk/person/27003"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {' '}
+                    Ильи Шалева
+                  </a>
+                  &nbsp; (г.Москва)
+                </p>
+              </div>
+            </div>
+            <div className="team-card">
+              <Img
+                fluid={props.data.teamThree.childImageSharp.fluid}
+                className="team-image"
+              ></Img>
+              <div className="card-info">
+                <div className="card-name">Константин Комаров</div>
+                <div className="card-position">
+                  <b>шеф-бармен</b>
+                </div>
+                <p className="card-experience">
+                  <b>проекты</b> : "Noor",&nbsp; "Gipsy",&nbsp; "Bar
+                  30/7",&nbsp; "Уголёк"&nbsp;(г.Москва)
+                </p>
+              </div>
+            </div>
+            <div className="team-card">
+              <Img
+                fluid={props.data.teamTwo.childImageSharp.fluid}
+                className="team-image"
+              ></Img>
+              <div className="card-info">
+                <div className="card-name">Сергей Захаров</div>
+                <div className="card-position">
+                  <b>шеф-сомелье</b>
+                </div>
+                <p className="card-experience">
+                  <b>проекты</b> : "Bar 30/7",&nbsp; "Gipsy",&nbsp;
+                  "Noor",&nbsp; "Уголёк",&nbsp; "Северяне"&nbsp; (г.Москва)
+                </p>
+              </div>
+            </div>
+            <div className="team-card">
+              <Img
+                fluid={props.data.teamOne.childImageSharp.fluid}
+                className="team-image"
+              ></Img>
+              <div className="card-info">
+                <div className="card-name">Ладо Прангишвили</div>
+                <div className="card-position">
+                  <b>идейный вдохновитель</b>
+                </div>
+                <p className="card-experience">
+                  <b>проекты</b> : "Bar 30/7",&nbsp; "Simachev Bar",&nbsp;
+                  "Dodo",&nbsp; "Pizza Express и Zю кафе",&nbsp; "Time out
+                  Bar",&nbsp; "Северяне"&nbsp; (г.Москва)
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
         <Footer />
       </div>
     </Layout>
@@ -144,16 +229,28 @@ export const fluidImage = graphql`
 
 export const pageQuery = graphql`
   query {
-    about_one: file(relativePath: { eq: "intro/about_one.jpg" }) {
+    about_one: file(relativePath: { eq: "about/about_one.jpg" }) {
       ...fluidImage
     }
-    about_two: file(relativePath: { eq: "intro/about_two.jpg" }) {
+    about_two: file(relativePath: { eq: "about/about_two.jpg" }) {
       ...fluidImage
     }
-    about_three: file(relativePath: { eq: "intro/about_three.jpg" }) {
+    about_three: file(relativePath: { eq: "about/about_three.jpg" }) {
       ...fluidImage
     }
-    about_four: file(relativePath: { eq: "intro/about_four.jpg" }) {
+    about_four: file(relativePath: { eq: "about/about_four.jpg" }) {
+      ...fluidImage
+    }
+    teamOne: file(relativePath: { eq: "team/lado.jpg" }) {
+      ...fluidImage
+    }
+    teamTwo: file(relativePath: { eq: "team/sergey.jpg" }) {
+      ...fluidImage
+    }
+    teamThree: file(relativePath: { eq: "team/konstantin.jpg" }) {
+      ...fluidImage
+    }
+    teamFour: file(relativePath: { eq: "team/arman.jpg" }) {
       ...fluidImage
     }
   }

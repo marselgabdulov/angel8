@@ -116,7 +116,7 @@ const detailsQuery = graphql`
         siteUrl
       }
     }
-    ogImage: file(relativePath: { eq: "ogImg.png" }) {
+    ogImage: file(relativePath: { eq: "ogImg2.png" }) {
       childImageSharp {
         fluid(maxWidth: 1200) {
           ...GatsbyImageSharpFluid

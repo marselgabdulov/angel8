@@ -3,6 +3,7 @@ import './menuPages.scss'
 import Layout from '../components/layout'
 import Footer from '../components/Footer/Footer'
 import SEO from '../components/seo'
+import menu from '../docs/angel_menu.pdf'
 
 import SimpleMenuPosition from '../components/SimpleMenuPosition/SimpleMenuPosition'
 import ComplexMenuPosition from '../components/ComplexMenuPosition/ComplexMenuPosition'
@@ -68,6 +69,9 @@ class DrinksPage extends React.Component {
               </div>
               <div className="menu-page__wrapper">
                 <h1>Меню напитки</h1>
+                <a href={menu} download>
+                  Скачать меню PDF
+                </a>
                 <span className="menu-page__submenu-title">БЫСТРЫЙ ПОИСК</span>
                 <div className="menu-page__submenu">
                   <button

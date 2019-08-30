@@ -3,6 +3,7 @@ import './menuPages.scss'
 import Layout from '../components/layout'
 import Footer from '../components/Footer/Footer'
 import SEO from '../components/seo'
+import menu from '../docs/angel_menu.pdf'
 
 import SimpleMenuPosition from '../components/SimpleMenuPosition/SimpleMenuPosition'
 import {
@@ -32,6 +33,9 @@ class FoodPage extends React.Component {
               <div className="menu-page__wrapper">
                 <section className="menu-page__section">
                   <h1>Меню блюда</h1>
+                  <a href={menu} download>
+                    Скачать меню PDF
+                  </a>
                   <div className="menu-page__section-title">
                     ПОЗДНИЕ ЗАВТРАКИ 12:00-15:00
                   </div>

@@ -129,7 +129,7 @@ function IndexPage(props) {
           <div className="team-cards">
             <div className="team-card">
               <Img
-                fluid={props.data.teamFour.childImageSharp.fluid}
+                fluid={props.data.Arman.childImageSharp.fluid}
                 className="team-image"
               ></Img>
               <div className="card-info">
@@ -162,7 +162,7 @@ function IndexPage(props) {
             </div>
             <div className="team-card">
               <Img
-                fluid={props.data.teamThree.childImageSharp.fluid}
+                fluid={props.data.Konstantin.childImageSharp.fluid}
                 className="team-image"
               ></Img>
               <div className="card-info">
@@ -178,7 +178,7 @@ function IndexPage(props) {
             </div>
             <div className="team-card">
               <Img
-                fluid={props.data.teamTwo.childImageSharp.fluid}
+                fluid={props.data.Sergey.childImageSharp.fluid}
                 className="team-image"
               ></Img>
               <div className="card-info">
@@ -194,7 +194,7 @@ function IndexPage(props) {
             </div>
             <div className="team-card">
               <Img
-                fluid={props.data.teamOne.childImageSharp.fluid}
+                fluid={props.data.Lado.childImageSharp.fluid}
                 className="team-image"
               ></Img>
               <div className="card-info">
@@ -241,16 +241,16 @@ export const pageQuery = graphql`
     about_four: file(relativePath: { eq: "about/about_four.jpg" }) {
       ...fluidImage
     }
-    teamOne: file(relativePath: { eq: "team/lado.jpg" }) {
+    Lado: file(relativePath: { eq: "team/Lado.jpg" }) {
       ...fluidImage
     }
-    teamTwo: file(relativePath: { eq: "team/sergey.jpg" }) {
+    Sergey: file(relativePath: { eq: "team/Sergey.jpg" }) {
       ...fluidImage
     }
-    teamThree: file(relativePath: { eq: "team/konstantin.jpg" }) {
+    Konstantin: file(relativePath: { eq: "team/Konstantin.jpg" }) {
       ...fluidImage
     }
-    teamFour: file(relativePath: { eq: "team/arman.jpg" }) {
+    Arman: file(relativePath: { eq: "team/Arman.jpg" }) {
       ...fluidImage
     }
   }

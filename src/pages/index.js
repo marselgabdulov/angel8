@@ -35,7 +35,7 @@ function IndexPage(props) {
               <source type="video/mp4" src={VideoMP4} />
             </video>
             <div className="intro-hashtag">
-              <h1>#Angel8</h1>
+              <h1>#Angel 8</h1>
               <span>cocktails. grill. wine...</span>
             </div>
             <div className="intro-footer">

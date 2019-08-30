@@ -125,7 +125,7 @@ function IndexPage(props) {
           </div>
         </section>
         <section className="team">
-          <h2>Команда</h2>
+          <h2>Команда Angel 8</h2>
           <div className="team-cards">
             <div className="team-card">
               <Img

@@ -1,0 +1,44 @@
+.nav-closed,
+.nav-opened {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100%;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #0e0e0e;
+  transition: transform 0.5s ease-in-out;
+  overflow: hidden;
+  z-index: 100;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.nav-closed {
+  transform: translateX(100%);
+  transition: transform 0.3 ease-in-out !important;
+}
+
+.nav-opened {
+  transform: translateX(0);
+  transition: transform 0.3 ease-in-out !important;
+}
+
+.nav__link {
+  width: auto;
+  font-size: 1.5em;
+  margin-bottom: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}

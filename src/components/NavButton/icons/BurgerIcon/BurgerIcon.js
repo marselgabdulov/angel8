@@ -1,5 +1,5 @@
-import React from "react";
-import "./BurgerIcon.css";
+import React from 'react'
+import './BurgerIcon.css'
 
 export function BurgerIcon() {
   return (
@@ -11,10 +11,10 @@ export function BurgerIcon() {
         height="32"
         fill="none"
         stroke="white"
-        strokeWidth="2"
+        strokeWidth="4"
       >
         <path d="M4 10h24M4 16h16M4 22h8" />
       </svg>
     </div>
-  );
+  )
 }

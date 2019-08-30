@@ -13,7 +13,7 @@ export function CrossIcon() {
       stroke="white"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth="2"
+      strokeWidth="4"
     >
       <path d="M2 24L24 2m0 22L2 2" />
     </svg>

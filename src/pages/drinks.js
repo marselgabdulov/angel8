@@ -1,7 +1,8 @@
 import React from 'react'
-import './menuPages.css'
+import './menuPages.scss'
 import Layout from '../components/layout'
 import Footer from '../components/Footer/Footer'
+import SEO from '../components/seo'
 
 import SimpleMenuPosition from '../components/SimpleMenuPosition/SimpleMenuPosition'
 import ComplexMenuPosition from '../components/ComplexMenuPosition/ComplexMenuPosition'
@@ -57,6 +58,7 @@ class DrinksPage extends React.Component {
   render() {
     return (
       <>
+        <SEO title="Меню Напитки" />
         <Layout>
           <div className="wrapper">
             <div className="menu-page">
@@ -65,6 +67,7 @@ class DrinksPage extends React.Component {
                 \&nbsp; \&nbsp; \&nbsp; \&nbsp; \&nbsp; \&nbsp; \
               </div>
               <div className="menu-page__wrapper">
+                <h1>Меню напитки</h1>
                 <span className="menu-page__submenu-title">БЫСТРЫЙ ПОИСК</span>
                 <div className="menu-page__submenu">
                   <button
@@ -302,7 +305,7 @@ class DrinksPage extends React.Component {
                   </span>
                   {whiteWinesBottles.map(position => (
                     <ComplexMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                       description={position.description}
@@ -321,7 +324,7 @@ class DrinksPage extends React.Component {
                   </span>
                   {redWinesBottles.map(position => (
                     <ComplexMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                       description={position.description}
@@ -340,7 +343,7 @@ class DrinksPage extends React.Component {
                   </span>
                   {champagne.map(position => (
                     <ComplexMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                       description={position.description}
@@ -359,7 +362,7 @@ class DrinksPage extends React.Component {
                   </span>
                   {whiteWinesGlasses.map(position => (
                     <ComplexMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                       description={position.description}
@@ -378,7 +381,7 @@ class DrinksPage extends React.Component {
                   </span>
                   {redWinesGlasses.map(position => (
                     <ComplexMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                       description={position.description}
@@ -399,7 +402,7 @@ class DrinksPage extends React.Component {
                   </span>
                   {scotchWhiskeyBlend.map(position => (
                     <SimpleMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                     />
@@ -409,7 +412,7 @@ class DrinksPage extends React.Component {
                   </span>
                   {singleMalt.map(position => (
                     <SimpleMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                     />
@@ -419,7 +422,7 @@ class DrinksPage extends React.Component {
                   </span>
                   {irishWhiskey.map(position => (
                     <SimpleMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                     />
@@ -429,7 +432,7 @@ class DrinksPage extends React.Component {
                   </span>
                   {americanWhiskey.map(position => (
                     <SimpleMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                     />
@@ -439,7 +442,7 @@ class DrinksPage extends React.Component {
                   </span>
                   {japanWhiskey.map(position => (
                     <SimpleMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                     />
@@ -457,7 +460,7 @@ class DrinksPage extends React.Component {
                   </span>
                   {tequilaAndMezkal.map(position => (
                     <SimpleMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                     />
@@ -475,7 +478,7 @@ class DrinksPage extends React.Component {
                   </span>
                   {portoAndJerez.map(position => (
                     <SimpleMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                     />
@@ -491,7 +494,7 @@ class DrinksPage extends React.Component {
                   <span className="menu-page__section-title">ВОДКА 50 мл</span>
                   {vodka.map(position => (
                     <SimpleMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                     />
@@ -509,7 +512,7 @@ class DrinksPage extends React.Component {
                   </span>
                   {rumAndChacha.map(position => (
                     <SimpleMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                     />
@@ -525,7 +528,7 @@ class DrinksPage extends React.Component {
                   <span className="menu-page__section-title">ДЖИН 50 мл</span>
                   {gin.map(position => (
                     <SimpleMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                     />
@@ -543,7 +546,7 @@ class DrinksPage extends React.Component {
                   </span>
                   {brandy.map(position => (
                     <SimpleMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                     />
@@ -561,7 +564,7 @@ class DrinksPage extends React.Component {
                   </span>
                   {calvados.map(position => (
                     <SimpleMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                     />
@@ -577,7 +580,7 @@ class DrinksPage extends React.Component {
                   <span className="menu-page__section-title">ГРАППА 50 мл</span>
                   {grappa.map(position => (
                     <SimpleMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                     />
@@ -593,7 +596,7 @@ class DrinksPage extends React.Component {
                   <span className="menu-page__section-title">ПИСКО 50 мл</span>
                   {pisco.map(position => (
                     <SimpleMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                     />
@@ -611,7 +614,7 @@ class DrinksPage extends React.Component {
                   </span>
                   {aperitivo.map(position => (
                     <SimpleMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                     />
@@ -627,7 +630,7 @@ class DrinksPage extends React.Component {
                   <span className="menu-page__section-title">ВЕРМУТ</span>
                   {vermut.map(position => (
                     <SimpleMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                     />
@@ -645,7 +648,7 @@ class DrinksPage extends React.Component {
                   </span>
                   {cocktails.map(position => (
                     <ComplexMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                       description={position.description}
@@ -664,7 +667,7 @@ class DrinksPage extends React.Component {
                   </span>
                   {summerCocktails.map(position => (
                     <ComplexMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                       description={position.description}
@@ -681,7 +684,7 @@ class DrinksPage extends React.Component {
                   <span className="menu-page__section-title">Вода</span>
                   {water.map(position => (
                     <SimpleMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                     />
@@ -697,7 +700,7 @@ class DrinksPage extends React.Component {
                   <span className="menu-page__section-title">СМУЗИ 300 мл</span>
                   {smoosy.map(position => (
                     <ComplexMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                       description={position.description}
@@ -716,7 +719,7 @@ class DrinksPage extends React.Component {
                   </span>
                   {limonades.map(position => (
                     <SimpleMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                     />
@@ -732,7 +735,7 @@ class DrinksPage extends React.Component {
                   <span className="menu-page__section-title">СОКИ "Я"</span>
                   {juicesYa.map(position => (
                     <SimpleMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                     />
@@ -749,7 +752,7 @@ class DrinksPage extends React.Component {
                   </span>
                   {freshJuices.map(position => (
                     <SimpleMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                     />
@@ -770,7 +773,7 @@ class DrinksPage extends React.Component {
                   </span>
                   {bottleBeer.map(position => (
                     <SimpleMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                     />
@@ -788,7 +791,7 @@ class DrinksPage extends React.Component {
                   </span>
                   {hotAlco.map(position => (
                     <ComplexMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                       description={position.description}
@@ -805,14 +808,14 @@ class DrinksPage extends React.Component {
                   <span className="menu-page__section-title">КОФЕ</span>
                   {coffee.map(position => (
                     <SimpleMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                     />
                   ))}
                   {coffeWithEngredients.map(position => (
                     <ComplexMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                       description={position.description}
@@ -830,7 +833,7 @@ class DrinksPage extends React.Component {
                   </span>
                   {fruitTea.map(position => (
                     <SimpleMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                     />
@@ -838,7 +841,7 @@ class DrinksPage extends React.Component {
                   <span className="menu-page__section-title">ЧАЙ 450 мл</span>
                   {simpleTea.map(position => (
                     <SimpleMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                     />
@@ -848,7 +851,7 @@ class DrinksPage extends React.Component {
                   </span>
                   {altayTea.map(position => (
                     <SimpleMenuPosition
-                      key={position.id}
+                      key={position.name}
                       name={position.name}
                       price={position.price}
                     />

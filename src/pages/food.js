@@ -1,7 +1,8 @@
 import React from 'react'
-import './menuPages.css'
+import './menuPages.scss'
 import Layout from '../components/layout'
 import Footer from '../components/Footer/Footer'
+import SEO from '../components/seo'
 
 import SimpleMenuPosition from '../components/SimpleMenuPosition/SimpleMenuPosition'
 import {
@@ -20,6 +21,7 @@ class FoodPage extends React.Component {
   render() {
     return (
       <>
+        <SEO title="Меню Блюда" />
         <Layout>
           <div className="wrapper">
             <div className="menu-page">
@@ -29,6 +31,7 @@ class FoodPage extends React.Component {
               </div>
               <div className="menu-page__wrapper">
                 <section className="menu-page__section">
+                  <h1>Меню блюда</h1>
                   <div className="menu-page__section-title">
                     ПОЗДНИЕ ЗАВТРАКИ 12:00-15:00
                   </div>

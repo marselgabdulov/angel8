@@ -24,7 +24,7 @@
   }
 }
 
-.intro-hashtag {
+.intro-slogan {
   position: absolute;
 
   span {
@@ -62,7 +62,7 @@
     height: 90vh;
   }
 
-  .intro-hashtag {
+  .intro-slogan {
     display: none;
   }
 
@@ -92,18 +92,18 @@
     height: 92.5vh;
   }
 
-  .intro-hashtag {
+  .intro-slogan {
+    width: 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 50%);
     z-index: 10;
     text-align: center;
-    line-height: 3em;
 
     h1 {
       font-weight: 900;
       letter-spacing: 3px;
-      font-size: 4em;
+      font-size: 3em;
     }
 
     span {
@@ -148,10 +148,11 @@
     height: 87.5vh;
   }
 
-  .intro-hashtag {
+  .intro-slogan {
+    width: 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -10%);
     z-index: 10;
     text-align: center;
     line-height: 3em;
@@ -159,7 +160,7 @@
     h1 {
       font-weight: 900;
       letter-spacing: 3px;
-      font-size: 4em;
+      font-size: 3em;
     }
 
     span {
@@ -192,18 +193,18 @@
     height: 85vh;
   }
 
-  .intro-hashtag {
+  .intro-slogan {
+    width: 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -10%);
     z-index: 10;
     text-align: center;
-    line-height: 3em;
 
     h1 {
       font-weight: 900;
       letter-spacing: 3px;
-      font-size: 6em;
+      font-size: 3.5em;
     }
 
     span {
@@ -236,18 +237,20 @@
     height: 90vh;
   }
 
-  .intro-hashtag {
+  .intro-slogan {
+    width: 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -10%);
     z-index: 10;
     text-align: center;
     line-height: 4em;
 
     h1 {
+      text-transform: uppercase;
       font-weight: 900;
       letter-spacing: 3px;
-      font-size: 6em;
+      font-size: 4em;
     }
 
     span {

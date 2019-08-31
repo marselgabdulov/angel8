@@ -7,6 +7,10 @@
   h1 {
     font-weight: bold;
   }
+
+  a {
+    text-transform: uppercase;
+  }
 }
 
 .menu-page__upper {
@@ -32,7 +36,6 @@
 }
 
 .menu-page__submenu {
-  z-index: 200;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;

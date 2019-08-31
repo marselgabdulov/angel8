@@ -34,9 +34,9 @@ function IndexPage(props) {
               <source type="video/webm" src={VideoWEBM} />
               <source type="video/mp4" src={VideoMP4} />
             </video>
-            <div className="intro-hashtag">
-              <h1>#Angel 8</h1>
-              <span>cocktails. grill. wine...</span>
+            <div className="intro-slogan">
+              <h1>Эмоциональная кухня</h1>
+              <span>ресторан. гриль. бар.</span>
             </div>
             <div className="intro-footer">
               <div className="intro-footer__working-times">
@@ -87,9 +87,10 @@ function IndexPage(props) {
             </Fade>
           </div>
           <div className="about__text">
-            <h2 className="about__text--title">Эмоциональная кухня</h2>
+            <h2 className="about__text--title">О нас</h2>
             <p>
-              Наши блюда готовятся в печи{' '}
+              Авторская кухня. Специализируемся на приготовлении на гриле. Наши
+              блюда готовятся в печи{' '}
               <a
                 href="https://www.josper.es/ru/josper/about/"
                 target="_blank"
@@ -99,11 +100,9 @@ function IndexPage(props) {
                 Josper.
               </a>
             </p>
-            <p>Классические коктейли из первоисточников.</p>
-            <p>Хороший выбор вина в правильных бокалах.</p>
             <p>
-              Восьмерка как символ бесконечности,​ разделение мира на две
-              основные составляющие – дух и материю, соединение неба и земли.
+              Классические и фирменные коктейли. <br />
+              Хороший выбор вина в правильных бокалах.
             </p>
             <p>
               Вы найдете нас на территории торгово-делового квартала&nbsp;
@@ -119,7 +118,7 @@ function IndexPage(props) {
             </p>
             <p>
               <AniLink to="/contacts" cover bg="#181818" title="Контакты">
-                Как добраться.
+                Контакты.
               </AniLink>
             </p>
           </div>

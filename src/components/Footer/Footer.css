@@ -1,7 +1,7 @@
 /*-----MAIN-----*/
 .footer {
   width: 100%;
-  background-color: rgba(11, 11, 11, 0.5);
+  background-color: rgba(11, 11, 11, 0);
   color: white;
   text-transform: uppercase;
 }

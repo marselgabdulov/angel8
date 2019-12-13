@@ -39,18 +39,8 @@ class FoodPage extends React.Component {
                   <div className="menu-page__section-title">
                     ПОЗДНИЕ ЗАВТРАКИ 12:00-15:00
                   </div>
-                  <div className="menu-page__section-subtitle">
-                    Натуральный йогурт & Cемена чиа и льна
-                  </div>
-                  {brunch.slice(0, 3).map(position => (
-                    <SimpleMenuPosition
-                      key={position.id}
-                      name={position.name}
-                      price={position.price}
-                    />
-                  ))}
                   <div className="menu-page__section-subtitle">Яйца & Хлеб</div>
-                  {brunch.slice(3, brunch.length).map(position => (
+                  {brunch.map(position => (
                     <SimpleMenuPosition
                       key={position.id}
                       name={position.name}

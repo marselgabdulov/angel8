@@ -25,7 +25,7 @@ import {
   aperitivo,
   vermut,
   cocktails,
-  summerCocktails,
+  specialCocktails,
   water,
   smoosy,
   limonades,
@@ -226,10 +226,10 @@ class DrinksPage extends React.Component {
                   <button
                     className="menu-page__submenu-button"
                     onClick={() =>
-                      this.scrollTo(document.getElementById('summerCocktails'))
+                      this.scrollTo(document.getElementById('specialCocktails'))
                     }
                   >
-                    Летние Коктейли
+                    FORGOTTEN COCKTAIL RECIPES
                   </button>
                   <button
                     className="menu-page__submenu-button"
@@ -660,16 +660,16 @@ class DrinksPage extends React.Component {
                   ))}
                 </section>
                 <section
-                  id="summerCocktails"
+                  id="specialCocktails"
                   className="menu-page__section"
                   ref={section => {
-                    this.summerCocktails = section
+                    this.specialCocktails = section
                   }}
                 >
                   <span className="menu-page__section-title">
-                    SUMMER COCKTAILS
+                    FORGOTTEN COCKTAIL RECIPES
                   </span>
-                  {summerCocktails.map(position => (
+                  {specialCocktails.map(position => (
                     <ComplexMenuPosition
                       key={position.name}
                       name={position.name}

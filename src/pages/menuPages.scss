@@ -4,6 +4,7 @@
   background: white;
   color: black;
   margin: 65px auto;
+
   h1 {
     font-weight: bold;
   }
@@ -66,7 +67,7 @@
 }
 
 .menu-page__submenu-button:hover {
-  color: orange;
+  color: rgb(247, 66, 126);
 }
 
 .menu-page__section-title {
@@ -151,6 +152,7 @@
     margin: auto;
     width: 95%;
   }
+
   .menu-page__upper {
     font-weight: bold;
     position: absolute;
@@ -175,6 +177,7 @@
     margin: auto;
     justify-content: flex-end;
   }
+
   .menu-page__upper {
     font-weight: bold;
     position: absolute;
@@ -202,6 +205,7 @@
     margin: auto;
     justify-content: flex-end;
   }
+
   .menu-page__upper {
     font-weight: bold;
     position: absolute;

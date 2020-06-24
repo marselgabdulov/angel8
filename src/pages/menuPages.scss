@@ -220,14 +220,14 @@
 /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
 @media only screen and (min-width: 90.063em) and (max-width: 120em) {
   .menu-page {
-    font-size: 1.5em;
+    font-size: 1.25em;
     line-height: 3em;
     font-weight: 500;
     width: 80%;
   }
 
   .menu-page__wrapper {
-    width: 80%;
+    width: 94%;
     margin: auto;
     height: 100%;
   }
@@ -262,6 +262,6 @@
     position: absolute;
     top: 1.3em;
     right: 5.5em;
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 }

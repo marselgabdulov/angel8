@@ -8,6 +8,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   overflow: hidden;
   z-index: 0;
 
@@ -52,14 +53,8 @@
 // mobile
 @media (max-width: 599px) {
   .intro {
-    width: 90%;
-    height: 100vh;
-    margin-left: 5%;
-    margin-top: 7.5vh;
-  }
-
-  .bg-video {
-    height: 90vh;
+    width: 100%;
+    height: calc(100vh - 4em);
   }
 
   .intro-slogan {
@@ -69,27 +64,21 @@
   .intro-footer {
     flex-direction: column;
     justify-content: space-between;
-    line-height: 1.5em;
     width: 100%;
-    height: 40%;
-    margin-left: 1%;
-    margin-bottom: 4em;
-    font-weight: 700;
+    height: auto;
+    margin-left: 1em;
+    margin-bottom: 2em;
+    font-weight: 500;
     align-items: flex-start;
+    font-size: 0.9em;
   }
 }
 
 // tublet-portrait
 @media (min-width: 600px) {
   .intro {
-    width: 90%;
-    height: 100vh;
-    margin-left: 5%;
-    margin-top: 5vh;
-  }
-
-  .bg-video {
-    height: 92.5vh;
+    width: 100%;
+    height: calc(100vh - 5em);
   }
 
   .intro-slogan {
@@ -103,24 +92,23 @@
     h1 {
       font-weight: 900;
       letter-spacing: 3px;
-      font-size: 3em;
+      margin-bottom: 1em;
     }
 
     span {
       font-weight: 900;
-      font-size: 1.25em;
       letter-spacing: 2px;
     }
   }
 
   .intro-footer {
-    width: 96%;
+    width: 90%;
     height: 4em;
-    margin-left: 2%;
-    font-weight: 700;
-    line-height: 1.75em;
-    margin-bottom: 1em;
-    font-size: 0.9em;
+    margin-left: 5%;
+    font-weight: 500;
+    line-height: 1.5em;
+    margin-bottom: 2em;
+
     .intro-footer__working-times {
       text-align: left;
     }
@@ -138,14 +126,12 @@
 // tablet-landscape
 @media (min-width: 900px) {
   .intro {
-    width: 90%;
-    height: 100vh;
-    margin-left: 5%;
-    margin-top: 7.5vh;
+    width: 100%;
+    height: calc(100vh - 5em);
   }
 
   .bg-video {
-    height: 87.5vh;
+    height: 100%;
   }
 
   .intro-slogan {
@@ -160,23 +146,20 @@
     h1 {
       font-weight: 900;
       letter-spacing: 3px;
-      font-size: 3em;
     }
 
     span {
       font-weight: 900;
-      font-size: 1em;
       letter-spacing: 2px;
     }
   }
 
   .intro-footer {
-    width: 96%;
+    width: 90%;
     height: 4em;
-    margin-left: 2%;
+    margin-left: 5%;
     font-weight: 700;
-    line-height: 1.75em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
   }
 }
 
@@ -184,13 +167,8 @@
 @media (min-width: 1200px) {
   .intro {
     width: 90%;
-    height: 100vh;
+    height: calc(100vh - 5em);
     margin-left: 5%;
-    margin-top: 7.5vh;
-  }
-
-  .bg-video {
-    height: 85vh;
   }
 
   .intro-slogan {
@@ -204,12 +182,11 @@
     h1 {
       font-weight: 900;
       letter-spacing: 3px;
-      font-size: 3.5em;
+      margin-bottom: 0;
     }
 
     span {
       font-weight: 900;
-      font-size: 1.4em;
       letter-spacing: 2px;
     }
   }
@@ -219,8 +196,7 @@
     height: 4em;
     margin-left: 2%;
     font-weight: 700;
-    line-height: 1.75em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
   }
 }
 
@@ -228,13 +204,12 @@
 @media (min-width: 1800px) {
   .intro {
     width: 80%;
-    height: 100vh;
+    height: calc(100vh - 4em);
     margin-left: 10%;
-    margin-top: 5vh;
   }
 
   .bg-video {
-    height: 90vh;
+    height: 100%;
   }
 
   .intro-slogan {
@@ -250,12 +225,10 @@
       text-transform: uppercase;
       font-weight: 900;
       letter-spacing: 3px;
-      font-size: 4em;
     }
 
     span {
       font-weight: 900;
-      font-size: 1.4em;
       letter-spacing: 2px;
     }
   }
@@ -265,6 +238,5 @@
     height: 4em;
     margin-left: 1%;
     font-weight: 700;
-    line-height: 1.75em;
   }
 }

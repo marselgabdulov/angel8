@@ -1,16 +1,15 @@
 /*-----MAIN-----*/
 .header {
-  width: 100%;
-  position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
   z-index: 2000;
   font-weight: 500;
   background-color: rgb(11, 11, 11);
 }
 
 .header__wrapper {
-  width: 80%;
+  height: 100%;
   margin: auto;
   display: -webkit-flex;
   display: -ms-flex;
@@ -32,6 +31,7 @@
 .header__logo img:hover {
   opacity: 0.7;
 }
+
 .header__logo-img {
   width: 150px;
 }
@@ -42,6 +42,7 @@
   display: -ms-flex;
   display: flex;
   justify-content: space-between;
+  font-weight: bold;
 }
 
 .header__links a {
@@ -57,11 +58,14 @@
 
 /* Small screens - MOBILE */
 
-/* max-width 640px, mobile-only styles, orientation: portrait */
-@media only screen and (max-width: 40em) and (orientation: portrait) {
+/* mobile portrait */
+@media (max-width: 599px) {
   .header {
     background-color: black;
+    position: fixed;
+    height: 4em;
   }
+
   .header__wrapper {
     width: 100%;
   }
@@ -70,40 +74,26 @@
     width: 100px;
     margin: 1em;
   }
+
   .header__links {
     display: none;
   }
 }
 
-/* max-width 640px, mobile-only styles, orientation: landscape */
-@media only screen and (max-width: 40em) and (orientation: landscape) {
+
+// tublet-portrait
+@media (min-width: 600px) {
   .header {
     background-color: black;
-  }
-  .header__wrapper {
-    width: 91%;
-    margin: auto;
+    position: fixed;
+    height: 5em;
   }
 
-  .header__logo {
-    width: 30%;
-  }
-  .header__links {
-    width: 60%;
-  }
-}
-
-/* Medium screens - TABLET */
-
-/* min-width 641px and max-width 1024px, orientation: portrait */
-@media only screen and (min-width: 40.063em) and (max-width: 64em) and (orientation: portrait) {
-  .header {
-    background-color: black;
-  }
   .header__wrapper {
     width: 90%;
     margin: auto;
   }
+
   .header__logo-img {
     width: 80px;
   }
@@ -111,16 +101,20 @@
   .header__logo {
     width: 40%;
   }
+
   .header__links {
     width: 50%;
   }
 }
 
-/* min-width 641px and max-width 1024px, orientation: portrait */
-@media only screen and (min-width: 40.063em) and (max-width: 64em) and (orientation: landscape) {
+// tablet-landscape
+@media (min-width: 900px) {
   .header {
     background-color: black;
+    position: fixed;
+    height: 5em;
   }
+
   .header__wrapper {
     width: 90%;
     margin: auto;
@@ -129,52 +123,52 @@
   .header__logo {
     width: 40%;
   }
+
   .header__links {
-    width: 50%;
+    width: 30%;
   }
 }
 
-/* Large screens - DESKTOP */
-/* min-width 1025px, large screens */
-
-/* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
-@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+// desktop/laptop
+@media (min-width: 1200px) {
   .header {
-    height: 4em;
+    height: 5em;
+    position: absolute;
   }
+
   .header__wrapper {
     width: 90%;
     margin: auto;
   }
+
   .header__logo {
     width: 45%;
   }
+
   .header__links {
     width: 45%;
   }
+
   .header a {
     font-size: 1.2em;
   }
 }
 
 /* XLarge screens */
-
-/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
-@media only screen and (min-width: 90.063em) and (max-width: 120em) {
+// desktop x-large
+@media (min-width: 1800px) {
   .header {
-    height: 4em;
+    height: 5em;
   }
-  .header a {
-    font-size: 1.2em;
-  }
-}
 
-/* XXLarge screens */
-/* min-width 1921px, xlarge screens */
-@media only screen and (min-width: 120.063em) {
-  .header {
-    height: 4em;
+  .header__wrapper {
+    width: 80%;
   }
+
+  .header__links {
+    width: 25%;
+  }
+
   .header a {
     font-size: 1.2em;
   }

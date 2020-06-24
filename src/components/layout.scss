@@ -29,30 +29,14 @@ h6 {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
+  font-size: 1.35em;
 }
 
-h1 {
-  font-weight: lighter;
-  font-size: 2em;
-  line-height: 1.25;
-}
 
-h2 {
-  font-size: 1.625em;
-  line-height: 1.15384615;
-}
-
-.main-wrapper {
-  flex: 1 0 auto;
-  display: -webkit-flex;
-  display: -ms-flex;
+main {
+  position: relative;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  min-height: 100vh;
-  font-size: 1em;
-  line-height: 1.25;
 }
 
 .footer {
@@ -66,7 +50,7 @@ h2 {
   top: 0;
   bottom: 0;
   background-color: #1a1a1a;
-  z-index: 1200;
+  z-index: 3000;
   display: none;
 
   span {
@@ -87,48 +71,51 @@ h2 {
   }
 }
 
-@media (min-width: 43.75em) {
-  h1 {
-    font-size: 2.5em;
-    line-height: 1.125;
-  }
-  h2 {
-    font-size: 2em;
-    line-height: 1.25;
-  }
-  .main-wrapper {
-    font-size: 1em;
-    line-height: 1.375;
-  }
-}
-
-@media (min-width: 56.25em) {
-  h1 {
-    font-size: 3em;
-    line-height: 1.05;
-  }
-  h2 {
-    font-size: 2.25em;
-    line-height: 1.25;
-  }
-}
-
 // mobile
 @media (max-width: 599px) {
+  main {
+    margin-top: 4em;
+    font-size: 16px !important;
+    line-height: 22px !important;
+  }
 }
 
 // tublet-portrait
 @media (min-width: 600px) {
+  h1 {
+    font-size: 3em;
+    line-height: 1.05;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.25;
+  }
+
+  main {
+    margin-top: 5em;
+  }
 }
 
 // tablet-landscape
 @media (min-width: 900px) {
+  main {
+    margin-top: 5em;
+    font-size: 18px !important;
+    line-height: 26px !important;
+  }
 }
 
 // desktop/laptop
 @media (min-width: 1200px) {
+  main {
+    margin-top: 5em;
+  }
 }
 
 // desktop x-large
 @media (min-width: 1800px) {
+  main {
+    margin-top: 4em;
+  }
 }

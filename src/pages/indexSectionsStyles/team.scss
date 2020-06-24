@@ -2,8 +2,6 @@
   height: auto;
 
   .team-cards {
-    display: -webkit-flex;
-    display: -ms-flex;
     display: flex;
     flex-wrap: wrap;
 
@@ -23,6 +21,7 @@
   .team {
     width: 90%;
     margin-left: 5%;
+    margin-top: 4em;
 
     h2 {
       text-align: center;
@@ -36,6 +35,7 @@
     .team-card {
       width: 100%;
       height: auto;
+
 
       .card-info {
         margin-top: 1em;
@@ -58,6 +58,7 @@
   .team {
     width: 90%;
     margin-left: 5%;
+    margin-top: 5em;
 
     h2 {
       text-align: center;

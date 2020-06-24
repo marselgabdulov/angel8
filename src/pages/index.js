@@ -137,8 +137,8 @@ function IndexPage(props) {
                   <b>шеф-повар</b>
                 </div>
                 <p className="card-experience">
-                  <b>проекты</b> : "Рагу",&nbsp; "Тайский слон"&nbsp;,
-                  "Моментс",&nbsp; ученик{' '}
+                  <b>проекты</b> : Рагу,&nbsp; Тайский слон&nbsp;,
+                  Моментс,&nbsp; ученик{' '}
                   <a
                     href="https://ruspekh.ru/people/item/zimin-aleksej-2"
                     target="_blank"
@@ -170,8 +170,8 @@ function IndexPage(props) {
                   <b>шеф-бармен</b>
                 </div>
                 <p className="card-experience">
-                  <b>проекты</b> : "Noor",&nbsp; "Gipsy",&nbsp; "Bar
-                  30/7",&nbsp; "Уголёк"&nbsp;(г.Москва)
+                  <b>проекты</b> : Noor,&nbsp; Gipsy,&nbsp; Bar 30/7,&nbsp;
+                  Уголёк&nbsp;(г.Москва)
                 </p>
               </div>
             </div>
@@ -186,8 +186,8 @@ function IndexPage(props) {
                   <b>шеф-сомелье</b>
                 </div>
                 <p className="card-experience">
-                  <b>проекты</b> : "Bar 30/7",&nbsp; "Gipsy",&nbsp;
-                  "Noor",&nbsp; "Уголёк",&nbsp; "Северяне"&nbsp; (г.Москва)
+                  <b>проекты</b> : Bar 30/7,&nbsp; Gipsy,&nbsp; Noor,&nbsp;
+                  Уголёк,&nbsp; Северяне&nbsp; (г.Москва)
                 </p>
               </div>
             </div>
@@ -202,9 +202,9 @@ function IndexPage(props) {
                   <b>идейный вдохновитель</b>
                 </div>
                 <p className="card-experience">
-                  <b>проекты</b> : "Bar 30/7",&nbsp; "Simachev Bar",&nbsp;
-                  "Dodo",&nbsp; "Pizza Express и Zю кафе",&nbsp; "Time out
-                  Bar",&nbsp; "Северяне"&nbsp; (г.Москва)
+                  <b>проекты</b> : Bar 30/7,&nbsp; Simachev Bar,&nbsp;
+                  Dodo,&nbsp; Pizza Express и Zю кафе,&nbsp; Time out Bar,&nbsp;
+                  Северяне&nbsp; (г.Москва)
                 </p>
               </div>
             </div>

@@ -23,14 +23,12 @@ function Layout(props) {
       <div className="turn">
         <span>Пожалуйста переверните</span>
       </div>
-      <div className="main-wrapper">
-        <ArrowUp />
-        <NavPannel show={navPannel} handleClick={handleClick} />
-        <NavButton clickHandler={handleClick} icon={navPannel} />
-        <Header />
-        <div>{props.children}</div>
-        <Grid />
-      </div>
+      <ArrowUp />
+      <NavPannel show={navPannel} handleClick={handleClick} />
+      <NavButton clickHandler={handleClick} icon={navPannel} />
+      <Header />
+      <main>{props.children}</main>
+      <Grid />
     </>
   )
 }

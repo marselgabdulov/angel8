@@ -1,7 +1,7 @@
 import React from 'react'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import logo from '../../images/logo-white.png'
-import './Header.css'
+import './Header.scss'
 
 const Header = () => (
   <div className="header">

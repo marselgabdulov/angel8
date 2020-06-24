@@ -3,7 +3,7 @@ import './menuPages.scss'
 import Layout from '../components/layout'
 import Footer from '../components/Footer/Footer'
 import SEO from '../components/seo'
-import menu from '../docs/angel_menu.pdf'
+import menu from '../docs/angel8_menu.pdf'
 
 import SimpleMenuPosition from '../components/SimpleMenuPosition/SimpleMenuPosition'
 import ComplexMenuPosition from '../components/ComplexMenuPosition/ComplexMenuPosition'

@@ -41,6 +41,7 @@ import {
   whiteWinesBottles,
   redWinesBottles,
   champagne,
+  rose,
   whiteWinesGlasses,
   redWinesGlasses,
 } from '../data/menu.js'
@@ -100,6 +101,14 @@ class DrinksPage extends React.Component {
                     }
                   >
                     шампанское и игристое
+                  </button>
+                  <button
+                    className="menu-page__submenu-button"
+                    onClick={() =>
+                      this.scrollTo(document.getElementById('rose'))
+                    }
+                  >
+                    розовые вина
                   </button>
                   <button
                     className="menu-page__submenu-button"
@@ -346,6 +355,23 @@ class DrinksPage extends React.Component {
                     Шампанское и игристое 150/750 мл
                   </span>
                   {champagne.map(position => (
+                    <ComplexMenuPosition
+                      key={position.name}
+                      name={position.name}
+                      price={position.price}
+                      description={position.description}
+                    />
+                  ))}
+                </section>
+                <section
+                  id="rose"
+                  className="menu-page__section"
+                  ref={section => {
+                    this.rose = section
+                  }}
+                >
+                  <span className="menu-page__section-title">Вина розовые</span>
+                  {rose.map(position => (
                     <ComplexMenuPosition
                       key={position.name}
                       name={position.name}

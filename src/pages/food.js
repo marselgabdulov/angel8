@@ -6,14 +6,7 @@ import SEO from '../components/seo'
 import menu from '../docs/angel_menu.pdf'
 
 import SimpleMenuPosition from '../components/SimpleMenuPosition/SimpleMenuPosition'
-import {
-  brunch,
-  starters,
-  salads,
-  soups,
-  hotAndGrill,
-  desserts,
-} from '../data/menu.js'
+import { starters, salads, soups, hotAndGrill, desserts } from '../data/menu.js'
 
 class FoodPage extends React.Component {
   componentDidMount() {
@@ -36,7 +29,7 @@ class FoodPage extends React.Component {
                   <a href={menu} download>
                     Скачать меню PDF
                   </a>
-                  <div className="menu-page__section-title">
+                  {/* <div className="menu-page__section-title">
                     ПОЗДНИЕ ЗАВТРАКИ 12:00-15:00
                   </div>
                   <div className="menu-page__section-subtitle">Яйца & Хлеб</div>
@@ -46,7 +39,7 @@ class FoodPage extends React.Component {
                       name={position.name}
                       price={position.price}
                     />
-                  ))}
+                  ))} */}
                 </section>
                 <section className="menu-page__section">
                   <span className="menu-page__section-title">ЗАКУСКИ</span>

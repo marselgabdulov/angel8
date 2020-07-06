@@ -13,8 +13,11 @@ function Header({ handleMenu }) {
           </AniLink>
         </div>
         <div className="header__button" onClick={handleMenu}>
-          <span className="line-one"></span>
-          <span className="line-two"></span>
+          <div className="header__button--bg">
+            <span className="line-one"></span>
+            <span className="line-two"></span>
+            <span className="line-three"></span>
+          </div>
         </div>
       </div>
     </div>

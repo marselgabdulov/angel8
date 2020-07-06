@@ -26,25 +26,42 @@
 .header__button {
   position: relative;
   z-index: 4;
+  background-color: white;
+  border-radius: 50%;
+
+
+  .header__button--bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 60%;
+    margin: 20%;
+  }
 
   &:hover {
     cursor: pointer;
   }
 
   .line-one,
-  .line-two {
+  .line-two,
+  .line-three {
     position: absolute;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid black;
     left: 0;
     width: 100%;
   }
 
   .line-one {
-    top: 30%;
+    top: 20%;
   }
 
   .line-two {
-    top: 70%;
+    top: 50%;
+  }
+
+  .line-three {
+    top: 80%;
   }
 }
 
@@ -140,7 +157,7 @@
   }
 
   .header__button {
-    width: 30px;
-    height: 24px;
+    width: 40px;
+    height: 40px;
   }
 }

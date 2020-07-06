@@ -4,7 +4,6 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import SEO from '../components/seo'
 // Components
 import Layout from '../components/layout'
-import Footer from '../components/Footer/Footer'
 //  Styles
 import './index.scss'
 

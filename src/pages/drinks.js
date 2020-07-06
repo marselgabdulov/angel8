@@ -64,19 +64,16 @@ class DrinksPage extends React.Component {
         <Layout>
           <div className="wrapper">
             <div className="menu-page">
-              <div className="menu-page__upper">
-                \&nbsp; \&nbsp; \&nbsp; \&nbsp; \&nbsp; \&nbsp; \&nbsp; \&nbsp;
-                \&nbsp; \&nbsp; \&nbsp; \&nbsp; \&nbsp; \&nbsp; \
-              </div>
               <div className="menu-page__wrapper">
-                <h1>Меню напитки</h1>
+                <h1>Напитки</h1>
                 <a href={menu} download>
                   Скачать меню PDF
                 </a>
+                <br />
                 <span className="menu-page__submenu-title">БЫСТРЫЙ ПОИСК</span>
                 <div className="menu-page__submenu">
-                  <button
-                    className="menu-page__submenu-button"
+                  <span
+                    className="menu-page__submenu-link"
                     onClick={() =>
                       this.scrollTo(
                         document.getElementById('whiteWinesBottles')
@@ -84,34 +81,34 @@ class DrinksPage extends React.Component {
                     }
                   >
                     Вина Белые по бутылкам
-                  </button>
+                  </span>
 
-                  <button
-                    className="menu-page__submenu-button"
+                  <span
+                    className="menu-page__submenu-link"
                     onClick={() =>
                       this.scrollTo(document.getElementById('redWinesBottles'))
                     }
                   >
                     Вина Красные по бутылкам
-                  </button>
-                  <button
-                    className="menu-page__submenu-button"
+                  </span>
+                  <span
+                    className="menu-page__submenu-link"
                     onClick={() =>
                       this.scrollTo(document.getElementById('champagne'))
                     }
                   >
                     шампанское и игристое
-                  </button>
-                  <button
-                    className="menu-page__submenu-button"
+                  </span>
+                  <span
+                    className="menu-page__submenu-link"
                     onClick={() =>
                       this.scrollTo(document.getElementById('rose'))
                     }
                   >
                     розовые вина
-                  </button>
-                  <button
-                    className="menu-page__submenu-button"
+                  </span>
+                  <span
+                    className="menu-page__submenu-link"
                     onClick={() =>
                       this.scrollTo(
                         document.getElementById('whiteWinesGlasses')
@@ -119,191 +116,191 @@ class DrinksPage extends React.Component {
                     }
                   >
                     Вина белые по бокалам 150 мл
-                  </button>
-                  <button
-                    className="menu-page__submenu-button"
+                  </span>
+                  <span
+                    className="menu-page__submenu-link"
                     onClick={() =>
                       this.scrollTo(document.getElementById('redWinesGlasses'))
                     }
                   >
                     Вина красные по бокалам 150 мл
-                  </button>
-                  <button
-                    className="menu-page__submenu-button"
+                  </span>
+                  <span
+                    className="menu-page__submenu-link"
                     onClick={() =>
                       this.scrollTo(document.getElementById('whiskey'))
                     }
                   >
                     Виски
-                  </button>
-                  <button
-                    className="menu-page__submenu-button"
+                  </span>
+                  <span
+                    className="menu-page__submenu-link"
                     onClick={() =>
                       this.scrollTo(document.getElementById('tequila'))
                     }
                   >
                     Текила
-                  </button>
-                  <button
-                    className="menu-page__submenu-button"
+                  </span>
+                  <span
+                    className="menu-page__submenu-link"
                     onClick={() =>
                       this.scrollTo(document.getElementById('portoAndJerez'))
                     }
                   >
                     Порто
-                  </button>
-                  <button
-                    className="menu-page__submenu-button"
+                  </span>
+                  <span
+                    className="menu-page__submenu-link"
                     onClick={() =>
                       this.scrollTo(document.getElementById('vodka'))
                     }
                   >
                     Водка
-                  </button>
-                  <button
-                    className="menu-page__submenu-button"
+                  </span>
+                  <span
+                    className="menu-page__submenu-link"
                     onClick={() =>
                       this.scrollTo(document.getElementById('rumAndChacha'))
                     }
                   >
                     Ром
-                  </button>
-                  <button
-                    className="menu-page__submenu-button"
+                  </span>
+                  <span
+                    className="menu-page__submenu-link"
                     onClick={() =>
                       this.scrollTo(document.getElementById('gin'))
                     }
                   >
                     Джин
-                  </button>
-                  <button
-                    className="menu-page__submenu-button"
+                  </span>
+                  <span
+                    className="menu-page__submenu-link"
                     onClick={() =>
                       this.scrollTo(document.getElementById('brandy'))
                     }
                   >
                     Коньяк/Бренди
-                  </button>
-                  <button
-                    className="menu-page__submenu-button"
+                  </span>
+                  <span
+                    className="menu-page__submenu-link"
                     onClick={() =>
                       this.scrollTo(document.getElementById('calvados'))
                     }
                   >
                     Арманьяк/Кальвадос
-                  </button>
-                  <button
-                    className="menu-page__submenu-button"
+                  </span>
+                  <span
+                    className="menu-page__submenu-link"
                     onClick={() =>
                       this.scrollTo(document.getElementById('grappa'))
                     }
                   >
                     Граппа
-                  </button>
-                  <button
-                    className="menu-page__submenu-button"
+                  </span>
+                  <span
+                    className="menu-page__submenu-link"
                     onClick={() =>
                       this.scrollTo(document.getElementById('pisko'))
                     }
                   >
                     Писко
-                  </button>
-                  <button
-                    className="menu-page__submenu-button"
+                  </span>
+                  <span
+                    className="menu-page__submenu-link"
                     onClick={() =>
                       this.scrollTo(document.getElementById('aperitivo'))
                     }
                   >
                     Аперитив/Digestiv
-                  </button>
-                  <button
-                    className="menu-page__submenu-button"
+                  </span>
+                  <span
+                    className="menu-page__submenu-link"
                     onClick={() =>
                       this.scrollTo(document.getElementById('vermut'))
                     }
                   >
                     Вермут
-                  </button>
-                  <button
-                    className="menu-page__submenu-button"
+                  </span>
+                  <span
+                    className="menu-page__submenu-link"
                     onClick={() =>
                       this.scrollTo(document.getElementById('cocktails'))
                     }
                   >
                     Коктейли
-                  </button>
-                  <button
-                    className="menu-page__submenu-button"
+                  </span>
+                  <span
+                    className="menu-page__submenu-link"
                     onClick={() =>
                       this.scrollTo(document.getElementById('specialCocktails'))
                     }
                   >
                     FORGOTTEN COCKTAIL RECIPES
-                  </button>
-                  <button
-                    className="menu-page__submenu-button"
+                  </span>
+                  <span
+                    className="menu-page__submenu-link"
                     onClick={() =>
                       this.scrollTo(document.getElementById('water'))
                     }
                   >
                     Вода
-                  </button>
-                  <button
-                    className="menu-page__submenu-button"
+                  </span>
+                  <span
+                    className="menu-page__submenu-link"
                     onClick={() =>
                       this.scrollTo(document.getElementById('smoosy'))
                     }
                   >
                     Смузи
-                  </button>
-                  <button
-                    className="menu-page__submenu-button"
+                  </span>
+                  <span
+                    className="menu-page__submenu-link"
                     onClick={() =>
                       this.scrollTo(document.getElementById('limonades'))
                     }
                   >
                     Лимонады
-                  </button>
-                  <button
-                    className="menu-page__submenu-button"
+                  </span>
+                  <span
+                    className="menu-page__submenu-link"
                     onClick={() =>
                       this.scrollTo(document.getElementById('juices'))
                     }
                   >
                     Соки
-                  </button>
-                  <button
-                    className="menu-page__submenu-button"
+                  </span>
+                  <span
+                    className="menu-page__submenu-link"
                     onClick={() =>
                       this.scrollTo(document.getElementById('beer'))
                     }
                   >
                     Пиво
-                  </button>
-                  <button
-                    className="menu-page__submenu-button"
+                  </span>
+                  <span
+                    className="menu-page__submenu-link"
                     onClick={() =>
                       this.scrollTo(document.getElementById('hotAlco'))
                     }
                   >
                     Горячее
-                  </button>
-                  <button
-                    className="menu-page__submenu-button"
+                  </span>
+                  <span
+                    className="menu-page__submenu-link"
                     onClick={() =>
                       this.scrollTo(document.getElementById('tea'))
                     }
                   >
                     Чай
-                  </button>
-                  <button
-                    className="menu-page__submenu-button"
+                  </span>
+                  <span
+                    className="menu-page__submenu-link"
                     onClick={() =>
                       this.scrollTo(document.getElementById('coffee'))
                     }
                   >
                     Кофе
-                  </button>
+                  </span>
                 </div>
 
                 <section

@@ -14,12 +14,6 @@
   }
 }
 
-.menu-page__upper {
-  font-weight: bold;
-  position: absolute;
-  top: 1.7em;
-  right: 8em;
-}
 
 .menu-page__section {
   border-bottom: 12px dotted black;
@@ -49,25 +43,21 @@
   font-weight: bold;
 }
 
-.menu-page__submenu-button {
+.menu-page__submenu-link {
   background-color: white;
-  padding: 0 !important;
-  height: 3em;
   color: rgb(55, 53, 53);
   border: none;
+  margin-right: 1em;
   font: inherit;
   font-weight: bold;
   cursor: pointer;
-  margin-right: 1em;
-  margin-top: 0.5em;
-  font-size: 1em;
   outline: none;
   text-transform: uppercase;
   text-decoration: underline;
 }
 
-.menu-page__submenu-button:hover {
-  color: rgb(247, 66, 126);
+.menu-page__submenu-link:hover {
+  color: blue;
 }
 
 .menu-page__section-title {
@@ -156,7 +146,7 @@
   }
 
   .menu-page__wrapper {
-    width: 80%;
+    width: 60%;
     margin: auto;
     height: 100%;
   }

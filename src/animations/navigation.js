@@ -11,13 +11,13 @@ export const openMenu = width => {
       // y: width <= 654 ? '70vh' : window.innerHeight / 3,
       ease: 'expo.inOut',
     })
-    .to('.header__button .line-one', 0.6, {
+    .to('.header__button .line-one', 0.3, {
       delay: -1,
       top: '40%',
       transform: 'rotate(45deg)',
       ease: 'expo.inOut',
     })
-    .to('.header__button .line-two', 0.6, {
+    .to('.header__button .line-two', 0.3, {
       delay: -1,
       top: '40%',
       transform: 'rotate(-45deg)',
@@ -36,14 +36,14 @@ export const closeMenu = () => {
     ease: 'expo.inOut',
   })
 
-    .to('.header__button .line-one', 0.6, {
+    .to('.header__button .line-one', 0.3, {
       delay: -1,
       top: '30%',
       transform: 'rotate(0deg)',
       borderBottom: '2px solid white',
       ease: 'expo.inOut',
     })
-    .to('.header__button .line-two', 0.6, {
+    .to('.header__button .line-two', 0.3, {
       delay: -1,
       top: '70%',
       transform: 'rotate(0deg)',

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import AOS from 'aos'
 import Header from './Header/Header'
-import NavPannel from './NavPannel/NavPannel'
+import Menu from './Menu/Menu'
 import Grid from './Grid/Grid'
 import { openMenu, closeMenu } from '../animations/navigation'
 import './layout.scss'
@@ -41,8 +41,7 @@ function Layout(props) {
       <div className="turn">
         <span>Пожалуйста переверните</span>
       </div>
-      <NavPannel show={menu.opened} handleClick={handleMenu} />
-      {/* <NavButton clickHandler={handleClick} icon={navPannel} /> */}
+      <Menu show={menu.opened} handleClick={handleMenu} />
       <Header handleMenu={handleMenu} />
       <main>{props.children}</main>
       <Grid />

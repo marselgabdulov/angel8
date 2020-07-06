@@ -1,8 +1,8 @@
 /*-----MAIN-----*/
 .intro {
   position: relative;
-  width: 100vw !important;
-  height: 100vh !important;
+  width: 100vw;
+  height: 100vh;
 }
 
 .bg-video {
@@ -31,6 +31,7 @@
   position: absolute;
   font-weight: bold;
 
+
   span {
     text-transform: uppercase;
   }
@@ -45,25 +46,6 @@
 
   a {
     color: white;
-    text-decoration: none;
-  }
-
-  .intro-footer__menu-download {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid white;
-    text-transform: uppercase;
-    background-color: transparent;
-    transition: all 0.3s ease-in-out;
-
-    &:hover {
-      a {
-        color: black;
-      }
-
-      background-color: white;
-    }
   }
 }
 
@@ -74,7 +56,7 @@
   }
 
   .intro-footer {
-    bottom: 7.5%;
+    bottom: 12%;
     left: 2.5%;
     width: 95%;
     font-weight: bold;
@@ -118,13 +100,7 @@
     bottom: 5%;
     left: 2.5%;
     width: 95%;
-    font-weight: bold;
 
-    .intro-footer__menu-download {
-      width: 14em;
-      height: 3em;
-      font-size: 12px;
-    }
   }
 }
 
@@ -154,11 +130,6 @@
     left: 2.5%;
     width: 95%;
 
-    .intro-footer__menu-download {
-      width: 14em;
-      height: 3em;
-      font-size: 12px;
-    }
   }
 }
 
@@ -189,11 +160,6 @@
     left: 2.5%;
     width: 95%;
 
-    .intro-footer__menu-download {
-      width: 14em;
-      height: 3em;
-      font-size: 12px;
-    }
   }
 
 }
@@ -226,10 +192,5 @@
     left: 5%;
     width: 90%;
 
-    .intro-footer__menu-download {
-      width: 14em;
-      height: 3em;
-      font-size: 12px;
-    }
   }
 }

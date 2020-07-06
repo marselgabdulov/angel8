@@ -11,7 +11,7 @@ import './index.scss'
 // Video
 import VideoMP4 from '../video/angel8bg2.mp4'
 import VideoWEBM from '../video/angel8bg2.webm'
-
+import menu from '../docs/angel8_menu.pdf'
 import { Fade } from 'react-slideshow-image'
 import Img from 'gatsby-image'
 
@@ -39,32 +39,19 @@ function IndexPage(props) {
               <span>ресторан. гриль. бар.</span>
             </div>
             <div className="intro-footer">
-              <div className="intro-footer__working-times">
-                <span>пн - чт и вс: 12.00 - 24: 00</span>
+              <div className="intro-footer__address">
+                <span>Тула проспект Ленина 85</span>
                 <br />
-                <span>пт - сб: 12.00 - 02: 00</span>
-              </div>
-              <div className="intro-footer__contacts">
-                <a
-                  href="mailto:angel8bar@gmail.com"
-                  title="Напишите нам"
-                  itemProp="email"
-                >
-                  angel8bar@gmail.com
-                </a>
+                <span>корпус 1, вход 5</span>
                 <br />
-                <a
-                  href="tel:+74872770247"
-                  title="Позвоните нам"
-                  itemProp="telephone"
-                >
+                <a href="tel:+74872770247" itemProp="telephone">
                   +7 (4872) 77-02-47
                 </a>
               </div>
-              <div className="intro-footer__address">
-                <span>г. Тула пр-т Ленина 85</span>
-                <br />
-                <span>кор. 1, вход 5</span>
+              <div className="intro-footer__menu-download">
+                <a href={menu} download>
+                  Скачать меню PDF
+                </a>
               </div>
             </div>
           </div>

@@ -11,10 +11,22 @@ function Menu(props) {
             title="Меню | Блюда"
             className="menu__link"
             cover
+            to="/"
+            bg="#232324"
+            activeStyle={{
+              color: '#f34444',
+            }}
+          >
+            Главная
+          </AniLink>
+          <AniLink
+            title="Меню | Блюда"
+            className="menu__link"
+            cover
             to="/food"
             bg="#232324"
             activeStyle={{
-              textDecoration: 'underline',
+              color: '#f34444',
             }}
           >
             Блюда
@@ -26,7 +38,7 @@ function Menu(props) {
             cover
             bg="#232324"
             activeStyle={{
-              textDecoration: 'underline',
+              color: '#f34444',
             }}
           >
             Напитки

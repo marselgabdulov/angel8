@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { graphql } from 'gatsby'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import SEO from '../components/seo'
@@ -6,6 +6,7 @@ import SEO from '../components/seo'
 import Layout from '../components/layout'
 //  Styles
 import './index.scss'
+import gsap from 'gsap'
 
 // Video
 import VideoMP4 from '../video/angel8bg2.mp4'
@@ -23,22 +24,44 @@ function IndexPage(props) {
     arrows: false,
   }
 
+  let videoRef = useRef(null)
+  let introTitle = useRef(null)
+  let introFooter = useRef(null)
+
+  useEffect(() => {
+    let tl = gsap.timeline()
+    tl.to('.intro__bg', 0.5, {
+      css: {
+        opacity: 1,
+      },
+      delay: 0.5,
+      ease: 'power4.inOut',
+    })
+    tl.to(['.intro__title', '.intro__footer'], 0.25, {
+      css: {
+        opacity: 1,
+      },
+      delay: 0.25,
+      ease: 'power4.inOut',
+    })
+  }, [videoRef, introTitle, introFooter])
+
   return (
     <Layout>
       <SEO title="Angel 8 | Эмоциональная кухня и бар в Туле. ✆ +7 4872 77 02 47" />
       <div className="index">
         <section className="intro">
-          <div className="bg-video">
-            <video loop autoPlay muted id="bg-video">
+          <div className="intro__bg" ref={el => (videoRef = el)}>
+            <video loop autoPlay muted>
               <source type="video/webm" src={VideoWEBM} />
               <source type="video/mp4" src={VideoMP4} />
             </video>
-            <div className="intro-slogan">
-              <h1>Эмоциональная кухня</h1>
+            <div className="intro__title">
+              <h1 ref={el => (introTitle = el)}>Эмоциональная кухня</h1>
               <span>ресторан. гриль. бар.</span>
             </div>
-            <div className="intro-footer">
-              <div className="intro-footer__address">
+            <div className="intro__footer" ref={el => (introFooter = el)}>
+              <div className="intro__address">
                 <span>Тула проспект Ленина 85</span>
                 <br />
                 <span>корпус 1, вход 5</span>
@@ -47,7 +70,10 @@ function IndexPage(props) {
                   +7 (4872) 77-02-47
                 </a>
               </div>
-              <div className="intro-footer__menu-download">
+              <div
+                className="intro__menu-download"
+                ref={el => (introFooter = el)}
+              >
                 <a href={menu} download>
                   Скачать меню PDF
                 </a>

@@ -56,22 +56,5 @@ module.exports = {
         trackHash: true,
       },
     },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Playfair Display`,
-            subsets: [`cyrillic`],
-            variants: [`700`, `900`],
-          },
-          {
-            family: `Montserrat`,
-            subsets: [`cyrillic`],
-            variants: [`400`],
-          },
-        ],
-      },
-    },
   ],
 }

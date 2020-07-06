@@ -5,13 +5,14 @@
   height: 100vh;
 }
 
-.bg-video {
+.intro__bg {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
+  opacity: 0;
   z-index: 0;
 
   video {
@@ -27,22 +28,32 @@
   }
 }
 
-.intro-slogan {
+.intro__title {
   position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  z-index: 10;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
   font-weight: bold;
+  opacity: 0;
 
-
-  span {
-    text-transform: uppercase;
+  h1 {
+    margin-bottom: 0.5em;
   }
 }
 
-.intro-footer {
+
+.intro__footer {
   position: absolute;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  opacity: 0;
 
   a {
     color: white;
@@ -51,11 +62,16 @@
 
 // mobile
 @media (max-width: 599px) {
-  .intro-slogan {
-    display: none;
+  .intro__title {
+    text-align: left;
+    margin-left: 2.5%;
+
+    h1 {
+      font-size: 1.75em;
+    }
   }
 
-  .intro-footer {
+  .intro__footer {
     bottom: 12%;
     left: 2.5%;
     width: 95%;
@@ -65,7 +81,7 @@
     align-items: end;
     line-height: 1.5em;
 
-    .intro-footer__menu-download {
+    .intro___menu-download {
       width: 14em;
       height: 3em;
       font-size: 12px;
@@ -96,7 +112,7 @@
     }
   }
 
-  .intro-footer {
+  .intro__footer {
     bottom: 5%;
     left: 2.5%;
     width: 95%;
@@ -125,7 +141,7 @@
     }
   }
 
-  .intro-footer {
+  .intro__footer {
     bottom: 5%;
     left: 2.5%;
     width: 95%;
@@ -135,62 +151,38 @@
 
 // desktop/laptop
 @media (min-width: 1200px) {
-  .intro-slogan {
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -10%);
-    z-index: 10;
-    text-align: center;
 
-    h1 {
-      font-weight: 900;
-      letter-spacing: 3px;
-      margin-bottom: 0;
-    }
 
-    span {
-      font-weight: 900;
-      letter-spacing: 2px;
-    }
-  }
-
-  .intro-footer {
+  .intro__footer {
     bottom: 5%;
     left: 2.5%;
     width: 95%;
-
   }
-
 }
 
 // desktop x-large
 @media (min-width: 1800px) {
-  .intro-slogan {
+  .intro__title {
+    position: absolute;
     width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -10%);
     z-index: 10;
     text-align: center;
-    line-height: 4em;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    opacity: 0;
 
     h1 {
-      text-transform: uppercase;
-      font-weight: 900;
-      letter-spacing: 3px;
-    }
-
-    span {
-      font-weight: 900;
-      letter-spacing: 2px;
+      margin-bottom: 0.5em;
     }
   }
 
-  .intro-footer {
+  .intro__footer {
     bottom: 5%;
     left: 5%;
     width: 90%;
-
   }
 }

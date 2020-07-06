@@ -2,10 +2,12 @@
 
 $aos-distance: 20px; // It has to be above import
 @import 'node_modules/aos/src/sass/aos.scss';
+@import url("https://allfont.ru/allfont.css?fonts=avantgardectt");
 
 html,
 body {
-  font-family: 'Montserrat', sans-serif;
+  // font-family: 'Montserrat', sans-serif;
+  font-family: 'AvantGardeCTT', arial;
   background-color: #0b0b0b;
   font-size: 100%;
 }

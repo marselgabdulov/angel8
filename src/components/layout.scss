@@ -28,7 +28,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   font-size: 1.35em;
@@ -76,7 +75,6 @@ main {
 // mobile
 @media (max-width: 599px) {
   main {
-    margin-top: 4em;
     font-size: 16px !important;
     line-height: 22px !important;
   }
@@ -94,15 +92,11 @@ main {
     line-height: 1.25;
   }
 
-  main {
-    margin-top: 5em;
-  }
 }
 
 // tablet-landscape
 @media (min-width: 900px) {
   main {
-    margin-top: 5em;
     font-size: 18px !important;
     line-height: 26px !important;
   }
@@ -110,14 +104,10 @@ main {
 
 // desktop/laptop
 @media (min-width: 1200px) {
-  main {
-    margin-top: 5em;
-  }
+  main {}
 }
 
 // desktop x-large
 @media (min-width: 1800px) {
-  main {
-    margin-top: 4em;
-  }
+  main {}
 }

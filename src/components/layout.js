@@ -2,20 +2,38 @@ import React, { useState, useEffect } from 'react'
 import AOS from 'aos'
 import Header from './Header/Header'
 import NavPannel from './NavPannel/NavPannel'
-import NavButton from './NavButton/NavButton'
-import ArrowUp from './ArrowUp/ArrowUp'
 import Grid from './Grid/Grid'
-
+import { openMenu, closeMenu } from '../animations/navigation'
 import './layout.scss'
 
 function Layout(props) {
-  const [navPannel, setNavPannel] = useState(false)
+  const [menu, setMenu] = useState({ opened: false })
+  const [width, setWidth] = useState(null)
+
   useEffect(() => {
     AOS.init()
+
+    let vh = window.innerHeight * 0.01
+    document.documentElement.style.setProperty('--vh', `${vh}px`)
+
+    setWidth(document.documentElement.clientWidth)
+
+    var docWidth = document.documentElement.offsetWidth
+
+    ;[].forEach.call(document.querySelectorAll('*'), function(el) {
+      if (el.offsetWidth > docWidth) {
+        console.log(el)
+      }
+    })
   })
 
-  function handleClick() {
-    navPannel ? setNavPannel(false) : setNavPannel(true)
+  function handleMenu() {
+    setMenu({ opened: !menu.opened })
+    if (menu.opened) {
+      closeMenu(width)
+    } else {
+      openMenu(width)
+    }
   }
 
   return (
@@ -23,10 +41,9 @@ function Layout(props) {
       <div className="turn">
         <span>Пожалуйста переверните</span>
       </div>
-      <ArrowUp />
-      <NavPannel show={navPannel} handleClick={handleClick} />
-      <NavButton clickHandler={handleClick} icon={navPannel} />
-      <Header />
+      <NavPannel show={menu.opened} handleClick={handleMenu} />
+      {/* <NavButton clickHandler={handleClick} icon={navPannel} /> */}
+      <Header handleMenu={handleMenu} />
       <main>{props.children}</main>
       <Grid />
     </>

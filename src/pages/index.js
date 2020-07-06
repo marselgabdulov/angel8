@@ -193,7 +193,6 @@ function IndexPage(props) {
             </div>
           </div>
         </section>
-        <Footer />
       </div>
     </Layout>
   )

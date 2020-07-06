@@ -891,7 +891,6 @@ class DrinksPage extends React.Component {
             </div>
           </div>
         </Layout>
-        <Footer />
       </>
     )
   }

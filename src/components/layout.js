@@ -37,7 +37,9 @@ function Layout(props) {
       </div>
       <Menu show={menu.opened} handleClick={handleMenu} />
       <Header handleMenu={handleMenu} />
-      <main>{props.children}</main>
+      <main className="main" onClick={handleMenu}>
+        {props.children}
+      </main>
       <Footer />
       <Grid />
     </>

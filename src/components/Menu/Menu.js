@@ -45,7 +45,11 @@ function Menu(props) {
           </AniLink>
 
           <div className="menu__address">
-            <span>Тула проспект Ленина 85 корпус 1 вход 5</span>
+            <span>
+              Тула проспект Ленина 85
+              <br />
+              корпус 1 вход 5
+            </span>
             <a href="tel:+74872770247" title="Позвоните нам">
               +7 4872 77 02 47
             </a>

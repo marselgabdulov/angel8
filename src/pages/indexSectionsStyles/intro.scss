@@ -46,7 +46,6 @@
   }
 }
 
-
 .intro__footer {
   position: absolute;
   margin: auto;
@@ -67,7 +66,7 @@
     margin-left: 2.5%;
 
     h1 {
-      font-size: 1.75em;
+      font-size: 1.5em;
     }
   }
 
@@ -92,31 +91,10 @@
 
 // tublet-portrait
 @media (min-width: 600px) {
-  .intro-slogan {
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    z-index: 10;
-    text-align: center;
-
-    h1 {
-      font-weight: 900;
-      letter-spacing: 3px;
-      margin-bottom: 0.5em;
-    }
-
-    span {
-      font-weight: 900;
-      letter-spacing: 2px;
-    }
-  }
-
   .intro__footer {
     bottom: 5%;
     left: 2.5%;
     width: 95%;
-
   }
 }
 
@@ -145,14 +123,11 @@
     bottom: 5%;
     left: 2.5%;
     width: 95%;
-
   }
 }
 
 // desktop/laptop
 @media (min-width: 1200px) {
-
-
   .intro__footer {
     bottom: 5%;
     left: 2.5%;

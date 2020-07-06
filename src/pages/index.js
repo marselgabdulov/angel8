@@ -92,7 +92,8 @@ function IndexPage(props) {
               Хороший выбор вина в правильных бокалах.
             </p>
             <p>
-              Вы найдете нас на территории торгово-делового квартала&nbsp;
+              Вы найдете нас на проспекте Ленина, дом 85, корпус 5, вход 1 на
+              территории торгово-делового квартала&nbsp;
               <a
                 className="index__link"
                 href="http://likerka-loft.ru/"
@@ -100,13 +101,8 @@ function IndexPage(props) {
                 rel="noopener noreferrer"
                 title="Сайт likerka-loft.ru"
               >
-                &laquo;Ликерка Лофт&raquo;.
+                &laquo;Ликерка Лофт&raquo;
               </a>
-            </p>
-            <p>
-              <AniLink to="/contacts" cover bg="#181818" title="Контакты">
-                Контакты.
-              </AniLink>
             </p>
           </div>
         </section>

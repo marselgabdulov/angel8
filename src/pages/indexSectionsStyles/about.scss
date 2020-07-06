@@ -47,7 +47,7 @@
 
     .about__text {
       margin-top: 1em;
-      width: 90%;
+      width: 95%;
       height: auto;
       align-self: center;
     }
@@ -57,8 +57,8 @@
 // tublet-portrait
 @media (min-width: 600px) {
   .about {
-    width: 90%;
-    margin-left: 5%;
+    width: 95%;
+    margin-left: 2.5%;
     height: auto;
     flex-direction: column;
     margin-top: 5em;
@@ -89,8 +89,8 @@
 // tablet-landscape
 @media (min-width: 900px) {
   .about {
-    width: 90%;
-    margin-left: 5%;
+    width: 95%;
+    margin-left: 2.5%;
     height: auto;
     flex-direction: row;
 
@@ -119,8 +119,8 @@
 // desktop/laptop
 @media (min-width: 1200px) {
   .about {
-    width: 90%;
-    margin-left: 5%;
+    width: 95%;
+    margin-left: 2.5%;
     height: 80vh;
 
     .about__gallery {
@@ -147,8 +147,8 @@
 // desktop x-large
 @media (min-width: 1800px) {
   .about {
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
+    margin-left: 5%;
     height: 80vh;
 
     .about__gallery {
@@ -165,7 +165,7 @@
 
     .about__text {
       margin: auto;
-      width: 40%;
+      width: 30%;
       height: auto;
       align-self: center;
     }

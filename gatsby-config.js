@@ -61,20 +61,17 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Montserrat Alternates`,
+            family: `Playfair Display`,
             subsets: [`cyrillic`],
-            variants: [`300`, `400`, `500`, `600`, `700`, `900`],
+            variants: [`700`, `900`],
           },
           {
             family: `Montserrat`,
             subsets: [`cyrillic`],
-            variants: [`300`, `400`, `500`, `600`, `700`, `900`],
+            variants: [`400`],
           },
         ],
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
   ],
 }

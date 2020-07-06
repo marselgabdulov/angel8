@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import AOS from 'aos'
 import Header from './Header/Header'
+import Footer from './Footer/Footer'
 import Menu from './Menu/Menu'
 import Grid from './Grid/Grid'
 import { openMenu, closeMenu } from '../animations/navigation'
 import './layout.scss'
+import { window } from 'browser-monads'
 
 function Layout(props) {
   const [menu, setMenu] = useState({ opened: false })
@@ -17,14 +19,6 @@ function Layout(props) {
     document.documentElement.style.setProperty('--vh', `${vh}px`)
 
     setWidth(document.documentElement.clientWidth)
-
-    var docWidth = document.documentElement.offsetWidth
-
-    ;[].forEach.call(document.querySelectorAll('*'), function(el) {
-      if (el.offsetWidth > docWidth) {
-        console.log(el)
-      }
-    })
   })
 
   function handleMenu() {
@@ -44,6 +38,7 @@ function Layout(props) {
       <Menu show={menu.opened} handleClick={handleMenu} />
       <Header handleMenu={handleMenu} />
       <main>{props.children}</main>
+      <Footer />
       <Grid />
     </>
   )

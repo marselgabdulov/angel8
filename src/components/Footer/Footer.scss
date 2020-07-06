@@ -1,6 +1,8 @@
 footer {
   width: 100%;
   height: auto;
+  background-color: black;
+  color: white;
 }
 
 .footer__wrapper {
@@ -8,8 +10,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  margin: auto;
-  margin-bottom: 1em;
+  margin: 1em auto;
 
   a {
     color: white;

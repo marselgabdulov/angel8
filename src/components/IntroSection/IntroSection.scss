@@ -81,8 +81,8 @@
 
   .intro__title {
     font-size: 1.5em;
+    text-align: center;
     line-height: 1.5em;
-    margin-left: 2.5%;
   }
 
   .intro__footer {
@@ -92,7 +92,8 @@
     font-weight: bold;
     flex-direction: column;
     height: auto;
-    align-items: end;
+    align-items: center;
+    text-align: center;
     line-height: 1.5em;
 
     .intro___menu-download {

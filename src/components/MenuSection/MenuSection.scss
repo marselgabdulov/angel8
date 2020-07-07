@@ -1,0 +1,31 @@
+.menu-section {
+  border-bottom: 12px dotted black;
+  padding-bottom: 2em;
+  margin-top: 2em;
+}
+
+.menu-section__title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu-section__subtitle {
+  font-weight: bold;
+}
+
+
+// mobile
+@media (max-width: 599px) {}
+
+// tublet-portrait
+@media (min-width: 600px) {}
+
+// tablet-landscape
+@media (min-width: 900px) {}
+
+
+// desktop/laptop
+@media (min-width: 1200px) {}
+
+// desktop x-large
+@media (min-width: 1800px) {}

@@ -1,11 +1,10 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './menuPages.scss'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import menu from '../docs/angel8_menu.pdf'
-
-import SimpleMenuPosition from '../components/SimpleMenuPosition/SimpleMenuPosition'
-import ComplexMenuPosition from '../components/ComplexMenuPosition/ComplexMenuPosition'
+import menuPDF from '../docs/angel8_menu.pdf'
+import Submenu from '../components/Submenu/Submenu'
+import MenuSection from '../components/MenuSection/MenuSection'
 import {
   scotchWhiskeyBlend,
   singleMalt,
@@ -45,851 +44,249 @@ import {
   redWinesGlasses,
 } from '../data/menu.js'
 
-class DrinksPage extends React.Component {
-  scrollTo = element => {
-    window.scroll({
-      behavior: 'smooth',
-      left: 0,
-      top: element.offsetTop - 100,
-    })
-  }
-  componentDidMount() {
-    window.scrollTo(0, 0)
-  }
-  render() {
-    return (
-      <>
-        <SEO title="Меню Напитки" />
-        <Layout>
-          <div className="wrapper">
-            <div className="menu-page">
-              <div className="menu-page__wrapper">
-                <h1>Напитки</h1>
-                <a href={menu} download>
-                  Скачать меню PDF
-                </a>
-                <br />
-                <span className="menu-page__submenu-title">БЫСТРЫЙ ПОИСК</span>
-                <div className="menu-page__submenu">
-                  <span
-                    className="menu-page__submenu-link"
-                    onClick={() =>
-                      this.scrollTo(
-                        document.getElementById('whiteWinesBottles')
-                      )
-                    }
-                  >
-                    Вина Белые по бутылкам
-                  </span>
+let linksData = [
+  {
+    id: 'whiteWinesBottles',
+    name: 'Вина Белые по бутылкам',
+  },
+  {
+    id: 'redWinesBottles',
+    name: 'Вина Красные по бутылкам',
+  },
+  {
+    id: 'champagne',
+    name: 'шампанское и игристое',
+  },
+  {
+    id: 'rose',
+    name: 'розовые вина',
+  },
+  {
+    id: 'whiteWinesGlasses',
+    name: 'Вина белые по бокалам 150 мл',
+  },
+  {
+    id: 'redWinesGlasses',
+    name: 'Вина красные по бокалам 150 мл',
+  },
+  {
+    id: 'whiskey',
+    name: 'Виски',
+  },
+  {
+    id: 'tequila',
+    name: 'Текила',
+  },
+  {
+    id: 'portoAndJerez',
+    name: 'Порто',
+  },
+  {
+    id: 'vodka',
+    name: 'Водка',
+  },
+  {
+    id: 'rumAndChacha',
+    name: 'Ром',
+  },
+  {
+    id: 'gin',
+    name: 'Джин',
+  },
+  {
+    id: 'brandy',
+    name: 'Коньяк/Бренди',
+  },
+  {
+    id: 'calvados',
+    name: 'Арманьяк/Кальвадос',
+  },
+  {
+    id: 'grappa',
+    name: 'Граппа',
+  },
+  {
+    id: 'pisco',
+    name: 'писко',
+  },
+  {
+    id: 'aperitivo',
+    name: 'Аперитив/Дижестив',
+  },
+  {
+    id: 'vermut',
+    name: 'Вермут',
+  },
+  {
+    id: 'cocktails',
+    name: 'Коктейли',
+  },
+  {
+    id: 'specialCocktails',
+    name: 'FORGOTTEN COCKTAIL RECIPES',
+  },
+  {
+    id: 'water',
+    name: 'Вода',
+  },
+  {
+    id: 'smoosy',
+    name: 'Смузи',
+  },
+  {
+    id: 'limonades',
+    name: 'Лимонады',
+  },
+  {
+    id: 'juices',
+    name: 'Соки',
+  },
+  {
+    id: 'beer',
+    name: 'Пиво',
+  },
+  {
+    id: 'hotAlco',
+    name: 'Горячие',
+  },
+  {
+    id: 'tea',
+    name: 'Чай',
+  },
+  {
+    id: 'coffe',
+    name: 'Кофе',
+  },
+]
 
-                  <span
-                    className="menu-page__submenu-link"
-                    onClick={() =>
-                      this.scrollTo(document.getElementById('redWinesBottles'))
-                    }
-                  >
-                    Вина Красные по бутылкам
-                  </span>
-                  <span
-                    className="menu-page__submenu-link"
-                    onClick={() =>
-                      this.scrollTo(document.getElementById('champagne'))
-                    }
-                  >
-                    шампанское и игристое
-                  </span>
-                  <span
-                    className="menu-page__submenu-link"
-                    onClick={() =>
-                      this.scrollTo(document.getElementById('rose'))
-                    }
-                  >
-                    розовые вина
-                  </span>
-                  <span
-                    className="menu-page__submenu-link"
-                    onClick={() =>
-                      this.scrollTo(
-                        document.getElementById('whiteWinesGlasses')
-                      )
-                    }
-                  >
-                    Вина белые по бокалам 150 мл
-                  </span>
-                  <span
-                    className="menu-page__submenu-link"
-                    onClick={() =>
-                      this.scrollTo(document.getElementById('redWinesGlasses'))
-                    }
-                  >
-                    Вина красные по бокалам 150 мл
-                  </span>
-                  <span
-                    className="menu-page__submenu-link"
-                    onClick={() =>
-                      this.scrollTo(document.getElementById('whiskey'))
-                    }
-                  >
-                    Виски
-                  </span>
-                  <span
-                    className="menu-page__submenu-link"
-                    onClick={() =>
-                      this.scrollTo(document.getElementById('tequila'))
-                    }
-                  >
-                    Текила
-                  </span>
-                  <span
-                    className="menu-page__submenu-link"
-                    onClick={() =>
-                      this.scrollTo(document.getElementById('portoAndJerez'))
-                    }
-                  >
-                    Порто
-                  </span>
-                  <span
-                    className="menu-page__submenu-link"
-                    onClick={() =>
-                      this.scrollTo(document.getElementById('vodka'))
-                    }
-                  >
-                    Водка
-                  </span>
-                  <span
-                    className="menu-page__submenu-link"
-                    onClick={() =>
-                      this.scrollTo(document.getElementById('rumAndChacha'))
-                    }
-                  >
-                    Ром
-                  </span>
-                  <span
-                    className="menu-page__submenu-link"
-                    onClick={() =>
-                      this.scrollTo(document.getElementById('gin'))
-                    }
-                  >
-                    Джин
-                  </span>
-                  <span
-                    className="menu-page__submenu-link"
-                    onClick={() =>
-                      this.scrollTo(document.getElementById('brandy'))
-                    }
-                  >
-                    Коньяк/Бренди
-                  </span>
-                  <span
-                    className="menu-page__submenu-link"
-                    onClick={() =>
-                      this.scrollTo(document.getElementById('calvados'))
-                    }
-                  >
-                    Арманьяк/Кальвадос
-                  </span>
-                  <span
-                    className="menu-page__submenu-link"
-                    onClick={() =>
-                      this.scrollTo(document.getElementById('grappa'))
-                    }
-                  >
-                    Граппа
-                  </span>
-                  <span
-                    className="menu-page__submenu-link"
-                    onClick={() =>
-                      this.scrollTo(document.getElementById('pisko'))
-                    }
-                  >
-                    Писко
-                  </span>
-                  <span
-                    className="menu-page__submenu-link"
-                    onClick={() =>
-                      this.scrollTo(document.getElementById('aperitivo'))
-                    }
-                  >
-                    Аперитив/Дижестив
-                  </span>
-                  <span
-                    className="menu-page__submenu-link"
-                    onClick={() =>
-                      this.scrollTo(document.getElementById('vermut'))
-                    }
-                  >
-                    Вермут
-                  </span>
-                  <span
-                    className="menu-page__submenu-link"
-                    onClick={() =>
-                      this.scrollTo(document.getElementById('cocktails'))
-                    }
-                  >
-                    Коктейли
-                  </span>
-                  <span
-                    className="menu-page__submenu-link"
-                    onClick={() =>
-                      this.scrollTo(document.getElementById('specialCocktails'))
-                    }
-                  >
-                    Фирменные Коктейли
-                  </span>
-                  <span
-                    className="menu-page__submenu-link"
-                    onClick={() =>
-                      this.scrollTo(document.getElementById('water'))
-                    }
-                  >
-                    Вода
-                  </span>
-                  <span
-                    className="menu-page__submenu-link"
-                    onClick={() =>
-                      this.scrollTo(document.getElementById('smoosy'))
-                    }
-                  >
-                    Смузи
-                  </span>
-                  <span
-                    className="menu-page__submenu-link"
-                    onClick={() =>
-                      this.scrollTo(document.getElementById('limonades'))
-                    }
-                  >
-                    Лимонады
-                  </span>
-                  <span
-                    className="menu-page__submenu-link"
-                    onClick={() =>
-                      this.scrollTo(document.getElementById('juices'))
-                    }
-                  >
-                    Соки
-                  </span>
-                  <span
-                    className="menu-page__submenu-link"
-                    onClick={() =>
-                      this.scrollTo(document.getElementById('beer'))
-                    }
-                  >
-                    Пиво
-                  </span>
-                  <span
-                    className="menu-page__submenu-link"
-                    onClick={() =>
-                      this.scrollTo(document.getElementById('hotAlco'))
-                    }
-                  >
-                    Горячее
-                  </span>
-                  <span
-                    className="menu-page__submenu-link"
-                    onClick={() =>
-                      this.scrollTo(document.getElementById('tea'))
-                    }
-                  >
-                    Чай
-                  </span>
-                  <span
-                    className="menu-page__submenu-link"
-                    onClick={() =>
-                      this.scrollTo(document.getElementById('coffee'))
-                    }
-                  >
-                    Кофе
-                  </span>
-                </div>
+function DrinksPage() {
+  return (
+    <>
+      <SEO title="Меню Напитки" />
+      <Layout>
+        <div className="menu-page">
+          <div className="menu-page__wrapper">
+            <h1>Напитки</h1>
+            <a href={menuPDF} download>
+              Скачать меню PDF
+            </a>
+            <br />
+            <Submenu linksData={linksData} />
+            <div className="menu-page__submenu"></div>
+            <MenuSection
+              id="whiteWinesBottles"
+              title="Вина по бутылкам белые 750 мл"
+              data={whiteWinesBottles}
+            />
+            <MenuSection
+              id="redWinesBottles"
+              title="Вина по бутылкам красные 750 мл"
+              data={redWinesBottles}
+            />
+            <MenuSection
+              id="champagne"
+              title="Шампанское и игристое 150/750 мл"
+              data={champagne}
+            />
+            <MenuSection id="rose" title="Вина розовые" data={rose} />
+            <MenuSection
+              id="whiteWinesGlasses"
+              title="Вина белые по бокалам 150 мл"
+              data={whiteWinesGlasses}
+            />
+            <MenuSection
+              id="redWinesGlasses"
+              title="Вина красные по бокалам 150 мл"
+              data={redWinesGlasses}
+            />
 
-                <section
-                  id="whiteWinesBottles"
-                  className="menu-page__section"
-                  ref={section => {
-                    this.whiteWinesBottles = section
-                  }}
-                >
-                  <span className="menu-page__section-title">
-                    Вина по бутылкам белые 750 мл
-                  </span>
-                  {whiteWinesBottles.map(position => (
-                    <ComplexMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                      description={position.description}
-                    />
-                  ))}
-                </section>
-                <section
-                  id="redWinesBottles"
-                  className="menu-page__section"
-                  ref={section => {
-                    this.whiteWinesBottles = section
-                  }}
-                >
-                  <span className="menu-page__section-title">
-                    Вина по бутылкам красные 750 мл
-                  </span>
-                  {redWinesBottles.map(position => (
-                    <ComplexMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                      description={position.description}
-                    />
-                  ))}
-                </section>
-                <section
-                  id="champagne"
-                  className="menu-page__section"
-                  ref={section => {
-                    this.champagne = section
-                  }}
-                >
-                  <span className="menu-page__section-title">
-                    Шампанское и игристое 150/750 мл
-                  </span>
-                  {champagne.map(position => (
-                    <ComplexMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                      description={position.description}
-                    />
-                  ))}
-                </section>
-                <section
-                  id="rose"
-                  className="menu-page__section"
-                  ref={section => {
-                    this.rose = section
-                  }}
-                >
-                  <span className="menu-page__section-title">Вина розовые</span>
-                  {rose.map(position => (
-                    <ComplexMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                      description={position.description}
-                    />
-                  ))}
-                </section>
-                <section
-                  id="whiteWinesGlasses"
-                  className="menu-page__section"
-                  ref={section => {
-                    this.whiteWinesGlasses = section
-                  }}
-                >
-                  <span className="menu-page__section-title">
-                    Вина белые по бокалам 150 мл
-                  </span>
-                  {whiteWinesGlasses.map(position => (
-                    <ComplexMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                      description={position.description}
-                    />
-                  ))}
-                </section>
-                <section
-                  id="redWinesGlasses"
-                  className="menu-page__section"
-                  ref={section => {
-                    this.redWinesGlasses = section
-                  }}
-                >
-                  <span className="menu-page__section-title">
-                    Вина красные по бокалам 150 мл
-                  </span>
-                  {redWinesGlasses.map(position => (
-                    <ComplexMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                      description={position.description}
-                    />
-                  ))}
-                </section>
-                <section
-                  id="whiskey"
-                  className="menu-page__section"
-                  ref={section => {
-                    this.whiskey = section
-                  }}
-                >
-                  <span className="menu-page__section-title">ВИСКИ 50 мл</span>
-                  <br />
-                  <span className="menu-page__section-subtitle">
-                    Scotch Whiskey Blend
-                  </span>
-                  {scotchWhiskeyBlend.map(position => (
-                    <SimpleMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                    />
-                  ))}
-                  <span className="menu-page__section-subtitle">
-                    Single Malt
-                  </span>
-                  {singleMalt.map(position => (
-                    <SimpleMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                    />
-                  ))}
-                  <span className="menu-page__section-subtitle">
-                    Irish Whiskey
-                  </span>
-                  {irishWhiskey.map(position => (
-                    <SimpleMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                    />
-                  ))}
-                  <span className="menu-page__section-subtitle">
-                    American Whiskey
-                  </span>
-                  {americanWhiskey.map(position => (
-                    <SimpleMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                    />
-                  ))}
-                  <span className="menu-page__section-subtitle">
-                    Japanese Whiskey
-                  </span>
-                  {japanWhiskey.map(position => (
-                    <SimpleMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                    />
-                  ))}
-                </section>
-                <section
-                  id="tequila"
-                  className="menu-page__section"
-                  ref={section => {
-                    this.tequila = section
-                  }}
-                >
-                  <span className="menu-page__section-title">
-                    ТЕКИЛА / MEСКАЛЬ 50 мл
-                  </span>
-                  {tequilaAndMezkal.map(position => (
-                    <SimpleMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                    />
-                  ))}
-                </section>
-                <section
-                  id="portoAndJerez"
-                  className="menu-page__section"
-                  ref={section => {
-                    this.portoAndJerez = section
-                  }}
-                >
-                  <span className="menu-page__section-title">
-                    ПОРТО / ШЕРРИ 75 мл
-                  </span>
-                  {portoAndJerez.map(position => (
-                    <SimpleMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                    />
-                  ))}
-                </section>
-                <section
-                  id="vodka"
-                  className="menu-page__section"
-                  ref={section => {
-                    this.vodka = section
-                  }}
-                >
-                  <span className="menu-page__section-title">ВОДКА 50 мл</span>
-                  {vodka.map(position => (
-                    <SimpleMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                    />
-                  ))}
-                </section>
-                <section
-                  id="rumAndChacha"
-                  className="menu-page__section"
-                  ref={section => {
-                    this.rumAndChacha = section
-                  }}
-                >
-                  <span className="menu-page__section-title">
-                    РОМ / ЧАЧА 50 мл
-                  </span>
-                  {rumAndChacha.map(position => (
-                    <SimpleMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                    />
-                  ))}
-                </section>
-                <section
-                  id="gin"
-                  className="menu-page__section"
-                  ref={section => {
-                    this.gin = section
-                  }}
-                >
-                  <span className="menu-page__section-title">ДЖИН 50 мл</span>
-                  {gin.map(position => (
-                    <SimpleMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                    />
-                  ))}
-                </section>
-                <section
-                  id="brandy"
-                  className="menu-page__section"
-                  ref={section => {
-                    this.brandy = section
-                  }}
-                >
-                  <span className="menu-page__section-title">
-                    КОНЬЯК / БРЕДИ 50 мл
-                  </span>
-                  {brandy.map(position => (
-                    <SimpleMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                    />
-                  ))}
-                </section>
-                <section
-                  id="calvados"
-                  className="menu-page__section"
-                  ref={section => {
-                    this.calvados = section
-                  }}
-                >
-                  <span className="menu-page__section-title">
-                    АРМАНЬЯК / КАЛЬВАДОС 50 мл
-                  </span>
-                  {calvados.map(position => (
-                    <SimpleMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                    />
-                  ))}
-                </section>
-                <section
-                  id="grappa"
-                  className="menu-page__section"
-                  ref={section => {
-                    this.grappa = section
-                  }}
-                >
-                  <span className="menu-page__section-title">ГРАППА 50 мл</span>
-                  {grappa.map(position => (
-                    <SimpleMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                    />
-                  ))}
-                </section>
-                <section
-                  id="pisko"
-                  className="menu-page__section"
-                  ref={section => {
-                    this.pisko = section
-                  }}
-                >
-                  <span className="menu-page__section-title">ПИСКО 50 мл</span>
-                  {pisco.map(position => (
-                    <SimpleMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                    />
-                  ))}
-                </section>
-                <section
-                  id="aperitivo"
-                  className="menu-page__section"
-                  ref={section => {
-                    this.aperitivo = section
-                  }}
-                >
-                  <span className="menu-page__section-title">
-                    АПЕРИТИВ / DIGESTIV 50 мл
-                  </span>
-                  {aperitivo.map(position => (
-                    <SimpleMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                    />
-                  ))}
-                </section>
-                <section
-                  id="vermut"
-                  className="menu-page__section"
-                  ref={section => {
-                    this.vermut = section
-                  }}
-                >
-                  <span className="menu-page__section-title">ВЕРМУТ</span>
-                  {vermut.map(position => (
-                    <SimpleMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                    />
-                  ))}
-                </section>
-                <section
-                  id="cocktails"
-                  className="menu-page__section"
-                  ref={section => {
-                    this.cocktails = section
-                  }}
-                >
-                  <span className="menu-page__section-title">
-                    ANGEL / 8 COCKTAILS
-                  </span>
-                  {cocktails.map(position => (
-                    <ComplexMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                      description={position.description}
-                    />
-                  ))}
-                </section>
-                <section
-                  id="specialCocktails"
-                  className="menu-page__section"
-                  ref={section => {
-                    this.specialCocktails = section
-                  }}
-                >
-                  <span className="menu-page__section-title">
-                    FORGOTTEN COCKTAIL RECIPES
-                  </span>
-                  {specialCocktails.map(position => (
-                    <ComplexMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                      description={position.description}
-                    />
-                  ))}
-                </section>
-                <section
-                  id="water"
-                  className="menu-page__section"
-                  ref={section => {
-                    this.water = section
-                  }}
-                >
-                  <span className="menu-page__section-title">Вода</span>
-                  {water.map(position => (
-                    <SimpleMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                    />
-                  ))}
-                </section>
-                <section
-                  id="smoosy"
-                  className="menu-page__section"
-                  ref={section => {
-                    this.smoosy = section
-                  }}
-                >
-                  <span className="menu-page__section-title">СМУЗИ 300 мл</span>
-                  {smoosy.map(position => (
-                    <ComplexMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                      description={position.description}
-                    />
-                  ))}
-                </section>
-                <section
-                  id="limonades"
-                  className="menu-page__section"
-                  ref={section => {
-                    this.limonades = section
-                  }}
-                >
-                  <span className="menu-page__section-title">
-                    ДОМАШНИЕ ЛИМОНАДЫ 300 мл / 1l
-                  </span>
-                  {limonades.map(position => (
-                    <SimpleMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                    />
-                  ))}
-                </section>
-                <section
-                  id="juices"
-                  className="menu-page__section"
-                  ref={section => {
-                    this.juicesYa = section
-                  }}
-                >
-                  <span className="menu-page__section-title">СОКИ "Я"</span>
-                  {juicesYa.map(position => (
-                    <SimpleMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                    />
-                  ))}
-                </section>
-                <section
-                  className="menu-page__section"
-                  ref={section => {
-                    this.freshJuices = section
-                  }}
-                >
-                  <span className="menu-page__section-title">
-                    СОК СВЕЖЕВЫЖАТЫЙ 250 мл
-                  </span>
-                  {freshJuices.map(position => (
-                    <SimpleMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                    />
-                  ))}
-                </section>
-                <section
-                  id="beer"
-                  className="menu-page__section"
-                  ref={section => {
-                    this.beer = section
-                  }}
-                >
-                  <span className="menu-page__section-title">ПИВО</span>
-                  <br />
+            <section id="whiskey" className="menu-page__section">
+              <span className="menu-page__section-title">ВИСКИ 50 мл</span>
+              <br />
 
-                  <span className="menu-page__section-subtitle">
-                    бутылочное
-                  </span>
-                  {bottleBeer.map(position => (
-                    <SimpleMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                    />
-                  ))}
-                </section>
-                <section
-                  id="hotAlco"
-                  className="menu-page__section"
-                  ref={section => {
-                    this.hotAlco = section
-                  }}
-                >
-                  <span className="menu-page__section-title">
-                    ГОРЯЧИЕ НАПИТКИ 300 мл
-                  </span>
-                  {hotAlco.map(position => (
-                    <ComplexMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                      description={position.description}
-                    />
-                  ))}
-                </section>
-                <section
-                  id="coffee"
-                  className="menu-page__section"
-                  ref={section => {
-                    this.coffee = section
-                  }}
-                >
-                  <span className="menu-page__section-title">КОФЕ</span>
-                  {coffee.map(position => (
-                    <SimpleMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                    />
-                  ))}
-                  {coffeWithEngredients.map(position => (
-                    <ComplexMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                      description={position.description}
-                    />
-                  ))}
-                </section>
-                <section
-                  className="menu-page__section--last"
-                  ref={section => {
-                    this.tea = section
-                  }}
-                >
-                  <span className="menu-page__section-title" id="tea">
-                    ЧАЙ НА ЯГОДАХ И ФРУКТАХ 450 мл
-                  </span>
-                  {fruitTea.map(position => (
-                    <SimpleMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                    />
-                  ))}
-                  <span className="menu-page__section-title">ЧАЙ 450 мл</span>
-                  {simpleTea.map(position => (
-                    <SimpleMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                    />
-                  ))}
-                  <span className="menu-page__section-title">
-                    ЧАЙ АЛТАЙ 450 мл
-                  </span>
-                  {altayTea.map(position => (
-                    <SimpleMenuPosition
-                      key={position.name}
-                      name={position.name}
-                      price={position.price}
-                    />
-                  ))}
-                </section>
-              </div>
-            </div>
+              <MenuSection
+                title="Scotch Whiskey Blend"
+                data={scotchWhiskeyBlend}
+              />
+              <MenuSection title="Single Malt" data={singleMalt} />
+              <MenuSection title="Irish Whiskey" data={irishWhiskey} />
+              <MenuSection title="American Whiskey" data={americanWhiskey} />
+              <MenuSection title="Japanese Whiskey" data={japanWhiskey} />
+            </section>
+            <MenuSection
+              id="tequila"
+              title="ТЕКИЛА / MEСКАЛЬ 50 мл"
+              data={tequilaAndMezkal}
+            />
+            <MenuSection
+              id="portoAndJerez"
+              title="ПОРТО / ШЕРРИ 75 мл"
+              data={portoAndJerez}
+            />
+            <MenuSection id="vodka" title="ВОДКА 50 мл" data={vodka} />
+            <MenuSection
+              id="rumAndChacha"
+              title="РОМ / ЧАЧА 50 мл"
+              data={rumAndChacha}
+            />
+            <MenuSection id="gin" title="ДЖИН 50 мл" data={gin} />
+            <MenuSection
+              id="brandy"
+              title="КОНЬЯК / БРЕДИ 50 мл"
+              data={brandy}
+            />
+            <MenuSection
+              id="calvados"
+              title="АРМАНЬЯК / КАЛЬВАДОС 50 мл"
+              data={calvados}
+            />
+            <MenuSection id="grappa" title="ГРАППА 50 мл" data={grappa} />
+            <MenuSection id="pisco" title="ПИСКО 50 мл" data={pisco} />
+            <MenuSection
+              id="aperitivo"
+              title="Аперитив / Дижестив 50 мл"
+              data={aperitivo}
+            />
+            <MenuSection id="vermut" title="ВЕРМУТ" data={vermut} />
+            <MenuSection
+              id="cocktails"
+              title="ANGEL / 8 COCKTAILS"
+              data={cocktails}
+            />
+            <MenuSection
+              id="specialCocktails"
+              title="FORGOTTEN COCKTAIL RECIPES"
+              data={specialCocktails}
+            />
+            <MenuSection id="water" title="Вода" data={water} />
+            <MenuSection id="smoosy" title="СМУЗИ 300 мл" data={smoosy} />
+            <MenuSection
+              id="limonades"
+              title="ДОМАШНИЕ ЛИМОНАДЫ 300 мл / 1l"
+              data={limonades}
+            />
+            <MenuSection id="juices" title="СОКИ 'Я'" data={juicesYa} />
+            <MenuSection title="СОК СВЕЖЕВЫЖАТЫЙ 250 мл" data={freshJuices} />
+            <MenuSection id="beer" title="ПИВО" data={bottleBeer} />
+            <MenuSection
+              id="hotAlco"
+              title="ГОРЯЧИЕ НАПИТКИ 300 мл"
+              data={hotAlco}
+            />
+            <MenuSection id="coffee" title="КОФЕ" data={coffee} />
+            <MenuSection title="КОФЕ С ДОБАВКАМИ" data={coffeWithEngredients} />
+            <MenuSection
+              id="tea"
+              title="ЧАЙ НА ЯГОДАХ И ФРУКТАХ 450 мл"
+              data={fruitTea}
+            />
+            <MenuSection title="ЧАЙ 450 мл" data={simpleTea} />
+            <MenuSection title="ЧАЙ АЛТАЙ 450 мл" data={altayTea} />
           </div>
-        </Layout>
-      </>
-    )
-  }
+        </div>
+      </Layout>
+    </>
+  )
 }
 
 export default DrinksPage

@@ -1,6 +1,5 @@
 /* MAIN */
-
-.simple-menu-position {
+.menu-item {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -11,12 +10,12 @@
   align-items: baseline;
 }
 
-.simple-menu-position > * {
+.menu-item>* {
   padding: 0;
   margin: 0;
 }
 
-.simple-menu-position span {
+.menu-item span {
   flex: 1;
   border-bottom: 2px dotted rgb(167, 167, 165);
 }

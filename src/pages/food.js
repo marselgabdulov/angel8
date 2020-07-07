@@ -1,7 +1,6 @@
 import React from 'react'
 import './menuPages.scss'
 import Layout from '../components/layout'
-import Footer from '../components/Footer/Footer'
 import SEO from '../components/seo'
 import menu from '../docs/angel8_menu.pdf'
 

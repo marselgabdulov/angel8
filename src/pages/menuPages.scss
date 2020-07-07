@@ -7,6 +7,7 @@
 
   h1 {
     margin-top: 0;
+    margin-bottom: 0.5em;
   }
 
   a {
@@ -111,8 +112,8 @@
 // tablet-landscape
 @media (min-width: 900px) {
   .menu-page {
-    width: 95%;
-    margin-top: 4em;
+    width: 70%;
+    margin-top: 1em;
   }
 
   .menu-page__wrapper {
@@ -127,12 +128,12 @@
 // desktop/laptop
 @media (min-width: 1200px) {
   .menu-page {
-    width: 95%;
-    margin-top: 5em;
+    width: 75%;
+    margin-top: 1em;
   }
 
   .menu-page__wrapper {
-    width: 94%;
+    width: 95%;
     margin: auto;
     height: 100%;
   }
@@ -141,12 +142,12 @@
 // desktop x-large
 @media (min-width: 1800px) {
   .menu-page {
-    width: 90%;
-    margin-top: 5em;
+    width: 70%;
+    margin-top: 1.5em;
   }
 
   .menu-page__wrapper {
-    width: 60%;
+    width: 90%;
     margin: auto;
     height: 100%;
   }

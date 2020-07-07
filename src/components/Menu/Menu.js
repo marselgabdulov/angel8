@@ -9,9 +9,8 @@ function Menu(props) {
         <div className="menu__wrapper">
           <AniLink
             className="menu__link"
-            cover
+            fade
             to="/"
-            bg="#232324"
             activeStyle={{
               color: '#f34444',
             }}
@@ -20,9 +19,8 @@ function Menu(props) {
           </AniLink>
           <AniLink
             className="menu__link"
-            cover
+            fade
             to="/food"
-            bg="#232324"
             activeStyle={{
               color: '#f34444',
             }}
@@ -32,8 +30,7 @@ function Menu(props) {
           <AniLink
             className="menu__link"
             to="/drinks"
-            cover
-            bg="#232324"
+            fade
             activeStyle={{
               color: '#f34444',
             }}

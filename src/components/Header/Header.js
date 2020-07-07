@@ -20,7 +20,7 @@ function Header({ handleMenu }) {
         css: {
           opacity: 1,
         },
-        delay: 0,
+        delay: 0.25,
         duration: 1,
         ease: 'power1.in',
       }
@@ -30,7 +30,7 @@ function Header({ handleMenu }) {
     <div className="header" ref={el => (headerRef = el)}>
       <div className="header__wrapper">
         <div className="header__logo">
-          <AniLink cover to="/" bg="#181818" title="На главную">
+          <AniLink fade to="/" title="На главную">
             <Logo color="white" />
           </AniLink>
         </div>

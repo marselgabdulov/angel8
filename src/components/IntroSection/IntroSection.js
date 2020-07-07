@@ -17,38 +17,22 @@ function IntroSection() {
 
   useEffect(() => {
     let tl = gsap.timeline()
-    tl.fromTo(
-      '.intro__video-container',
-      {
-        css: {
-          opacity: '0',
-        },
+    tl.to('.intro__bg', {
+      css: {
+        opacity: '1',
       },
-      {
-        css: {
-          opacity: '1',
-        },
-        delay: 0,
-        duration: 1,
-        ease: 'power1.in',
-      }
-    ).fromTo(
-      ['.intro__title', '.intro__description', '.intro__footer'],
-      {
-        css: {
-          opacity: '0',
-        },
+      delay: 0,
+      duration: 1,
+      ease: 'power1.in',
+    }).to(['.intro__title', '.intro__description', '.intro__footer'], {
+      css: {
+        opacity: '1',
       },
-      {
-        css: {
-          opacity: '1',
-        },
-        delay: 0,
-        duration: 0.45,
-        stagger: 0.25,
-        ease: 'power1.in',
-      }
-    )
+      delay: 0,
+      duration: 0.45,
+      stagger: 0.25,
+      ease: 'power1.in',
+    })
   }, [introBg, introVideo, introTitle, introDescription, introFooter])
 
   return (

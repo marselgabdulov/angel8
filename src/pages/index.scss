@@ -1,8 +1,6 @@
-@import './indexSectionsStyles/intro.scss';
-@import './indexSectionsStyles/about.scss';
-@import './indexSectionsStyles/team.scss';
-
-.index {
+#index {
   width: 100%;
-  color: white;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }

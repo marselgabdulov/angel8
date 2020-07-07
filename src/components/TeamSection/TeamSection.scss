@@ -1,5 +1,6 @@
-.team {
+#team {
   height: auto;
+  color: white;
 
   .team-cards {
     display: flex;
@@ -18,7 +19,7 @@
 
 // mobile
 @media (max-width: 599px) {
-  .team {
+  #team {
     width: 95%;
     margin-left: 2.5%;
     margin-top: 4em;
@@ -55,7 +56,7 @@
 
 // tublet-portrait
 @media (min-width: 600px) {
-  .team {
+  #team {
     width: 95%;
     margin-left: 2.5%;
     margin-top: 5em;
@@ -92,7 +93,7 @@
 
 // tablet-landscape
 @media (min-width: 900px) {
-  .team {
+  #team {
     width: 95%;
     margin-left: 2.5%;
 
@@ -127,7 +128,7 @@
 
 // desktop/laptop
 @media (min-width: 1200px) {
-  .team {
+  #team {
     width: 95%;
     margin-left: 2.5%;
     margin-bottom: 4em;
@@ -164,7 +165,7 @@
 
 // desktop x-large
 @media (min-width: 1800px) {
-  .team {
+  #team {
     width: 90%;
     margin-left: 5%;
     margin-bottom: 4em;

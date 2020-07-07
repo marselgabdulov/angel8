@@ -27,7 +27,7 @@ function TeamSection({ teamData }) {
               <div className="card-position">
                 <b>{member.position}</b>
               </div>
-              <p className="card-experience">{member.projects}</p>
+              <p className="card-experience">проекты: {member.projects}</p>
             </div>
           </div>
         ))}

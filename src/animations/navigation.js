@@ -10,19 +10,19 @@ export const openMenu = width => {
     .to('.main', 1, {
       ease: 'expo.inOut',
     })
-    .to('.header__button .line-one', 0.2, {
+    .to('.header__button .line-one', 0.25, {
       delay: -1,
       top: '50%',
       transform: 'rotate(45deg)',
       ease: 'expo.inOut',
     })
-    .to('.header__button .line-two', 0.2, {
+    .to('.header__button .line-two', 0.25, {
       delay: -1,
       top: '50%',
       transform: 'rotate(-45deg)',
       ease: 'expo.inOut',
     })
-    .to('.header__button .line-three', 0.2, {
+    .to('.header__button .line-three', 0.25, {
       delay: -1,
       opacity: 0,
       top: '50%',
@@ -36,19 +36,19 @@ export const closeMenu = () => {
     ease: 'expo.inOut',
   })
 
-    .to('.header__button .line-one', 0.2, {
+    .to('.header__button .line-one', 0.25, {
       delay: -1,
       top: '20%',
       transform: 'rotate(0deg)',
       ease: 'expo.inOut',
     })
-    .to('.header__button .line-two', 0.2, {
+    .to('.header__button .line-two', 0.25, {
       delay: -1,
       top: '50%',
       transform: 'rotate(0deg)',
       ease: 'expo.inOut',
     })
-    .to('.header__button .line-three', 0.2, {
+    .to('.header__button .line-three', 0.25, {
       delay: -1,
       opacity: 1,
       top: '80%',

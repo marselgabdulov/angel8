@@ -8,7 +8,6 @@ function Menu(props) {
       <div className={props.show ? 'menu-opened' : 'menu-closed'}>
         <div className="menu__wrapper">
           <AniLink
-            title="Меню | Блюда"
             className="menu__link"
             cover
             to="/"
@@ -20,7 +19,6 @@ function Menu(props) {
             Главная
           </AniLink>
           <AniLink
-            title="Меню | Блюда"
             className="menu__link"
             cover
             to="/food"
@@ -32,7 +30,6 @@ function Menu(props) {
             Блюда
           </AniLink>
           <AniLink
-            title="Меню | Напитки"
             className="menu__link"
             to="/drinks"
             cover
@@ -50,9 +47,7 @@ function Menu(props) {
               <br />
               корпус 1 вход 5
             </span>
-            <a href="tel:+74872770247" title="Позвоните нам">
-              +7 4872 77 02 47
-            </a>
+            <a href="tel:+74872770247">+7 4872 77 02 47</a>
           </div>
 
           <div className="menu__working-time">
@@ -65,7 +60,6 @@ function Menu(props) {
                 href="https://www.facebook.com/Angel-8-2123834887946466/"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="Мы в Facebook"
               >
                 Facebook
               </a>
@@ -75,7 +69,6 @@ function Menu(props) {
                 href="https://www.instagram.com/angel_bar_grill/?hl=ru"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="Наш Instagram"
               >
                 Instagram
               </a>

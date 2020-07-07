@@ -211,7 +211,7 @@ class DrinksPage extends React.Component {
                       this.scrollTo(document.getElementById('aperitivo'))
                     }
                   >
-                    Аперитив/Digestiv
+                    Аперитив/Дижестив
                   </span>
                   <span
                     className="menu-page__submenu-link"
@@ -235,7 +235,7 @@ class DrinksPage extends React.Component {
                       this.scrollTo(document.getElementById('specialCocktails'))
                     }
                   >
-                    FORGOTTEN COCKTAIL RECIPES
+                    Фирменные Коктейли
                   </span>
                   <span
                     className="menu-page__submenu-link"

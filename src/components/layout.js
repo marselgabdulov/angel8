@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import AOS from 'aos'
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
 import Menu from './Menu/Menu'
@@ -13,11 +12,8 @@ function Layout(props) {
   const [width, setWidth] = useState(null)
 
   useEffect(() => {
-    AOS.init()
-
     let vh = window.innerHeight * 0.01
     document.documentElement.style.setProperty('--vh', `${vh}px`)
-
     setWidth(document.documentElement.clientWidth)
   })
 
@@ -37,7 +33,10 @@ function Layout(props) {
       </div>
       <Menu show={menu.opened} handleClick={handleMenu} />
       <Header handleMenu={handleMenu} />
-      <main className="main" onClick={handleMenu}>
+      <main
+        className="main"
+        onClick={() => (menu.opened ? handleMenu() : null)}
+      >
         {props.children}
       </main>
       <Footer />

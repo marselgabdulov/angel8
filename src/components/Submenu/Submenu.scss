@@ -11,14 +11,15 @@
   .submenu__links {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     flex-direction: column;
   }
 
   .submenu__link {
+    align-self: flex-start;
     text-decoration: underline;
     font-weight: bold;
     transition: all 0.25s ease-in-out;
+    width: auto;
 
     &:hover {
       cursor: pointer;

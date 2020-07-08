@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import './menuPages.scss'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -154,7 +154,7 @@ let linksData = [
     name: 'Чай',
   },
   {
-    id: 'coffe',
+    id: 'coffee',
     name: 'Кофе',
   },
 ]

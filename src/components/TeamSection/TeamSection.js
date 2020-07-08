@@ -1,26 +1,33 @@
-import React, { useRef } from 'react'
-import { useIntersection } from 'react-use'
+import React from 'react'
 import Img from 'gatsby-image'
-import gsap from 'gsap'
 import './TeamSection.scss'
 
 function TeamSection({ teamData }) {
-  let teamCards = useRef(null)
-
-  const intersection = useIntersection(teamCards, {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.2,
-  })
-
-  // Animation for fading in
-
   return (
     <section id="team">
-      <h2 className="team__title">Команда</h2>
-      <div className="team-cards" ref={teamCards}>
+      <h2
+        className="team__title"
+        data-aos="fade"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-once="false"
+        data-aos-anchor-placement="top"
+      >
+        Команда
+      </h2>
+      <div className="team-cards">
         {teamData.map(member => (
-          <div className="team-card" key={member.id}>
+          <div
+            className="team-card"
+            key={member.id}
+            data-aos="fade"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-once="false"
+            data-aos-anchor-placement="top"
+          >
             <Img fluid={member.image} className="team-image"></Img>
             <div className="card-info">
               <div className="card-name ">{member.name}</div>

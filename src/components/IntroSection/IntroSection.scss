@@ -140,7 +140,7 @@
     }
 
     .intro__menu {
-      display: none;
+      display: none !important;
     }
 
     .intro__address {
@@ -185,7 +185,7 @@
     }
 
     .intro__menu {
-      display: block;
+      display: flex !important;
     }
 
     .intro__address {

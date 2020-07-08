@@ -1,6 +1,5 @@
 import React from 'react'
 import './AboutSection.scss'
-import Img from 'gatsby-image'
 
 function AboutSection({ image }) {
   return (

@@ -1,40 +1,31 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useContext } from 'react'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import './Header.scss'
 import Logo from '../Logo'
 import gsap from 'gsap'
+import NavContext from '../../context/nav/navContext'
 
-function Header({ handleMenu }) {
-  let headerRef = useRef(null)
-  let tl = gsap.timeline()
+function Header() {
+  const navContext = useContext(NavContext)
+  const { navIsOpened, openNav, closeNav } = navContext
 
-  useEffect(() => {
-    tl.fromTo(
-      '.header',
-      {
-        css: {
-          opacity: 0,
-        },
-      },
-      {
-        css: {
-          opacity: 1,
-        },
-        delay: 0.25,
-        duration: 1,
-        ease: 'power1.in',
-      }
-    )
-  }, [headerRef])
+  function handleNav() {
+    if (navIsOpened) {
+      closeNav()
+    } else {
+      openNav()
+    }
+  }
+
   return (
-    <div className="header" ref={el => (headerRef = el)}>
+    <div className="header">
       <div className="header__wrapper">
         <div className="header__logo">
           <AniLink fade to="/" title="На главную">
             <Logo color="white" />
           </AniLink>
         </div>
-        <div className="header__button" onClick={handleMenu}>
+        <div className="header__button" onClick={handleNav}>
           <div className="header__button--bg">
             <span className="line-one"></span>
             <span className="line-two"></span>

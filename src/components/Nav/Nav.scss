@@ -1,5 +1,5 @@
-.menu-closed,
-.menu-opened {
+.nav-closed,
+.nav-opened {
   position: fixed;
   top: 0;
   right: 0;
@@ -12,7 +12,7 @@
   overflow: hidden;
   z-index: 100;
 
-  .menu__wrapper {
+  .nav__wrapper {
     margin: auto;
     display: -webkit-flex;
     display: -ms-flex;
@@ -32,17 +32,17 @@
 
 }
 
-.menu-closed {
+.nav-closed {
   transition: transform 0.3 ease-in-out;
   transform: translateX(100%);
 }
 
-.menu-opened {
+.nav-opened {
   transition: transform 0.3 ease-in-out;
   transform: translateX(0);
 }
 
-.menu__link {
+.nav__link {
   width: auto;
   font-weight: bold;
   text-transform: uppercase;
@@ -56,13 +56,13 @@
 // mobile
 @media (max-width: 599px) {
 
-  .menu-closed,
-  .menu-opened {
+  .nav-closed,
+  .nav-opened {
     width: 85%;
     line-height: 2em;
     text-align: right;
 
-    .menu__wrapper {
+    .nav__wrapper {
       width: 90%;
       height: auto;
     }
@@ -72,12 +72,12 @@
 // tublet-portrait
 @media (min-width: 600px) {
 
-  .menu-closed,
-  .menu-opened {
+  .nav-closed,
+  .nav-opened {
     width: 50%;
     line-height: 2em;
 
-    .menu__wrapper {
+    .nav__wrapper {
       width: 70%;
       height: auto;
     }
@@ -87,12 +87,12 @@
 // tablet-landscape
 @media (min-width: 900px) {
 
-  .menu-closed,
-  .menu-opened {
+  .nav-closed,
+  .nav-opened {
     width: 40%;
     line-height: 2em;
 
-    .menu__wrapper {
+    .nav__wrapper {
       width: 80%;
       height: 50%;
     }
@@ -102,12 +102,12 @@
 // desktop/laptop
 @media (min-width: 1200px) {
 
-  .menu-closed,
-  .menu-opened {
+  .nav-closed,
+  .nav-opened {
     width: 30%;
     line-height: 2em;
 
-    .menu__wrapper {
+    .nav__wrapper {
       width: 80%;
       height: 50%;
     }
@@ -117,12 +117,12 @@
 // desktop x-large
 @media (min-width: 1800px) {
 
-  .menu-closed,
-  .menu-opened {
+  .nav-closed,
+  .nav-opened {
     width: 25%;
     line-height: 2em;
 
-    .menu__wrapper {
+    .nav__wrapper {
       width: 70%;
       height: 50%;
     }

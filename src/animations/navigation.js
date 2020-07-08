@@ -2,7 +2,7 @@ import gsap from 'gsap'
 
 let tl = gsap.timeline()
 
-export const openMenu = width => {
+export const openMenu = () => {
   tl.to('navigation', 0, {
     css: { display: 'block' },
   })

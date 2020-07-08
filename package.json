@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "aos": "^2.3.4",
     "browser-monads": "^1.0.0",
     "gatsby": "^2.23.11",
     "gatsby-cli": "^2.12.58",
@@ -29,6 +30,7 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
+    "react-intersection-observer": "^8.26.2",
     "react-slideshow-image": "^1.2.2",
     "react-use": "^15.3.2"
   },

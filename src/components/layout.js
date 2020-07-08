@@ -4,6 +4,7 @@ import Footer from './Footer/Footer'
 import Nav from './Nav/Nav'
 import Grid from './Grid/Grid'
 import gsap from 'gsap'
+import AOS from 'aos'
 import { openMenu, closeMenu } from '../animations/navigation'
 import './layout.scss'
 import { window } from 'browser-monads'
@@ -14,6 +15,7 @@ function Layout(props) {
   let layoutRef = useRef(null)
 
   useEffect(() => {
+    AOS.init()
     let vh = window.innerHeight * 0.01
     document.documentElement.style.setProperty('--vh', `${vh}px`)
     setWidth(document.documentElement.clientWidth)

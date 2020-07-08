@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import SEO from '../components/seo'
 // Components
 import Layout from '../components/layout'
@@ -56,7 +55,7 @@ function IndexPage(props) {
       <SEO title="Angel 8 | Эмоциональная кухня и бар в Туле. ✆ +7 4872 77 02 47" />
       <div id="index">
         <IntroSection />
-        <AboutSection images={aboutImages} />
+        <AboutSection image={props.data.about_one.childImageSharp.fluid} />
         <TeamSection teamData={teamData} />
       </div>
     </Layout>

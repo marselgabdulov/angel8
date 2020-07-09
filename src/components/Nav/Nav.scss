@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #0e0e0e;
+  background: white;
   transition: transform 0.25s ease;
   overflow: hidden;
   z-index: 100;
@@ -27,7 +27,7 @@
   }
 
   * {
-    color: white;
+    color: black;
   }
 
 }
@@ -49,7 +49,6 @@
   text-decoration: none;
   font-size: 1.25em;
   margin-bottom: 1em;
-  font-family: 'Playfair Display', serif;
 }
 
 
@@ -58,9 +57,9 @@
 
   .nav-closed,
   .nav-opened {
-    width: 85%;
+    width: 100%;
     line-height: 2em;
-    text-align: right;
+    text-align: center;
 
     .nav__wrapper {
       width: 90%;
@@ -74,12 +73,13 @@
 
   .nav-closed,
   .nav-opened {
-    width: 50%;
+    width: 100%;
     line-height: 2em;
 
     .nav__wrapper {
-      width: 70%;
+      width: 50%;
       height: auto;
+      text-align: center;
     }
   }
 }

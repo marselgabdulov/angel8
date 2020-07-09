@@ -9,20 +9,16 @@ import { window } from 'browser-monads'
 import NavState from '../context/nav/NavState'
 
 function Layout(props) {
-  const [width, setWidth] = useState(null)
   let layoutRef = useRef(null)
 
   useEffect(() => {
-    let vh = window.innerHeight * 0.01
-    document.documentElement.style.setProperty('--vh', `${vh}px`)
-    setWidth(document.documentElement.clientWidth)
     let tl = gsap.timeline()
     tl.to('.layout', {
       css: {
         opacity: 1,
       },
       delay: 0,
-      duration: 0.25,
+      duration: 0.15,
       ease: 'power1.in',
     })
   }, [layoutRef])

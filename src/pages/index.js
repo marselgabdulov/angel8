@@ -23,7 +23,7 @@ function IndexPage(props) {
     window.scroll({
       behavior: 'smooth',
       left: 0,
-      top: el.offsetTop - 100,
+      top: el.offsetTop,
     })
   }
 

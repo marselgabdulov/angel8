@@ -1,43 +1,20 @@
 import React from 'react'
 import './AboutSection.scss'
 
-function AboutSection({ image }) {
+function AboutSection({ img }) {
   return (
-    <section id="about">
+    <section id="about" className="data-scroll-section">
       <div className="about__wrapper">
         <div className="about__image-container">
           <div
             className="about__image"
-            data-aos="zoom-out"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-once="false"
-            data-aos-anchor-placement="top"
-            style={{ backgroundImage: `url(${image.src})` }}
+            style={{ backgroundImage: `url(${img.src})` }}
           ></div>
         </div>
         <div className="about__content">
-          <h2
-            className="about__title"
-            data-aos="fade"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-once="false"
-            data-aos-anchor-placement="top"
-          >
-            О нас
-          </h2>
+          <h2 className="about__title">О нас</h2>
           <div className="about__text">
-            <p
-              data-aos="fade"
-              data-aos-delay="150"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
-              data-aos-once="false"
-              data-aos-anchor-placement="top"
-            >
+            <p>
               Авторская кухня. Специализируемся на блюдах, приготовленных на
               гриле. Используем печь{' '}
               <a
@@ -49,25 +26,11 @@ function AboutSection({ image }) {
                 Josper.
               </a>
             </p>
-            <p
-              data-aos="fade"
-              data-aos-delay="250"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
-              data-aos-once="false"
-              data-aos-anchor-placement="top"
-            >
+            <p>
               Классические и фирменные коктейли. <br />
               Хороший выбор вина в правильных бокалах.
             </p>
-            <p
-              data-aos="fade"
-              data-aos-delay="350"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
-              data-aos-once="false"
-              data-aos-anchor-placement="top"
-            >
+            <p>
               Вы найдете нас на территории торгово-делового квартала&nbsp;
               <a
                 className="index__link"

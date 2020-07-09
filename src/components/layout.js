@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react'
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
 import Nav from './Nav/Nav'
-// import Grid from './Grid/Grid'
 import gsap from 'gsap'
 import './layout.scss'
 import { window } from 'browser-monads'
@@ -35,7 +34,6 @@ function Layout(props) {
         <main className="main">{props.children}</main>
 
         <Footer />
-        {/* <Grid /> */}
       </div>
     </NavState>
   )

@@ -2,9 +2,8 @@ import React, { useState, useEffect, useRef } from 'react'
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
 import Nav from './Nav/Nav'
-import Grid from './Grid/Grid'
+// import Grid from './Grid/Grid'
 import gsap from 'gsap'
-import AOS from 'aos'
 import './layout.scss'
 import { window } from 'browser-monads'
 import NavState from '../context/nav/NavState'
@@ -14,7 +13,6 @@ function Layout(props) {
   let layoutRef = useRef(null)
 
   useEffect(() => {
-    AOS.init()
     let vh = window.innerHeight * 0.01
     document.documentElement.style.setProperty('--vh', `${vh}px`)
     setWidth(document.documentElement.clientWidth)
@@ -37,7 +35,9 @@ function Layout(props) {
         </div>
         <Nav />
         <Header />
+
         <main className="main">{props.children}</main>
+
         <Footer />
         {/* <Grid /> */}
       </div>

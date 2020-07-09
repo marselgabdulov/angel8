@@ -5,6 +5,7 @@ import TransitionLink from 'gatsby-plugin-transition-link'
 // data files
 import VideoMP4 from '../../video/angel8bg2.mp4'
 import VideoWEBM from '../../video/angel8bg2.webm'
+import LogoDesk from '../../components/LogoDesk'
 import menuPDF from '../../docs/angel8_menu.pdf'
 //Styles
 import './IntroSection.scss'
@@ -56,7 +57,9 @@ function IntroSection() {
   return (
     <section id="intro">
       <div className="intro__slogan">
-        <h1 className="intro__title">Эмоциональная кухня</h1>
+        <div className="intro__title">
+          <LogoDesk />
+        </div>
         <h4 className="intro__description">Ресторан. Гриль. Бар.</h4>
       </div>
       <div className="intro__working-time">

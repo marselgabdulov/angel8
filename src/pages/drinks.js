@@ -5,6 +5,8 @@ import SEO from '../components/seo'
 import menuPDF from '../docs/angel8_menu.pdf'
 import Submenu from '../components/Submenu/Submenu'
 import MenuSection from '../components/MenuSection/MenuSection'
+import { window } from 'browser-monads'
+
 import {
   scotchWhiskeyBlend,
   singleMalt,

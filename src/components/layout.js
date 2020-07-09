@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
 import Nav from './Nav/Nav'
@@ -11,6 +11,9 @@ function Layout(props) {
   let layoutRef = useRef(null)
 
   useEffect(() => {
+    let vh = window.innerHeight * 0.01
+    document.documentElement.style.setProperty('--vh', `${vh}`)
+
     let tl = gsap.timeline()
     tl.to('.layout', {
       css: {

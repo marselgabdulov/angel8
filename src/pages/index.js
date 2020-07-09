@@ -7,6 +7,9 @@ import ArrowToSection from '../components/ArrowToSection/ArrowToSection'
 import IntroSection from '../components/IntroSection/IntroSection'
 import AboutSection from '../components/AboutSection/AboutSection'
 import TeamSection from '../components/TeamSection/TeamSection'
+
+import { window } from 'browser-monads'
+
 //  Styles
 import './index.scss'
 import classnames from 'classnames'

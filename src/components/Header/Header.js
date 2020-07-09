@@ -1,10 +1,10 @@
 import React, { useContext, useState, useEffect, useRef } from 'react'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import './Header.scss'
-import LogoDesk from './LogoDesk'
 import LogoMobile from './LogoMobile'
 import NavContext from '../../context/nav/navContext'
 import classnames from 'classnames'
+import { window } from 'browser-monads'
 
 function Header() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
@@ -17,14 +17,8 @@ function Header() {
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
-    const handleWindowResize = () => {
-      setWindowWidth(window.innerWidth)
-    }
-
-    window.addEventListener('resize', handleWindowResize)
 
     return () => {
-      window.removeEventListener('resize', handleWindowResize)
       window.removeEventListener('scroll', handleScroll)
     }
   }, [headerRef])
@@ -50,11 +44,7 @@ function Header() {
       <div className="header__wrapper">
         <div className="header__logo">
           <AniLink fade to="/" title="На главную">
-            {windowWidth >= 769 ? (
-              <LogoDesk color="black" />
-            ) : (
-              <LogoMobile color="black" />
-            )}
+            <LogoMobile color="black" />
           </AniLink>
         </div>
         <div className="header__address">

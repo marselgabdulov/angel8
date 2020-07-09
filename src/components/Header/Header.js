@@ -1,11 +1,26 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState, useEffect } from 'react'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import './Header.scss'
-import Logo from '../Logo'
+import LogoDesk from './LogoDesk'
+import LogoMobile from './LogoMobile'
 import gsap from 'gsap'
 import NavContext from '../../context/nav/navContext'
 
 function Header() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowWidth(window.innerWidth)
+    }
+
+    window.addEventListener('resize', handleWindowResize)
+
+    return () => {
+      window.removeEventListener('resize', handleWindowResize)
+    }
+  }, [])
+
   const navContext = useContext(NavContext)
   const { navIsOpened, openNav, closeNav } = navContext
 
@@ -22,7 +37,11 @@ function Header() {
       <div className="header__wrapper">
         <div className="header__logo">
           <AniLink fade to="/" title="На главную">
-            <Logo color="white" />
+            {windowWidth >= 769 ? (
+              <LogoDesk color="white" />
+            ) : (
+              <LogoMobile color="white" />
+            )}
           </AniLink>
         </div>
         <div className="header__button" onClick={handleNav}>

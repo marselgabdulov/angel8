@@ -1,21 +1,46 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { graphql } from 'gatsby'
 import SEO from '../components/seo'
 // Components
 import Layout from '../components/layout'
+import ArrowToSection from '../components/ArrowToSection/ArrowToSection'
 import IntroSection from '../components/IntroSection/IntroSection'
 import AboutSection from '../components/AboutSection/AboutSection'
 import TeamSection from '../components/TeamSection/TeamSection'
 //  Styles
 import './index.scss'
+import classnames from 'classnames'
 
 function IndexPage(props) {
-  const aboutImages = [
-    props.data.about_one.childImageSharp.fluid,
-    props.data.about_two.childImageSharp.fluid,
-    props.data.about_three.childImageSharp.fluid,
-    props.data.about_four.childImageSharp.fluid,
-  ]
+  const sections = ['intro', 'about', 'team']
+  const [currentSectionIndex, setCurrentSectionIndex] = useState(0)
+
+  useEffect(() => {
+    executeScroll(document.getElementById(sections[currentSectionIndex]))
+  }, [currentSectionIndex])
+
+  function executeScroll(el) {
+    window.scroll({
+      behavior: 'smooth',
+      left: 0,
+      top: el.offsetTop - 100,
+    })
+  }
+
+  function handleTargetSection() {
+    if (currentSectionIndex !== sections.length - 1) {
+      setCurrentSectionIndex(currentSectionIndex + 1)
+    } else {
+      setCurrentSectionIndex(0)
+    }
+  }
+
+  // const aboutImages = [
+  //   props.data.about_one.childImageSharp.fluid,
+  //   props.data.about_two.childImageSharp.fluid,
+  //   props.data.about_three.childImageSharp.fluid,
+  //   props.data.about_four.childImageSharp.fluid,
+  // ]
 
   const teamData = [
     {
@@ -54,8 +79,19 @@ function IndexPage(props) {
     <Layout>
       <SEO title="Angel 8 | Эмоциональная кухня и бар в Туле. ✆ +7 4872 77 02 47" />
       <div id="index">
+        <div
+          className={classnames('index__scroll-button', {
+            'index__scroll-button--changed':
+              currentSectionIndex === sections.length - 1,
+          })}
+        >
+          <ArrowToSection
+            handleClick={() => handleTargetSection()}
+            isDown={currentSectionIndex === sections.length - 1}
+          />
+        </div>
         <IntroSection />
-        <AboutSection image={props.data.about_one.childImageSharp.fluid} />
+        <AboutSection img={props.data.about_one.childImageSharp.fluid} />
         <TeamSection teamData={teamData} />
       </div>
     </Layout>

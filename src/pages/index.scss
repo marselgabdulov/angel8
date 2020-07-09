@@ -4,3 +4,30 @@
   display: flex;
   flex-direction: column;
 }
+
+@media (max-width: 599px) {}
+
+// tublet-portrait
+@media (min-width: 600px) {}
+
+// tablet-landscape
+@media (min-width: 900px) {}
+
+// desktop/laptop
+@media (min-width: 1200px) {}
+
+// desktop x-large
+@media (min-width: 1800px) {
+  .index__scroll-button {
+    position: fixed;
+    bottom: 6%;
+    right: 5%;
+    width: 2em;
+    height: 2em;
+    z-index: 100;
+  }
+
+  .index__scroll-button--changed {
+    transform: rotate(180deg);
+  }
+}

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
+import { useInView } from 'react-intersection-observer'
 import { graphql } from 'gatsby'
 import SEO from '../components/seo'
 // Components
@@ -16,7 +17,17 @@ import classnames from 'classnames'
 
 function IndexPage(props) {
   const sections = ['intro', 'about', 'team']
+  const [currentSection, setCurrentSection] = useState({ isFinal: false })
   const [currentSectionIndex, setCurrentSectionIndex] = useState(0)
+  const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.5 })
+
+  useEffect(() => {
+    if (inView) {
+      setCurrentSection({ isFinal: true })
+    } else {
+      setCurrentSection({ isFinal: false })
+    }
+  }, [inView])
 
   useEffect(() => {
     executeScroll(document.getElementById(sections[currentSectionIndex]))
@@ -84,18 +95,16 @@ function IndexPage(props) {
       <div id="index">
         <div
           className={classnames('index__scroll-button', {
-            'index__scroll-button--changed':
-              currentSectionIndex === sections.length - 1,
+            'index__scroll-button--changed': currentSection.isFinal,
           })}
         >
-          <ArrowToSection
-            handleClick={() => handleTargetSection()}
-            isDown={currentSectionIndex === sections.length - 1}
-          />
+          <ArrowToSection handleClick={() => handleTargetSection()} />
         </div>
         <IntroSection />
         <AboutSection img={props.data.about_one.childImageSharp.fluid} />
-        <TeamSection teamData={teamData} />
+        <div className="final-section" ref={ref}>
+          <TeamSection teamData={teamData} />
+        </div>
       </div>
     </Layout>
   )

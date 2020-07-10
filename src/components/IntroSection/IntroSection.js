@@ -1,7 +1,5 @@
 import React, { useRef, useEffect } from 'react'
-// import { useInView } from 'react-intersection-observer'
 import gsap from 'gsap'
-import TransitionLink from 'gatsby-plugin-transition-link'
 // data files
 import VideoMP4 from '../../video/angel8bg2.mp4'
 import VideoWEBM from '../../video/angel8bg2.webm'
@@ -17,22 +15,6 @@ function IntroSection() {
   let introTitle = useRef(null)
   let introDescription = useRef(null)
   let introFooter = useRef(null)
-
-  // const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.5 })
-
-  // useEffect(() => {
-  //   if (inView) {
-  //     let tl = gsap.timeline()
-  //     tl.to('#path22', {
-  //       css: {
-  //         fill: 'white',
-  //       },
-  //       delay: 0,
-  //       duration: 0.25,
-  //       ease: 'power1.in',
-  //     })
-  //   }
-  // }, [inView])
 
   useEffect(() => {
     let tl = gsap.timeline()

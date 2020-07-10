@@ -19,8 +19,8 @@ function Layout(props) {
       css: {
         opacity: 1,
       },
-      delay: 0,
-      duration: 0.15,
+      delay: 0.25,
+      duration: 0.25,
       ease: 'power1.in',
     })
   }, [layoutRef])

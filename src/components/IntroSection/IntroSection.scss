@@ -20,14 +20,16 @@
   opacity: 0;
 }
 
+.intro__image {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 
 .intro__slogan {
   text-align: center;
-
-  .intro__title {}
 }
 
-.intro__working-time {}
 
 .intro__social {
   position: fixed;
@@ -53,6 +55,11 @@
   .intro__video {
     width: 90%;
     height: auto;
+  }
+
+  .intro__image {
+    width: 90%;
+    height: 40vh;
   }
 
   .intro__social {
@@ -90,6 +97,10 @@
     width: 75%;
   }
 
+  .intro__image {
+    width: 75%;
+  }
+
   .intro__social {
     display: flex;
     bottom: 5%;
@@ -123,6 +134,10 @@
     width: 75%;
   }
 
+  .intro__image {
+    width: 75%;
+  }
+
   .intro__social {
     display: flex;
     bottom: 5%;
@@ -152,6 +167,10 @@
     width: 60%;
   }
 
+  .intro__image {
+    width: 60%;
+  }
+
   .intro__social {
     bottom: 5%;
     left: 5%;
@@ -174,6 +193,10 @@
 @media (min-width: 1800px) {
   .intro__video {
     width: 50%;
+  }
+
+  .intro__image {
+    width: 1200px;
   }
 
   .intro__social {

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
 import { graphql } from 'gatsby'
+
 import SEO from '../components/seo'
 // Components
 import Layout from '../components/layout'
@@ -100,7 +101,9 @@ function IndexPage(props) {
         >
           <ArrowToSection handleClick={() => handleTargetSection()} />
         </div>
-        <IntroSection />
+        <IntroSection
+          introImage={props.data.intro_image.childImageSharp.fluid}
+        />
         <AboutSection img={props.data.about_one.childImageSharp.fluid} />
         <div className="final-section" ref={ref}>
           <TeamSection teamData={teamData} />
@@ -122,6 +125,9 @@ export const fluidImage = graphql`
 
 export const pageQuery = graphql`
   query {
+    intro_image: file(relativePath: { eq: "intro/intro_bar.png" }) {
+      ...fluidImage
+    }
     about_one: file(relativePath: { eq: "about/about_one.jpg" }) {
       ...fluidImage
     }

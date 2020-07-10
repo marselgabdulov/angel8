@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react'
+import { isMobileOnly, isSafari } from 'react-device-detect'
 import gsap from 'gsap'
 // data files
 import VideoMP4 from '../../video/angel8bg2.mp4'
@@ -10,7 +11,7 @@ import './IntroSection.scss'
 import InstagramLogo from '../../assets/instagram-logo.svg'
 import FacebookLogo from '../../assets/facebookAlt.svg'
 
-function IntroSection() {
+function IntroSection({ introImage }) {
   let introVideo = useRef(null)
   let introTitle = useRef(null)
   let introDescription = useRef(null)
@@ -53,16 +54,23 @@ function IntroSection() {
           Меню PDF
         </a>
       </div>
-      <video
-        loop
-        autoPlay
-        muted
-        className="intro__video"
-        ref={el => (introVideo = el)}
-      >
-        <source type="video/webm" src={VideoWEBM} />
-        <source type="video/mp4" src={VideoMP4} />
-      </video>
+      {isMobileOnly || isSafari ? (
+        <div
+          className="intro__image"
+          style={{ backgroundImage: `url(${introImage.src})` }}
+        ></div>
+      ) : (
+        <video
+          loop
+          autoPlay
+          muted
+          className="intro__video"
+          ref={el => (introVideo = el)}
+        >
+          <source type="video/webm" src={VideoWEBM} />
+          <source type="video/mp4" src={VideoMP4} />
+        </video>
+      )}
 
       <div className="intro__social">
         <a

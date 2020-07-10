@@ -48,6 +48,11 @@ function IntroSection() {
         <p>Воскресенье - Четверг 12:00 - 24:00</p>
         <p>Пятница и Суббота 12:00 - 02:00</p>
       </div>
+      <div className="intro__menu-pdf">
+        <a href={menuPDF} target="_blank" rel="noopener noreferrer">
+          Меню PDF
+        </a>
+      </div>
       <video
         loop
         autoPlay

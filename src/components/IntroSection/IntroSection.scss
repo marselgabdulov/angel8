@@ -72,6 +72,12 @@
   .intro__working-time {
     margin-bottom: 2em;
   }
+
+  .intro__menu-pdf {
+    display: none;
+  }
+
+
 }
 
 // tublet-portrait
@@ -103,7 +109,11 @@
   }
 
   .intro__working-time {
-    margin-bottom: 2em;
+    margin-bottom: 0;
+  }
+
+  .intro__menu-pdf {
+    margin-bottom: 1em;
   }
 }
 
@@ -131,8 +141,8 @@
     }
   }
 
-  .intro__working-time {
-    margin-bottom: 2em;
+  .intro__menu-pdf {
+    margin-bottom: 1em;
   }
 }
 
@@ -157,10 +167,6 @@
     .intro__title {
       width: 12em;
     }
-  }
-
-  .intro__working-time {
-    margin-bottom: 2em;
   }
 }
 
@@ -187,9 +193,6 @@
     }
   }
 
-  .intro__working-time {
-    margin-bottom: 2em;
-  }
 
   .intro__arrow {
     position: absolute;

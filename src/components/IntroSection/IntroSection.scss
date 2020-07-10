@@ -24,11 +24,13 @@
   background-repeat: no-repeat;
 }
 
-
 .intro__slogan {
   text-align: center;
 }
 
+.intro__address {
+  flex-direction: column;
+}
 
 .intro__social {
   position: fixed;
@@ -47,7 +49,7 @@
 
 @media (max-width: 599px) {
   #intro {
-    margin-top: 4em;
+    margin-top: 2em;
     height: 80vh;
   }
 
@@ -65,6 +67,11 @@
     display: none;
   }
 
+  .intro__address {
+    display: flex;
+    margin-bottom: 1em;
+  }
+
   .intro__slogan {
     text-align: center;
     margin-top: 0em;
@@ -75,15 +82,15 @@
     }
   }
 
+  .intro__image {
+    display: none;
+  }
+
   .intro__working-time {
     margin-bottom: 2em;
   }
 
-  .intro__menu-pdf {
-    display: none;
-  }
-
-
+  .intro__menu-pdf {}
 }
 
 // tublet-portrait
@@ -109,6 +116,11 @@
     height: 3.5em;
   }
 
+  .intro__address {
+    display: flex;
+    margin-bottom: 1em;
+  }
+
   .intro__slogan {
     text-align: center;
     margin-top: 0em;
@@ -120,7 +132,7 @@
   }
 
   .intro__working-time {
-    margin-bottom: 0;
+    margin-bottom: 1em;
   }
 
   .intro__menu-pdf {
@@ -145,6 +157,10 @@
     left: 5%;
     width: 0.75em;
     height: 3.5em;
+  }
+
+  .intro__address {
+    display: none;
   }
 
   .intro__slogan {
@@ -219,7 +235,6 @@
       width: 12em;
     }
   }
-
 
   .intro__arrow {
     position: absolute;

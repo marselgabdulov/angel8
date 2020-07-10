@@ -38,11 +38,13 @@
         height: 100%;
 
         .about__image {
-          display: none;
+          width: 90vw;
+          height: 40vh;
         }
       }
 
       .about__content {
+        margin-top: 1em;
 
         .about__title {
           text-align: center;

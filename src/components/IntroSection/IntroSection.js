@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { isMobile, isSafari, isChrome } from 'react-device-detect'
+import { isSafari } from 'react-device-detect'
 // data files
 import VideoMP4 from '../../video/angel8bg2.mp4'
 import VideoWEBM from '../../video/angel8bg2.webm'
@@ -13,7 +13,7 @@ import FacebookLogo from '../../assets/facebookAlt.svg'
 function IntroImage({ image }) {
   const [isImage, setIsImage] = useState(null)
   useEffect(() => {
-    setIsImage(isMobile || isSafari)
+    setIsImage(isSafari)
   }, [])
 
   if (isImage) {
@@ -41,6 +41,14 @@ function IntroSection({ introImage }) {
           <LogoDesk />
         </div>
         <h4 className="intro__description">Ресторан. Гриль. Бар.</h4>
+      </div>
+      <div className="intro__address">
+        <span></span>
+        Тула проспект Ленина 85
+        <span>корпус 1 вход 5</span>
+        <br />
+        <a href="tel:+74872770247">+7 4872 77 02 47</a>
+        <br />
       </div>
       <div className="intro__working-time">
         <p>Воскресенье - Четверг 12:00 - 24:00</p>

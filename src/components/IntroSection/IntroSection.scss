@@ -17,7 +17,6 @@
 
 .intro__video {
   height: auto;
-  opacity: 0;
 }
 
 .intro__image {
@@ -99,6 +98,7 @@
 
   .intro__image {
     width: 75%;
+    height: 30vh;
   }
 
   .intro__social {
@@ -136,6 +136,7 @@
 
   .intro__image {
     width: 75%;
+    height: 40vh;
   }
 
   .intro__social {
@@ -169,6 +170,7 @@
 
   .intro__image {
     width: 60%;
+    height: 40vh;
   }
 
   .intro__social {
@@ -193,10 +195,12 @@
 @media (min-width: 1800px) {
   .intro__video {
     width: 50%;
+    height: auto;
   }
 
   .intro__image {
-    width: 1200px;
+    width: 50%;
+    height: 40vh;
   }
 
   .intro__social {

@@ -1,6 +1,5 @@
-import React, { useRef, useEffect } from 'react'
-import { isMobileOnly, isSafari } from 'react-device-detect'
-import gsap from 'gsap'
+import React, { useEffect, useState } from 'react'
+import { isMobile, isSafari, isChrome } from 'react-device-detect'
 // data files
 import VideoMP4 from '../../video/angel8bg2.mp4'
 import VideoWEBM from '../../video/angel8bg2.webm'
@@ -11,32 +10,30 @@ import './IntroSection.scss'
 import InstagramLogo from '../../assets/instagram-logo.svg'
 import FacebookLogo from '../../assets/facebookAlt.svg'
 
-function IntroSection({ introImage }) {
-  let introVideo = useRef(null)
-  let introTitle = useRef(null)
-  let introDescription = useRef(null)
-  let introFooter = useRef(null)
-
+function IntroImage({ image }) {
+  const [isImage, setIsImage] = useState(null)
   useEffect(() => {
-    let tl = gsap.timeline()
-    tl.to('.intro__video', {
-      css: {
-        opacity: '1',
-      },
-      delay: 0,
-      duration: 1,
-      ease: 'power1.in',
-    }).to(['.intro__title', '.intro__description', '.intro__footer'], {
-      css: {
-        opacity: '1',
-      },
-      delay: 0,
-      duration: 0.45,
-      stagger: 0.25,
-      ease: 'power1.in',
-    })
-  }, [introVideo, introTitle, introDescription, introFooter])
+    setIsImage(isMobile || isSafari)
+  }, [])
 
+  if (isImage) {
+    return (
+      <div
+        className="intro__image"
+        style={{ backgroundImage: `url(${image.src})` }}
+      ></div>
+    )
+  } else {
+    return (
+      <video loop autoPlay muted className="intro__video">
+        <source type="video/webm" src={VideoWEBM} />
+        <source type="video/mp4" src={VideoMP4} />
+      </video>
+    )
+  }
+}
+
+function IntroSection({ introImage }) {
   return (
     <section id="intro">
       <div className="intro__slogan">
@@ -54,24 +51,7 @@ function IntroSection({ introImage }) {
           Меню PDF
         </a>
       </div>
-      {isMobileOnly || isSafari ? (
-        <div
-          className="intro__image"
-          style={{ backgroundImage: `url(${introImage.src})` }}
-        ></div>
-      ) : (
-        <video
-          loop
-          autoPlay
-          muted
-          className="intro__video"
-          ref={el => (introVideo = el)}
-        >
-          <source type="video/webm" src={VideoWEBM} />
-          <source type="video/mp4" src={VideoMP4} />
-        </video>
-      )}
-
+      <IntroImage image={introImage} />
       <div className="intro__social">
         <a
           href="https://www.instagram.com/angel_bar_grill/?hl=ru"

@@ -1,7 +1,6 @@
 footer {
   width: 100%;
-  height: auto;
-  color: white;
+  color: black;
 }
 
 .footer__wrapper {
@@ -9,46 +8,51 @@ footer {
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  margin: 1em auto;
+  margin: auto;
 
   a {
-    color: white;
+    color: black;
   }
 }
 
 // mobile
 @media (max-width: 599px) {
   .footer__wrapper {
-    width: 95%;
+    width: 90%;
     flex-direction: column;
     align-items: start;
+    justify-content: center;
+    height: 4em;
   }
 }
 
 // tublet-portrait
 @media (min-width: 600px) {
   .footer__wrapper {
-    width: 95%;
+    width: 75%;
   }
 }
 
 // tablet-landscape
 @media (min-width: 900px) {
   .footer__wrapper {
-    width: 95%;
+    width: 75%;
+    height: 2em;
   }
 }
 
 // desktop/laptop
 @media (min-width: 1200px) {
   .footer__wrapper {
-    width: 95%;
+    width: 80%;
+    height: 2em;
   }
 }
 
 // desktop x-large
 @media (min-width: 1800px) {
   .footer__wrapper {
-    width: 90%;
+    width: 1200px;
+    height: 100px;
   }
 }

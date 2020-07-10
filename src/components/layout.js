@@ -33,9 +33,7 @@ function Layout(props) {
         </div>
         <Nav />
         <Header />
-
         <main className="main">{props.children}</main>
-
         <Footer />
       </div>
     </NavState>

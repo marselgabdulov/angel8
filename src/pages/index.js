@@ -10,6 +10,9 @@ import IntroSection from '../components/IntroSection/IntroSection'
 import AboutSection from '../components/AboutSection/AboutSection'
 import TeamSection from '../components/TeamSection/TeamSection'
 
+import InstagramLogo from '../assets/instagram-logo.svg'
+import FacebookLogo from '../assets/facebookAlt.svg'
+
 import { window } from 'browser-monads'
 
 //  Styles
@@ -100,6 +103,22 @@ function IndexPage(props) {
           })}
         >
           <ArrowToSection handleClick={() => handleTargetSection()} />
+        </div>
+        <div className="index__social">
+          <a
+            href="https://www.instagram.com/angel_bar_grill/?hl=ru"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <InstagramLogo />
+          </a>
+          <a
+            href="https://www.facebook.com/Angel-8-2123834887946466/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FacebookLogo />
+          </a>
         </div>
         <IntroSection
           introImage={props.data.intro_image.childImageSharp.fluid}

@@ -19,25 +19,47 @@
   .index__scroll-button {
     display: none;
   }
+
+  .index__social {
+    display: none;
+  }
 }
 
 // tublet-portrait
 @media (min-width: 600px) {
   .index__scroll-button {
-    bottom: 5%;
-    right: 5%;
-    width: 1.5em;
-    height: 1.5em;
+    display: none;
+  }
+
+  .index__social {
+    display: none;
   }
 }
 
 // tablet-landscape
 @media (min-width: 900px) {
   .index__scroll-button {
+    display: block;
     bottom: 5%;
-    right: 5%;
+    right: 4%;
     width: 1.5em;
     height: 1.5em;
+  }
+
+  .index__social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 5%;
+    left: 5%;
+    width: 0.75em;
+    height: 3em;
+
+    svg {
+      width: 100%;
+      height: auto;
+    }
   }
 }
 
@@ -45,9 +67,16 @@
 @media (min-width: 1200px) {
   .index__scroll-button {
     bottom: 5%;
-    right: 5%;
-    width: 2em;
-    height: 2em;
+    right: 4%;
+    width: 1.75em;
+    height: 1.75em;
+  }
+
+  .index__social {
+    bottom: 5%;
+    left: 4%;
+    width: 1em;
+    height: 4em;
   }
 }
 
@@ -58,5 +87,12 @@
     right: 5%;
     width: 2em;
     height: 2em;
+  }
+
+  .index__social {
+    bottom: 6%;
+    left: 5%;
+    width: 1em;
+    height: 4em;
   }
 }

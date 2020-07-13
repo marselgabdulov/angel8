@@ -7,8 +7,6 @@ import LogoDesk from '../../components/LogoDesk'
 import menuPDF from '../../docs/angel8_menu.pdf'
 //Styles
 import './IntroSection.scss'
-import InstagramLogo from '../../assets/instagram-logo.svg'
-import FacebookLogo from '../../assets/facebookAlt.svg'
 
 function IntroImage({ image }) {
   const [isImage, setIsImage] = useState(null)
@@ -71,22 +69,6 @@ function IntroSection({ introImage }) {
             Facebook
           </a>
         </div>
-      </div>
-      <div className="intro__social-desk">
-        <a
-          href="https://www.instagram.com/angel_bar_grill/?hl=ru"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <InstagramLogo />
-        </a>
-        <a
-          href="https://www.facebook.com/Angel-8-2123834887946466/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FacebookLogo />
-        </a>
       </div>
     </section>
   )

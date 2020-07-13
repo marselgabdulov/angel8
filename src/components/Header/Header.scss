@@ -5,7 +5,7 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: transparent;
+  background-color: white;
   transition: all 0.25s ease-in-out;
 }
 
@@ -111,8 +111,6 @@
   }
 }
 
-
-
 /* mobile portrait */
 @media (max-width: 599px) {
   .header {
@@ -153,7 +151,7 @@
   }
 
   .header--changed {
-    height: 3.75em;
+    height: 4.5em;
   }
 
   .header__wrapper {
@@ -186,7 +184,7 @@
   }
 
   .header--changed {
-    height: 3.75em;
+    height: 4.5em;
   }
 
   .header__wrapper {

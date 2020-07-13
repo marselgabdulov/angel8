@@ -53,6 +53,8 @@ function IndexPage(props) {
     }
   }
 
+  const introImages = []
+
   // const aboutImages = [
   //   props.data.about_one.childImageSharp.fluid,
   //   props.data.about_two.childImageSharp.fluid,
@@ -144,19 +146,10 @@ export const fluidImage = graphql`
 
 export const pageQuery = graphql`
   query {
-    intro_image: file(relativePath: { eq: "intro/intro_bar.png" }) {
+    intro_image: file(relativePath: { eq: "intro/bar.png" }) {
       ...fluidImage
     }
     about_one: file(relativePath: { eq: "about/about_one.jpg" }) {
-      ...fluidImage
-    }
-    about_two: file(relativePath: { eq: "about/about_two.jpg" }) {
-      ...fluidImage
-    }
-    about_three: file(relativePath: { eq: "about/about_three.jpg" }) {
-      ...fluidImage
-    }
-    about_four: file(relativePath: { eq: "about/about_four.jpg" }) {
       ...fluidImage
     }
     Lado: file(relativePath: { eq: "team/Lado.jpg" }) {

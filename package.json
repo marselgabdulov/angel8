@@ -44,7 +44,8 @@
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
-    "deploy": "gatsby build && cp ./src/CNAME ./src/google0f9db2e2d43dfcab.html public/  && gh-pages -d public"
+    "deploy": "gatsby build && cp ./src/CNAME ./src/google0f9db2e2d43dfcab.html public/  && gh-pages -d public",
+    "deploy:github": "gatsby build && gh-pages -d public"
   },
   "devDependencies": {
     "gh-pages": "^2.1.1",

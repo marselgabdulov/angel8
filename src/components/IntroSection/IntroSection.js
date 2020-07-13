@@ -1,40 +1,18 @@
-import React, { useEffect, useState } from 'react'
-import { isSafari } from 'react-device-detect'
+import React from 'react'
 // data files
-import VideoMP4 from '../../video/angel8bg2.mp4'
-import VideoWEBM from '../../video/angel8bg2.webm'
 import LogoDesk from '../../components/LogoDesk'
 import menuPDF from '../../docs/angel8_menu.pdf'
+
 //Styles
 import './IntroSection.scss'
-
-function IntroImage({ image }) {
-  const [isImage, setIsImage] = useState(null)
-  useEffect(() => {
-    setIsImage(isSafari)
-  }, [])
-
-  if (isImage) {
-    return (
-      <div
-        className="intro__image"
-        style={{ backgroundImage: `url(${image.src})` }}
-      ></div>
-    )
-  } else {
-    return (
-      <video loop autoPlay muted className="intro__video">
-        <source type="video/webm" src={VideoWEBM} />
-        <source type="video/mp4" src={VideoMP4} />
-      </video>
-    )
-  }
-}
 
 function IntroSection({ introImage }) {
   return (
     <section id="intro">
-      <IntroImage image={introImage} />
+      <div
+        className="intro__image"
+        style={{ backgroundImage: `url(${introImage.src})` }}
+      ></div>
       <div className="intro__logo">
         <LogoDesk />
       </div>

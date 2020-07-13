@@ -1,14 +1,11 @@
 @import './normalize.css';
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
 html,
 body {
   background-color: white;
-  // background-color: #0b0b0b;
-  font-family: "Quiza W05 Regular", 'Montserrat', sans-serif;
-
+  font-family: 'Nunito', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -28,20 +25,8 @@ h3,
 h4,
 h5,
 h6 {
-  // font-family: 'Playfair Display', serif;
-  font-family: "Quiza W05 Regular";
   margin: 0;
   padding: 0;
-}
-
-@font-face {
-  font-family: "Quiza W05 Italic";
-  src: url("../fonts/5415045/12fd8c09-8d0d-43c1-b025-368de389f878.woff2") format("woff2"), url("../fonts/5415045/feeec2b3-618c-4c7e-8850-900e5b6db807.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Quiza W05 Regular";
-  src: url("../fonts/5415071/bca9c822-f316-4016-b416-9032ef90d348.woff2") format("woff2"), url("../fonts/5415071/4525caa8-5bf7-4eb1-a7d1-186365b23de7.woff") format("woff");
 }
 
 main {

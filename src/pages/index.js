@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
 import { graphql } from 'gatsby'
+import Footer from '../components/Footer/Footer'
 
 import SEO from '../components/seo'
 // Components
@@ -96,41 +97,44 @@ function IndexPage(props) {
   ]
 
   return (
-    <Layout>
-      <SEO title="Angel 8 | Эмоциональная кухня и бар в Туле. ✆ +7 4872 77 02 47" />
-      <div id="index">
-        <div
-          className={classnames('index__scroll-button', {
-            'index__scroll-button--changed': currentSection.isFinal,
-          })}
-        >
-          <ArrowToSection handleClick={() => handleTargetSection()} />
-        </div>
-        <div className="index__social">
-          <a
-            href="https://www.instagram.com/angel_bar_grill/?hl=ru"
-            target="_blank"
-            rel="noopener noreferrer"
+    <>
+      <Layout>
+        <SEO title="Angel 8 | Эмоциональная кухня и бар в Туле. ✆ +7 4872 77 02 47" />
+        <div id="index">
+          <div
+            className={classnames('index__scroll-button', {
+              'index__scroll-button--changed': currentSection.isFinal,
+            })}
           >
-            <InstagramLogo />
-          </a>
-          <a
-            href="https://www.facebook.com/Angel-8-2123834887946466/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FacebookLogo />
-          </a>
+            <ArrowToSection handleClick={() => handleTargetSection()} />
+          </div>
+          <div className="index__social">
+            <a
+              href="https://www.instagram.com/angel_bar_grill/?hl=ru"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <InstagramLogo />
+            </a>
+            <a
+              href="https://www.facebook.com/Angel-8-2123834887946466/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FacebookLogo />
+            </a>
+          </div>
+          <IntroSection
+            introImage={props.data.intro_image.childImageSharp.fluid}
+          />
+          <AboutSection img={props.data.about_one.childImageSharp.fluid} />
+          <div className="final-section" ref={ref}>
+            <TeamSection teamData={teamData} />
+          </div>
         </div>
-        <IntroSection
-          introImage={props.data.intro_image.childImageSharp.fluid}
-        />
-        <AboutSection img={props.data.about_one.childImageSharp.fluid} />
-        <div className="final-section" ref={ref}>
-          <TeamSection teamData={teamData} />
-        </div>
-      </div>
-    </Layout>
+      </Layout>
+      <Footer />
+    </>
   )
 }
 

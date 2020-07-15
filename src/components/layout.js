@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react'
 import Header from './Header/Header'
-import Footer from './Footer/Footer'
 import Nav from './Nav/Nav'
 import gsap from 'gsap'
 import './layout.scss'
@@ -34,7 +33,6 @@ function Layout(props) {
         <Nav />
         <Header />
         <main className="main">{props.children}</main>
-        <Footer />
       </div>
     </NavState>
   )

@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import Header from './Header/Header'
 import Nav from './Nav/Nav'
-import gsap from 'gsap'
 import './layout.scss'
 import { window } from 'browser-monads'
 import NavState from '../context/nav/NavState'
@@ -12,16 +11,6 @@ function Layout(props) {
   useEffect(() => {
     let vh = window.innerHeight * 0.01
     document.documentElement.style.setProperty('--vh', `${vh}`)
-
-    let tl = gsap.timeline()
-    tl.to('.layout', {
-      css: {
-        opacity: 1,
-      },
-      delay: 0.25,
-      duration: 0.25,
-      ease: 'power1.in',
-    })
   }, [layoutRef])
 
   return (

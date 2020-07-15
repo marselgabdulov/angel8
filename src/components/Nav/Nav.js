@@ -1,58 +1,40 @@
 import React, { useContext } from 'react'
-import TransitionLink from 'gatsby-plugin-transition-link'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import './Nav.scss'
 import NavContext from '../../context/nav/navContext'
 
 function Nav() {
   const navContext = useContext(NavContext)
-  const { navIsOpened, closeNav } = navContext
+  const { navIsOpened } = navContext
 
   return (
     <>
       <nav className={navIsOpened ? 'nav-opened' : 'nav-closed'}>
         <div className="nav__wrapper">
-          <TransitionLink
+          <AniLink
             to="/"
             className="nav__link"
             activeStyle={{ color: '#f34444' }}
-            onClick={() => closeNav()}
-            exit={{
-              length: 0.5,
-            }}
-            entry={{
-              delay: 0.25,
-            }}
+            fade
           >
             Главная
-          </TransitionLink>
-          <TransitionLink
+          </AniLink>
+          <AniLink
             to="/food"
             className="nav__link"
             activeStyle={{ color: '#f34444' }}
-            onClick={() => closeNav()}
-            exit={{
-              length: 0.5,
-            }}
-            entry={{
-              delay: 0.25,
-            }}
+            fade
           >
             Блюда
-          </TransitionLink>
-          <TransitionLink
+          </AniLink>
+          <AniLink
             to="/drinks"
             className="nav__link"
             activeStyle={{ color: '#f34444' }}
-            onClick={() => closeNav()}
-            exit={{
-              length: 0.5,
-            }}
-            entry={{
-              delay: 0.25,
-            }}
+            fade
           >
             Напитки
-          </TransitionLink>
+          </AniLink>
           <div className="nav__address">
             <span>
               Тула проспект Ленина 85

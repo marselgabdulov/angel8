@@ -54,15 +54,6 @@ function IndexPage(props) {
     }
   }
 
-  const introImages = []
-
-  // const aboutImages = [
-  //   props.data.about_one.childImageSharp.fluid,
-  //   props.data.about_two.childImageSharp.fluid,
-  //   props.data.about_three.childImageSharp.fluid,
-  //   props.data.about_four.childImageSharp.fluid,
-  // ]
-
   const teamData = [
     {
       id: 1,
@@ -150,7 +141,7 @@ export const fluidImage = graphql`
 
 export const pageQuery = graphql`
   query {
-    intro_image: file(relativePath: { eq: "intro/bar.png" }) {
+    intro_image: file(relativePath: { eq: "intro/intro.jpg" }) {
       ...fluidImage
     }
     about_one: file(relativePath: { eq: "about/about_one.jpg" }) {

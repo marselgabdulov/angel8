@@ -6,7 +6,14 @@ import menu from '../docs/angel8_menu.pdf'
 
 import MenuSection from '../components/MenuSection/MenuSection'
 
-import { starters, salads, soups, hotAndGrill, desserts } from '../data/menu.js'
+import {
+  brunch,
+  starters,
+  salads,
+  soups,
+  hotAndGrill,
+  desserts,
+} from '../data/menu.js'
 
 class FoodPage extends React.Component {
   componentDidMount() {
@@ -24,7 +31,7 @@ class FoodPage extends React.Component {
                 Скачать меню PDF
               </a>
 
-              {/* <MenuSection title="ПОЗДНИЕ ЗАВТРАКИ 12:00-15:00" data={brunch} /> */}
+              <MenuSection title="ПОЗДНИЕ ЗАВТРАКИ 12:00-15:00" data={brunch} />
               <MenuSection title="ЗАКУСКИ" data={starters} />
               <MenuSection title="САЛАТЫ" data={salads} />
               <MenuSection title="СУПЫ" data={soups} />

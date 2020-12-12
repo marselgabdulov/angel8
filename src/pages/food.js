@@ -11,7 +11,8 @@ import {
   starters,
   salads,
   soups,
-  hotAndGrill,
+  hotFood,
+  grillAndSteaks,
   desserts,
 } from '../data/menu.js'
 
@@ -35,7 +36,8 @@ class FoodPage extends React.Component {
               <MenuSection title="ЗАКУСКИ" data={starters} />
               <MenuSection title="САЛАТЫ" data={salads} />
               <MenuSection title="СУПЫ" data={soups} />
-              <MenuSection title="ГРИЛЬ & ГОРЯЧЕЕ" data={hotAndGrill} />
+              <MenuSection title="ГРИЛЬ & ГОРЯЧЕЕ" data={hotFood} />
+              <MenuSection title="GRILL / STEAKS" data={grillAndSteaks} />
               <MenuSection title="ДЕСЕРТЫ" data={desserts} />
             </div>
           </div>

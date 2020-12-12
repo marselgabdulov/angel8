@@ -7,7 +7,6 @@ import classnames from 'classnames'
 import { window } from 'browser-monads'
 
 function Header() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
   const [headerChanged, setHeaderChanged] = useState(false)
   let headerRef = useRef(null)
 

@@ -36,7 +36,7 @@ function IndexPage(props) {
 
   useEffect(() => {
     executeScroll(document.getElementById(sections[currentSectionIndex]))
-  }, [currentSectionIndex])
+  }, [currentSectionIndex, sections])
 
   function executeScroll(el) {
     window.scroll({

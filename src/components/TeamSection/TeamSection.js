@@ -1,7 +1,6 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import './TeamSection.scss'
-import gsap from 'gsap'
 
 function TeamSection({ teamData }) {
   return (

@@ -36,7 +36,7 @@ function IndexPage(props) {
 
   useEffect(() => {
     executeScroll(document.getElementById(sections[currentSectionIndex]))
-  }, [currentSectionIndex, sections])
+  }, [currentSectionIndex])
 
   function executeScroll(el) {
     window.scroll({
@@ -141,10 +141,10 @@ export const fluidImage = graphql`
 
 export const pageQuery = graphql`
   query {
-    intro_image: file(relativePath: { eq: "intro/intro.jpg" }) {
+    intro_image: file(relativePath: { eq: "intro/ES-90.jpg" }) {
       ...fluidImage
     }
-    about_one: file(relativePath: { eq: "about/about_one.jpg" }) {
+    about_one: file(relativePath: { eq: "about/ES-79.jpg" }) {
       ...fluidImage
     }
     Lado: file(relativePath: { eq: "team/Lado.jpg" }) {

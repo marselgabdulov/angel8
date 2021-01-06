@@ -1,4 +1,5 @@
 import React from 'react'
+import Img from 'gatsby-image'
 import './AboutSection.scss'
 
 function AboutSection({ img }) {
@@ -6,10 +7,7 @@ function AboutSection({ img }) {
     <section id="about" className="data-scroll-section">
       <div className="about__wrapper">
         <div className="about__image-container">
-          <div
-            className="about__image"
-            style={{ backgroundImage: `url(${img.src})` }}
-          ></div>
+          <Img fluid={img} className="about__image"></Img>
         </div>
         <div className="about__content">
           <h2 className="about__title">О нас</h2>

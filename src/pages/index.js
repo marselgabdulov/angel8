@@ -141,7 +141,7 @@ export const fluidImage = graphql`
 
 export const pageQuery = graphql`
   query {
-    intro_image: file(relativePath: { eq: "intro/ES-90.jpg" }) {
+    intro_image: file(relativePath: { eq: "intro/ES-2.jpg" }) {
       ...fluidImage
     }
     about_one: file(relativePath: { eq: "about/ES-79.jpg" }) {

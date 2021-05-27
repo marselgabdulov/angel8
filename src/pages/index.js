@@ -144,7 +144,7 @@ export const pageQuery = graphql`
     intro_image: file(relativePath: { eq: "intro/ES-2.jpg" }) {
       ...fluidImage
     }
-    about_one: file(relativePath: { eq: "about/ES-79.jpg" }) {
+    about_one: file(relativePath: { eq: "about/about.jpg" }) {
       ...fluidImage
     }
     Lado: file(relativePath: { eq: "team/Lado.jpg" }) {

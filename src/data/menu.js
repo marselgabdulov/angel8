@@ -3,78 +3,78 @@
 export const brunch = [
   {
     id: 1,
-    name: 'Яйцо пашот & угорь, ореховый соус',
-    price: 450,
-  },
-  {
-    id: 2,
-    name: 'Сэндвич с курицей & глазунья',
-    price: 390,
+    name: 'Шакшука / печеные перцы / брынза',
+    price: 480,
   },
 ]
 
 export const starters = [
   {
     id: 1,
-    name: 'Эклер / утка / пудра из цитрусов',
-    price: 650,
+    name: 'Тыква из печи, айоли из свеклы',
+    price: 420,
   },
   {
-    name: 'Тартар из говядины с угрем и голландским соусом',
+    name: 'Морковь / страчелла / сальса из кумквата / трюфель',
     price: 580,
     id: 2,
   },
   {
-    name: 'Брускетта с креветками, авокадо и соусом мисо майо',
-    price: 780,
+    name: 'Тартар из говядины с угрем и голландским соусом',
+    price: 580,
     id: 3,
   },
   {
-    name: 'Камамбер из печи & груша, соленая карамель',
+    name: 'Брускетта с креветками, авокадо и соусом мисо майо',
     price: 780,
     id: 4,
   },
   {
-    name: 'Паштет из куриной печени & рийет из утки / айва',
+    name: 'Камамбер из печи & груша, соленая карамель',
     price: 780,
     id: 5,
   },
   {
-    name: 'Фуа-гра / бриошь с вишней',
+    name: 'Паштет из куриной печени & рийет из птицы / айва',
     price: 780,
     id: 6,
   },
   {
-    name: 'Брискет / бабагануш & сырный крем',
-    price: 690,
+    name: 'Фуагра / багет',
+    price: 780,
     id: 7,
   },
   {
-    name: 'Поке & тунец / дыня',
+    name: 'Брискет / бабагануш & сырный крем',
     price: 690,
     id: 8,
   },
   {
+    name: 'Тартар из тунца / креветочные чипсы',
+    price: 690,
+    id: 9,
+  },
+  {
     name: 'Креветки гриль & хрустящий салат, соус вакаме',
     price: 820,
-    id: 9,
+    id: 10,
   },
   {
     name: 'Оливки “L” 100 гр./цитрусовая заправка',
     price: 320,
-    id: 10,
+    id: 11,
   },
 ]
 
 export const salads = [
   {
     name: 'Киноа & лосось / авокадо',
-    price: 450,
+    price: 550,
     id: 1,
   },
   {
-    name: 'Зеленый салат /спелые томаты',
-    price: 430,
+    name: 'Кольраби / слива / мисо / бонито',
+    price: 450,
     id: 2,
   },
 ]
@@ -114,13 +114,13 @@ export const hotFood = [
     id: 4,
   },
   {
-    id: 5,
-    name: 'Чечевица & утка / голубой сыр',
-    price: '790',
-  },
-  {
     name: 'Бургер с мраморной говядиной',
     price: 680,
+    id: 5,
+  },
+  {
+    name: 'Чечевица & утка / голубой сыр',
+    price: '790',
     id: 6,
   },
   {
@@ -145,7 +145,7 @@ export const hotFood = [
   },
   {
     name: 'Гребешок / брокколи на гриле',
-    price: 990,
+    price: 1050,
     id: 11,
   },
   {
@@ -158,7 +158,7 @@ export const hotFood = [
 export const grillAndSteaks = [
   {
     name: 'Фермерский бык & три соуса / Орел / 100 гр.',
-    price: 260,
+    price: 280,
     id: 1,
   },
   {
@@ -173,41 +173,36 @@ export const grillAndSteaks = [
   },
   {
     name: 'T-bone / Брянск / 100 гр.',
-    price: 580,
+    price: 620,
     id: 4,
   },
 ]
 
 export const desserts = [
   {
-    name: 'Тыквенный чизкейк /гель из облепихи',
-    price: 350,
+    name: 'Тыквенный чизкейк / гель из облепихи',
+    price: 380,
     id: 1,
   },
   {
     name: 'Суфле матча / белый шоколад',
-    price: 350,
+    price: 380,
     id: 2,
   },
   {
     name: 'Шоколадный фондан с соусом англез',
-    price: 350,
+    price: 380,
     id: 3,
   },
   {
-    name: 'Профитроли / шоколадный трюфель / клубника',
-    price: 350,
+    name: 'Бородинское // ванильное 90 гр.',
+    price: 190,
     id: 4,
   },
   {
-    name: 'Бородинское // ванильное 90 гр.',
-    price: 180,
-    id: 5,
-  },
-  {
     name: 'Персик - Маракуйя // ягодный 90 гр',
-    price: 180,
-    id: 6,
+    price: 190,
+    id: 4,
   },
 ]
 
@@ -403,18 +398,18 @@ export const tequilaAndMezkal = [
     id: 4,
   },
   {
-    name: 'Maquey Vida 42%',
-    price: 650,
+    name: 'Mezcal `Derrumbes Potosi 44.4%',
+    price: 920,
     id: 5,
   },
   {
-    name: 'Maquey Minero 49%',
-    price: 1150,
+    name: 'Mezcal Koch El Espadin 47%',
+    price: 700,
     id: 6,
   },
   {
-    name: 'Maquey Wild Tenextate 45%',
-    price: 1550,
+    name: 'Mezcal Koch El Tobala 70%',
+    price: 1200,
     id: 6,
   },
 ]
@@ -639,8 +634,8 @@ export const calvados = [
 
 export const grappa = [
   {
-    name: 'Grappa Candolinn',
-    price: 350,
+    name: 'Grappa Nonino',
+    price: 400,
     id: 1,
   },
   {
@@ -985,6 +980,11 @@ export const limonades = [
     price: '320/650',
     id: 3,
   },
+  {
+    name: 'Цитрус + Клубника',
+    price: '320/650',
+    id: 3,
+  },
 ]
 
 export const juicesYa = [
@@ -1042,31 +1042,31 @@ export const hotAlco = [
   {
     name: 'Hot Bulleret Rum',
     description: 'ром, яблоко, специи',
-    price: 380,
+    price: 420,
     id: 1,
   },
   {
     name: 'Apple Tody',
     description: 'бренди, мед, специи',
-    price: 380,
+    price: 420,
     id: 2,
   },
   {
     name: 'Bishop',
     description: 'портвейн, мед, апельсин, специи',
-    price: 380,
+    price: 420,
     id: 3,
   },
   {
     name: 'Глинтвейн',
     description: 'кр. вино, бренди, фрукты, специи',
-    price: 380,
+    price: 420,
     id: 4,
   },
   {
     name: 'Medical Infusion',
     description: 'какао масло, бурбон, молоко, мускатный орех',
-    price: 450,
+    price: 480,
     id: 5,
   },
 ]
@@ -1132,6 +1132,11 @@ export const coffee = [
     price: 300,
     id: 12,
   },
+  {
+    name: 'Кофе с халвой 200ml',
+    price: 220,
+    id: 12,
+  },
 ]
 
 export const coffeWithEngredients = [
@@ -1152,22 +1157,22 @@ export const coffeWithEngredients = [
 export const fruitTea = [
   {
     name: 'Облепиха - Мед - Липа',
-    price: 350,
+    price: 380,
     id: 1,
   },
   {
     name: 'Имбирь - Ромашка - Мед - Лимон',
-    price: 350,
+    price: 380,
     id: 2,
   },
   {
     name: 'Малина - Имбирь - Мед',
-    price: 350,
+    price: 380,
     id: 3,
   },
   {
     name: 'Брусника - Мед - Мята',
-    price: 350,
+    price: 380,
     id: 4,
   },
 ]
@@ -1175,7 +1180,7 @@ export const fruitTea = [
 export const simpleTea = [
   {
     name: 'Ассам/Те гуан инь/Молочный улун',
-    price: 300,
+    price: 350,
     id: 1,
   },
 ]
@@ -1183,7 +1188,7 @@ export const simpleTea = [
 export const altayTea = [
   {
     name: 'Тибетский чай/Курильский/Иван вишня/Иван-Сайган',
-    price: 300,
+    price: 350,
     id: 1,
   },
 ]

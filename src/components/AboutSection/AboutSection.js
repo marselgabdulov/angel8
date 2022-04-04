@@ -12,9 +12,9 @@ function AboutSection({ img }) {
         <div className="about__content">
           <h2 className="about__title">О нас</h2>
           <div className="about__text">
+            <p>Полумрак, свечи, винтажная мебель. Приятный вкус до и после.</p>
             <p>
-              Авторская кухня. Специализируемся на блюдах, приготовленных на
-              гриле. Используем печь{' '}
+              Готовим блюда в печи&nbsp;
               <a
                 href="https://www.josper.es/ru/josper/about/"
                 target="_blank"
@@ -25,11 +25,11 @@ function AboutSection({ img }) {
               </a>
             </p>
             <p>
-              Классические и фирменные коктейли. <br />
-              Хороший выбор вина в правильных бокалах.
+              Смешиваем тихие и яркие вкусы. Подаем вина в хрустале. Летам
+              пальмы и столы во дворе.
             </p>
             <p>
-              Вы найдете нас на территории торгово-делового квартала&nbsp;
+              Нас трудно найти на территории&nbsp;
               <a
                 className="index__link"
                 href="http://likerka-loft.ru/"
@@ -38,8 +38,8 @@ function AboutSection({ img }) {
                 title="Сайт likerka-loft.ru"
               >
                 &laquo;Ликерка Лофт&raquo;
-              </a>{' '}
-              по адресу: проспект Ленина, дом 85, корпус 5, вход 1.
+              </a>
+              . Звоните и мы вас встретим и проводим.
             </p>
           </div>
         </div>

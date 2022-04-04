@@ -83,7 +83,7 @@ function IndexPage(props) {
       name: 'Ладо Прангишвили',
       position: 'идейный вдохновитель',
       projects:
-        'Bar 30/7, Simachev Bar,Dodo, Pizza Express и Zю кафе, Time out Bar, Северяне',
+        'Bar 30/7, Simachev Bar, Dodo Pizza Express, Zю кафе, Time out Bar, Северяне',
     },
   ]
 

@@ -49,7 +49,7 @@ function Nav() {
             <span>пятница - суббота: 12:00 - 02:00</span>
           </div>
           <div className="nav__social">
-            <span>
+            {/* <span>
               <a
                 href="https://www.facebook.com/Angel-8-2123834887946466/"
                 target="_blank"
@@ -57,7 +57,7 @@ function Nav() {
               >
                 Facebook
               </a>
-            </span>{' '}
+            </span>{' '} */}
             <span>
               <a
                 href="https://www.instagram.com/angel_bar_grill/?hl=ru"

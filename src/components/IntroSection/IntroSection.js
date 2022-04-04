@@ -39,13 +39,13 @@ function IntroSection({ introImage }) {
           >
             Instagram
           </a>
-          <a
+          {/* <a
             href="https://www.facebook.com/Angel-8-2123834887946466/"
             target="_blank"
             rel="noopener noreferrer"
           >
             Facebook
-          </a>
+          </a> */}
         </div>
       </div>
     </section>

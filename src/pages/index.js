@@ -107,13 +107,6 @@ function IndexPage(props) {
             >
               <InstagramLogo />
             </a>
-            <a
-              href="https://www.facebook.com/Angel-8-2123834887946466/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FacebookLogo />
-            </a>
           </div>
           <IntroSection
             introImage={props.data.intro_image.childImageSharp.fluid}

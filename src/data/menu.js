@@ -3,6 +3,11 @@
 export const brunch = [
   {
     id: 1,
+    name: 'Хрустящая Бао /креветки /страчателла',
+    price: 580,
+  },
+  {
+    id: 2,
     name: 'Шакшука / печеные перцы / брынза',
     price: 480,
   },
@@ -10,71 +15,62 @@ export const brunch = [
 
 export const starters = [
   {
-    id: 1,
-    name: 'Тыква из печи, айоли из свеклы',
-    price: 420,
-  },
-  {
-    name: 'Морковь / страчелла / сальса из кумквата / трюфель',
-    price: 580,
-    id: 2,
-  },
-  {
     name: 'Тартар из говядины с угрем и голландским соусом',
-    price: 580,
-    id: 3,
+    price: 680,
+    id: 1,
   },
   {
     name: 'Брускетта с креветками, авокадо и соусом мисо майо',
     price: 780,
-    id: 4,
+    id: 2,
   },
   {
     name: 'Камамбер из печи & груша, соленая карамель',
     price: 780,
-    id: 5,
+    id: 3,
+  },
+  {
+    name: 'Эклер с уткой / пудра из цитрусов',
+    price: 720,
+    id: 4,
   },
   {
     name: 'Паштет из куриной печени & рийет из птицы / айва',
     price: 780,
-    id: 6,
+    id: 5,
   },
   {
     name: 'Фуагра / багет',
     price: 780,
-    id: 7,
+    id: 6,
   },
   {
     name: 'Брискет / бабагануш & сырный крем',
-    price: 690,
+    price: 720,
+    id: 7,
+  },
+  {
+    name: 'Татаки из тунца / ананас',
+    price: 720,
     id: 8,
   },
-  {
-    name: 'Тартар из тунца / креветочные чипсы',
-    price: 690,
-    id: 9,
-  },
-  {
-    name: 'Креветки гриль & хрустящий салат, соус вакаме',
-    price: 820,
-    id: 10,
-  },
+  { name: 'Тигровые креветки / Umami', price: 860, id: 9 },
   {
     name: 'Оливки “L” 100 гр./цитрусовая заправка',
-    price: 320,
-    id: 11,
+    price: 350,
+    id: 10,
   },
 ]
 
 export const salads = [
   {
     name: 'Киноа & лосось / авокадо',
-    price: 550,
+    price: 580,
     id: 1,
   },
   {
-    name: 'Кольраби / слива / мисо / бонито',
-    price: 450,
+    name: 'Печеная свекла / груша / грейпфрут',
+    price: 480,
     id: 2,
   },
 ]
@@ -82,12 +78,12 @@ export const salads = [
 export const soups = [
   {
     name: 'Куриный суп',
-    price: 300,
+    price: 320,
     id: 1,
   },
   {
     name: 'Клэм чаудер с морепродуктами',
-    price: 520,
+    price: 620,
     id: 2,
   },
 ]
@@ -95,32 +91,32 @@ export const soups = [
 export const hotFood = [
   {
     name: 'Печеный картофель с сыром и трюфельным маслом',
-    price: 380,
+    price: 420,
     id: 1,
   },
   {
     name: 'Кукуруза гриль',
-    price: 380,
+    price: 420,
     id: 2,
   },
   {
-    name: 'Кальмар на гриле & цветная капуста',
-    price: 550,
+    name: 'Кальмар на гриле & брокколи',
+    price: 650,
     id: 3,
   },
   {
-    name: 'Orzo & палтус / осьминог',
-    price: 850,
+    name: 'Orzo & краб / креветка',
+    price: 950,
     id: 4,
   },
   {
     name: 'Бургер с мраморной говядиной',
-    price: 680,
+    price: 720,
     id: 5,
   },
   {
     name: 'Чечевица & утка / голубой сыр',
-    price: '790',
+    price: '890',
     id: 6,
   },
   {
@@ -130,27 +126,27 @@ export const hotFood = [
   },
   {
     name: 'Баклажан / свежие овощи / фета',
-    price: 520,
+    price: 550,
     id: 8,
   },
   {
-    name: 'Сибас на гриле',
-    price: 720,
+    name: 'Сибас на гриле 500гр',
+    price: 1250,
     id: 9,
   },
   {
-    name: 'Лосось умами / спаржа',
-    price: 950,
+    name: 'Лосось / цукини турне / соус даси',
+    price: 1250,
     id: 10,
   },
   {
     name: 'Гребешок / брокколи на гриле',
-    price: 1050,
+    price: 1250,
     id: 11,
   },
   {
     name: 'Осьминог & Романо / соус Бер Блан',
-    price: 1380,
+    price: 1580,
     id: 12,
   },
 ]
@@ -158,51 +154,56 @@ export const hotFood = [
 export const grillAndSteaks = [
   {
     name: 'Фермерский бык & три соуса / Орел / 100 гр.',
-    price: 280,
+    price: 380,
     id: 1,
   },
   {
     name: 'Сердца индейки & корень сельдерея соус из сморчков',
-    price: 750,
+    price: 850,
     id: 2,
   },
   {
     name: 'Flank Steak & картофель нуазет / Брянск',
-    price: 950,
+    price: 1150,
     id: 3,
   },
   {
-    name: 'T-bone / Брянск / 100 гр.',
-    price: 620,
+    name: 'Rib eye Steak & картофельное паве',
+    price: 2250,
     id: 4,
   },
 ]
 
 export const desserts = [
   {
-    name: 'Тыквенный чизкейк / гель из облепихи',
-    price: 380,
+    name: 'Маковый бисквит / мороженое пряник',
+    price: 390,
     id: 1,
   },
   {
-    name: 'Суфле матча / белый шоколад',
-    price: 380,
+    name: 'Суфле из молочного шоколада / гель из маракуйи',
+    price: 390,
     id: 2,
   },
   {
     name: 'Шоколадный фондан с соусом англез',
-    price: 380,
+    price: 390,
     id: 3,
   },
   {
-    name: 'Бородинское // ванильное 90 гр.',
-    price: 190,
+    name: 'Тирамису / гель из ежевики',
+    price: 390,
     id: 4,
   },
   {
+    name: 'Бородинское // ванильное 90 гр.',
+    price: 220,
+    id: 5,
+  },
+  {
     name: 'Персик - Маракуйя // ягодный 90 гр',
-    price: 190,
-    id: 4,
+    price: 220,
+    id: 6,
   },
 ]
 
@@ -320,12 +321,12 @@ export const singleMalt = [
 export const irishWhiskey = [
   {
     name: 'Jameson',
-    price: 300,
+    price: 320,
     id: 1,
   },
   {
     name: 'Paddy',
-    price: 300,
+    price: 320,
     id: 2,
   },
   {
@@ -379,7 +380,7 @@ export const japanWhiskey = [
 export const tequilaAndMezkal = [
   {
     name: 'Jose Cuervo Especial Silver 38%',
-    price: 300,
+    price: 320,
     id: 1,
   },
   {
@@ -431,22 +432,17 @@ export const portoAndJerez = [
     id: 3,
   },
   {
-    name: 'Sandeman Fino Jerez Xerez Sherry DO',
+    name: 'Sandeman Fino Sherry DO',
     price: 260,
     id: 4,
   },
   {
     name: 'Bardalillo (Crem / Amontilado)',
     price: 260,
-    id: 7,
-  },
-  {
-    name: 'Sandeman Medium Sweet Jerez Xerez Sherry DO',
-    price: 280,
     id: 5,
   },
   {
-    name: 'Sandeman Pedro Ximenes Superior Jerez Xerez Sherry DO',
+    name: 'Valdespino El Candado Pedro Ximenez Sherry',
     price: 380,
     id: 6,
   },
@@ -512,7 +508,7 @@ export const rumAndChacha = [
     id: 7,
   },
   {
-    name: 'Sallor Jerry Spiced (the United Kingdom)',
+    name: 'Sailor Jerry Spiced (the United Kingdom)',
     price: 320,
     id: 8,
   },
@@ -545,8 +541,8 @@ export const gin = [
     id: 1,
   },
   {
-    name: 'Luxardo Sour Cherry 37.5%',
-    price: 320,
+    name: 'Red Door 45%',
+    price: 680,
     id: 2,
   },
   {
@@ -574,14 +570,15 @@ export const gin = [
     price: 520,
     id: 7,
   },
+
   {
     name: 'Botanist 22 40%',
     price: 480,
     id: 8,
   },
   {
-    name: 'Marconi 46%',
-    price: 540,
+    name: 'Ben Lomond 43%',
+    price: 460,
     id: 9,
   },
 ]
@@ -622,12 +619,12 @@ export const brandy = [
 export const calvados = [
   {
     name: "Chateau du Breuil 'Fine' Calvados",
-    price: 400,
+    price: 430,
     id: 1,
   },
   {
     name: 'Chаteau du Breuil VSOP',
-    price: 680,
+    price: 700,
     id: 2,
   },
 ]
@@ -635,12 +632,12 @@ export const calvados = [
 export const grappa = [
   {
     name: 'Grappa Nonino',
-    price: 400,
+    price: 420,
     id: 1,
   },
   {
     name: 'Nonino Vendemmia Riserva',
-    price: 650,
+    price: 680,
     id: 2,
   },
 ]
@@ -738,146 +735,146 @@ export const cocktails = [
   {
     name: 'TIMBERPOINT COOLER',
     description: 'gin / aperol / tonic',
-    price: 480,
+    price: 550,
     id: 1,
   },
   {
     name: 'B.E.T',
     description: 'gin / Saint-Germain / tonic',
-    price: 480,
+    price: 550,
     id: 2,
   },
   {
     name: 'BLUSH',
     description: 'gin / raspberry / soda',
-    price: 480,
+    price: 550,
     id: 3,
   },
   {
     name: 'ANGEL /8 SOUR',
     description: 'вourbon / pear puree / lemon',
-    price: 480,
+    price: 550,
     id: 4,
   },
   {
     name: 'BRONCO',
     description: 'bourbon / port / vermouth',
-    price: 480,
+    price: 550,
     id: 5,
   },
   {
     name: 'BERRY SMASH',
     description: 'bourbon / blackberry / lemon',
-    price: 480,
+    price: 550,
     id: 6,
   },
   {
     name: 'AVIATION',
     description: 'gin / violet / lemon',
-    price: 480,
+    price: 550,
     id: 7,
   },
   {
     name: 'RED RABBIT',
     description: 'gin / orange / lemon',
-    price: 480,
+    price: 550,
     id: 8,
   },
   {
     name: 'GIN BASIL SMASH',
     description: 'gin / basil / lemon / sugar',
-    price: 480,
+    price: 550,
     id: 9,
   },
   {
     name: '10 CC',
     description: 'gin / chamomile / cucumber / lemon / sugar',
-    price: 480,
+    price: 550,
     id: 10,
   },
   {
     name: 'SPRING PUNCH',
     description: 'vodka / raspberry / ginger',
-    price: 480,
+    price: 550,
     id: 11,
   },
   {
     name: 'HARVEY',
     description: 'vodka / vanilla / orange',
-    price: 520,
+    price: 550,
     id: 12,
   },
   {
     name: 'ESPRESSO MARTINI',
     description: 'vodka / espresso / sugar',
-    price: 480,
+    price: 550,
     id: 13,
   },
   {
     name: 'PUSHERMAN',
     description: 'brandy / orange / maple syrup',
-    price: 480,
+    price: 550,
     id: 14,
   },
   {
     name: 'ORANGE SOUR',
     description: 'pisco / triple sec / lemon / sugar',
-    price: 480,
+    price: 550,
     id: 15,
   },
   {
     name: 'PORTO FLIP',
     description: 'brandy / port / cream',
-    price: 480,
+    price: 550,
     id: 16,
   },
   {
     name: 'BIG APPLE BERRY',
     description: 'brandy / berries / lemon / sugar',
-    price: 480,
+    price: 550,
     id: 17,
   },
   {
     name: 'REGGAE RUM PUNCH',
     description: 'rum / raspberry / lemon',
-    price: 480,
+    price: 550,
     id: 18,
   },
   {
     name: 'ZOMBIE',
     description: 'rum / angostura bitter / grapefruit',
-    price: 480,
+    price: 500,
     id: 19,
   },
 
   {
     name: 'DAIQUIRI DRY',
     description: 'rum / passionfruit / sugar',
-    price: 480,
+    price: 550,
     id: 20,
   },
   {
     name: 'MEZCAL NEGRONI',
     description: 'mezcal / campari / vermouth',
-    price: 480,
+    price: 550,
     id: 21,
   },
   {
     name: 'JOSE',
     description: 'mezcal / falernum/ prosecco',
-    price: 480,
+    price: 550,
     id: 22,
   },
   {
     name: 'HORN OF THE BULLS',
     description: 'tequila / cocumber / lemon / sugar',
-    price: 480,
+    price: 550,
     id: 23,
   },
   {
     name: 'DEVIL”S MARGARITA',
     description: 'tequila / port / lemon / sugar',
-    price: 480,
+    price: 550,
     id: 24,
   },
 ]
@@ -912,22 +909,22 @@ export const specialCocktails = [
 export const water = [
   {
     name: 'Сан Бенедетто 250ml',
-    price: 220,
+    price: 250,
     id: 1,
   },
   {
     name: 'Сан Бенедетто 750ml',
-    price: 450,
+    price: 480,
     id: 2,
   },
   {
     name: 'Кока-Кола / Кока-Кола зеро / Cпрайт 250ml',
-    price: 200,
+    price: 230,
     id: 2,
   },
   {
     name: 'Швепс тоник 250ml',
-    price: 200,
+    price: 230,
     id: 4,
   },
   {
@@ -941,25 +938,25 @@ export const smoosy = [
   {
     name: 'Тропический',
     description: 'манго, маракуйя, банан',
-    price: 350,
+    price: 420,
     id: 1,
   },
   {
     name: 'Вишня - Клубника',
     description: 'вишня, клубника, вишневый сок',
-    price: 350,
+    price: 420,
     id: 2,
   },
   {
     name: 'Клубника - Ананас',
     description: 'клубника, ананас, яблочный сок',
-    price: 350,
+    price: 420,
     id: 3,
   },
   {
     name: 'Малина - Манго',
     description: 'малина, манго, груша',
-    price: 350,
+    price: 420,
     id: 4,
   },
 ]
@@ -967,22 +964,22 @@ export const smoosy = [
 export const limonades = [
   {
     name: 'Маракуйя + Черника',
-    price: '320/650',
+    price: '350/680',
     id: 1,
   },
   {
     name: 'Малина + Имбирь',
-    price: '320/650',
+    price: '350/680',
     id: 2,
   },
   {
     name: 'Огурец + Яблоко',
-    price: '320/650',
+    price: '350/680',
     id: 3,
   },
   {
     name: 'Цитрус + Клубника',
-    price: '320/650',
+    price: '330/680',
     id: 3,
   },
 ]
@@ -990,19 +987,19 @@ export const limonades = [
 export const juicesYa = [
   {
     name: 'Вишня/Томат/Ананас/Яблоко/Апельсин/Грейпфрут',
-    price: 200,
+    price: 220,
     id: 1,
   },
 ]
 
 export const freshJuices = [
-  { name: 'Яблоко/Апельсин/Грейпфрут/Морковь/Сельдерей', price: 280, id: 1 },
+  { name: 'Яблоко/Апельсин/Грейпфрут/Морковь/Сельдерей', price: 320, id: 1 },
 ]
 
 export const bottleBeer = [
   {
     name: 'Maisel’s Weisse (Germany, wheat beer) 0,5 л',
-    price: 360,
+    price: 380,
     id: 1,
   },
   {
@@ -1012,28 +1009,22 @@ export const bottleBeer = [
   },
   {
     name: 'Blue Moon (Belgium, Wheat Ale)',
-    price: 360,
-    id: 0,
+    price: 450,
+    id: 3,
   },
   {
     name: 'Bayreuther Hell (Germany, Lager) 0,5 л',
-    price: 360,
-    id: 3,
-  },
-
-  {
-    name: 'Landbier Dunkel (Germany, Dark) 0,5 л',
-    price: 360,
+    price: 380,
     id: 4,
   },
   {
-    name: 'Petrus Blond (Belgium, Blond Ale) 0,33 л',
-    price: 450,
+    name: 'Landbier Dunkel (Germany, Dark) 0,5 л',
+    price: 380,
     id: 5,
   },
   {
-    name: 'Maisel’s Weisse (Germany, Alkohol free) 0,5 л',
-    price: 360,
+    name: 'Petrus Red (Belgium, Blond Ale) 0,33 л',
+    price: 500,
     id: 6,
   },
 ]
@@ -1042,31 +1033,31 @@ export const hotAlco = [
   {
     name: 'Hot Bulleret Rum',
     description: 'ром, яблоко, специи',
-    price: 420,
+    price: 480,
     id: 1,
   },
   {
     name: 'Apple Tody',
     description: 'бренди, мед, специи',
-    price: 420,
+    price: 480,
     id: 2,
   },
   {
     name: 'Bishop',
     description: 'портвейн, мед, апельсин, специи',
-    price: 420,
+    price: 480,
     id: 3,
   },
   {
     name: 'Глинтвейн',
     description: 'кр. вино, бренди, фрукты, специи',
-    price: 420,
+    price: 480,
     id: 4,
   },
   {
     name: 'Medical Infusion',
     description: 'какао масло, бурбон, молоко, мускатный орех',
-    price: 480,
+    price: 500,
     id: 5,
   },
 ]
@@ -1074,67 +1065,67 @@ export const hotAlco = [
 export const coffee = [
   {
     name: 'Ристретто 20ml',
-    price: 120,
+    price: 140,
     id: 1,
   },
   {
     name: 'Эспрессо 30ml',
-    price: 120,
+    price: 140,
     id: 2,
   },
   {
     name: 'Двойной Эспрессо 60ml',
-    price: 160,
+    price: 200,
     id: 3,
   },
   {
     name: 'Лунго 50ml',
-    price: 120,
+    price: 160,
     id: 4,
   },
   {
     name: 'Американо 150ml',
-    price: 120,
+    price: 160,
     id: 5,
   },
   {
-    name: 'Двойной Американо 250ml',
-    price: 160,
+    name: 'Двойной Американо 150ml',
+    price: 200,
     id: 6,
   },
   {
     name: 'Капучино 200ml',
-    price: 200,
+    price: 250,
     id: 7,
   },
   {
     name: 'Латте 250ml',
-    price: 180,
+    price: 250,
     id: 8,
   },
   {
-    name: 'Матча капучино',
-    price: 200,
+    name: 'Матча капучино 200ml',
+    price: 280,
     id: 9,
   },
   {
     name: 'Макиато 50ml',
-    price: 160,
+    price: 200,
     id: 10,
   },
   {
     name: 'Флэт Уайт 250ml',
-    price: 160,
+    price: 200,
     id: 11,
   },
   {
-    name: 'Какао',
-    price: 300,
-    id: 12,
+    name: 'Какао 250ml',
+    price: 380,
+    id: 13,
   },
   {
     name: 'Кофе с халвой 200ml',
-    price: 220,
+    price: 260,
     id: 12,
   },
 ]
@@ -1143,13 +1134,13 @@ export const coffeWithEngredients = [
   {
     name: 'Раф кофе 300ml',
     description: 'ваниль, карамель, миндаль и др.',
-    price: 200,
+    price: 250,
     id: 1,
   },
   {
     name: 'Латте сироп 250ml',
     description: 'ваниль, карамель, миндаль и др.',
-    price: 200,
+    price: 250,
     id: 2,
   },
 ]
@@ -1180,7 +1171,7 @@ export const fruitTea = [
 export const simpleTea = [
   {
     name: 'Ассам/Те гуан инь/Молочный улун',
-    price: 350,
+    price: 380,
     id: 1,
   },
 ]
@@ -1188,7 +1179,7 @@ export const simpleTea = [
 export const altayTea = [
   {
     name: 'Тибетский чай/Курильский/Иван вишня/Иван-Сайган',
-    price: 350,
+    price: 380,
     id: 1,
   },
 ]
@@ -1196,8 +1187,8 @@ export const altayTea = [
 export const whiteWinesBottles = [
   {
     name: 'Orvietto, Santa Cristina',
-    description: 'Italy',
-    price: 1900,
+    description: 'Italy, 2019',
+    price: 2200,
     id: 1,
   },
   {
@@ -1206,83 +1197,107 @@ export const whiteWinesBottles = [
     price: 2250,
     id: 2,
   },
+  // {
+  //   name: 'Pfeﬀerer',
+  //   description: 'Italy, 2018',
+  //   price: 2350,
+  //   id: 3,
+  // },
+  // {
+  //   name: 'Pecorino, Vellodoro',
+  //   description: 'Italy, 2018',
+  //   price: 2500,
+  //   id: 4,
+  // },
   {
-    name: 'Pfeﬀerer',
-    description: 'Italy, 2018',
-    price: 2350,
+    name: 'Sauvignon Blanc, Mud House (NZ, 2021)',
+    description: 'NZ, 2020',
+    price: 3000,
     id: 3,
-  },
-  {
-    name: 'Pecorino, Vellodoro',
-    description: 'Italy, 2018',
-    price: 2500,
-    id: 4,
-  },
-  {
-    name: 'Sauvignon Blanc, Guy Allion',
-    description: 'France, 2016',
-    price: 2650,
-    id: 5,
-  },
-  {
-    name: 'Sauvignon Blanc, Pradio',
-    description: 'France, 2018',
-    price: 2650,
-    id: 6,
-  },
-  {
-    name: 'Riesling Philipp Kuhn',
-    description: 'Germany, 2016',
-    price: 2650,
-    id: 7,
-  },
-  {
-    name: 'Gavi, Michele Chiarlo',
-    description: 'Italy, 2018',
-    price: 2650,
-    id: 8,
-  },
-  {
-    name: 'Sommerpalais, Riesling',
-    description: 'Germany, 2016',
-    price: 2800,
-    id: 9,
   },
   {
     name: 'Nik Weis, Riesling',
     description: 'Germany, 2018',
-    price: 2950,
+    price: 3200,
+    id: 4,
+  },
+  {
+    name: 'Соteax Bourguingnons',
+    description: 'France, 2019',
+    price: 3000,
+    id: 5,
+  },
+  {
+    name: 'Chablis Marc Brocard',
+    description: 'France, 2019',
+    price: 3500,
+    id: 6,
+  },
+  {
+    name: 'Riesling, Dr. Fischer',
+    description: 'Germany, 2018',
+    price: 3650,
+    id: 7,
+  },
+  {
+    name: 'Sauvignon Blanc, LoveBlock',
+    description: 'NZ, 2020',
+    price: 3750,
+    id: 8,
+  },
+  {
+    name: 'Vermentino, Solosole Bolgheri',
+    description: 'Italy, 2019',
+    price: 3800,
+    id: 9,
+  },
+  {
+    name: 'Riesling, Robert Weil',
+    description: 'Geramny 2022',
+    price: 4000,
     id: 10,
   },
   {
-    name: 'Chardonnay, Marco Felluga',
-    description: 'Italy 2019',
-    price: 3500,
+    name: 'Sauvignon Blanc, Grey Wacke',
+    description: 'NZ, 2020',
+    price: 4500,
     id: 11,
   },
   {
-    name: 'Chablis La Pierrelee',
-    description: 'France, 2016',
-    price: 3500,
+    name: 'Livio Felluga, Pinot Grigio',
+    description: 'Italy, 2019',
+    price: 5000,
     id: 12,
   },
   {
-    name: 'Riesling Dr. Fischer',
-    description: 'Germany, 2018',
-    price: 3650,
+    name: 'Gavi dei Gavi, La Scolca',
+    description: 'Italy, 2020',
+    price: 6500,
     id: 13,
   },
   {
     name: 'Chablis Grand Regnard',
     description: 'France, 2016',
-    price: 8500,
+    price: 12000,
     id: 14,
+  },
+  {
+    name: 'Vintage Tunita, Iermann',
+    description: 'Italy, 2018',
+    price: 14500,
+    id: 15,
+  },
+  {
+    name: 'Where Dreams, Vandemmia',
+    description: 'Italy, 2017',
+    price: 14500,
+    id: 16,
   },
   {
     name: 'Cervaro, Antinori',
     description: 'Italy, 2018',
     price: 14500,
-    id: 15,
+    id: 17,
   },
 ]
 
@@ -1290,200 +1305,164 @@ export const redWinesBottles = [
   {
     name: 'Kindzmarauli, Chateau Mukhrani',
     description: 'Georgia',
-    price: 1900,
+    price: 2500,
     id: 1,
   },
   {
-    name: 'El Castro de Valtuille',
-    description: 'Spain, 2018',
-    price: 1900,
+    name: 'Shiraz, The very Sexy',
+    description: 'S.Africa, 2018',
+    price: 2500,
     id: 2,
   },
   {
-    name: 'Nederburg Pinotage',
-    description: 'South Africa, 2018',
-    price: 1900,
+    name: 'Shiraz, Koonunga Hill',
+    description: 'Australia, 2018',
+    price: 2500,
     id: 3,
   },
   {
-    name: 'Cune Crianza Rioha',
-    description: 'Spain, 2016',
-    price: 2000,
+    name: 'Malbec, Carrascal',
+    description: 'Argentina, 2018',
+    price: 2500,
     id: 4,
   },
   {
-    name: 'Chateau Tassin',
-    description: 'France, 2017',
-    price: 2000,
+    name: 'Shiraz, Rawson”s Retreat',
+    description: 'Australia, 2018',
+    price: 2350,
     id: 5,
   },
   {
-    name: 'Chateau Lermitage',
-    description: 'France, 2019',
-    price: 2000,
+    name: 'Cune Crianza',
+    description: 'Spain, 2016',
+    price: 2350,
     id: 6,
   },
   {
-    name: 'Altos de la Hoya',
-    description: 'Spain , 2019',
-    price: 2000,
+    name: 'Pinot Noir, Philipp Kuhn',
+    description: 'Geramny, 2018',
+    price: 2750,
     id: 7,
   },
   {
-    name: 'Altos de la Hoya',
-    description: 'Spain, 2019',
-    price: 2000,
+    name: 'Zweigelt, Lomer',
+    description: 'Austria, 2018',
+    price: 3000,
     id: 8,
   },
   {
-    name: 'La Colonia, Malbec',
-    description: 'Argentina, 2019',
-    price: 2500,
+    name: 'Zinfandel, Motto',
+    description: 'USA, 2016',
+    price: 4150,
     id: 9,
   },
   {
-    name: 'Vinsobres, Les Cornuds',
-    description: 'France, 2017',
-    price: 2600,
+    name: 'Felino, Malbec',
+    description: 'Argentina, 2019',
+    price: 3800,
     id: 10,
   },
   {
-    name: 'Felino Malbec',
-    description: 'Argentina, 2018',
-    price: 3000,
+    name: 'Enemigo Mio, Casarojo',
+    description: 'Spain, 2019',
+    price: 4850,
     id: 11,
   },
   {
-    name: 'Bourgogne, Louis Jadot',
+    name: 'Chateau Roc Taillade',
     description: 'France, 2017',
-    price: 4200,
+    price: 4850,
     id: 12,
   },
   {
-    name: 'Von Buhl, Spatburgunder',
-    description: 'Germany, 2016',
-    price: 3850,
+    name: 'Il Bruciato',
+    description: 'Italy, 2019',
+    price: 4900,
     id: 13,
   },
   {
-    name: 'Emilio Moro',
-    description: 'Spain, 2013',
-    price: 4700,
+    name: 'Camins Del Priorat',
+    description: 'Spain, 2019',
+    price: 5750,
     id: 14,
   },
   {
-    name: 'Chateau Roc Taillade, Medoc',
-    description: 'France, 2016',
-    price: 4650,
+    name: 'Chateau Chartalouette',
+    description: 'France, 2014',
+    price: 6650,
     id: 15,
   },
   {
-    name: 'Malbec, Achaval Ferrer',
-    description: 'Argentina, 2017',
-    price: 4850,
+    name: 'Bourgogne, Auvallon',
+    description: 'France, 2017',
+    price: 7500,
     id: 16,
   },
   {
-    name: 'Machoman, Monastrell',
-    description: 'Spain, 2017',
-    price: 4850,
+    name: 'Bramare, Malbec',
+    description: 'Argentina, 2018',
+    price: 7500,
     id: 17,
   },
   {
-    name: 'NOA, Cusumano',
-    description: 'Italy, 2016',
-    price: 4950,
+    name: 'Malleolus, Riberia del Duero',
+    description: 'Spain, 2018',
+    price: 8350,
     id: 18,
   },
   {
-    name: 'Protos’27',
-    description: 'Spain, 2017',
-    price: 5000,
+    name: 'Les Terrasses, Priorat',
+    description: 'Spain, 2018',
+    price: 9500,
     id: 19,
   },
   {
-    name: 'Camins Del, Priorat',
-    description: 'Spain, 2019',
-    price: 5750,
+    name: 'Roda I, Reserva',
+    description: 'Spain, 2016',
+    price: 10500,
     id: 20,
   },
   {
-    name: 'Vina Bosconia Reserva',
-    description: 'Spain, 2007',
-    price: 5950,
+    name: 'Barolo',
+    description: 'Italy, 2016',
+    price: 14500,
     id: 21,
   },
   {
-    name: 'Martinet Bru Priorat',
-    description: 'Spain, 2018',
-    price: 6100,
+    name: 'Cabernet Sauvignon, Artemis',
+    description: 'USA, 2016',
+    price: 16500,
     id: 22,
   },
   {
-    name: 'Chateau Chantalouette',
-    description: 'France, 2014',
-    price: 6550,
+    name: 'Finca Dofi, Priorat',
+    description: 'Spain, 2018',
+    price: 18500,
     id: 23,
-  },
-  {
-    name: 'Bramare, Malbec',
-    description: 'Argentina, 2017',
-    price: 7500,
-    id: 24,
-  },
-  {
-    name: 'Brunello Di Montalcino',
-    description: 'Italy, 2016',
-    price: 7500,
-    id: 25,
-  },
-  {
-    name: 'PSI, Ribera del Duero',
-    description: 'Spain, 2018',
-    price: 9500,
-    id: 26,
-  },
-  {
-    name: 'Amarone Della Valpolicella',
-    description: 'Italy, 2015',
-    price: 9500,
-    id: 27,
-  },
-  {
-    name: 'Pago De Carraovejas,',
-    description: 'Spain, 2017',
-    price: 9500,
-    id: 28,
-  },
-  {
-    name: 'Les Terrasses , Priorat',
-    description: 'Spain, 2018',
-    price: 9500,
-    id: 29,
-  },
-  {
-    name: 'Finca Doﬁ Priorat',
-    description: 'Spain, 2018',
-    price: 18500,
-    id: 30,
-  },
-  {
-    name: 'Cami Pesseroles Priorat',
-    description: 'Spain, 2016',
-    price: 18500,
-    id: 31,
   },
   {
     name: 'Kurni Oasi degli Angeli',
     description: 'Italy, 2017',
-    price: 19500,
-    id: 32,
+    price: 25000,
+    id: 24,
   },
   {
-    name: 'Valbuena 5, Vega Sicilia',
-    description: 'Spain, 2019',
-    price: 25000,
-    id: 33,
+    name: 'Tignanello, Antinori',
+    description: 'Italy, 2018',
+    price: 28000,
+    id: 25,
+  },
+  {
+    name: 'Valbuena 5*, Riberia del Duero',
+    description: '2016',
+    price: 28000,
+    id: 26,
+  },
+  {
+    name: 'Cabernet Sauvignon, FAY',
+    description: 'USA, 2016',
+    price: 30000,
+    id: 27,
   },
 ]
 
@@ -1495,96 +1474,91 @@ export const rose = [
     id: 1,
   },
   {
-    name: 'Suez Spatburgunder Rose',
-    description: 'Germany, 2018',
-    price: 4750,
+    name: 'Suez Spatburgunder',
+    description: 'Germany, 2015',
+    price: 4900,
     id: 2,
   },
 ]
 
 export const champagne = [
   {
-    name: 'Casa Defra Rose',
+    name: 'Bio Bio Bubbles, extra dry 150/750',
     description: 'Italy',
-    price: 2250,
+    price: '450/2250',
     id: 1,
-  },
-  {
-    name: 'Casa Defra, Prosecco',
-    description: 'Italy',
-    price: '400/2000',
-    id: 2,
   },
   {
     name: 'Cava, Brut / Rose',
     description: 'Spain',
-    price: 2150,
-    id: 3,
+    price: 2250,
+    id: 2,
   },
+
   {
     name: 'Cremant De Bourgogne',
     description: 'France',
-    price: 2850,
-    id: 4,
+    price: 3000,
+    id: 3,
   },
   {
     name: 'Louis Roederer, Brut Premier',
     description: 'France',
-    price: 9500,
-    id: 5,
+    price: 13500,
+    id: 4,
   },
   {
-    name: 'Pierre Gimonnet, Rose',
+    name: 'Ruinart Blanc De Blancs',
     description: 'France',
-    price: 9800,
-    id: 6,
+    price: 16000,
+    id: 5,
   },
 ]
 
 export const whiteWinesGlasses = [
   {
-    name: 'Pinot Grigio',
-    description: 'Italy, 2018',
-    price: 320,
+    name: 'Vinho Verde',
+    description: 'Portugal, 2018',
+    price: 450,
     id: 1,
   },
   {
-    name: 'Vinho Verde',
-    description: 'Portugal, 2018',
-    price: 370,
+    name: 'Sauvignon Blanc',
+    description: 'NZ, 2018',
+    price: 600,
     id: 2,
   },
   {
     name: 'Urban Riesling, Mosel',
     description: 'Germany, 2017',
-    price: 480,
+    price: 500,
     id: 3,
   },
 ]
 
 export const redWinesGlasses = [
   {
-    name: 'Malbec Alamos',
-    description: 'Argentina, 2018',
-    price: 420,
+    name: 'Saperavi Superior',
+    description: 'Georgia, 2018',
+    price: 450,
     id: 1,
   },
   {
-    name: 'Saperavi Superior',
-    description: 'Georgia, 2018',
-    price: 390,
+    name: 'Malbec Alamos',
+    description: 'Argentina, 2019',
+    price: 480,
     id: 2,
   },
   {
-    name: 'Beringer, Zinfandel',
+    name: 'Big Top, Zinfandel',
     description: 'USA, 2018',
-    price: 480,
+    price: 530,
     id: 3,
   },
   {
     name: 'Garnatxa, VilaDelloPs',
     description: 'Spain, 2018',
-    price: 520,
+    price: 550,
     id: 4,
   },
 ]

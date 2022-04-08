@@ -12,7 +12,6 @@ import AboutSection from '../components/AboutSection/AboutSection'
 import TeamSection from '../components/TeamSection/TeamSection'
 
 import InstagramLogo from '../assets/instagram-logo.svg'
-import FacebookLogo from '../assets/facebookAlt.svg'
 
 import { window } from 'browser-monads'
 
@@ -79,6 +78,13 @@ function IndexPage(props) {
     },
     {
       id: 4,
+      image: props.data.Roman.childImageSharp.fluid,
+      name: 'Роман Голубев',
+      position: 'су-шеф',
+      projects: 'Angel8',
+    },
+    {
+      id: 5,
       image: props.data.Lado.childImageSharp.fluid,
       name: 'Ладо Прангишвили',
       position: 'идейный вдохновитель',
@@ -140,16 +146,19 @@ export const pageQuery = graphql`
     about_one: file(relativePath: { eq: "about/about.jpg" }) {
       ...fluidImage
     }
-    Lado: file(relativePath: { eq: "team/Lado.jpg" }) {
+    Lado: file(relativePath: { eq: "team/Lado2.jpg" }) {
       ...fluidImage
     }
-    Sergey: file(relativePath: { eq: "team/Sergey.jpg" }) {
+    Sergey: file(relativePath: { eq: "team/Sergey2.jpg" }) {
       ...fluidImage
     }
-    Konstantin: file(relativePath: { eq: "team/Konstantin.jpg" }) {
+    Konstantin: file(relativePath: { eq: "team/Konstantin2.jpg" }) {
       ...fluidImage
     }
-    Arman: file(relativePath: { eq: "team/Arman.jpg" }) {
+    Arman: file(relativePath: { eq: "team/Arman2.jpg" }) {
+      ...fluidImage
+    }
+    Roman: file(relativePath: { eq: "team/Roman.jpg" }) {
       ...fluidImage
     }
   }

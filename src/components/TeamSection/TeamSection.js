@@ -9,7 +9,11 @@ function TeamSection({ teamData }) {
       <div className="team-cards">
         {teamData.map(member => (
           <div className="team-card" key={member.id}>
-            <Img fluid={member.image} className="team-image"></Img>
+            <div
+              className="team-image"
+              style={{ backgroundImage: `url(${member.image.src})` }}
+            ></div>
+            {/* <Img fluid={member.image} className="team-image"></Img> */}
             <div className="card-info">
               <div className="card-name ">{member.name}</div>
               <div className="card-position">

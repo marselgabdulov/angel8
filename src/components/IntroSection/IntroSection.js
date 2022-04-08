@@ -17,7 +17,7 @@ function IntroSection({ introImage }) {
         <LogoDesk />
       </div>
       <div className="intro__info">
-        <h1 className="intro__title">Coctails / Grill / Wine</h1>
+        <h1 className="intro__title">Cocktails / Grill / Wine</h1>
         <h4 className="intro__subtitle">Контакты</h4>
         <div className="intro__contacts">
           <span>Тула проспект Ленина 85</span>

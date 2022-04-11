@@ -1,6 +1,6 @@
 import React from 'react'
 // import './TeamSection.scss'
-import TeamCard from '../../TeamCard/TeamCard'
+import TeamCard from './TeamCard/TeamCard'
 import './Team.css'
 
 function TeamSection({ teamData }) {

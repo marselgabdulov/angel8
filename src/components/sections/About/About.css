@@ -18,6 +18,13 @@
 
 /* desktop */
 @media (min-width: 1280px) and (max-width: 1919px) {
+  .about {
+    width: 850px;
+    margin: 100px auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 /* desktop XXL */

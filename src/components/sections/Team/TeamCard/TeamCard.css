@@ -18,12 +18,26 @@
 
 /* desktop */
 @media (min-width: 1280px) and (max-width: 1919px) {
+  .team-card {
+    width: 240px;
+  }
+
+  .team-card__image {
+    width: 95%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 1em;
+  }
+  .team-card__projects {
+    margin-right: 0.75em;
+  }
 }
 
 /* desktop XXL */
 @media (min-width: 1920px) {
   .team-card {
-    width: 275px;
+    width: 290px;
   }
 
   .team-card__image {

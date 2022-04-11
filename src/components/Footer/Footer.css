@@ -34,6 +34,12 @@ footer {
 
 /* desktop */
 @media (min-width: 1280px) and (max-width: 1919px) {
+  .footer__wrapper {
+    width: 1040px;
+    height: 100px;
+    margin-bottom: 0em;
+    font-size: 12px;
+  }
 }
 
 /* desktop XXL */
@@ -41,7 +47,7 @@ footer {
   .footer__wrapper {
     width: 1400px;
     height: 100px;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     font-size: 18px;
   }
 }

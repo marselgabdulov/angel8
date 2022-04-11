@@ -9,6 +9,14 @@ body {
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+}
+
+a {
+  border-bottom: 1px solid #4949f3;
+}
+
 body,
 h1,
 h2,
@@ -136,6 +144,11 @@ main {
   h3 {
     font-size: 1.75em;
     line-height: 1.25em;
+  }
+
+  .main {
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 

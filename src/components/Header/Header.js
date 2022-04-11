@@ -1,28 +1,12 @@
-import React, { useContext, useState, useEffect, useRef } from 'react'
+import React, { useContext } from 'react'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
-import './Header.scss'
+import './Header.css'
 import LogoMobile from './LogoMobile'
 import NavContext from '../../context/nav/navContext'
 import classnames from 'classnames'
-import { window } from 'browser-monads'
 import menuPDF from '../../docs/angel8_menu.pdf'
 
 function Header() {
-  const [headerChanged, setHeaderChanged] = useState(false)
-  let headerRef = useRef(null)
-
-  function handleScroll() {
-    setHeaderChanged(window.pageYOffset > 0)
-  }
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [headerRef])
-
   const navContext = useContext(NavContext)
   const { navIsOpened, openNav, closeNav } = navContext
 
@@ -35,19 +19,13 @@ function Header() {
   }
 
   return (
-    <div
-      className={classnames('header', {
-        'header--changed': headerChanged,
-      })}
-      ref={el => (headerRef = el)}
-    >
+    <header className="header">
       <div className="header__wrapper">
         <div className="header__logo">
           <AniLink fade to="/" title="На главную">
             <LogoMobile color="black" />
           </AniLink>
         </div>
-        <div className="header__address"></div>
         <div className="header__links">
           <AniLink fade to="/food">
             Блюда
@@ -70,7 +48,7 @@ function Header() {
           <span className="line-three"></span>
         </div>
       </div>
-    </div>
+    </header>
   )
 }
 

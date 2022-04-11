@@ -6,6 +6,26 @@
 
 /* mobile landscape */
 @media (min-width: 480px) and (max-width: 767px) {
+  .team {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4em;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .team__title {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  .team__cards {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
 }
 
 /* tablet-portrait */

@@ -16,9 +16,6 @@ function Layout(props) {
   return (
     <NavState>
       <div className="layout" ref={el => (layoutRef = el)}>
-        <div className="turn">
-          <span>Пожалуйста переверните</span>
-        </div>
         <Nav />
         <Header />
         <main className="main">{props.children}</main>

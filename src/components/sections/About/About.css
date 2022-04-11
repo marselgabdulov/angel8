@@ -2,6 +2,13 @@
 
 /* mobile portrait */
 @media (min-width: 320px) and (max-width: 479px) {
+  .about {
+    width: 95%;
+    margin: 50px auto;
+    text-align: left;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 /* mobile landscape */

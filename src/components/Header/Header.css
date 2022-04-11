@@ -17,10 +17,38 @@
   color: black;
   margin-left: 1em;
   border-bottom: 1px solid black;
+  font-weight: bold;
 }
 
 /* mobile portrait */
 @media (min-width: 320px) and (max-width: 479px) {
+  .header {
+    height: 4.5em;
+    font-size: 18px;
+    background-color: #fff;
+  }
+
+  .header__wrapper {
+    width: 92%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+  }
+
+  .header__logo {
+    width: 2.5em;
+  }
+
+  .header__logo a {
+    border-bottom: none;
+  }
+
+  .header__button {
+    display: none;
+  }
 }
 
 /* mobile landscape */

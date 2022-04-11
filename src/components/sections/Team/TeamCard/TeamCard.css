@@ -14,6 +14,20 @@
 
 /* tablet-landscape */
 @media (min-width: 1000px) and (max-width: 1279px) {
+  .team-card {
+    width: 200px;
+  }
+
+  .team-card__image {
+    width: 95%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 1em;
+  }
+  .team-card__projects {
+    margin-right: 0.75em;
+  }
 }
 
 /* desktop */
@@ -46,5 +60,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 1em;
+  }
+
+  .team-card__projects {
+    margin-right: 0.75em;
   }
 }

@@ -30,12 +30,18 @@ footer {
 
 /* tablet-landscape */
 @media (min-width: 1000px) and (max-width: 1279px) {
+  .footer__wrapper {
+    width: 80%;
+    height: 100px;
+    margin-bottom: 0em;
+    font-size: 12px;
+  }
 }
 
 /* desktop */
 @media (min-width: 1280px) and (max-width: 1919px) {
   .footer__wrapper {
-    width: 1040px;
+    width: 80%;
     height: 100px;
     margin-bottom: 0em;
     font-size: 12px;
@@ -45,7 +51,7 @@ footer {
 /* desktop XXL */
 @media (min-width: 1920px) {
   .footer__wrapper {
-    width: 1400px;
+    width: 75%;
     height: 100px;
     margin-bottom: 1em;
     font-size: 18px;

@@ -14,7 +14,6 @@
   background-color: white;
 }
 
-
 .header__wrapper {
   height: 100%;
   margin: auto;
@@ -25,15 +24,6 @@
 
 .header__logo {
   height: auto;
-}
-
-.header__address {
-  display: flex;
-  justify-content: space-between;
-
-  a {
-    color: black;
-  }
 }
 
 .header__links {
@@ -246,7 +236,7 @@
 @media (min-width: 1800px) {
   .header {
     height: 5em;
-    font-size: 16px;
+    font-size: 21px;
   }
 
   .header--changed {
@@ -258,15 +248,12 @@
   }
 
   .header__logo {
-    flex-basis: 3.5%;
-  }
-
-  .header__address {
-    flex-basis: 550px;
+    flex-basis: auto;
+    width: 3em;
   }
 
   .header__links {
-    flex-basis: 200px;
+    flex-basis: 300px;
   }
 
   .header__button {

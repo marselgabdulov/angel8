@@ -152,11 +152,11 @@
 // desktop x-large
 @media (min-width: 1800px) {
   #about {
-    height: 100vh;
+    height: auto;
 
     .about__wrapper {
-      width: 1200px;
-      height: 80%;
+      width: 900px;
+      height: auto;
       margin: 5% auto;
       flex-direction: row;
       align-items: center;
@@ -165,19 +165,17 @@
       .about__image-container {
         flex-basis: 48%;
         height: 90%;
-
       }
 
       .about__content {
-        flex-basis: 50%;
+        flex-basis: 100%;
 
         .about__title {
           text-align: center;
         }
 
         .about__text {
-          width: 70%;
-          margin-left: 15%;
+          text-align: center;
         }
       }
     }

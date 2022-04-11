@@ -5,6 +5,7 @@ import LogoMobile from './LogoMobile'
 import NavContext from '../../context/nav/navContext'
 import classnames from 'classnames'
 import { window } from 'browser-monads'
+import menuPDF from '../../docs/angel8_menu.pdf'
 
 function Header() {
   const [headerChanged, setHeaderChanged] = useState(false)
@@ -46,10 +47,7 @@ function Header() {
             <LogoMobile color="black" />
           </AniLink>
         </div>
-        <div className="header__address">
-          <span>Тула проспект Ленина 85 корпус 1 вход 5</span>
-          <a href="tel:+74872770247">+7 4872 77 02 47</a>
-        </div>
+        <div className="header__address"></div>
         <div className="header__links">
           <AniLink fade to="/food">
             Блюда
@@ -57,6 +55,9 @@ function Header() {
           <AniLink fade to="/drinks">
             Напитки
           </AniLink>
+          <a href={menuPDF} target="_blank" rel="noopener noreferrer">
+            Меню pdf
+          </a>
         </div>
         <div
           className={classnames('header__button', {

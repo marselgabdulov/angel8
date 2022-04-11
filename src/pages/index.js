@@ -7,9 +7,9 @@ import SEO from '../components/seo'
 // Components
 import Layout from '../components/layout'
 import ArrowToSection from '../components/ArrowToSection/ArrowToSection'
-import IntroSection from '../components/IntroSection/IntroSection'
-import AboutSection from '../components/AboutSection/AboutSection'
-import TeamSection from '../components/TeamSection/TeamSection'
+import IntroSection from '../components/sections/Intro/Intro'
+import AboutSection from '../components/sections/About/About'
+import TeamSection from '../components/sections/Team/Team'
 
 import InstagramLogo from '../assets/instagram-logo.svg'
 
@@ -140,7 +140,7 @@ export const fluidImage = graphql`
 
 export const pageQuery = graphql`
   query {
-    intro_image: file(relativePath: { eq: "intro/ES-2.jpg" }) {
+    intro_image: file(relativePath: { eq: "intro/intro_flower.jpg" }) {
       ...fluidImage
     }
     about_one: file(relativePath: { eq: "about/about.jpg" }) {

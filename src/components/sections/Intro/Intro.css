@@ -1,0 +1,55 @@
+/* common */
+
+/* mobile portrait */
+@media (min-width: 320px) and (max-width: 479px) {
+}
+
+/* mobile landscape */
+@media (min-width: 480px) and (max-width: 767px) {
+}
+
+/* tablet-portrait */
+@media (min-width: 768px) and (max-width: 999px) {
+}
+
+/* tablet-landscape */
+@media (min-width: 1000px) and (max-width: 1279px) {
+}
+
+/* desktop */
+@media (min-width: 1280px) and (max-width: 1919px) {
+}
+
+/* desktop XXL */
+@media (min-width: 1920px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4.5em;
+  }
+
+  .intro__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5em;
+  }
+
+  .intro__title {
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+  }
+
+  .intro__image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1400px;
+    height: 900px;
+  }
+}

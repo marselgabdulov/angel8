@@ -26,6 +26,12 @@ footer {
 
 /* tablet-portrait */
 @media (min-width: 768px) and (max-width: 999px) {
+  .footer__wrapper {
+    width: 95%;
+    height: 100px;
+    margin-bottom: 0em;
+    font-size: 12px;
+  }
 }
 
 /* tablet-landscape */

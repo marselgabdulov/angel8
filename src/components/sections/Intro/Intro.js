@@ -18,6 +18,13 @@ function IntroSection({ introImage }) {
         <span>Воскресенье - Четверг 12:00 - 24:00</span>
         <span>Пятница и Суббота 12:00 - 02:00</span>
         <a href="tel:+74872770247">+7 4872 77 02 47</a>
+        <a
+          href="https://www.instagram.com/angel_bar_grill/?hl=ru"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
       </div>
 
       <div

@@ -10,6 +10,21 @@
 
 /* tablet-portrait */
 @media (min-width: 768px) and (max-width: 999px) {
+  .team-card {
+    width: 33%;
+    margin-top: 1em;
+  }
+
+  .team-card__image {
+    width: 95%;
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 1em;
+  }
+  .team-card__projects {
+    margin-right: 0.75em;
+  }
 }
 
 /* tablet-landscape */

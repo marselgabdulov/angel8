@@ -23,7 +23,7 @@
 /* mobile portrait */
 @media (min-width: 320px) and (max-width: 479px) {
   .header {
-    height: 4.5em;
+    height: 3.5em;
     font-size: 18px;
     background-color: #fff;
   }

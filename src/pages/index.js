@@ -10,6 +10,7 @@ import ArrowToSection from '../components/ArrowToSection/ArrowToSection'
 import IntroSection from '../components/sections/Intro/Intro'
 import AboutSection from '../components/sections/About/About'
 import TeamSection from '../components/sections/Team/Team'
+import ImagesSection from '../components/sections/Images/Images'
 
 import InstagramLogo from '../assets/instagram-logo.svg'
 
@@ -20,7 +21,7 @@ import './index.scss'
 import classnames from 'classnames'
 
 function IndexPage(props) {
-  const sections = ['intro', 'about', 'team']
+  const sections = ['intro', 'about', 'images', 'team']
   const [currentSection, setCurrentSection] = useState({ isFinal: false })
   const [currentSectionIndex, setCurrentSectionIndex] = useState(0)
   const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.5 })
@@ -118,6 +119,14 @@ function IndexPage(props) {
             introImage={props.data.intro_image.childImageSharp.fluid}
           />
           <AboutSection img={props.data.about_one.childImageSharp.fluid} />
+          <ImagesSection
+            verticalFirst={props.data.vertical_first.childImageSharp.fluid}
+            verticalSecond={props.data.vertical_second.childImageSharp.fluid}
+            verticalThird={props.data.vertical_third.childImageSharp.fluid}
+            quadrantFirst={props.data.quadrant_first.childImageSharp.fluid}
+            quadrantSecond={props.data.quadrant_second.childImageSharp.fluid}
+            horizontal={props.data.horizontal.childImageSharp.fluid}
+          />
           <div className="final-section" ref={ref}>
             <TeamSection teamData={teamData} />
           </div>
@@ -159,6 +168,24 @@ export const pageQuery = graphql`
       ...fluidImage
     }
     Roman: file(relativePath: { eq: "team/Roman.jpg" }) {
+      ...fluidImage
+    }
+    vertical_first: file(relativePath: { eq: "images_section/alko.jpg" }) {
+      ...fluidImage
+    }
+    vertical_second: file(relativePath: { eq: "images_section/desert.jpg" }) {
+      ...fluidImage
+    }
+    vertical_third: file(relativePath: { eq: "images_section/shrimps.jpg" }) {
+      ...fluidImage
+    }
+    quadrant_first: file(relativePath: { eq: "images_section/desert2.jpg" }) {
+      ...fluidImage
+    }
+    quadrant_second: file(relativePath: { eq: "images_section/flower.jpg" }) {
+      ...fluidImage
+    }
+    horizontal: file(relativePath: { eq: "images_section/cooks1.jpg" }) {
       ...fluidImage
     }
   }

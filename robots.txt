@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: http://angel8bar.ru/sitemap.xml
-Host: angel8bar.ru
+Sitemap: https://angel8bar.ru/sitemap.xml
+Host: https://angel8bar.ru

@@ -1,23 +1,10 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import './Header.css'
 import LogoMobile from './LogoMobile'
-import NavContext from '../../context/nav/navContext'
-import classnames from 'classnames'
 import menuPDF from '../../docs/angel8_menu.pdf'
 
 function Header() {
-  const navContext = useContext(NavContext)
-  const { navIsOpened, openNav, closeNav } = navContext
-
-  function handleNav() {
-    if (navIsOpened) {
-      closeNav()
-    } else {
-      openNav()
-    }
-  }
-
   return (
     <header className="header">
       <div className="header__wrapper">
@@ -37,23 +24,9 @@ function Header() {
             Меню pdf
           </a>
         </div>
-        <div
-          className={classnames('header__button', {
-            'header__button--changed': navIsOpened,
-          })}
-          onClick={handleNav}
-        >
-          <span className="line-one"></span>
-          <span className="line-two"></span>
-          <span className="line-three"></span>
-        </div>
       </div>
     </header>
   )
 }
 
 export default Header
-
-{
-  /*  */
-}

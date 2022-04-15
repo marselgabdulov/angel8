@@ -1,9 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import Header from './Header/Header'
-import Nav from './Nav/Nav'
 import './layout.scss'
 import { window } from 'browser-monads'
-import NavState from '../context/nav/NavState'
 
 function Layout(props) {
   let layoutRef = useRef(null)
@@ -14,13 +12,10 @@ function Layout(props) {
   }, [layoutRef])
 
   return (
-    <NavState>
-      <div className="layout" ref={el => (layoutRef = el)}>
-        <Nav />
-        <Header />
-        <main className="main">{props.children}</main>
-      </div>
-    </NavState>
+    <div className="layout" ref={el => (layoutRef = el)}>
+      <Header />
+      <main className="main">{props.children}</main>
+    </div>
   )
 }
 

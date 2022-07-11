@@ -6,7 +6,7 @@ function MenuItem({ name, description, price }) {
     <div className="menu-item">
       <div className="menu-item__name">{name}</div>
       {description && (
-        <div className="menu-item__description">{description}</div>
+        <div className="menu-item__description">&nbsp;({description})</div>
       )}
       <span />
       <div className="menu-item__price">{price}</div>

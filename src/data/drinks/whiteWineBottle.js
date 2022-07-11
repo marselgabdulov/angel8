@@ -1,0 +1,111 @@
+export const whiteWineBottle = [
+  {
+    name: 'Priara, Pinot Grigio',
+    description: 'Italy, 2018',
+    price: 3000,
+    id: 1,
+  },
+  {
+    name: 'Gavi, La Scolca',
+    description: 'Italy, 2020',
+    price: 3650,
+    id: 2,
+  },
+
+  {
+    name: 'Chardonnay, Catena',
+    description: 'Argentina, 2020',
+    price: 4500,
+    id: 3,
+  },
+  {
+    name: 'Nik Weis, Riesling',
+    description: 'Germany, 2018',
+    price: 4500,
+    id: 4,
+  },
+  {
+    name: 'Соteax Bourguingnons',
+    description: 'France, 2019',
+    price: 3000,
+    id: 5,
+  },
+  {
+    name: 'Chablis Marc Brocard',
+    description: 'France, 2019',
+    price: 3500,
+    id: 6,
+  },
+  {
+    name: 'Riesling, Red Stone',
+    description: 'Germany, 2020',
+    price: 3000,
+    id: 7,
+  },
+  {
+    name: 'Riesling, Sommerpalais',
+    description: 'Germany, 2019',
+    price: 4500,
+    id: 8,
+  },
+  {
+    name: 'Riesling, Fritz*s',
+    description: 'Germany, 2020',
+    price: 2750,
+    id: 9,
+  },
+  {
+    name: 'Vermentino, Solosole Bolgheri',
+    description: 'Italy, 2019',
+    price: 3800,
+    id: 10,
+  },
+  {
+    name: 'Sauvignon Blanc, Sileni',
+    description: 'NZ, 2020',
+    price: 3800,
+    id: 11,
+  },
+  {
+    name: 'Gewurztraminer, Trimbach',
+    description: 'France, 2017',
+    price: 6950,
+    id: 12,
+  },
+  {
+    name: 'Livio Felluga, Pinot Grigio',
+    description: 'Italy, 2019',
+    price: 5000,
+    id: 13,
+  },
+  {
+    name: 'Petit Chablis, G-M Brocard',
+    description: 'France, 2016',
+    price: 5900,
+    id: 14,
+  },
+  {
+    name: 'Gavi dei Gavi, La Scolca',
+    description: 'Italy, 2020',
+    price: 6500,
+    id: 15,
+  },
+  {
+    name: 'Chablis Grand Regnard',
+    description: 'France, 2016',
+    price: 12000,
+    id: 16,
+  },
+  {
+    name: 'Vintage Tunita, Iermann',
+    description: 'Italy, 2018',
+    price: 14500,
+    id: 17,
+  },
+  {
+    name: 'Where Dreams, Vandemmia',
+    description: 'Italy, 2017',
+    price: 14500,
+    id: 16,
+  },
+]

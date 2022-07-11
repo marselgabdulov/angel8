@@ -6,48 +6,45 @@ import menuPDF from '../docs/angel8_menu.pdf'
 import Submenu from '../components/Submenu/Submenu'
 import MenuSection from '../components/MenuSection/MenuSection'
 
-import {
-  scotchWhiskeyBlend,
-  singleMalt,
-  irishWhiskey,
-  americanWhiskey,
-  japanWhiskey,
-  tequilaAndMezkal,
-  portoAndJerez,
-  vodka,
-  rumAndChacha,
-  gin,
-  brandy,
-  calvados,
-  grappa,
-  pisco,
-  aperitivo,
-  vermut,
-  cocktails,
-  specialCocktails,
-  water,
-  smoosy,
-  limonades,
-  juicesYa,
-  freshJuices,
-  bottleBeer,
-  hotAlco,
-  coffee,
-  coffeWithEngredients,
-  fruitTea,
-  simpleTea,
-  altayTea,
-  whiteWinesBottles,
-  redWinesBottles,
-  champagne,
-  rose,
-  whiteWinesGlasses,
-  redWinesGlasses,
-} from '../data/menu.js'
+import { americanWhiskey } from '../data/drinks/americanWhiskey'
+import { aperitif } from '../data/drinks/aperitif'
+import { beer } from '../data/drinks/beer'
+import { brandy } from '../data/drinks/brandy'
+import { calvados } from '../data/drinks/calvados'
+import { cocktails } from '../data/drinks/cocktails'
+import { coffee } from '../data/drinks/coffee'
+import { coffeeComplicated } from '../data/drinks/coffeeComplicated'
+import { gin } from '../data/drinks/gin'
+import { grappa } from '../data/drinks/grappa'
+import { hotAlco } from '../data/drinks/hotAlco'
+import { irishWhiskey } from '../data/drinks/irishWhiskey'
+import { japanWhiskey } from '../data/drinks/japanWhiskey'
+import { juices } from '../data/drinks/juices'
+import { juicesFresh } from '../data/drinks/juicesFresh'
+import { lemonades } from '../data/drinks/lemonades'
+import { pisco } from '../data/drinks/pisco'
+import { portoAndJerez } from '../data/drinks/portoAndJerez'
+import { redWineBottle } from '../data/drinks/redWineBottle'
+import { redWineGlass } from '../data/drinks/redWineGlass'
+import { roseWineBottle } from '../data/drinks/roseWineBottle'
+import { rumAndChacha } from '../data/drinks/rumAndcacha'
+import { scotchWhiskeyBlend } from '../data/drinks/scotchWhiskeyBlend'
+import { singleMalt } from '../data/drinks/singleMalt'
+import { smoothies } from '../data/drinks/smoothies'
+import { sparklingWine } from '../data/drinks/sparklingWine'
+import { tea } from '../data/drinks/tea'
+import { teaAltay } from '../data/drinks/teaAltay'
+import { teaFruit } from '../data/drinks/teaFruit'
+import { tequilaAndMezkal } from '../data/drinks/tequilaAndMezcal'
+import { vermouth } from '../data/drinks/vermouth'
+import { vodka } from '../data/drinks/vodka'
+import { water } from '../data/drinks/water'
+import { whiteAndRoseGlass } from '../data/drinks/whiteAndRoseGlass'
+import { whiteWineBottle } from '../data/drinks/whiteWineBottle'
 
 let linksData = [
   {
-    id: 'whiteWinesBottles',
+    id: 'whiteWineBottle',
     name: 'Вина Белые по бутылкам',
   },
   {
@@ -55,19 +52,19 @@ let linksData = [
     name: 'Вина Красные по бутылкам',
   },
   {
-    id: 'champagne',
+    id: 'sparklingWine',
     name: 'шампанское и игристое',
   },
   {
-    id: 'rose',
+    id: 'roseWineBottle',
     name: 'розовые вина',
   },
   {
-    id: 'whiteWinesGlasses',
-    name: 'Вина белые по бокалам 150 мл',
+    id: 'whiteAndRoseGlass',
+    name: 'Вина белые и розовые в бокалах 150 мл',
   },
   {
-    id: 'redWinesGlasses',
+    id: 'redWineGlass',
     name: 'Вина красные по бокалам 150 мл',
   },
   {
@@ -111,31 +108,28 @@ let linksData = [
     name: 'писко',
   },
   {
-    id: 'aperitivo',
+    id: 'aperitif',
     name: 'Аперитив/Дижестив',
   },
   {
-    id: 'vermut',
+    id: 'vermouth',
     name: 'Вермут',
   },
   {
     id: 'cocktails',
     name: 'Коктейли',
   },
-  {
-    id: 'specialCocktails',
-    name: 'FORGOTTEN COCKTAIL RECIPES',
-  },
+
   {
     id: 'water',
     name: 'Вода',
   },
   {
-    id: 'smoosy',
+    id: 'smoothies',
     name: 'Смузи',
   },
   {
-    id: 'limonades',
+    id: 'lemonades',
     name: 'Лимонады',
   },
   {
@@ -175,30 +169,34 @@ function DrinksPage() {
             <Submenu linksData={linksData} />
             <div className="menu-page__submenu"></div>
             <MenuSection
-              id="whiteWinesBottles"
+              id="whiteWineBottle"
               title="Вина по бутылкам белые 750 мл"
-              data={whiteWinesBottles}
+              data={whiteWineBottle}
             />
             <MenuSection
-              id="redWinesBottles"
+              id="redWineBottle"
               title="Вина по бутылкам красные 750 мл"
-              data={redWinesBottles}
+              data={redWineBottle}
             />
             <MenuSection
-              id="champagne"
+              id="sparklingWine"
               title="Шампанское и игристое 150/750 мл"
-              data={champagne}
+              data={sparklingWine}
             />
-            <MenuSection id="rose" title="Вина розовые" data={rose} />
             <MenuSection
-              id="whiteWinesGlasses"
+              id="roseWineBottle"
+              title="Вина розовые"
+              data={roseWineBottle}
+            />
+            <MenuSection
+              id="whiteAndRoseGlass"
               title="Вина белые по бокалам 150 мл"
-              data={whiteWinesGlasses}
+              data={whiteAndRoseGlass}
             />
             <MenuSection
-              id="redWinesGlasses"
+              id="redWineGlass"
               title="Вина красные по бокалам 150 мл"
-              data={redWinesGlasses}
+              data={redWineGlass}
             />
 
             <section id="whiskey" className="menu-page__section">
@@ -227,7 +225,7 @@ function DrinksPage() {
             <MenuSection id="vodka" title="ВОДКА 50 мл" data={vodka} />
             <MenuSection
               id="rumAndChacha"
-              title="РОМ / ЧАЧА 50 мл"
+              title="РОМ / КАШАСА 50 мл"
               data={rumAndChacha}
             />
             <MenuSection id="gin" title="ДЖИН 50 мл" data={gin} />
@@ -244,45 +242,40 @@ function DrinksPage() {
             <MenuSection id="grappa" title="ГРАППА 50 мл" data={grappa} />
             <MenuSection id="pisco" title="ПИСКО 50 мл" data={pisco} />
             <MenuSection
-              id="aperitivo"
+              id="aperitif"
               title="Аперитив / Дижестив 50 мл"
-              data={aperitivo}
+              data={aperitif}
             />
-            <MenuSection id="vermut" title="ВЕРМУТ" data={vermut} />
+            <MenuSection id="vermouth" title="ВЕРМУТ" data={vermouth} />
             <MenuSection
               id="cocktails"
               title="ANGEL / 8 COCKTAILS"
               data={cocktails}
             />
-            <MenuSection
-              id="specialCocktails"
-              title="FORGOTTEN COCKTAIL RECIPES"
-              data={specialCocktails}
-            />
             <MenuSection id="water" title="Вода" data={water} />
-            <MenuSection id="smoosy" title="СМУЗИ 300 мл" data={smoosy} />
+            <MenuSection id="smoothies" title="СМУЗИ 300 мл" data={smoothies} />
             <MenuSection
-              id="limonades"
+              id="lemonades"
               title="ДОМАШНИЕ ЛИМОНАДЫ 300 мл / 1l"
-              data={limonades}
+              data={lemonades}
             />
-            <MenuSection id="juices" title="СОКИ 'Я'" data={juicesYa} />
-            <MenuSection title="СОК СВЕЖЕВЫЖАТЫЙ 250 мл" data={freshJuices} />
-            <MenuSection id="beer" title="ПИВО" data={bottleBeer} />
+            <MenuSection id="juices" title="СОКИ 'Я'" data={juices} />
+            <MenuSection title="СОК СВЕЖЕВЫЖАТЫЙ 250 мл" data={juicesFresh} />
+            <MenuSection id="beer" title="ПИВО" data={beer} />
             <MenuSection
               id="hotAlco"
               title="ГОРЯЧИЕ НАПИТКИ 300 мл"
               data={hotAlco}
             />
             <MenuSection id="coffee" title="КОФЕ" data={coffee} />
-            <MenuSection title="КОФЕ С ДОБАВКАМИ" data={coffeWithEngredients} />
+            <MenuSection title="КОФЕ С ДОБАВКАМИ" data={coffeeComplicated} />
             <MenuSection
               id="tea"
               title="ЧАЙ НА ЯГОДАХ И ФРУКТАХ 450 мл"
-              data={fruitTea}
+              data={teaFruit}
             />
-            <MenuSection title="ЧАЙ 450 мл" data={simpleTea} />
-            <MenuSection title="ЧАЙ АЛТАЙ 450 мл" data={altayTea} />
+            <MenuSection title="ЧАЙ 450 мл" data={tea} />
+            <MenuSection title="ЧАЙ АЛТАЙ 450 мл" data={teaAltay} />
           </div>
         </div>
       </Layout>

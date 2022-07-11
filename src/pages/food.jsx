@@ -6,15 +6,13 @@ import menu from '../docs/angel8_menu.pdf'
 
 import MenuSection from '../components/MenuSection/MenuSection'
 
-import {
-  brunch,
-  starters,
-  salads,
-  soups,
-  hotFood,
-  grillAndSteaks,
-  desserts,
-} from '../data/menu.js'
+import { brunch } from '../data/food/brunch'
+import { desserts } from '../data/food/deserts'
+import { grillHot } from '../data/food/grillHot'
+import { grillSteaks } from '../data/food/grillSteaks'
+import { salads } from '../data/food/salads'
+import { soups } from '../data/food/soups'
+import { starters } from '../data/food/starters'
 
 class FoodPage extends React.Component {
   componentDidMount() {
@@ -36,8 +34,8 @@ class FoodPage extends React.Component {
               <MenuSection title="ЗАКУСКИ" data={starters} />
               <MenuSection title="САЛАТЫ" data={salads} />
               <MenuSection title="СУПЫ" data={soups} />
-              <MenuSection title="ГРИЛЬ & ГОРЯЧЕЕ" data={hotFood} />
-              <MenuSection title="GRILL / STEAKS" data={grillAndSteaks} />
+              <MenuSection title="ГРИЛЬ & ГОРЯЧЕЕ" data={grillHot} />
+              <MenuSection title="GRILL / STEAKS" data={grillSteaks} />
               <MenuSection title="ДЕСЕРТЫ" data={desserts} />
             </div>
           </div>

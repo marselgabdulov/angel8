@@ -70,13 +70,13 @@ function IndexPage(props) {
       position: 'шеф-бармен',
       projects: 'Noor, Gipsy, Bar 30/7, Уголёк',
     },
-    {
-      id: 3,
-      image: props.data.Sergey.childImageSharp.fluid,
-      name: 'Сергей Захаров',
-      position: 'шеф-сомелье',
-      projects: 'Bar 30/7, Gipsy, Noor, Уголёк, Северяне',
-    },
+    // {
+    //   id: 3,
+    //   image: props.data.Sergey.childImageSharp.fluid,
+    //   name: 'Сергей Захаров',
+    //   position: 'шеф-сомелье',
+    //   projects: 'Bar 30/7, Gipsy, Noor, Уголёк, Северяне',
+    // },
     {
       id: 4,
       image: props.data.Roman.childImageSharp.fluid,

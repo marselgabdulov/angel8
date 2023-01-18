@@ -1,6 +1,6 @@
 export const irishWhiskey = [
   {
-    name: 'Jameson',
+    name: 'Bushmills Original',
     price: 320,
     id: 1,
   },
@@ -8,10 +8,5 @@ export const irishWhiskey = [
     name: 'Paddy',
     price: 320,
     id: 2,
-  },
-  {
-    name: 'Jameson Black Barrel',
-    price: 380,
-    id: 3,
   },
 ]

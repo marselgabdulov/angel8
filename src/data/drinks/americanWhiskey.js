@@ -1,7 +1,7 @@
 export const americanWhiskey = [
   {
-    name: 'Kentucky Tavern',
-    price: 320,
+    name: 'Jim Beam',
+    price: 390,
     id: 1,
   },
   {

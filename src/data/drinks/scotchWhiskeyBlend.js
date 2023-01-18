@@ -19,4 +19,14 @@ export const scotchWhiskeyBlend = [
     price: 550,
     id: 4,
   },
+  {
+    name: 'Mossburn Cask Bill #1',
+    price: 580,
+    id: 5,
+  },
+  {
+    name: 'Mossburn Cask Bill #2',
+    price: 580,
+    id: 6,
+  },
 ]

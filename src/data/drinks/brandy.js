@@ -1,6 +1,6 @@
 export const brandy = [
   {
-    name: 'Martell VS',
+    name: 'Monnet VS',
     price: 420,
     id: 1,
   },
@@ -18,10 +18,5 @@ export const brandy = [
     name: 'Remy Martin VSOP',
     price: 850,
     id: 4,
-  },
-  {
-    name: 'Martell VSOP',
-    price: 850,
-    id: 5,
   },
 ]

@@ -6,34 +6,28 @@ export const sparklingWine = [
     id: 1,
   },
   {
-    name: 'Casa Defra,Prosecco',
+    name: 'Prosecco, Belstar',
     description: 'Italy',
-    price: 2500,
+    price: 3100,
     id: 2,
   },
 
   {
-    name: 'Ruggeri, Prosecco Superiore',
+    name: 'Prosecco Superiore, Bisol',
     description: 'Italy',
-    price: 3000,
+    price: 3980,
     id: 3,
   },
   {
-    name: 'Cremant De Bourgogne',
+    name: 'Cremant, De Bourgogne',
     description: 'France',
     price: 4250,
     id: 4,
   },
   {
-    name: 'Louis Roederer, Brut Premier',
-    description: 'France',
-    price: 14000,
-    id: 5,
-  },
-  {
-    name: 'Ruinart Blanc De Blancs',
+    name: 'Ruinart, Bruit ',
     description: 'France',
     price: 16000,
-    id: 6,
+    id: 5,
   },
 ]

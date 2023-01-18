@@ -41,7 +41,7 @@ export const rumAndChacha = [
     id: 8,
   },
   {
-    name: 'Zacapa Centario Solera Gran Reserva 23 y.o (Guatemala)',
+    name: 'Gran Reserva 23 y.o (Guatemala)',
     price: 960,
     id: 9,
   },

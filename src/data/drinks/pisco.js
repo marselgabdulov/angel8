@@ -1,7 +1,7 @@
 export const pisco = [
   {
     name: 'Pisco (Chille)',
-    price: 350,
+    price: 360,
     id: 1,
   },
 ]

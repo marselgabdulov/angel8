@@ -64,4 +64,9 @@ export const coffee = [
     price: 260,
     id: 12,
   },
+  {
+    name: 'Эспрессо & Тоник',
+    price: 280,
+    id: 13,
+  },
 ]

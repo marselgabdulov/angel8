@@ -1,12 +1,12 @@
 export const beer = [
   {
-    name: 'Maisel’s Weisse (Germany, wheat beer) 0,5 л',
-    price: 380,
+    name: 'Bayreuther Hell (Germany, Lager) 0,5 л',
+    price: 450,
     id: 1,
   },
   {
-    name: 'Sweet Water (USA, IPA) 0,33 л',
-    price: 400,
+    name: 'Clausthaler (Germany /alk. free) 0,5 л',
+    price: 350,
     id: 2,
   },
   {
@@ -15,18 +15,23 @@ export const beer = [
     id: 3,
   },
   {
-    name: 'Bayreuther Hell (Germany, Lager) 0,5 л',
-    price: 380,
+    name: 'Weisse Munchner (Germany, wheat beer) 0,5 л',
+    price: 450,
     id: 4,
   },
   {
-    name: 'Landbier Dunkel (Germany, Dark) 0,5 л',
-    price: 380,
+    name: 'Schwarze Weisse (Germany, Dark) 0,5 л',
+    price: 450,
     id: 5,
   },
   {
-    name: 'Petrus Red (Belgium, Blond Ale) 0,33 л',
-    price: 500,
+    name: 'Schwarze Einsiedler (Germany, Dark) 0,5 л',
+    price: 450,
     id: 6,
+  },
+  {
+    name: 'Petrus Red (Belgium, Blond Ale) 0,33 л',
+    price: 650,
+    id: 7,
   },
 ]

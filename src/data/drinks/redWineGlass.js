@@ -1,6 +1,6 @@
 export const redWineGlass = [
   {
-    name: 'Grape Noire',
+    name: 'Saperavi, Chateau-Mukhrani',
     description: 'Georgia, 2018',
     price: 450,
     id: 1,
@@ -12,13 +12,13 @@ export const redWineGlass = [
     id: 2,
   },
   {
-    name: 'Big Top, Zinfandel',
-    description: 'USA, 2018',
-    price: 530,
+    name: 'Zinfandel, La Linda',
+    description: 'USA, 2020',
+    price: 550,
     id: 3,
   },
   {
-    name: 'Cune Crianza',
+    name: 'Garnacha',
     description: 'Spain, 2018',
     price: 480,
     id: 4,

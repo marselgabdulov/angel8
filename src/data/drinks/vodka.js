@@ -5,7 +5,7 @@ export const vodka = [
     id: 1,
   },
   {
-    name: 'Оганик водка Чистые Росы из ржаного зерна',
+    name: 'Мамонт',
     price: 300,
     id: 2,
   },
@@ -13,10 +13,5 @@ export const vodka = [
     name: 'Онегин',
     price: 300,
     id: 3,
-  },
-  {
-    name: 'Grey Goose (France)',
-    price: 450,
-    id: 4,
   },
 ]

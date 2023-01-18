@@ -1,8 +1,8 @@
 export const roseWineBottle = [
   {
-    name: 'M Minuty Rose',
-    description: 'France, 2020',
-    price: 3500,
+    name: 'The Ned, Marlborough Rose',
+    description: 'NZ, 2020',
+    price: 2500,
     id: 1,
   },
 ]

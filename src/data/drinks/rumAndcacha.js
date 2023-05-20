@@ -34,15 +34,19 @@ export const rumAndChacha = [
     price: 540,
     id: 7,
   },
-
   {
-    name: 'Botucal Reserva Exclusiva (Venezuela)',
-    price: 480,
+    name: 'Angostura 7 y.o. (Trinidad & Tobago)',
+    price: 560,
     id: 8,
   },
   {
-    name: 'Gran Reserva 23 y.o (Guatemala)',
-    price: 960,
+    name: 'Botucal Reserva Exclusiva (Venezuela)',
+    price: 780,
     id: 9,
+  },
+  {
+    name: 'Zacapa Centenario Solera Gran Reserva 23 y.o (Guatemala)',
+    price: 960,
+    id: 10,
   },
 ]

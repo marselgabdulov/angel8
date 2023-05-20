@@ -1,22 +1,22 @@
 export const gin = [
   {
-    name: 'Red Door 45%',
-    price: 680,
+    name: 'Roku Gin 43%',
+    price: 460,
     id: 1,
+  },
+  {
+    name: 'Malfy Grapefruit 41%',
+    price: 480,
+    id: 2,
   },
   {
     name: 'Bombay Sapphire 47%',
     price: 500,
-    id: 2,
-  },
-  {
-    name: 'Malfy (Limone / Graperfruit) 41%',
-    price: 480,
     id: 3,
   },
   {
-    name: "Hendrick's 44%",
-    price: 650,
+    name: 'Citadelle Jatdin D’ ETE 41,5%',
+    price: 540,
     id: 4,
   },
   {
@@ -25,13 +25,18 @@ export const gin = [
     id: 5,
   },
   {
-    name: 'Ben Lomond 43%',
-    price: 460,
+    name: 'Etsu Double yuzu 43%',
+    price: 600,
     id: 6,
+  },
+  {
+    name: 'Hendrick’s 44%',
+    price: 650,
+    id: 7,
   },
   {
     name: 'Mare 42,7%',
     price: 720,
-    id: 7,
+    id: 8,
   },
 ]

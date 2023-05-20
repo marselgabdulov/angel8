@@ -17,7 +17,7 @@ export const americanWhiskey = [
 
   {
     name: 'Woodford Reserve',
-    price: 480,
+    price: 720,
     id: 4,
   },
 ]

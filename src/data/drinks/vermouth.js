@@ -22,16 +22,16 @@ export const vermouth = [
   {
     name: 'Martini Fiero 100ml',
     price: 350,
-    id: 4,
+    id: 5,
   },
   {
     name: 'Carpano Antica Formula 50ml',
-    price: 420,
-    id: 5,
+    price: 560,
+    id: 6,
   },
   {
     name: 'Punt E Mes 50ml',
     price: 350,
-    id: 6,
+    id: 7,
   },
 ]

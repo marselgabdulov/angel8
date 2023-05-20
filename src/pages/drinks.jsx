@@ -48,7 +48,7 @@ let linksData = [
     name: 'Вина Белые по бутылкам',
   },
   {
-    id: 'redWineBottles',
+    id: 'redWineBottle',
     name: 'Вина Красные по бутылкам',
   },
   {

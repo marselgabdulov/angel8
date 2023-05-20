@@ -6,21 +6,21 @@ export const redWineGlass = [
     id: 1,
   },
   {
+    name: 'Garnacha',
+    description: 'Spain, 2018',
+    price: 480,
+    id: 2,
+  },
+  {
     name: 'Malbec Alamos',
     description: 'Argentina, 2019',
     price: 550,
-    id: 2,
+    id: 3,
   },
   {
     name: 'Zinfandel, La Linda',
     description: 'USA, 2020',
     price: 550,
-    id: 3,
-  },
-  {
-    name: 'Garnacha',
-    description: 'Spain, 2018',
-    price: 480,
     id: 4,
   },
 ]

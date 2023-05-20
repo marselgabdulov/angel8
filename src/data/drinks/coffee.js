@@ -55,18 +55,18 @@ export const coffee = [
     id: 11,
   },
   {
-    name: 'Какао 250ml',
-    price: 380,
-    id: 13,
-  },
-  {
     name: 'Кофе с халвой 200ml',
     price: 260,
     id: 12,
   },
   {
+    name: 'Какао 250ml',
+    price: 380,
+    id: 13,
+  },
+  {
     name: 'Эспрессо & Тоник',
     price: 280,
-    id: 13,
+    id: 14,
   },
 ]

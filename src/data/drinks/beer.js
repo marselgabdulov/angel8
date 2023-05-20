@@ -1,17 +1,17 @@
 export const beer = [
   {
     name: 'Bayreuther Hell (Germany, Lager) 0,5 л',
-    price: 450,
+    price: 480,
     id: 1,
   },
   {
-    name: 'Clausthaler (Germany /alk. free) 0,5 л',
-    price: 350,
+    name: 'Hofbrau Original (Germany, Lager) 0,5 л',
+    price: 480,
     id: 2,
   },
   {
-    name: 'Blue Moon (Belgium, Wheat Ale)',
-    price: 450,
+    name: 'Blue Monkey (Belgium, Wheat Ale) 0,5 л',
+    price: 350,
     id: 3,
   },
   {
@@ -25,13 +25,8 @@ export const beer = [
     id: 5,
   },
   {
-    name: 'Schwarze Einsiedler (Germany, Dark) 0,5 л',
-    price: 450,
+    name: 'Petrus RED (Belgium, 8,5% ) 0,33 л',
+    price: 620,
     id: 6,
-  },
-  {
-    name: 'Petrus Red (Belgium, Blond Ale) 0,33 л',
-    price: 650,
-    id: 7,
   },
 ]

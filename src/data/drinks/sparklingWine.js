@@ -6,16 +6,16 @@ export const sparklingWine = [
     id: 1,
   },
   {
-    name: 'Prosecco, Belstar',
-    description: 'Italy',
-    price: 3100,
+    name: 'Riesling Urban, Bruit',
+    description: 'Germany',
+    price: 3000,
     id: 2,
   },
 
   {
-    name: 'Prosecco Superiore, Bisol',
+    name: 'Prosecco, Bruni / 12',
     description: 'Italy',
-    price: 3980,
+    price: 3000,
     id: 3,
   },
   {
@@ -25,9 +25,9 @@ export const sparklingWine = [
     id: 4,
   },
   {
-    name: 'Ruinart, Bruit ',
-    description: 'France',
-    price: 16000,
+    name: 'Hure Freres, B & B',
+    description: 'France, Champagne',
+    price: 16500,
     id: 5,
   },
 ]

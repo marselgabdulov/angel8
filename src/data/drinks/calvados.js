@@ -1,6 +1,6 @@
 export const calvados = [
   {
-    name: "Chateau du Breuil 'Fine' Calvados",
+    name: 'Chateau du Breuil "Fine" Calvados',
     price: 450,
     id: 1,
   },

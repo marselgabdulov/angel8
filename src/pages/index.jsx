@@ -67,7 +67,7 @@ function IndexPage(props) {
       id: 2,
       image: props.data.Konstantin.childImageSharp.fluid,
       name: 'Константин Комаров',
-      position: 'старший бармен',
+      position: 'шеф-бармен',
       projects: 'Noor, Gipsy, Bar 30/7, Уголёк',
     },
     {

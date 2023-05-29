@@ -67,25 +67,32 @@ function IndexPage(props) {
       id: 2,
       image: props.data.Konstantin.childImageSharp.fluid,
       name: 'Константин Комаров',
-      position: 'шеф-бармен',
+      position: 'старший бармен',
       projects: 'Noor, Gipsy, Bar 30/7, Уголёк',
     },
-    // {
-    //   id: 3,
-    //   image: props.data.Sergey.childImageSharp.fluid,
-    //   name: 'Сергей Захаров',
-    //   position: 'шеф-сомелье',
-    //   projects: 'Bar 30/7, Gipsy, Noor, Уголёк, Северяне',
-    // },
+    {
+      id: 3,
+      image: props.data.Roman.childImageSharp.fluid,
+      name: 'Роман Пичхадзе',
+      position: 'старший бармен',
+      projects: 'Angel8',
+    },
     {
       id: 4,
-      image: props.data.Roman.childImageSharp.fluid,
-      name: 'Роман Голубев',
-      position: 'су-шеф',
+      image: props.data.Ivan.childImageSharp.fluid,
+      name: 'Иван Середа',
+      position: 'виночéрпий',
       projects: 'Angel8',
     },
     {
       id: 5,
+      image: props.data.Michael.childImageSharp.fluid,
+      name: 'Михаил Корчагин',
+      position: 'су-шеф',
+      projects: 'Angel8',
+    },
+    {
+      id: 6,
       image: props.data.Lado.childImageSharp.fluid,
       name: 'Ладо Прангишвили',
       position: 'идейный вдохновитель',
@@ -158,16 +165,19 @@ export const pageQuery = graphql`
     Lado: file(relativePath: { eq: "team/Lado2.jpg" }) {
       ...fluidImage
     }
-    Sergey: file(relativePath: { eq: "team/Sergey2.jpg" }) {
+    Michael: file(relativePath: { eq: "team/Michael.jpeg" }) {
       ...fluidImage
     }
     Konstantin: file(relativePath: { eq: "team/Konstantin2.jpg" }) {
       ...fluidImage
     }
+    Roman: file(relativePath: { eq: "team/Roman.jpg" }) {
+      ...fluidImage
+    }
     Arman: file(relativePath: { eq: "team/Arman2.jpg" }) {
       ...fluidImage
     }
-    Roman: file(relativePath: { eq: "team/Roman.jpg" }) {
+    Ivan: file(relativePath: { eq: "team/Ivan.jpg" }) {
       ...fluidImage
     }
     vertical_first: file(relativePath: { eq: "images_section/alko.jpg" }) {

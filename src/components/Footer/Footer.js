@@ -11,7 +11,11 @@ function Footer() {
         </div>
         <div className="footer__author">
           разработка{' '}
-          <a href="https://marsdev.ru/" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/marselgabdulov"
+            target="_blank"
+            rel="noreferrer"
+          >
             marsdev
           </a>
         </div>

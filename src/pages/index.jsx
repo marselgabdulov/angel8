@@ -130,9 +130,15 @@ function IndexPage(props) {
             verticalFirst={props.data.vertical_first.childImageSharp.fluid}
             verticalSecond={props.data.vertical_second.childImageSharp.fluid}
             verticalThird={props.data.vertical_third.childImageSharp.fluid}
+            verticalFourth={props.data.vertical_fourth.childImageSharp.fluid}
+            verticalFifth={props.data.vertical_fifth.childImageSharp.fluid}
+            verticalSix={props.data.vertical_six.childImageSharp.fluid}
             quadrantFirst={props.data.quadrant_first.childImageSharp.fluid}
             quadrantSecond={props.data.quadrant_second.childImageSharp.fluid}
+            quadrantThird={props.data.quadrant_third.childImageSharp.fluid}
+            quadrantFourth={props.data.quadrant_fourth.childImageSharp.fluid}
             horizontal={props.data.horizontal.childImageSharp.fluid}
+            horizontalSecond={props.data.horizontalSecond.childImageSharp.fluid}
           />
           <div className="final-section" ref={ref}>
             <TeamSection teamData={teamData} />
@@ -189,13 +195,35 @@ export const pageQuery = graphql`
     vertical_third: file(relativePath: { eq: "images_section/shrimps.jpg" }) {
       ...fluidImage
     }
+    vertical_fourth: file(
+      relativePath: { eq: "images_section/wine-glass.jpg" }
+    ) {
+      ...fluidImage
+    }
+    vertical_fifth: file(relativePath: { eq: "images_section/cocktail.jpg" }) {
+      ...fluidImage
+    }
+    vertical_six: file(relativePath: { eq: "images_section/breakfast.jpg" }) {
+      ...fluidImage
+    }
     quadrant_first: file(relativePath: { eq: "images_section/desert2.jpg" }) {
       ...fluidImage
     }
     quadrant_second: file(relativePath: { eq: "images_section/flower.jpg" }) {
       ...fluidImage
     }
+    quadrant_third: file(relativePath: { eq: "images_section/tar-tar.jpg" }) {
+      ...fluidImage
+    }
+    quadrant_fourth: file(relativePath: { eq: "images_section/knife.jpg" }) {
+      ...fluidImage
+    }
     horizontal: file(relativePath: { eq: "images_section/cooks1.jpg" }) {
+      ...fluidImage
+    }
+    horizontalSecond: file(
+      relativePath: { eq: "images_section/barCounter.jpg" }
+    ) {
       ...fluidImage
     }
   }

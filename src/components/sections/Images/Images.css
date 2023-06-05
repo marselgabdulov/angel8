@@ -234,6 +234,7 @@
   .vertical,
   .quadrant {
     height: 725px;
+    margin-top: 0.75em;
   }
 
   .quadrant {

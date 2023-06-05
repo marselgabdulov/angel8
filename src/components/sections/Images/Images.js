@@ -5,9 +5,15 @@ function Images({
   verticalFirst,
   verticalSecond,
   verticalThird,
+  verticalFourth,
+  verticalFifth,
+  verticalSix,
   quadrantFirst,
   quadrantSecond,
+  quadrantThird,
+  quadrantFourth,
   horizontal,
+  horizontalSecond,
 }) {
   return (
     <section id="images" className="images">
@@ -41,6 +47,34 @@ function Images({
           className="horizontal"
           style={{ backgroundImage: `url(${horizontal.src})` }}
         ></div>
+        <div
+          className="horizontal"
+          style={{ backgroundImage: `url(${horizontalSecond.src})` }}
+        ></div>
+        <div className="vertical">
+          <div
+            className="vertical__first"
+            style={{ backgroundImage: `url(${verticalFourth.src})` }}
+          ></div>
+          <div
+            className="vertical__second"
+            style={{ backgroundImage: `url(${verticalFifth.src})` }}
+          ></div>
+          <div
+            className="vertical__fourth"
+            style={{ backgroundImage: `url(${verticalSix.src})` }}
+          ></div>
+        </div>
+        <div className="quadrant">
+          <div
+            className="quadrant__first"
+            style={{ backgroundImage: `url(${quadrantThird.src})` }}
+          ></div>
+          <div
+            className="quadrant__second"
+            style={{ backgroundImage: `url(${quadrantFourth.src})` }}
+          ></div>
+        </div>
       </div>
     </section>
   )

@@ -55,13 +55,13 @@
 
   .vertical * {
     height: 75vh;
-    margin-bottom: 0.5em;
+    margin-top: 0.5em;
     width: 100%;
   }
 
   .quadrant * {
     height: 50vh;
-    margin-bottom: 0.5em;
+    margin-top: 0.5em;
     width: 100%;
   }
 
@@ -86,9 +86,6 @@
   .vertical,
   .quadrant {
     height: 400px;
-  }
-
-  .quadrant {
     margin-top: 0.5em;
   }
 
@@ -123,9 +120,6 @@
   .vertical,
   .quadrant {
     height: 350px;
-  }
-
-  .quadrant {
     margin-top: 0.75em;
   }
 
@@ -160,9 +154,6 @@
   .vertical,
   .quadrant {
     height: 500px;
-  }
-
-  .quadrant {
     margin-top: 0.75em;
   }
 
@@ -197,9 +188,6 @@
   .vertical,
   .quadrant {
     height: 600px;
-  }
-
-  .quadrant {
     margin-top: 0.75em;
   }
 
@@ -234,10 +222,6 @@
   .vertical,
   .quadrant {
     height: 725px;
-    margin-top: 0.75em;
-  }
-
-  .quadrant {
     margin-top: 0.75em;
   }
 

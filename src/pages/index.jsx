@@ -162,7 +162,7 @@ export const fluidImage = graphql`
 
 export const pageQuery = graphql`
   query {
-    intro_image: file(relativePath: { eq: "intro/intro_flower.jpg" }) {
+    intro_image: file(relativePath: { eq: "intro/barCounter.jpg" }) {
       ...fluidImage
     }
     about_one: file(relativePath: { eq: "about/about.jpg" }) {
@@ -222,7 +222,7 @@ export const pageQuery = graphql`
       ...fluidImage
     }
     horizontalSecond: file(
-      relativePath: { eq: "images_section/barCounter.jpg" }
+      relativePath: { eq: "images_section/intro_flower.jpg" }
     ) {
       ...fluidImage
     }

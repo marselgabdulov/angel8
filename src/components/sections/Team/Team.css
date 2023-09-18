@@ -90,7 +90,7 @@
 
   .team__cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
   }
 }
@@ -113,7 +113,7 @@
 
   .team__cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 
@@ -135,6 +135,6 @@
 
   .team__cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 }

@@ -1,7 +1,7 @@
 export const rumAndChacha = [
   {
-    name: 'Santero Silver Dry (Cuba)',
-    price: 320,
+    name: 'Legendario Blanco / Cuba',
+    price: 440,
     id: 1,
   },
   {
@@ -20,13 +20,13 @@ export const rumAndChacha = [
     id: 4,
   },
   {
-    name: 'Botucal Mantuano (Venezuela)',
-    price: 420,
+    name: 'Beach House Mauritius / France',
+    price: 480,
     id: 5,
   },
   {
-    name: 'Beach House Mauritius (France)',
-    price: 480,
+    name: 'Angostura 7 / Trinidad & Tobago',
+    price: 560,
     id: 6,
   },
   {
@@ -35,18 +35,33 @@ export const rumAndChacha = [
     id: 7,
   },
   {
-    name: 'Angostura 7 y.o. (Trinidad & Tobago)',
-    price: 560,
+    name: 'Brugal / Anejo | Exstra vie / Domicana',
+    price: '380/580',
     id: 8,
   },
   {
-    name: 'Botucal Reserva Exclusiva (Venezuela)',
-    price: 780,
+    name: 'Don Papa / Philippines',
+    price: 580,
     id: 9,
   },
   {
-    name: 'Zacapa Centenario Solera Gran Reserva 23 y.o (Guatemala)',
-    price: 960,
+    name: 'Botucal Reserva Exclusiva / Venezuela',
+    price: 740,
     id: 10,
+  },
+  {
+    name: 'Don Papa / Sherry Casks / Philippines',
+    price: 950,
+    id: 11,
+  },
+  {
+    name: 'Don Papa 10 / Philippines',
+    price: 1050,
+    id: 12,
+  },
+  {
+    name: 'Zacapa 23 / Solera Gran Reserva / Guatemala',
+    price: 1250,
+    id: 13,
   },
 ]

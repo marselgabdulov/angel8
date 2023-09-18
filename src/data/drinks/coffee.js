@@ -45,28 +45,23 @@ export const coffee = [
     id: 9,
   },
   {
-    name: 'Макиато 50ml',
+    name: 'Флэт Уайт 250ml',
     price: 200,
     id: 10,
   },
   {
-    name: 'Флэт Уайт 250ml',
-    price: 200,
-    id: 11,
-  },
-  {
     name: 'Кофе с халвой 200ml',
     price: 260,
-    id: 12,
+    id: 11,
   },
   {
     name: 'Какао 250ml',
     price: 380,
-    id: 13,
+    id: 12,
   },
   {
     name: 'Эспрессо & Тоник',
     price: 280,
-    id: 14,
+    id: 13,
   },
 ]

@@ -1,11 +1,11 @@
 export const gin = [
   {
-    name: 'Roku Gin 43%',
-    price: 460,
+    name: 'Cruxland / Africa / 42,7%',
+    price: 380,
     id: 1,
   },
   {
-    name: 'Malfy Grapefruit 41%',
+    name: 'Malfy / Italy / Grapefruit / 41%',
     price: 480,
     id: 2,
   },
@@ -20,23 +20,28 @@ export const gin = [
     id: 4,
   },
   {
-    name: 'Drumshanbo Gunpowder Irish 43%',
-    price: 580,
+    name: 'Roku / Japan / 43%',
+    price: 560,
     id: 5,
   },
   {
-    name: 'Etsu Double yuzu 43%',
-    price: 600,
+    name: 'Neroli Gin / France / 46%',
+    price: 580,
     id: 6,
   },
   {
-    name: 'Hendrick’s 44%',
-    price: 650,
+    name: 'Drumshanbo / Irish / 43%',
+    price: 580,
     id: 7,
   },
   {
     name: 'Mare 42,7%',
     price: 720,
     id: 8,
+  },
+  {
+    name: 'Bash-Up Gin / France / 46%',
+    price: 920,
+    id: 9,
   },
 ]

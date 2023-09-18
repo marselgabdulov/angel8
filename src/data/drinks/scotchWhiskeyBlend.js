@@ -5,8 +5,8 @@ export const scotchWhiskeyBlend = [
     id: 1,
   },
   {
-    name: "Dewar's 12 y.o",
-    price: 550,
+    name: 'Monkey Sholder / malt blend',
+    price: 630,
     id: 2,
   },
   {

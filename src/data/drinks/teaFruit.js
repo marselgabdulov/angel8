@@ -1,22 +1,22 @@
 export const teaFruit = [
   {
     name: 'Облепиха - Мед - Липа',
-    price: 400,
+    price: 420,
     id: 1,
   },
   {
     name: 'Имбирь - Ромашка - Мед - Лимон',
-    price: 400,
+    price: 420,
     id: 2,
   },
   {
     name: 'Малина - Имбирь - Мед',
-    price: 400,
+    price: 420,
     id: 3,
   },
   {
     name: 'Брусника - Мед - Мята',
-    price: 400,
+    price: 420,
     id: 4,
   },
 ]

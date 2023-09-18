@@ -1,26 +1,26 @@
 export const whiteAndRoseGlass = [
   {
-    name: 'Vinho Verde',
-    description: 'Portugal, 2021',
-    price: 400,
+    name: 'Sauvignon Blanc',
+    description: 'NZ, 2018',
+    price: 600,
     id: 1,
-  },
-  {
-    name: 'Gruner,Veltliner',
-    description: 'Austria, 2021',
-    price: 500,
-    id: 2,
   },
   {
     name: 'Riesling, Mosel',
     description: 'Germany, 2021',
-    price: 550,
+    price: 620,
+    id: 2,
+  },
+  {
+    name: 'Vermentino, Solo',
+    description: 'Italy, 2021',
+    price: 500,
     id: 3,
   },
   {
-    name: 'Sauvignon Blanc',
-    description: 'NZ, 2018',
-    price: 600,
+    name: 'Vinho Verde',
+    description: 'Portugal, 2021',
+    price: 400,
     id: 4,
   },
 ]

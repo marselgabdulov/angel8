@@ -5,23 +5,23 @@ export const portoAndJerez = [
     id: 1,
   },
   {
-    name: 'Sandeman Fino Sherry DO',
+    name: 'Bardalillo Crem | Amontilado | Fino / Sherry',
     price: 340,
     id: 2,
   },
   {
-    name: 'Bardalillo (Crem / Amontilado)',
-    price: 340,
+    name: 'Valdespino / Pedro Ximenez / Sherry',
+    price: 580,
     id: 3,
   },
   {
-    name: 'Valdespino El Candado Pedro Ximenez Sherry',
-    price: 580,
+    name: 'Dow*s / LBV | 2015 / Sherry',
+    price: 420,
     id: 4,
   },
   {
-    name: "Graham's 10 y.o Tawny Port",
-    price: 680,
+    name: 'Graham’s 20 / Tawny port',
+    price: 1660,
     id: 5,
   },
 ]

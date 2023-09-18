@@ -1,12 +1,17 @@
 export const irishWhiskey = [
   {
-    name: 'Paddy',
-    price: 320,
+    name: 'Bushmills',
+    price: 340,
     id: 2,
   },
   {
     name: 'Teeling Small Batch',
     price: 560,
     id: 2,
+  },
+  {
+    name: 'Writers Tears',
+    price: 720,
+    id: 3,
   },
 ]

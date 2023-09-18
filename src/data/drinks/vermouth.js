@@ -1,37 +1,37 @@
 export const vermouth = [
   {
-    name: 'Martini Extra Dry 100ml',
+    name: 'Martini Dry / Bianco / Rosso 100ml',
     price: 350,
     id: 1,
   },
   {
-    name: 'Martini Rosato 100ml',
+    name: 'Martini Reserva Speciale Ambrato 50ml',
     price: 350,
     id: 2,
   },
   {
-    name: 'Martini Rosso 100ml',
+    name: 'Martini Reserva Speciale Rubino 50ml',
     price: 350,
     id: 3,
   },
   {
-    name: 'Martini Bianco 100ml',
+    name: 'Belsazar Rose 50ml',
     price: 350,
     id: 4,
   },
   {
-    name: 'Martini Fiero 100ml',
+    name: 'Punt E Mes 50ml',
     price: 350,
     id: 5,
   },
   {
-    name: 'Carpano Antica Formula 50ml',
-    price: 560,
+    name: 'Lillet 50ml',
+    price: 380,
     id: 6,
   },
   {
-    name: 'Punt E Mes 50ml',
-    price: 350,
+    name: 'Cocchi Vermouth Di Torino 50ml',
+    price: 400,
     id: 7,
   },
 ]

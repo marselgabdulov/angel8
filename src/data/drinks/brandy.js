@@ -1,12 +1,12 @@
 export const brandy = [
   {
-    name: 'Monnet VS',
-    price: 420,
+    name: 'Barbadillo B&B / brandy',
+    price: 360,
     id: 1,
   },
   {
-    name: 'Remy Martin VSOP',
-    price: 850,
+    name: 'Bache VS / cognac',
+    price: 420,
     id: 2,
   },
   {

@@ -14,4 +14,9 @@ export const vodka = [
     price: 300,
     id: 3,
   },
+  {
+    name: 'Shmidt',
+    price: 320,
+    id: 4,
+  },
 ]

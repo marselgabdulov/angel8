@@ -39,4 +39,9 @@ export const aperitif = [
     price: 450,
     id: 8,
   },
+  {
+    name: 'Fernet / Branca / Mentha',
+    price: 380,
+    id: 9,
+  },
 ]

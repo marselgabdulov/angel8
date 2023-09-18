@@ -10,14 +10,18 @@ export const americanWhiskey = [
     id: 2,
   },
   {
-    name: "Makes's Mark",
-    price: 480,
+    name: 'The WiseMan',
+    price: 850,
     id: 3,
   },
-
+  {
+    name: "Makes's Mark",
+    price: 540,
+    id: 4,
+  },
   {
     name: 'Woodford Reserve',
     price: 720,
-    id: 4,
+    id: 5,
   },
 ]

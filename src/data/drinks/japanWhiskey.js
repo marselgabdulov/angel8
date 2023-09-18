@@ -5,8 +5,13 @@ export const japanWhiskey = [
     id: 1,
   },
   {
-    name: 'Tenjaku Pure Malt',
-    price: 650,
+    name: 'Nirasaki',
+    price: 450,
     id: 2,
+  },
+  {
+    name: 'Shinobu / Pure Malt',
+    price: 950,
+    id: 3,
   },
 ]

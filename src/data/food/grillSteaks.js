@@ -5,18 +5,18 @@ export const grillSteaks = [
     id: 1,
   },
   {
-    name: 'Сердца индейки & корень сельдерея, соус из сморчков',
-    price: 950,
+    name: 'Flank steak & картофель нуазет',
+    price: 1250,
     id: 2,
   },
   {
-    name: 'Tri-Tip & гратен из батата / Брясоус из печеных перцев / Брянск',
-    price: 1250,
+    name: 'New York Steak / Брянск / 100гр.',
+    price: 650,
     id: 3,
   },
   {
-    name: 'New York Steak / Брянск / 100гр.',
-    price: 620,
+    name: 'Cердца индейки / Халуми / соус Бордолез',
+    price: 950,
     id: 4,
   },
 ]

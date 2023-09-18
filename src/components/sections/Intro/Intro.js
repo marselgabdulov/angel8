@@ -15,8 +15,8 @@ function IntroSection({ introImage }) {
         </div>
         <h1 className="intro__title">Cocktails / Grill / Wine</h1>
         <span>Тула пр. Ленина 85 корпус 1 вход 5</span>
-        <span>Понедельник - Пятница 12:00 - 23:00</span>
-        <span>Суббота и Воскресенье 12:00 - 24:00</span>
+        <span>Воскресенье - Четверг 12:00 - 23:00</span>
+        <span>Пятница и Суббота 12:00 - 24:00</span>
         <a href="tel:+74872770247">+7 4872 77 02 47</a>
         <a
           href="https://www.instagram.com/angel_bar_grill/?hl=ru"

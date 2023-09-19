@@ -11,7 +11,11 @@ function VideoSection() {
           src="https://www.youtube.com/embed/BY4inryexz8"
           frameborder="0"
           allow="autoplay; encrypted-media"
-          allowfullscreen
+          allowfullscreen="allowfullscreen"
+          mozallowfullscreen="mozallowfullscreen"
+          msallowfullscreen="msallowfullscreen"
+          oallowfullscreen="oallowfullscreen"
+          webkitallowfullscreen="webkitallowfullscreen"
           title="video"
         />
       </div>

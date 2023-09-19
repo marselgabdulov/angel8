@@ -11,6 +11,7 @@ import IntroSection from '../components/sections/Intro/Intro'
 import AboutSection from '../components/sections/About/About'
 import TeamSection from '../components/sections/Team/Team'
 import ImagesSection from '../components/sections/Images/Images'
+import VideoSection from '../components/sections/Video/Video'
 
 import InstagramLogo from '../assets/instagram-logo.svg'
 
@@ -21,7 +22,7 @@ import './index.scss'
 import classnames from 'classnames'
 
 function IndexPage(props) {
-  const sections = ['intro', 'about', 'images', 'team']
+  const sections = ['intro', 'about', 'images', 'video', 'team']
   const [currentSection, setCurrentSection] = useState({ isFinal: false })
   const [currentSectionIndex, setCurrentSectionIndex] = useState(0)
   const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.5 })
@@ -119,6 +120,7 @@ function IndexPage(props) {
             horizontal={props.data.horizontal.childImageSharp.fluid}
             horizontalSecond={props.data.horizontalSecond.childImageSharp.fluid}
           />
+          <VideoSection />
           <div className="final-section" ref={ref}>
             <TeamSection teamData={teamData} />
           </div>

@@ -25,6 +25,7 @@ function IntroSection({ introImage }) {
         >
           Instagram
         </a>
+        <a href="mailto:info@angel8bar.ru">info@angel8bar.ru</a>
       </div>
 
       <div

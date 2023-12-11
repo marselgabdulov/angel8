@@ -12,21 +12,21 @@ export const grappa = [
   {
     name: 'Grappa Moscato',
     price: 720,
-    id: 2,
+    id: 3,
   },
   {
     name: 'Pisco Chile / Peru',
     price: 380,
-    id: 2,
+    id: 4,
   },
   {
     name: 'Ouzo / Greece',
     price: 350,
-    id: 2,
+    id: 5,
   },
   {
     name: 'Weiser Shnaps Apricot / Plum / Williams pear',
     price: 460,
-    id: 2,
+    id: 6,
   },
 ]

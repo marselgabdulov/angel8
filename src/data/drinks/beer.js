@@ -10,8 +10,8 @@ export const beer = [
     id: 2,
   },
   {
-    name: 'Weisse Munchner (Germany, wheat beer) 0,5 л',
-    price: 450,
+    name: 'Blanche de Namur / Wheat | Belgium / 0,33 л',
+    price: 690,
     id: 3,
   },
   {
@@ -20,8 +20,8 @@ export const beer = [
     id: 4,
   },
   {
-    name: 'Duvel Red Cup / Strong 7% | Belgium / 0,33',
-    price: 550,
+    name: 'Chimay Red Cup / Strong 7% | Belgium / 0,33 л',
+    price: 560,
     id: 5,
   },
   {

@@ -70,12 +70,12 @@ export const singleMalt = [
     id: 14,
   },
   {
-    name: 'Glenfiddich 21 y.o. (Speyside)',
-    price: 1850,
+    name: 'Glenfiddich 12 | 21 / Speyside',
+    price: '980/1850',
     id: 16,
   },
   {
-    name: 'The Macallan 18 y.o. (Speyside',
+    name: 'The Macallan 18 y.o. / Speyside',
     price: 2350,
     id: 16,
   },

@@ -1,6 +1,6 @@
 export const portoAndJerez = [
   {
-    name: 'Martinez Fine Tawny',
+    name: 'Niepoort Fine Tawny / Porto',
     price: 320,
     id: 1,
   },
@@ -10,18 +10,28 @@ export const portoAndJerez = [
     id: 2,
   },
   {
-    name: 'Valdespino / Pedro Ximenez / Sherry',
+    name: 'Bardalillo Pedro Ximenez / Sherry',
     price: 580,
     id: 3,
   },
   {
-    name: 'Dow*s / LBV | 2015 / Sherry',
-    price: 420,
+    name: 'Dow”s Fine white | LBV / Porto',
+    price: '320/420',
     id: 4,
   },
   {
-    name: 'Graham’s 20 / Tawny port',
-    price: 1660,
+    name: 'Graham’s LBV 2013',
+    price: 660,
     id: 5,
+  },
+  {
+    name: 'Graham’s 10 Tawny port',
+    price: 1150,
+    id: 6,
+  },
+  {
+    name: 'Graham’s 20 / Tawny port',
+    price: 1800,
+    id: 7,
   },
 ]

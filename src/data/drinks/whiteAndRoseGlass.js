@@ -14,7 +14,7 @@ export const whiteAndRoseGlass = [
   {
     name: 'Vermentino, Solo',
     description: 'Italy, 2021',
-    price: 500,
+    price: 480,
     id: 3,
   },
   {

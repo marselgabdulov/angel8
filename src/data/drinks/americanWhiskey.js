@@ -24,4 +24,9 @@ export const americanWhiskey = [
     price: 720,
     id: 5,
   },
+  {
+    name: 'Copper Fox Ry',
+    price: 1140,
+    id: 6,
+  },
 ]

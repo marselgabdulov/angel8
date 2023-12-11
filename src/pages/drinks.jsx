@@ -12,6 +12,7 @@ import { beer } from '../data/drinks/beer'
 import { brandy } from '../data/drinks/brandy'
 import { calvados } from '../data/drinks/calvados'
 import { cocktails } from '../data/drinks/cocktails'
+import { cocktailsSpecial } from '../data/drinks/cocktailsSpecial'
 import { coffee } from '../data/drinks/coffee'
 import { coffeeComplicated } from '../data/drinks/coffeeComplicated'
 import { gin } from '../data/drinks/gin'
@@ -119,7 +120,10 @@ let linksData = [
     id: 'cocktails',
     name: 'Коктейли',
   },
-
+  {
+    id: 'cocktailsSpecial',
+    name: 'Зимние коктейли',
+  },
   {
     id: 'water',
     name: 'Вода',
@@ -252,6 +256,11 @@ function DrinksPage() {
               title="ANGEL / 8 COCKTAILS"
               data={cocktails}
             />
+            <MenuSection
+              id="cocktailsSpecial"
+              title="WINTER COCKTAIL SPECIAL"
+              data={cocktailsSpecial}
+            />
             <MenuSection id="water" title="Вода" data={water} />
             <MenuSection id="smoothies" title="СМУЗИ 300 мл" data={smoothies} />
             <MenuSection
@@ -268,7 +277,6 @@ function DrinksPage() {
               data={hotAlco}
             />
             <MenuSection id="coffee" title="КОФЕ" data={coffee} />
-            <MenuSection title="КОФЕ С ДОБАВКАМИ" data={coffeeComplicated} />
             <MenuSection
               id="tea"
               title="ЧАЙ НА ЯГОДАХ И ФРУКТАХ 450 мл"

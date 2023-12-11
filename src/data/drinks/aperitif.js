@@ -15,7 +15,7 @@ export const aperitif = [
     id: 3,
   },
   {
-    name: 'Becherovka/Becherovla lemon',
+    name: 'Becherovka Original | lemon',
     price: 380,
     id: 4,
   },
@@ -40,7 +40,7 @@ export const aperitif = [
     id: 8,
   },
   {
-    name: 'Fernet / Branca / Mentha',
+    name: 'Fernet Branca | Mentha',
     price: 380,
     id: 9,
   },

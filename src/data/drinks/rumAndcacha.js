@@ -10,8 +10,8 @@ export const rumAndChacha = [
     id: 2,
   },
   {
-    name: 'Bacardi Oakheart (Puerto Rico)',
-    price: 360,
+    name: 'Matusalem 7 Solera / Cuba',
+    price: 480,
     id: 3,
   },
   {
@@ -50,6 +50,11 @@ export const rumAndChacha = [
     id: 10,
   },
   {
+    name: 'Matusalem 15 Gran Reserva / Cuba',
+    price: 740,
+    id: 14,
+  },
+  {
     name: 'Don Papa / Sherry Casks / Philippines',
     price: 950,
     id: 11,
@@ -63,5 +68,20 @@ export const rumAndChacha = [
     name: 'Zacapa 23 / Solera Gran Reserva / Guatemala',
     price: 1250,
     id: 13,
+  },
+  {
+    name: 'Valdespino Viejo | Sherry Casks / Spain',
+    price: 1300,
+    id: 16,
+  },
+  {
+    name: 'Matusalem 23 Gran Reserva / Cuba',
+    price: 1450,
+    id: 14,
+  },
+  {
+    name: 'Zacapa XO Solera Gran Reserva / Guatemala',
+    price: 1950,
+    id: 15,
   },
 ]

@@ -36,8 +36,13 @@ export const gin = [
   },
   {
     name: 'Mare 42,7%',
-    price: 720,
+    price: 580,
     id: 8,
+  },
+  {
+    name: 'Mare Capri / Spain / 42,7%',
+    price: 620,
+    id: 10,
   },
   {
     name: 'Bash-Up Gin / France / 46%',

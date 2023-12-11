@@ -5,8 +5,8 @@ export const grillSteaks = [
     id: 1,
   },
   {
-    name: 'Flank steak & картофель нуазет',
-    price: 1250,
+    name: 'Tri Tip & гратен из батата / томаты конфи',
+    price: 1280,
     id: 2,
   },
   {

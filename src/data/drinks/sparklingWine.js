@@ -1,14 +1,14 @@
 export const sparklingWine = [
   {
-    name: 'Bio Bio Bubbles, extra dry 150/750',
+    name: 'Bio Bio Bubbles, extra dry 150ml',
     description: 'Italy',
-    price: '450/2250',
+    price: 450,
     id: 1,
   },
   {
     name: 'Cava, Dos Caprichos',
     description: 'Spain',
-    price: 3000,
+    price: 2500,
     id: 2,
   },
   {
@@ -18,19 +18,19 @@ export const sparklingWine = [
     id: 3,
   },
   {
-    name: 'Prosecco, Bruni / 12',
+    name: 'Prosecco, Rugeri / 12',
     description: 'Italy',
-    price: 3000,
+    price: 4950,
     id: 4,
   },
   {
-    name: 'Cremant,Bruit /Rose Cuvee Francoise',
+    name: 'Cremant / Cuvee Francoise',
     description: 'France',
     price: 4000,
     id: 5,
   },
   {
-    name: 'Hure Freres, B & B',
+    name: 'Champagne B & B / Hure Freres',
     description: 'France, Champagne',
     price: 16500,
     id: 6,

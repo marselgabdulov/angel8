@@ -1,17 +1,22 @@
 export const japanWhiskey = [
   {
-    name: 'Hatozaki',
-    price: 440,
+    name: 'Shinobu / Pure Malt',
+    price: 950,
     id: 1,
   },
   {
-    name: 'Nirasaki',
-    price: 450,
+    name: 'Togouchi blended',
+    price: 720,
     id: 2,
   },
   {
-    name: 'Shinobu / Pure Malt',
-    price: 950,
+    name: 'Nikka Coffe grain',
+    price: 1950,
     id: 3,
+  },
+  {
+    name: 'Hibiki Japanese Harmony',
+    price: 2950,
+    id: 4,
   },
 ]

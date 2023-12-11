@@ -1,26 +1,26 @@
 export const hotAlco = [
   {
-    name: 'Hot Bulleret Rum',
-    description: 'ром, яблоко, специи',
-    price: 520,
+    name: 'Hot Buttered Rum Pistatio',
+    description: 'ром / яблоко / специи / пена из фисташек',
+    price: 550,
     id: 1,
   },
   {
-    name: 'Apple Tody',
-    description: 'бренди, мед, специи',
-    price: 520,
+    name: 'Peach Toddy',
+    description: 'ром / грейпфрут / персик',
+    price: 550,
     id: 2,
   },
   {
     name: 'Bishop',
-    description: 'портвейн, мед, апельсин, специи',
-    price: 520,
+    description: 'портвейн, мед, апельсин',
+    price: 550,
     id: 3,
   },
   {
-    name: 'Глинтвейн',
-    description: 'кр. вино, бренди, фрукты, специи',
-    price: 520,
+    name: 'Глинтвейн / red | white',
+    description: 'вино / бренди / фрукты / специи',
+    price: 550,
     id: 4,
   },
 ]

@@ -30,13 +30,15 @@ class FoodPage extends React.Component {
                 Скачать меню PDF
               </a>
 
-              <MenuSection title="ПОЗДНИЕ ЗАВТРАКИ 12:00-15:00" data={brunch} />
-              <MenuSection title="ЗАКУСКИ" data={starters} />
-              <MenuSection title="САЛАТЫ" data={salads} />
+              <MenuSection title="ПОЗДНИЙ ЗАВТРАК 12:00-15:00" data={brunch} />
+              <MenuSection title="ЗАКУСКИ / САЛАТЫ" data={salads} />
               <MenuSection title="СУПЫ" data={soups} />
-              <MenuSection title="ГРИЛЬ & ГОРЯЧЕЕ" data={grillHot} />
+              <MenuSection title="GRILL / ГОРЯЧЕЕ" data={grillHot} />
               <MenuSection title="GRILL / STEAKS" data={grillSteaks} />
-              <MenuSection title="ДЕСЕРТЫ" data={desserts} />
+              <MenuSection
+                title="ДЕСЕРТЫ/ МОРОЖЕНОЕ / СОРБЕТ"
+                data={desserts}
+              />
             </div>
           </div>
         </Layout>

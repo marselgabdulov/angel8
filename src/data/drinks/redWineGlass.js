@@ -1,8 +1,8 @@
 export const redWineGlass = [
   {
-    name: 'Saperavi, Chateau-Mukhrani',
-    description: 'Georgia, 2018',
-    price: 450,
+    name: 'Pinotage',
+    description: 'S-Africa | 2020',
+    price: 520,
     id: 1,
   },
   {

@@ -1,6 +1,6 @@
 export const vermouth = [
   {
-    name: 'Martini Dry / Bianco / Rosso 100ml',
+    name: 'Martini Dry | Bianco | Rosso 100 ml',
     price: 350,
     id: 1,
   },
@@ -33,5 +33,10 @@ export const vermouth = [
     name: 'Cocchi Vermouth Di Torino 50ml',
     price: 400,
     id: 7,
+  },
+  {
+    name: 'Carpano Antica Formula 50 ml',
+    price: 560,
+    id: 8,
   },
 ]

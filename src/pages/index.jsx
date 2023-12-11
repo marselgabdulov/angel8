@@ -181,13 +181,13 @@ export const pageQuery = graphql`
     vertical_six: file(relativePath: { eq: "images_section/breakfast.jpg" }) {
       ...fluidImage
     }
-    vertical_seven: file(relativePath: { eq: "images_section/ES-21.jpg" }) {
+    vertical_seven: file(relativePath: { eq: "images_section/ES-26.jpg" }) {
       ...fluidImage
     }
-    vertical_eght: file(relativePath: { eq: "images_section/ES-57.jpg" }) {
+    vertical_eght: file(relativePath: { eq: "images_section/ES-52.jpg" }) {
       ...fluidImage
     }
-    vertical_nine: file(relativePath: { eq: "images_section/ES-69.jpg" }) {
+    vertical_nine: file(relativePath: { eq: "images_section/ES-35.jpg" }) {
       ...fluidImage
     }
     quadrant_first: file(relativePath: { eq: "images_section/desert2.jpg" }) {
@@ -205,9 +205,7 @@ export const pageQuery = graphql`
     horizontal: file(relativePath: { eq: "images_section/cooks1.jpg" }) {
       ...fluidImage
     }
-    horizontalSecond: file(
-      relativePath: { eq: "images_section/intro_flower.jpg" }
-    ) {
+    horizontalSecond: file(relativePath: { eq: "images_section/ES-5.jpg" }) {
       ...fluidImage
     }
   }

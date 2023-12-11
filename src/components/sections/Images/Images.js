@@ -8,6 +8,9 @@ function Images({
   verticalFourth,
   verticalFifth,
   verticalSix,
+  verticalSeven,
+  verticalEght,
+  verticalNine,
   quadrantFirst,
   quadrantSecond,
   quadrantThird,
@@ -47,6 +50,22 @@ function Images({
           className="horizontal"
           style={{ backgroundImage: `url(${horizontal.src})` }}
         ></div>
+
+        <div className="vertical">
+          <div
+            className="vertical__seven"
+            style={{ backgroundImage: `url(${verticalSeven.src})` }}
+          ></div>
+          <div
+            className="vertical__eght"
+            style={{ backgroundImage: `url(${verticalEght.src})` }}
+          ></div>
+          <div
+            className="vertical__nine"
+            style={{ backgroundImage: `url(${verticalNine.src})` }}
+          ></div>
+        </div>
+
         <div
           className="horizontal"
           style={{ backgroundImage: `url(${horizontalSecond.src})` }}

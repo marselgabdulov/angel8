@@ -6,10 +6,10 @@ yarn-debug.log*
 yarn-error.log*
 
 # images
-*.png
-*.jpg
-*.jpeg
-*.gif
+# *.png
+# *.jpg
+# *.jpeg
+# *.gif
 
 # video
 *.mp4

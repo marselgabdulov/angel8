@@ -48,14 +48,6 @@ module.exports = {
         siteUrl: `https://angel8bar.ru`,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-yandex-metrika`,
-    //   options: {
-    //     trackingId: '55093711',
-    //     webvisor: true,
-    //     trackHash: true,
-    //   },
-    // },
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {

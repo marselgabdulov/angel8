@@ -16,7 +16,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            mars.dev
+            'marsdev'
           </a>
         </div>
       </div>

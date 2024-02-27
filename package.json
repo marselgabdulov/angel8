@@ -33,7 +33,7 @@
     "react-helmet": "^5.2.1",
     "react-intersection-observer": "^8.26.2",
     "react-use": "^15.3.2",
-    "sharp": "^0.27.1"
+    "sharp": "^0.32.6"
   },
   "keywords": [
     "gatsby"

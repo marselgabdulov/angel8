@@ -25,14 +25,14 @@ export const tequilaAndMezkal = [
     id: 5,
   },
   {
+    name: 'Azul Plata / 40%',
+    price: 3000,
+    id: 7,
+  },
+  {
     name: 'Mezcal / Koch El Espadin 47%',
     price: 700,
     id: 6,
-  },
-  {
-    name: 'Mezcal / Vida Del Maguey 42%',
-    price: 900,
-    id: 7,
   },
   {
     name: 'Mezcal / Del Maguey Minero 50%',

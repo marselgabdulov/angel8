@@ -12,7 +12,6 @@ import { grillHot } from '../data/food/grillHot'
 import { grillSteaks } from '../data/food/grillSteaks'
 import { salads } from '../data/food/salads'
 import { soups } from '../data/food/soups'
-import { starters } from '../data/food/starters'
 
 class FoodPage extends React.Component {
   componentDidMount() {

@@ -2,19 +2,19 @@ export const sparklingWine = [
   {
     name: 'Bio Bio Bubbles, extra dry 150ml',
     description: 'Italy',
-    price: 450,
+    price: 500,
     id: 1,
   },
   {
-    name: 'Cava, Dos Caprichos',
+    name: 'Prosecco / Belstar | Italy',
     description: 'Spain',
-    price: 2500,
+    price: 3900,
     id: 2,
   },
   {
-    name: 'Riesling Urban, Bruit',
+    name: 'Cuvee Rose / Belstar | Italy',
     description: 'Germany',
-    price: 3000,
+    price: 3950,
     id: 3,
   },
   {

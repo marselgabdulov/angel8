@@ -1,7 +1,7 @@
 export const japanWhiskey = [
   {
-    name: 'Shinobu / Pure Malt',
-    price: 950,
+    name: 'Nikka Days blended Whisky',
+    price: 760,
     id: 1,
   },
   {
@@ -15,8 +15,13 @@ export const japanWhiskey = [
     id: 3,
   },
   {
-    name: 'Hibiki Japanese Harmony',
-    price: 2950,
+    name: 'Taketsuru Pure Malt',
+    price: 2500,
     id: 4,
+  },
+  {
+    name: 'HIBIKI Single Malt',
+    price: 2500,
+    id: 5,
   },
 ]

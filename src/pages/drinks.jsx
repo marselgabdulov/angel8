@@ -121,10 +121,6 @@ let linksData = [
     name: 'Коктейли',
   },
   {
-    id: 'cocktailsSpecial',
-    name: 'Зимние коктейли',
-  },
-  {
     id: 'water',
     name: 'Вода',
   },
@@ -256,11 +252,7 @@ function DrinksPage() {
               title="ANGEL / 8 COCKTAILS"
               data={cocktails}
             />
-            <MenuSection
-              id="cocktailsSpecial"
-              title="WINTER COCKTAIL SPECIAL"
-              data={cocktailsSpecial}
-            />
+
             <MenuSection id="water" title="Вода" data={water} />
             <MenuSection id="smoothies" title="СМУЗИ 300 мл" data={smoothies} />
             <MenuSection

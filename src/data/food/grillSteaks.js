@@ -11,7 +11,7 @@ export const grillSteaks = [
   },
   {
     name: 'New York Steak / Брянск / 100гр.',
-    price: 650,
+    price: 680,
     id: 3,
   },
   {

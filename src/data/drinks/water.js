@@ -7,12 +7,12 @@ export const water = [
 
   {
     name: 'Coca-Cola / Coca-Cola zero / Sprite / Schwepps Tonic / 0,33 л',
-    price: 280,
+    price: 300,
     id: 2,
   },
   {
     name: 'Тоник J.Gasco / Italy / 0.2 л',
-    price: 350,
+    price: 380,
     id: 3,
   },
 ]

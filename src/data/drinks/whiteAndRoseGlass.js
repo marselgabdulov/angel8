@@ -12,9 +12,9 @@ export const whiteAndRoseGlass = [
     id: 2,
   },
   {
-    name: 'Vermentino, Solo',
+    name: 'Soave',
     description: 'Italy, 2021',
-    price: 480,
+    price: 530,
     id: 3,
   },
   {

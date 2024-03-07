@@ -5,18 +5,13 @@ export const vodka = [
     id: 1,
   },
   {
-    name: 'Мамонт',
+    name: 'Онегин',
     price: 300,
     id: 2,
   },
   {
-    name: 'Онегин',
-    price: 300,
-    id: 3,
-  },
-  {
     name: 'Shmidt',
     price: 320,
-    id: 4,
+    id: 3,
   },
 ]

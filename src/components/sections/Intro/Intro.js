@@ -3,7 +3,6 @@ import React from 'react'
 import LogoDesk from '../../LogoDesk'
 
 //Styles
-//
 // import './IntroSection.scss'
 import './Intro.css'
 

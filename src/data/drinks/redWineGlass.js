@@ -1,21 +1,21 @@
 export const redWineGlass = [
   {
-    name: 'Pinotage',
-    description: 'S-Africa | 2020',
-    price: 520,
-    id: 1,
-  },
-  {
     name: 'Malbec',
-    description: 'Argentina, 2019',
-    price: 550,
-    id: 2,
+    description: 'Argentina | 2019',
+    price: 580,
+    id: 1,
   },
   {
     name: 'Zinfandel',
     description: 'USA, 2020',
+    price: 580,
+    id: 2,
+  },
+  {
+    name: 'Pinotage',
+    description: 'Africa, 2020',
     price: 550,
-    id: 3,
+    id: 2,
   },
   {
     name: 'Garnacha',

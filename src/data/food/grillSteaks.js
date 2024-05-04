@@ -1,7 +1,7 @@
 export const grillSteaks = [
   {
     name: 'Фермерский бык & три соуса / Орел / 100 гр.',
-    price: 340,
+    price: 360,
     id: 1,
   },
   {
@@ -15,8 +15,8 @@ export const grillSteaks = [
     id: 3,
   },
   {
-    name: 'Cердца индейки / Халуми / соус Бордолез',
-    price: 950,
+    name: 'Pressé сердца индейки & New York / Соус из йогурта и мяты',
+    price: 980,
     id: 4,
   },
 ]

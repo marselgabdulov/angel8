@@ -1,12 +1,12 @@
 export const soups = [
   {
     name: 'Куриный суп',
-    price: 350,
+    price: 380,
     id: 1,
   },
   {
     name: 'Клэм чаудер с морепродуктами',
-    price: 650,
+    price: 680,
     id: 2,
   },
 ]

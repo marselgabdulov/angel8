@@ -1,7 +1,7 @@
 export const beer = [
   {
     name: 'Bayreuther Hell (Germany, Lager) 0,5 л',
-    price: 580,
+    price: 650,
     id: 1,
   },
   {
@@ -15,8 +15,8 @@ export const beer = [
     id: 3,
   },
   {
-    name: 'Petrus Dubbel / 7 % | Belgium / 0,33 л',
-    price: 650,
+    name: 'Dunkel / dark weisse 5.2 % | Germany / 0,5 л',
+    price: 620,
     id: 4,
   },
   {

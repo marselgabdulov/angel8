@@ -2,11 +2,11 @@ export const whiteAndRoseGlass = [
   {
     name: 'Sauvignon Blanc',
     description: 'NZ, 2018',
-    price: 600,
+    price: 620,
     id: 1,
   },
   {
-    name: 'Riesling, Mosel',
+    name: 'Riesling',
     description: 'Germany, 2021',
     price: 620,
     id: 2,
@@ -14,13 +14,13 @@ export const whiteAndRoseGlass = [
   {
     name: 'Soave',
     description: 'Italy, 2021',
-    price: 530,
+    price: 550,
     id: 3,
   },
   {
     name: 'Vinho Verde',
     description: 'Portugal, 2021',
-    price: 400,
+    price: 420,
     id: 4,
   },
 ]

@@ -1,12 +1,12 @@
 export const calvados = [
   {
     name: 'Chateau du Breuil "Fine" Calvados',
-    price: 450,
+    price: 480,
     id: 1,
   },
   {
     name: 'Chаteau du Breuil VSOP',
-    price: 720,
+    price: 750,
     id: 2,
   },
 ]

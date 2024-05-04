@@ -11,7 +11,7 @@ export const scotchWhiskeyBlend = [
   },
   {
     name: 'Monkey Sholder / malt blend',
-    price: 630,
+    price: 800,
     id: 3,
   },
 ]

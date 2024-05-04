@@ -23,6 +23,7 @@ import { japanWhiskey } from '../data/drinks/japanWhiskey'
 import { juices } from '../data/drinks/juices'
 import { juicesFresh } from '../data/drinks/juicesFresh'
 import { lemonades } from '../data/drinks/lemonades'
+import { milkShakes } from '../data/drinks/milkShakes'
 import { pisco } from '../data/drinks/pisco'
 import { portoAndJerez } from '../data/drinks/portoAndJerez'
 import { redWineBottle } from '../data/drinks/redWineBottle'
@@ -131,6 +132,10 @@ let linksData = [
   {
     id: 'lemonades',
     name: 'Лимонады',
+  },
+  {
+    id: 'milkShakes',
+    name: 'MILK SHAKES',
   },
   {
     id: 'juices',
@@ -259,6 +264,11 @@ function DrinksPage() {
               id="lemonades"
               title="ДОМАШНИЕ ЛИМОНАДЫ 300 мл / 1l"
               data={lemonades}
+            />
+            <MenuSection
+              id="milkShakes"
+              title="MILK SHAKES"
+              data={milkShakes}
             />
             <MenuSection id="juices" title="СОКИ 'Я'" data={juices} />
             <MenuSection title="СОК СВЕЖЕВЫЖАТЫЙ 250 мл" data={juicesFresh} />

@@ -1,7 +1,7 @@
 export const vodka = [
   {
     name: 'Архангельская',
-    price: 150,
+    price: 180,
     id: 1,
   },
   {

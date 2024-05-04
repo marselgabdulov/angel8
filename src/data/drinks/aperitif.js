@@ -20,28 +20,23 @@ export const aperitif = [
     id: 4,
   },
   {
-    name: 'Fernet Bitter Luxardo',
-    price: 320,
+    name: 'Campari',
+    price: 400,
     id: 5,
   },
   {
-    name: 'Campari',
-    price: 380,
-    id: 6,
-  },
-  {
     name: 'Aperol',
-    price: 380,
-    id: 7,
+    price: 400,
+    id: 6,
   },
   {
     name: 'Absinthe',
     price: 450,
-    id: 8,
+    id: 7,
   },
   {
     name: 'Fernet Branca | Mentha',
-    price: 380,
-    id: 9,
+    price: 420,
+    id: 8,
   },
 ]

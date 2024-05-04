@@ -1,12 +1,12 @@
 export const americanWhiskey = [
   {
     name: 'Jim Beam',
-    price: 390,
+    price: 420,
     id: 1,
   },
   {
     name: "Jack Daniel's",
-    price: 420,
+    price: 450,
     id: 2,
   },
   {
@@ -16,7 +16,7 @@ export const americanWhiskey = [
   },
   {
     name: "Makes's Mark",
-    price: 540,
+    price: 850,
     id: 4,
   },
   {

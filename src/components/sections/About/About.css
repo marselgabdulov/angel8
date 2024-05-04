@@ -2,7 +2,7 @@
 
 /* mobile portrait */
 @media (min-width: 320px) and (max-width: 479px) {
-  .about {
+  .text {
     width: 95%;
     margin: 50px auto;
     text-align: left;
@@ -13,7 +13,7 @@
 
 /* mobile landscape */
 @media (min-width: 480px) and (max-width: 767px) {
-  .about {
+  .text {
     width: 95%;
     margin: 50px auto;
     text-align: center;
@@ -24,7 +24,7 @@
 
 /* tablet-portrait */
 @media (min-width: 768px) and (max-width: 999px) {
-  .about {
+  .text {
     width: 70%;
     margin: 100px auto;
     text-align: center;
@@ -35,7 +35,7 @@
 
 /* tablet-landscape */
 @media (min-width: 1000px) and (max-width: 1279px) {
-  .about {
+  .text {
     width: 700px;
     margin: 100px auto;
     text-align: center;
@@ -46,7 +46,7 @@
 
 /* desktop */
 @media (min-width: 1280px) and (max-width: 1919px) {
-  .about {
+  .text {
     width: 850px;
     margin: 100px auto;
     text-align: center;
@@ -57,7 +57,7 @@
 
 /* desktop XXL */
 @media (min-width: 1920px) {
-  .about {
+  .text {
     width: 900px;
     margin: 100px auto;
     text-align: center;

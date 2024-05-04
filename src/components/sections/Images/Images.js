@@ -2,21 +2,27 @@ import React from 'react'
 import './Images.css'
 
 function Images({
-  verticalFirst,
-  verticalSecond,
-  verticalThird,
-  verticalFourth,
-  verticalFifth,
-  verticalSix,
-  verticalSeven,
-  verticalEght,
-  verticalNine,
-  quadrantFirst,
-  quadrantSecond,
-  quadrantThird,
-  quadrantFourth,
-  horizontal,
-  horizontalSecond,
+  vertical_1,
+  vertical_2,
+  vertical_3,
+  vertical_4,
+  vertical_5,
+  vertical_6,
+  vertical_7,
+  vertical_8,
+  vertical_9,
+  vertical_10,
+  vertical_11,
+  vertical_12,
+  vertical_13,
+  vertical_14,
+  vertical_15,
+  quadrant_1,
+  quadrant_2,
+  quadrant_3,
+  quadrant_4,
+  horizontal_1,
+  horizontal_2,
 }) {
   return (
     <section id="images" className="images">
@@ -24,74 +30,116 @@ function Images({
       <div className="images__wrapper">
         <div className="vertical">
           <div
-            className="vertical__first"
-            style={{ backgroundImage: `url(${verticalFirst.src})` }}
+            className="vertical_1"
+            style={{ backgroundImage: `url(${vertical_1.src})` }}
           ></div>
           <div
-            className="vertical__second"
-            style={{ backgroundImage: `url(${verticalSecond.src})` }}
+            className="vertical_2"
+            style={{ backgroundImage: `url(${vertical_2.src})` }}
           ></div>
           <div
-            className="vertical__third"
-            style={{ backgroundImage: `url(${verticalThird.src})` }}
-          ></div>
-        </div>
-        <div className="quadrant">
-          <div
-            className="quadrant__first"
-            style={{ backgroundImage: `url(${quadrantFirst.src})` }}
-          ></div>
-          <div
-            className="quadrant__second"
-            style={{ backgroundImage: `url(${quadrantSecond.src})` }}
-          ></div>
-        </div>
-        <div
-          className="horizontal"
-          style={{ backgroundImage: `url(${horizontal.src})` }}
-        ></div>
-
-        <div className="vertical">
-          <div
-            className="vertical__seven"
-            style={{ backgroundImage: `url(${verticalSeven.src})` }}
-          ></div>
-          <div
-            className="vertical__eght"
-            style={{ backgroundImage: `url(${verticalEght.src})` }}
-          ></div>
-          <div
-            className="vertical__nine"
-            style={{ backgroundImage: `url(${verticalNine.src})` }}
-          ></div>
-        </div>
-
-        <div
-          className="horizontal"
-          style={{ backgroundImage: `url(${horizontalSecond.src})` }}
-        ></div>
-        <div className="vertical">
-          <div
-            className="vertical__first"
-            style={{ backgroundImage: `url(${verticalFourth.src})` }}
-          ></div>
-          <div
-            className="vertical__second"
-            style={{ backgroundImage: `url(${verticalFifth.src})` }}
-          ></div>
-          <div
-            className="vertical__fourth"
-            style={{ backgroundImage: `url(${verticalSix.src})` }}
+            className="vertical_3"
+            style={{ backgroundImage: `url(${vertical_3.src})` }}
           ></div>
         </div>
         <div className="quadrant">
           <div
-            className="quadrant__first"
-            style={{ backgroundImage: `url(${quadrantThird.src})` }}
+            className="quadrant_1"
+            style={{ backgroundImage: `url(${quadrant_1.src})` }}
           ></div>
           <div
-            className="quadrant__second"
-            style={{ backgroundImage: `url(${quadrantFourth.src})` }}
+            className="quadrant_2"
+            style={{ backgroundImage: `url(${quadrant_2.src})` }}
+          ></div>
+        </div>
+        <div
+          className="horizontal"
+          style={{ backgroundImage: `url(${horizontal_1.src})` }}
+        ></div>
+
+        <div className="vertical">
+          <div
+            className="vertical_7"
+            style={{ backgroundImage: `url(${vertical_7.src})` }}
+          ></div>
+          <div
+            className="vertical_8"
+            style={{ backgroundImage: `url(${vertical_8.src})` }}
+          ></div>
+          <div
+            className="vertical_9"
+            style={{ backgroundImage: `url(${vertical_9.src})` }}
+          ></div>
+        </div>
+
+        <div
+          className="horizontal"
+          style={{ backgroundImage: `url(${horizontal_2.src})` }}
+        ></div>
+        <div className="vertical">
+          <div
+            className="vertical_10"
+            style={{ backgroundImage: `url(${vertical_4.src})` }}
+          ></div>
+          <div
+            className="vertical_11"
+            style={{ backgroundImage: `url(${vertical_5.src})` }}
+          ></div>
+          <div
+            className="vertical_12"
+            style={{ backgroundImage: `url(${vertical_6.src})` }}
+          ></div>
+        </div>
+        <div className="quadrant">
+          <div
+            className="quadrant_1"
+            style={{ backgroundImage: `url(${quadrant_3.src})` }}
+          ></div>
+          <div
+            className="quadrant_2"
+            style={{ backgroundImage: `url(${quadrant_4.src})` }}
+          ></div>
+        </div>
+
+        <div className="vertical">
+          <div
+            className="vertical_10"
+            style={{ backgroundImage: `url(${vertical_10.src})` }}
+          ></div>
+          <div
+            className="vertical_11"
+            style={{ backgroundImage: `url(${vertical_11.src})` }}
+          ></div>
+          <div
+            className="vertical_12"
+            style={{ backgroundImage: `url(${vertical_12.src})` }}
+          ></div>
+        </div>
+
+        <div className="text">
+          <h3 className="text_title">Вера. Время. Движение.</h3>
+          <div className="text_body">
+            <p>
+              История и вкус. Дьявол в мелочах. <br /> Храм архангела Михаила,
+              1825 г, село Крутицы.
+              <br /> Backstage съемок новых напитков для барной карты. <br />
+              Вера - Свет | Движение - Огонь | Время - Жизнь.
+            </p>
+          </div>
+        </div>
+
+        <div className="vertical">
+          <div
+            className="vertical_13"
+            style={{ backgroundImage: `url(${vertical_13.src})` }}
+          ></div>
+          <div
+            className="vertical_14"
+            style={{ backgroundImage: `url(${vertical_14.src})` }}
+          ></div>
+          <div
+            className="vertical_15"
+            style={{ backgroundImage: `url(${vertical_15.src})` }}
           ></div>
         </div>
       </div>

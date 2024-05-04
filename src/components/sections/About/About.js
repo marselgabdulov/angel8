@@ -7,9 +7,9 @@ function AboutSection({ img }) {
       {/* <div className="about__image-container">
           <Img fluid={img} className="about__image"></Img>
         </div> */}
-      <div className="about__text">
-        <h2 className="about__title">О нас</h2>
-        <div className="about__text">
+      <div className="text">
+        <h2 className="text__title">О нас</h2>
+        <div className="about__body">
           <p>
             Полумрак, свечи и винтажная мебель. Приятный вкус до и после.
             Смешиваем тихие и яркие вкусы. Подаем вина в хрустале. Летом пальмы

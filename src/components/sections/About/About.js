@@ -19,7 +19,7 @@ function AboutSection({ img }) {
             </a>
             . Доставляем бесплатно.
           </p>
-          <h3>Оплата по QR-коду</h3>
+          <h4>Оплата по QR-коду</h4>
           <div className="qr__image-container">
             <div
               className="qr__image"

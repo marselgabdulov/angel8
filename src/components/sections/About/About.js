@@ -4,15 +4,11 @@ import './About.css'
 function AboutSection({ img }) {
   return (
     <section id="about" className="data-scroll-section about">
-      {/* <div className="about__image-container">
-          <Img fluid={img} className="about__image"></Img>
-        </div> */}
       <div className="text">
         <h2 className="text__title">О нас</h2>
         <div className="about__body">
           <p>
-            Приятный вкус до и после. Смешиваем тихие и яркие ноты. Готовим
-            блюда в печи&nbsp;
+            Готовим блюда в печи&nbsp;
             <a
               href="https://www.josper.es/ru/josper/about/"
               target="_blank"
@@ -23,6 +19,14 @@ function AboutSection({ img }) {
             </a>
             . Доставляем бесплатно.
           </p>
+          <h3>Оплата по QR-коду</h3>
+          <div className="qr__image-container">
+            <div
+              className="qr__image"
+              style={{ backgroundImage: `url(${img.src})` }}
+            ></div>
+          </div>
+          <p>Отсканируйте и оплатите в приложении банка</p>
         </div>
       </div>
     </section>

@@ -22,7 +22,7 @@ import './index.scss'
 import classnames from 'classnames'
 
 function IndexPage(props) {
-  const sections = ['intro', 'about', 'images', 'video', 'team']
+  const sections = ['intro', 'about', 'images', 'team']
   const [currentSection, setCurrentSection] = useState({ isFinal: false })
   const [currentSectionIndex, setCurrentSectionIndex] = useState(0)
   const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.5 })
@@ -105,7 +105,7 @@ function IndexPage(props) {
           <IntroSection
             introImage={props.data.intro_image.childImageSharp.fluid}
           />
-          <AboutSection img={props.data.about_one.childImageSharp.fluid} />
+          <AboutSection img={props.data.qr_image.childImageSharp.fluid} />
           <ImagesSection
             vertical_1={props.data.vertical_1.childImageSharp.fluid}
             vertical_2={props.data.vertical_2.childImageSharp.fluid}
@@ -154,7 +154,7 @@ export const pageQuery = graphql`
     intro_image: file(relativePath: { eq: "intro/dark.jpg" }) {
       ...fluidImage
     }
-    about_one: file(relativePath: { eq: "about/about.jpg" }) {
+    qr_image: file(relativePath: { eq: "about/qr_code.jpg" }) {
       ...fluidImage
     }
     Lado: file(relativePath: { eq: "team/Lado2.jpg" }) {

@@ -1,5 +1,17 @@
 /* common */
 
+.qr__image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr__image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
 /* mobile portrait */
 @media (min-width: 320px) and (max-width: 479px) {
   .text {
@@ -8,6 +20,15 @@
     text-align: left;
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .qr__image-container {
+    width: 100%;
+    height: 300px;
+  }
+
+  .qr__image {
+    width: 100%;
   }
 }
 
@@ -20,6 +41,15 @@
     font-size: 18px;
     line-height: 30px;
   }
+
+  .qr__image-container {
+    width: 100%;
+    height: 300px;
+  }
+
+  .qr__image {
+    width: 100%;
+  }
 }
 
 /* tablet-portrait */
@@ -30,6 +60,16 @@
     text-align: center;
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .qr__image-container {
+    width: 70%;
+    margin: 10px auto;
+    height: 350px;
+  }
+
+  .qr__image {
+    width: 100%;
   }
 }
 
@@ -42,6 +82,15 @@
     font-size: 18px;
     line-height: 30px;
   }
+
+  .qr__image-container {
+    width: 100%;
+    height: 200px;
+  }
+
+  .qr__image {
+    width: 100%;
+  }
 }
 
 /* desktop */
@@ -53,6 +102,14 @@
     font-size: 18px;
     line-height: 30px;
   }
+
+  .qr__image-container {
+    height: 400px;
+  }
+
+  .qr__image {
+    width: 100%;
+  }
 }
 
 /* desktop XXL */
@@ -63,5 +120,13 @@
     text-align: center;
     font-size: 24px;
     line-height: 36px;
+  }
+
+  .qr__image-container {
+    height: 400px;
+  }
+
+  .qr__image {
+    width: 50%;
   }
 }

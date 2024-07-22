@@ -16,7 +16,7 @@ export const grillHot = [
   },
   {
     name: 'Овощи гриль',
-    price: 500,
+    price: 680,
     id: 0,
   },
   {

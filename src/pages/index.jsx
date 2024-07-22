@@ -129,7 +129,6 @@ function IndexPage(props) {
             vertical_14={props.data.vertical_14.childImageSharp.fluid}
             vertical_15={props.data.vertical_15.childImageSharp.fluid}
           />
-          <VideoSection />
           <div className="final-section" ref={ref}>
             <TeamSection teamData={teamData} />
           </div>
@@ -152,7 +151,7 @@ export const fluidImage = graphql`
 
 export const pageQuery = graphql`
   query {
-    intro_image: file(relativePath: { eq: "intro/barCounter.jpg" }) {
+    intro_image: file(relativePath: { eq: "intro/dark.jpg" }) {
       ...fluidImage
     }
     about_one: file(relativePath: { eq: "about/about.jpg" }) {
@@ -167,7 +166,7 @@ export const pageQuery = graphql`
     Arman: file(relativePath: { eq: "team/Arman2.jpg" }) {
       ...fluidImage
     }
-    vertical_1: file(relativePath: { eq: "images_section/ES-13.jpg" }) {
+    vertical_1: file(relativePath: { eq: "images_section/salat.jpg" }) {
       ...fluidImage
     }
     vertical_2: file(relativePath: { eq: "images_section/desert.jpg" }) {
@@ -176,16 +175,16 @@ export const pageQuery = graphql`
     vertical_3: file(relativePath: { eq: "images_section/shrimps.jpg" }) {
       ...fluidImage
     }
-    vertical_4: file(relativePath: { eq: "images_section/wine-glass.jpg" }) {
+    vertical_4: file(relativePath: { eq: "images_section/intro__food.jpg" }) {
       ...fluidImage
     }
-    vertical_5: file(relativePath: { eq: "images_section/ES-76.jpg" }) {
+    vertical_5: file(relativePath: { eq: "images_section/meat.jpg" }) {
       ...fluidImage
     }
     vertical_6: file(relativePath: { eq: "images_section/breakfast.jpg" }) {
       ...fluidImage
     }
-    vertical_7: file(relativePath: { eq: "images_section/ES-26.jpg" }) {
+    vertical_7: file(relativePath: { eq: "images_section/intro__food.jpg" }) {
       ...fluidImage
     }
     vertical_8: file(relativePath: { eq: "images_section/ES-52.jpg" }) {
@@ -194,9 +193,7 @@ export const pageQuery = graphql`
     vertical_9: file(relativePath: { eq: "images_section/ES-35.jpg" }) {
       ...fluidImage
     }
-    vertical_10: file(
-      relativePath: { eq: "images_section/cocktail_tree.jpg" }
-    ) {
+    vertical_10: file(relativePath: { eq: "images_section/intro__food.jpg" }) {
       ...fluidImage
     }
     vertical_11: file(relativePath: { eq: "images_section/cocktail_sun.jpg" }) {
@@ -207,7 +204,7 @@ export const pageQuery = graphql`
     ) {
       ...fluidImage
     }
-    vertical_13: file(relativePath: { eq: "images_section/back_1.jpg" }) {
+    vertical_13: file(relativePath: { eq: "images_section/intro__food.jpg" }) {
       ...fluidImage
     }
     vertical_14: file(relativePath: { eq: "images_section/back_2.jpg" }) {
@@ -219,7 +216,7 @@ export const pageQuery = graphql`
     quadrant_1: file(relativePath: { eq: "images_section/desert2.jpg" }) {
       ...fluidImage
     }
-    quadrant_2: file(relativePath: { eq: "images_section/flower.jpg" }) {
+    quadrant_2: file(relativePath: { eq: "images_section/tar-tar.jpg" }) {
       ...fluidImage
     }
     quadrant_3: file(relativePath: { eq: "images_section/tar-tar.jpg" }) {

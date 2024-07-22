@@ -1,5 +1,4 @@
 import React from 'react'
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import { Link } from 'gatsby'
 import './Header.css'
 import LogoMobile from './LogoMobile'
@@ -16,8 +15,7 @@ function Header() {
           </Link>
         </div>
         <div className="header__links">
-          <Link to="/food">Блюда</Link>
-          <Link to="/drinks">Напитки</Link>
+          <Link to="/menu">Меню</Link>
           <a href={menuPDF} target="_blank" rel="noopener noreferrer">
             Меню pdf
           </a>

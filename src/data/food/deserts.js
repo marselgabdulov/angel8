@@ -1,10 +1,5 @@
 export const desserts = [
   {
-    name: 'Тирамису / ягодный сорбет',
-    price: 470,
-    id: 1,
-  },
-  {
     name: 'Шоколадный фондан с соусом англез',
     price: 470,
     id: 2,
@@ -15,8 +10,8 @@ export const desserts = [
     id: 3,
   },
   {
-    name: 'Орехи & Ириски // 90 гр.',
-    price: 350,
+    name: 'Лимонный Kérd / манго / фисташки',
+    price: 470,
     id: 4,
   },
   {

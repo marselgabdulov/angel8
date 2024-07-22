@@ -11,9 +11,8 @@ function AboutSection({ img }) {
         <h2 className="text__title">О нас</h2>
         <div className="about__body">
           <p>
-            Полумрак, свечи и винтажная мебель. Приятный вкус до и после.
-            Смешиваем тихие и яркие вкусы. Подаем вина в хрустале. Летом пальмы
-            и столы во дворе. Готовим блюда в печи&nbsp;
+            Приятный вкус до и после. Смешиваем тихие и яркие ноты. Готовим
+            блюда в печи&nbsp;
             <a
               href="https://www.josper.es/ru/josper/about/"
               target="_blank"
@@ -22,17 +21,7 @@ function AboutSection({ img }) {
             >
               Josper
             </a>
-            . Нас трудно найти на территории&nbsp;
-            <a
-              className="index__link"
-              href="http://likerka-loft.ru/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Сайт likerka-loft.ru"
-            >
-              &laquo;Ликерка Лофт&raquo;
-            </a>
-            . Звоните и мы Вас встретим и проводим.
+            . Доставляем бесплатно.
           </p>
         </div>
       </div>

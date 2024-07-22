@@ -5,7 +5,7 @@ export const grillSteaks = [
     id: 1,
   },
   {
-    name: 'Tri Tip & гратен из батата / томаты конфи',
+    name: 'Tri Tip & гратен из корнеплодов / печеный перец',
     price: 1280,
     id: 2,
   },

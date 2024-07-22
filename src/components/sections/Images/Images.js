@@ -59,25 +59,6 @@ function Images({
 
         <div className="vertical">
           <div
-            className="vertical_7"
-            style={{ backgroundImage: `url(${vertical_7.src})` }}
-          ></div>
-          <div
-            className="vertical_8"
-            style={{ backgroundImage: `url(${vertical_8.src})` }}
-          ></div>
-          <div
-            className="vertical_9"
-            style={{ backgroundImage: `url(${vertical_9.src})` }}
-          ></div>
-        </div>
-
-        <div
-          className="horizontal"
-          style={{ backgroundImage: `url(${horizontal_2.src})` }}
-        ></div>
-        <div className="vertical">
-          <div
             className="vertical_10"
             style={{ backgroundImage: `url(${vertical_4.src})` }}
           ></div>
@@ -88,58 +69,6 @@ function Images({
           <div
             className="vertical_12"
             style={{ backgroundImage: `url(${vertical_6.src})` }}
-          ></div>
-        </div>
-        <div className="quadrant">
-          <div
-            className="quadrant_1"
-            style={{ backgroundImage: `url(${quadrant_3.src})` }}
-          ></div>
-          <div
-            className="quadrant_2"
-            style={{ backgroundImage: `url(${quadrant_4.src})` }}
-          ></div>
-        </div>
-
-        <div className="vertical">
-          <div
-            className="vertical_10"
-            style={{ backgroundImage: `url(${vertical_10.src})` }}
-          ></div>
-          <div
-            className="vertical_11"
-            style={{ backgroundImage: `url(${vertical_11.src})` }}
-          ></div>
-          <div
-            className="vertical_12"
-            style={{ backgroundImage: `url(${vertical_12.src})` }}
-          ></div>
-        </div>
-
-        <div className="text">
-          <h3 className="text_title">Вера. Время. Движение.</h3>
-          <div className="text_body">
-            <p>
-              История и вкус. Дьявол в мелочах. <br /> Храм архангела Михаила,
-              1825 г, село Крутицы.
-              <br /> Backstage съемок новых напитков для барной карты. <br />
-              Вера - Свет | Движение - Огонь | Время - Жизнь.
-            </p>
-          </div>
-        </div>
-
-        <div className="vertical">
-          <div
-            className="vertical_13"
-            style={{ backgroundImage: `url(${vertical_13.src})` }}
-          ></div>
-          <div
-            className="vertical_14"
-            style={{ backgroundImage: `url(${vertical_14.src})` }}
-          ></div>
-          <div
-            className="vertical_15"
-            style={{ backgroundImage: `url(${vertical_15.src})` }}
           ></div>
         </div>
       </div>

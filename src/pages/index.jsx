@@ -68,7 +68,7 @@ function IndexPage(props) {
       id: 2,
       image: props.data.Michael.childImageSharp.fluid,
       name: 'Михаил Корчагин',
-      position: 'су-шеф',
+      position: 'су--шеф',
       projects: 'Angel8',
     },
     {
